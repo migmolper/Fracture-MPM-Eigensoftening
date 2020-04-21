@@ -1,0 +1,53 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Wieckowski2004}
+W.~Zdzislaw, {The material point method in large strain engineering problems},
+  Computer Methods in Applied Mechanics and Engineering 193~(39-41 SPEC. ISS.)
+  (2004) 4417--4438.
+\newblock \href {http://dx.doi.org/10.1016/j.cma.2004.01.035}
+  {\path{doi:10.1016/j.cma.2004.01.035}}.
+
+\bibitem{Arroyo2006}
+M.~Arroyo, M.~Ortiz, {Local maximum-entropy approximation schemes: A seamless
+  bridge between finite elements and meshfree methods}, International Journal
+  for Numerical Methods in Engineering\href
+  {http://dx.doi.org/10.1002/nme.1534} {\path{doi:10.1002/nme.1534}}.
+
+\bibitem{Jaynes1957}
+E.~Jaynes, {Information Theory and Statistical Mechanics}, The Physical Review
+  106~(4) (1957) 620--630.
+
+\bibitem{Shannon1948}
+C.~E. Shannon, {A Mathematical Theory of Communication}, Bell System Technical
+  Journal\href {http://dx.doi.org/10.1002/j.1538-7305.1948.tb01338.x}
+  {\path{doi:10.1002/j.1538-7305.1948.tb01338.x}}.
+
+\bibitem{Navas_2017_ES}
+P.~Navas, R.~Yu, B.~Li, G.~Ruiz, Modeling the dynamic fracture in concrete: an
+  eigensoftening meshfree approach, International Journal of Impact Engineering
+  113.
+\newblock \href {http://dx.doi.org/10.1016/j.ijimpeng.2017.11.004}
+  {\path{doi:10.1016/j.ijimpeng.2017.11.004}}.
+
+\bibitem{Pandolfi_2012}
+A.~Pandolfi, M.~Ortiz, An eigenerosion approach to brittle fracture.,
+  International Journal for Numerical Methods in Engineering 92 (2012)
+  694--714.
+
+\bibitem{Navas_2018_ES}
+P.~Navas, R.~Yu, G.~Ruiz, Meshfree modeling of the dynamic mixed-mode fracture
+  in frc through an eigensoftening approach, Engineering Structures 172.
+\newblock \href {http://dx.doi.org/10.1016/j.engstruct.2018.06.010}
+  {\path{doi:10.1016/j.engstruct.2018.06.010}}.
+
+\bibitem{Schmidt_2009}
+B.~Schmidt, F.~Fraternali, M.~Ortiz, Eigenfracture: an eigendeformation
+  approach to variational fracture., SIAM J. Multiscale Model. Simul. 7 (2009)
+  1237--1266.
+
+\end{thebibliography}

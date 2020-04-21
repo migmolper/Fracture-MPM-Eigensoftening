@@ -1,0 +1,57 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{width=7cm, compat=1.10}
+\usepgfplotslibrary{fillbetween}
+\pgfmathdeclarefunction{poly}{0}{\pgfmathparse{1-x}}
+
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis y line = left,
+    axis x line = bottom,
+    xtick       = {0.5,1},
+    xticklabels = {$\mathbf{\omega}_n$,$\mathbf{\omega}_c$},
+    ytick       = {0.5,1},
+    yticklabels = {$\mathbf{f}_c$,$\mathbf{f}_t$},
+    samples     = 160,
+    domain      = 0:1,
+    xmin = 0, xmax = 1.2,
+    ymin = 0, ymax = 1.2,
+    ]
+    \coordinate (c) at (0.5,0.5);
+    \addplot[name path=poly, black, thick, mark=none, ] {poly};
+    \addplot[name path=line, gray, no markers, line width=1pt] {0};
+    \addplot fill between[ 
+    of = poly and line, 
+    split, % calculate segments
+    every even segment/.style  = {gray!60}
+    ];
+    \draw[dashed] (yaxis |- c) node[left] {$y'$}
+        -| (xaxis -| c) node[below] {$x'$};
+\end{axis}
+\end{tikzpicture}
+\end{document}
+
+
+% \documentclass{article}
+% \usepackage{tikz}
+% \begin{document}
+
+% \begin{tikzpicture}[scale=1.5]
+%     % Draw axes
+%     \draw [<->,thick] (0,2) node (yaxis) [above] {$y$}
+%         |- (3,0) node (xaxis) [right] {$x$};
+%     % Draw two intersecting lines
+%     \draw (0,0) coordinate (a_1) -- (2,1.8) coordinate (a_2);
+%     \draw (0,1.5) coordinate (b_1) -- (2.5,0) coordinate (b_2);
+%     % Calculate the intersection of the lines a_1 -- a_2 and b_1 -- b_2
+%     % and store the coordinate in c.
+%     \coordinate (c) at (intersection of a_1--a_2 and b_1--b_2);
+%     % Draw lines indicating intersection with y and x axis. Here we use
+%     % the perpendicular coordinate system
+%     \draw[dashed] (yaxis |- c) node[left] {$y'$}
+%         -| (xaxis -| c) node[below] {$x'$};
+%     % Draw a dot to indicate intersection point
+%     \fill[red] (c) circle (2pt);
+% \end{tikzpicture}
+% \end{document}
