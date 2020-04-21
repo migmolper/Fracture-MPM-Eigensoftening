@@ -129,16 +129,35 @@ Material Point Method \sep Solid Dynamics
 The simulation of fracture propagation in a more accurate and
 effective way can be considered as one of the original drivers for
 developing novel spatial discretization methods such as meshfree
-methods like the material point method (MPM). Presence of cracks are a violation of the
-continuity requirement of the finite element approach (MPM).
+methods like the material point method (MPM). Presence of cracks are a
+violation of the continuity requirement of the finite element method
+(FEM).  
 
-The MPM does not suffer from the above difficulties. Discontinuities
-can be described in two ways. One is to abandon the single-valued
-velocity field property near the crack by using two or more background
-meshes, and the other is to use failed material points to
-approximately describe the crack.
+By contrast, MPM does not suffer from the above difficulty since the
+continuity requirement is less restrictive. Regarding fracture, it can
+be described in two ways. One is to remove the restriction of the single-valued velocity field close to the crack by using two or
+more sets of nodes \cite{Nairn_2006}. This method is based in to
+assign different labels to distinguish if the material points and
+nodes are in the same side of the crack or not. Under this approach
+the crack surface is described with line segments in 2D and triangle
+patches in 3D cases. This method was named as ``CRAcks with Material
+Points (CRAMP)'' \cite{Nairn_2003}. In this method, the criteria for
+crack propagation is based on such parameters as energy release rate
+analyzed by Tan \& Nairn (2002)\cite{Nairn_2002}, and the stress
+intensity factor or the J-integral discussed by Guo \& Nairn
+(2004)\cite{Nairn_2004}.
 
-In the first approach,
+and the other is to use failed material points to
+describe the crack evolution.
+
+The erosion of the material point means that each material point can
+be either intact or be completely failed or eroded and has no load
+bearing capacity, Even thought the method has been successfully
+applied to dynamic fragmentation of metals, quantitative validations,
+such as stress or strain levels near or at the crack set compared to
+experimental measures are still lacking. Having in mind that the
+eigenerosion approach was intended for perfectly brittle fracture, an
+eigensoftening concept is developed for quasi-brittle materials
 
 
 
@@ -146,21 +165,71 @@ In the first approach,
 \section{The meshfree methodology}
 \label{sec:2}
 
-The popularity of MPM has increase notoriously during the recent years
-due to its ability to deal with large strain problems without mesh
-distorsion issues inherent to mesh based methods like FEM, see
-Zdzislaw \cite{Wieckowski2004}. However, in the simulations made with
-the original MPM, there are numerical noises when particles crossing
-the cell boundaries. 
+The aim of this section is to provide an overview of the special
+techniques employed to face the fracture problem under the MPM
+framework. In consequence it is structured as follows: first in
+\ref{sec:2.1} we summarize the explicit-predictor algorithm for the
+MPM, next the local \textit{max-ent} approximants are introduced in
+\ref{sec:2.2} as an accurate alternative technique to interpolate data
+between particles and nodes, and finally the fracture algorithms based
+in the eigendeformations are presented in \ref{sec:2.3}.
 
 \subsection{The Material Point Method}
 \label{sec:2.1}
 
-For the spatial discretization, two sets of points are introduced in
-the MPM. First, the nodes, this points are considered fixed in the space and are in charge of
-computing all the kinematic fields such forces $f_I$, accelerations $a_I$ and
-velocities $v_I$. And second the material points or particles. They are in
-charge of the discretization of the continuum, and store the local state ($\sigma_p, \varepsilon_p$).
+The MPM~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian method
+where particles carries on all the physical information and a set of
+background nodes is employed to compute the equilibrium
+equation. Since the MPM possesses the advantages of both Lagrangian
+and Eulerian descriptions, no element distortion exists in the MPM,
+therefore it is an appropriate and efficient method in solving
+problems involving extremely large deformation and moving
+discontinuities such fracture evolution. For the spatial
+discretization, two sets of points are introduced in 
+the MPM. First, the nodes. This points are considered fixed in the
+space and are in charge of computing all the kinematic fields such
+forces $f_I$, accelerations $a_I$ and velocities $v_I$. And second the
+material points or particles. They are in charge of the discretization
+of the continuum, and store the local state ($\sigma_p,
+\varepsilon_p$). Without loosing generality, the MPM algorithm can be
+described with three main steps: (i) a
+variational recovery process, where particle data is projected to the
+grid nodes, (ii) an Eulerian step, where balance of momentum equation
+is expressed as a nodal equilibrium equation thorough a FEM-like
+procedure, and finally (iii) a Lagrangian advection of the
+particles. In the present research we will adopt a explicit
+predictor-corrector time integration scheme. The purpose of this
+choice is motivated due its proved robustness and stability in
+numerical calculations. In the first stage (i), the nodal velocity
+predictor is computed following \eqref{eq:Predictor-velocity}, 
+\begin{equation}
+  \label{eq:Predictor-velocity}
+  \vec{\tilde{v}}_I^{k+1} = \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}
+\end{equation}
+This way of computing the nodal predictor is both numerically stable
+and minimize the computational effort. Once nodal velocity are
+obtained, the essential boundary conditions are imposed. And in the
+following, a Eulerian phase (ii) is computed in the set of nodes in a
+FEM-like way, where nodal forces $\vec{f}_{I}^{k+1}$ are computed thorough the
+equilibrium equation. Next the nodal velocities are corrected in a
+\textit{corrector} stage,
+\begin{equation}
+  \label{eq:Corrector-velocity}
+  \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}
+\end{equation}
+Finally updated the particles are advected in the Lagrangian stage (iii) using nodal values as,
+\begin{align}
+  \label{eq:Update-lagrangian-pce}
+        &\vec{a}_p^{k+1} = \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+      &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
+        \frac{N_{Ip}^k\
+        \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
+         N_{Ip}^k\ \vec{v}_{I}^{k} +
+        \frac{1}{2}\Delta t^2\ \frac{N_{Ip}^k\
+        \vec{f}_{I}^{k}}{\tens{m}_I^k} 
+\end{align}
+The complete pseudo-algorithm it is summarized in \ref{sec:expl-pred-corr}.
 
 \subsection{Spatial discretization : Local-\textit{max-ent} approximants}
 \label{sec:2.2}
@@ -243,49 +312,8 @@ neighbours, see \cite{Arroyo2006} for details. This tolerance defines
 the limit values of the influence radius and is used thereafter to
 find the neighbour nodes of a given integration point.
 
-\subsection{Temporal discretization}
-\label{sec:2.3}
-
-This research is devoted to capture the challenging process of
-fracture during high velocity impacts. To capture the presence of
-elastic shock waves triggered by the fracture process. Here we adopt
-a explicit predictor-corrector time integration
-scheme. It is based in the Newmark a-form 
-$\gamma = 0.5$ and $\beta = 0$ which is the central difference
-explicit. In a first stage, the nodal velocity predictor is computed
-following \eqref{eq:Predictor-velocity}, 
-\begin{equation}
-  \label{eq:Predictor-velocity}
-  \vec{\tilde{v}}_I^{k+1} = \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}
-\end{equation}
-This way of computing the nodal predictor is both numerically stable
-and minimize the computational effort. Once nodal velocity are
-obtained, the essential boundary conditions are imposed. And in the
-following, the ``classic'' MPM algorithm continues to reach to the
-equilibrium equation \eqref{eq:particle_balance_forces3}. Here we
-continue with the \textit{corrector} stage, due to the fact that we
-already have nodal velocity, this step is computed in the same way as
-in FEM,
-\begin{equation}
-  \label{eq:Corrector-velocity}
-  \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}
-\end{equation}
-Finally updated particle kinetics are computed using nodal values as,
-\begin{align}
-  \label{eq:Update-lagrangian-pce}
-        &\vec{a}_p^{k+1} = \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
-      &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
-        \frac{N_{Ip}^k\
-        \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
-      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
-         N_{Ip}^k\ \vec{v}_{I}^{k} +
-        \frac{1}{2}\Delta t^2\ \frac{N_{Ip}^k\
-        \vec{f}_{I}^{k}}{\tens{m}_I^k} 
-\end{align}
-The complete pseudo-algorithm it is summarized in \ref{sec:expl-pred-corr}.
-
 \subsection{Fracture modelling approach}
-\label{sec:2.4}
+\label{sec:2.3}
 
 Within the context of MPM formulation, fracture can be modelled by
 failing particles according to a suitable criterion. When material
@@ -352,7 +380,9 @@ picture, the shaded area represents the static fracture energy per
 unit of area, $G_F$. As we can see, a cohesive crack appears when the
 maximum tensile strength, $f_t$ is reached. Once the opening
 displacement $w$ takes the value of the critical crack displacement
-$w_c$, a stress-free crack is attained. For intermediate values 
+$w_c$, a stress-free crack is attained. For intermediate values,
+$w_n$, a damage value between zero and one represents the extension to
+which the material has failed.
 %%%%%%%%%%%
 \begin{figure}
   \centering
@@ -363,7 +393,9 @@ $w_c$, a stress-free crack is attained. For intermediate values
   \label{fig:Damage-ft-wc}
 \end{figure}
 %%%%%%%%%%%
+For the eigensoftening algorithm,
 
+a strength criterion for crack initialization was adopted
 
 \begin{equation}
   \label{eq:variation-averaged-strain-energy-density}

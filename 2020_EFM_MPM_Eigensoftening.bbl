@@ -1,16 +1,40 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
-\bibitem{Wieckowski2004}
-W.~Zdzislaw, {The material point method in large strain engineering problems},
-  Computer Methods in Applied Mechanics and Engineering 193~(39-41 SPEC. ISS.)
-  (2004) 4417--4438.
-\newblock \href {http://dx.doi.org/10.1016/j.cma.2004.01.035}
-  {\path{doi:10.1016/j.cma.2004.01.035}}.
+\bibitem{Nairn_2006}
+Y.~GUO, J.~Nairn, Three-dimensional dynamic fracture analysis using the
+  material point method, Computer Modeling in Engineering & Sciences 16.
+
+\bibitem{Nairn_2003}
+J.~Nairn, \href{http://www.techscience.com/CMES/v4n6/33290}{Material point
+  method calculations with explicit cracks}, Computer Modeling in Engineering
+  \& Sciences 4~(6) (2003) 649--664.
+\newblock \href {http://dx.doi.org/10.3970/cmes.2003.004.649}
+  {\path{doi:10.3970/cmes.2003.004.649}}.
+\newline\urlprefix\url{http://www.techscience.com/CMES/v4n6/33290}
+
+\bibitem{Nairn_2002}
+H.~Tan, J.~Nairn, Hierarchical, adaptive, material point method for dynamic
+  energy release rate calculations, Computer Methods in Applied Mechanics and
+  Engineering 191 (2002) 2123--2137.
+\newblock \href {http://dx.doi.org/10.1016/S0045-7825(01)00377-2}
+  {\path{doi:10.1016/S0045-7825(01)00377-2}}.
+
+\bibitem{Nairn_2004}
+Y.~GUO, J.~Nairn, Calculation of j-integral and stress intensity factors using
+  the material point method, CMES. Computer Modeling in Engineering & Sciences
+  6.
+
+\bibitem{Sulsky1994}
+D.~L. Sulsky, H.~Schreyer, Z.~Chen, {A particle method for history-dependent
+  materials}, {Computer Methods in Applied Mechanics and Engineering} 118~(1)
+  (1994) 179--196.
+\newblock \href {http://dx.doi.org/10.1016/0045-7825(94)90112-0}
+  {\path{doi:10.1016/0045-7825(94)90112-0}}.
 
 \bibitem{Arroyo2006}
 M.~Arroyo, M.~Ortiz, {Local maximum-entropy approximation schemes: A seamless
@@ -49,5 +73,10 @@ P.~Navas, R.~Yu, G.~Ruiz, Meshfree modeling of the dynamic mixed-mode fracture
 B.~Schmidt, F.~Fraternali, M.~Ortiz, Eigenfracture: an eigendeformation
   approach to variational fracture., SIAM J. Multiscale Model. Simul. 7 (2009)
   1237--1266.
+
+\bibitem{Ortiz_1999}
+M.~Ortiz, A.~Pandolfi, Finite-deformation irreversible cohesive elements for
+  three-dimensional crack-propagation analysis., International Journal for
+  Numerical Methods in Engineering. 44 (1999) 1267--1282.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  21 APR 2020 13:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  21 APR 2020 20:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -794,522 +794,513 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 
 [2
 
-] [3] [4]
-
-LaTeX Warning: Reference `eq:particle_balance_forces3' on page 5 undefined on i
-nput line 265.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--305
+] [3] [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 318--333
 
  []
 
-[5]
-<Figures/Particle-failed.png, id=127, 557.2017pt x 521.7894pt>
+<Figures/Particle-failed.png, id=129, 557.2017pt x 521.7894pt>
 File: Figures/Particle-failed.png Graphic file (type png)
 <use Figures/Particle-failed.png>
-Package pdftex.def Info: Figures/Particle-failed.png  used on input line 323.
+Package pdftex.def Info: Figures/Particle-failed.png  used on input line 351.
 (pdftex.def)             Requested size: 195.0pt x 182.60513pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--340
+Underfull \hbox (badness 10000) in paragraph at lines 340--368
 
  []
 
-
-Package natbib Warning: Citation `Ortiz_1999' on page 6 undefined on input line
- 348.
-
-<Figures/Damage.pdf, id=131, 190.95741pt x 161.78944pt>
+[6]
+<Figures/Damage.pdf, id=146, 190.95741pt x 161.78944pt>
 File: Figures/Damage.pdf Graphic file (type pdf)
 <use Figures/Damage.pdf>
-Package pdftex.def Info: Figures/Damage.pdf  used on input line 359.
+Package pdftex.def Info: Figures/Damage.pdf  used on input line 389.
 (pdftex.def)             Requested size: 195.0pt x 165.21559pt.
-[6 <./Figures/Particle-failed.png>]
-<Figures/Brazilian.pdf, id=143, 181.80661pt x 257.1134pt>
+ [7 <./Figures/Particle-failed.png>]
+<Figures/Brazilian.pdf, id=157, 181.80661pt x 257.1134pt>
 File: Figures/Brazilian.pdf Graphic file (type pdf)
 <use Figures/Brazilian.pdf>
-Package pdftex.def Info: Figures/Brazilian.pdf  used on input line 401.
+Package pdftex.def Info: Figures/Brazilian.pdf  used on input line 433.
 (pdftex.def)             Requested size: 195.0pt x 275.7834pt.
-<Figures/Drop_weight.pdf, id=144, 1295.99269pt x 658.31584pt>
+<Figures/Drop_weight.pdf, id=158, 1295.99269pt x 658.31584pt>
 File: Figures/Drop_weight.pdf Graphic file (type pdf)
 <use Figures/Drop_weight.pdf>
-Package pdftex.def Info: Figures/Drop_weight.pdf  used on input line 411.
+Package pdftex.def Info: Figures/Drop_weight.pdf  used on input line 443.
 (pdftex.def)             Requested size: 312.00119pt x 158.48119pt.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ­ in font cmr12!
 
-Overfull \hbox (40.26776pt too wide) in paragraph at lines 423--424
+Overfull \hbox (40.26776pt too wide) in paragraph at lines 455--456
 []\OT1/cmr/m/n/12 The first au-thor ac-knowl-edges the fel-low-ship Agustn de B
 e-tan-court 262390106114. 
  []
 
-[7 <./Figures/Damage.pdf>] [8 <./Figures/Brazilian.pdf> <./Figures/Drop_weight.
+[8 <./Figures/Damage.pdf>] [9 <./Figures/Brazilian.pdf> <./Figures/Drop_weight.
 pdf
 
 pdfTeX warning: pdflatex (file ./Figures/Drop_weight.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] [9]
+>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 438.
+put line 470.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:447: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:479: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.447     \begin
+l.479     \begin
                 {equation*}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:447: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:479: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.447     \begin
+l.479     \begin
                 {equation*}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:447: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:479: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.447     \begin
+l.479     \begin
                 {equation*}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:452: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:484: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.452     A
+l.484     A
            t the fixed boundary, set $\vec{v}_{I}^{pred} = 0$.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:452: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:484: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.452     A
+l.484     A
            t the fixed boundary, set $\vec{v}_{I}^{pred} = 0$.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:452: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:484: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.452     A
+l.484     A
            t the fixed boundary, set $\vec{v}_{I}^{pred} = 0$.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:471: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:503: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.471     C
+l.503     C
            alculate the total grid nodal force $\vec{f}_{I}^{k+1} =
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:471: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:503: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.471     C
+l.503     C
            alculate the total grid nodal force $\vec{f}_{I}^{k+1} =
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:471: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:503: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.471     C
+l.503     C
            alculate the total grid nodal force $\vec{f}_{I}^{k+1} =
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: Reference `eq:nodal_internal_forces' on page 10 undefined on inp
-ut line 473.
+ut line 505.
 
 
 LaTeX Warning: Reference `eq:nodal_external_forces' on page 10 undefined on inp
-ut line 474.
+ut line 506.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:478: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:510: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478     \STATE
+l.510     \STATE
                  \textbf{Explicit Newmark Corrector}:
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:478: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:510: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478     \STATE
+l.510     \STATE
                  \textbf{Explicit Newmark Corrector}:
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:478: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:510: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478     \STATE
+l.510     \STATE
                  \textbf{Explicit Newmark Corrector}:
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 466--479
+Underfull \hbox (badness 2452) in paragraph at lines 498--511
 \OT1/cmr/bx/n/12 Compute dam-age pa-ram-e-ter\OT1/cmr/m/n/12 : \OT1/cmr/bx/n/12
  Bal-ance of forces cal-cu-la-
  []
 
 
-./2020_EFM_MPM_Eigensoftening.tex:496: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:528: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.496   \end{algorithmic}
+l.528   \end{algorithmic}
                          
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:506: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:538: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.506     N
+l.538     N
            umber of particles: $N_p$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:506: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:538: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.506     N
+l.538     N
            umber of particles: $N_p$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:506: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:538: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.506     N
+l.538     N
            umber of particles: $N_p$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:507: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:539: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.507     $
+l.539     $
            \epsilon$-neighbourhood of each particle $p$ : $B_{\epsilon,p}$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:507: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:539: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.507     $
+l.539     $
            \epsilon$-neighbourhood of each particle $p$ : $B_{\epsilon,p}$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:507: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:539: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.507     $
+l.539     $
            \epsilon$-neighbourhood of each particle $p$ : $B_{\epsilon,p}$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:508: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:540: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.508     \REQUIRE
+l.540     \REQUIRE
                    Material data\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:508: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:540: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.508     \REQUIRE
+l.540     \REQUIRE
                    Material data\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:508: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:540: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.508     \REQUIRE
+l.540     \REQUIRE
                    Material data\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:509: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:541: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.509     T
+l.541     T
            ensile strength: $f_{t,p}$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:509: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:541: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.509     T
+l.541     T
            ensile strength: $f_{t,p}$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:509: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:541: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.509     T
+l.541     T
            ensile strength: $f_{t,p}$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:510: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:542: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.510     B
+l.542     B
            andwidth of the cohesive fracture: $h_{\epsilon,p}$ \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:510: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:542: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.510     B
+l.542     B
            andwidth of the cohesive fracture: $h_{\epsilon,p}$ \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:510: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:542: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.510     B
+l.542     B
            andwidth of the cohesive fracture: $h_{\epsilon,p}$ \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:511: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:543: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.511     C
+l.543     C
            ritical opening displacement: $w_c$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:511: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:543: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.511     C
+l.543     C
            ritical opening displacement: $w_c$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:511: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:543: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.511     C
+l.543     C
            ritical opening displacement: $w_c$\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:512: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:544: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.512     \ENSURE
+l.544     \ENSURE
                   Return damage parameter $\chi := \{\chi_p\}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:512: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:544: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.512     \ENSURE
+l.544     \ENSURE
                   Return damage parameter $\chi := \{\chi_p\}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:512: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:544: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.512     \ENSURE
+l.544     \ENSURE
                   Return damage parameter $\chi := \{\chi_p\}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./2020_EFM_MPM_Eigensoftening.tex:515: Undefined control sequence.
-l.515     \IF{$\chi_p = 0$ \AND
+./2020_EFM_MPM_Eigensoftening.tex:547: Undefined control sequence.
+l.547     \IF{$\chi_p = 0$ \AND
                                 $\epsilon_{f,p} = 0$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1317,8 +1308,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:526: Undefined control sequence.
-l.526     \ELSE[$\chi_p \neq 1$ \AND
+./2020_EFM_MPM_Eigensoftening.tex:558: Undefined control sequence.
+l.558     \ELSE[$\chi_p \neq 1$ \AND
                                      $\epsilon_{f,p} > 0$]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1327,39 +1318,57 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:531: LaTeX Error: Something's wrong--perhaps 
+./2020_EFM_MPM_Eigensoftening.tex:563: LaTeX Error: Something's wrong--perhaps 
 a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531   \end{algorithmic}
+l.563   \end{algorithmic}
                          
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 505--531
+Underfull \hbox (badness 3128) in paragraph at lines 537--563
 \OT1/cmr/m/n/12 of the co-he-sive frac-ture: $\OML/cmm/m/it/12 h[]$ []\OT1/cmr/
 m/n/12 Critical open-ing dis-place-ment:
  []
 
-(./2020_EFM_MPM_Eigensoftening.bbl)
+(./2020_EFM_MPM_Eigensoftening.bbl
+./2020_EFM_MPM_Eigensoftening.bbl:10: Misplaced alignment tab character &.
+l.10 ...method, Computer Modeling in Engineering &
+                                                   Sciences 16.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-Package natbib Warning: There were undefined citations.
+./2020_EFM_MPM_Eigensoftening.bbl:29: Misplaced alignment tab character &.
+l.29 ..., CMES. Computer Modeling in Engineering &
+                                                   Sciences
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 538.
 [10
 
-] [11] [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 538.
+] [11])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 570.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 570.
  (./2020_EFM_MPM_Eigensoftening.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 538.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 538.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 570.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 570.
 Package rerunfilecheck Info: File `2020_EFM_MPM_Eigensoftening.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: 828AAC3481B70E2F288417C4C9E25A20;895.
+(rerunfilecheck)             Checksum: EBF6503E3194CB568D85D05D2125B1A7;822.
 
 
 LaTeX Warning: There were undefined references.
@@ -1367,16 +1376,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 538.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 570.
  ) 
 Here is how much of TeX's memory you used:
- 9167 strings out of 492982
- 134208 string characters out of 6134895
- 235405 words of memory out of 5000000
- 12547 multiletter control sequences out of 15000+600000
+ 9182 strings out of 492982
+ 134457 string characters out of 6134895
+ 237558 words of memory out of 5000000
+ 12558 multiletter control sequences out of 15000+600000
  14314 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,16n,42p,300b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,16n,42p,300b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -1396,10 +1405,10 @@ st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt12.pfb>
-Output written on 2020_EFM_MPM_Eigensoftening.pdf (12 pages, 394286 bytes).
+Output written on 2020_EFM_MPM_Eigensoftening.pdf (12 pages, 399012 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 312 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
