@@ -1,0 +1,2862 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  22 APR 2020 19:50
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\nonstopmode\nofiles\PassOptionsToPackage{active,tightpage,auctex}{preview}\AtBeginDocument{\ifx\ifPreview\undefined\RequirePackage[displaymath,floats,graphics,textmath,sections,footnotes]{preview}[2004/11/05]\fi} \input {\detokenize{ _region_.tex }}
+(./_region_.tex  !name(2020_EFM_MPM_Eigensoftening.tex) (./elsarticle.cls
+Document Class: elsarticle 2019/01/14, 3.1: Elsevier Ltd
+\@bls=\dimen102
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+\c@tnote=\count87
+\c@fnote=\count88
+\c@cnote=\count89
+\c@ead=\count90
+\c@author=\count91
+\@eadauthor=\toks15
+\c@affn=\count92
+\absbox=\box26
+\keybox=\box27
+\Columnwidth=\dimen106
+\space@left=\dimen107
+\els@boxa=\box28
+\els@boxb=\box29
+\leftMargin=\dimen108
+\@enLab=\toks16
+\@sep=\skip43
+\@@sep=\skip44
+ (./_region_.spl) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty:795: LaTeX Error: \makeindex undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.795 \renewcommand\makeindex
+                             {\NAT@makeindex
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@NAT@ctr=\count93
+)
+\splwrite=\write3
+\openout3 = `_region_.spl'.
+
+\appnamewidth=\dimen109
+) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count94
+\output=\toks17
+\linenoprevgraf=\count95
+\linenumbersep=\dimen110
+\linenumberwidth=\dimen111
+\c@linenumber=\count96
+\c@pagewiselinenumber=\count97
+\c@LN@truepage=\count98
+\c@internallinenumber=\count99
+\c@internallinenumbers=\count100
+\quotelinenumbersep=\dimen112
+\bframerule=\dimen113
+\bframesep=\dimen114
+\bframebox=\box30
+LaTeX Info: Redefining \\ on input line 3056.
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen115
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count103
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count104
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen116
+\Fld@menulength=\count105
+\Field@Width=\dimen117
+\Fld@charsize=\dimen118
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count109
+\c@bookmark@seq@number=\count110
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip47
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count111
+\float@exts=\toks18
+\float@box=\box31
+\@float@everytoks=\toks19
+\@floatcapt=\box32
+) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+)
+\c@ContinuedFloat=\count112
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count113
+\sf@farskip=\skip48
+\sf@captopadj=\dimen126
+\sf@capskip=\skip49
+\sf@nearskip=\skip50
+\c@subfigure=\count114
+\c@subfigure@save=\count115
+\c@lofdepth=\count116
+\c@subtable=\count117
+\c@subtable@save=\count118
+\c@lotdepth=\count119
+\sf@top=\skip51
+\sf@bottom=\skip52
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+) (/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks20
+\SOUL@lasttoken=\toks21
+\SOUL@cmds=\toks22
+\SOUL@buffer=\toks23
+\SOUL@token=\toks24
+\SOUL@spaceskip=\skip53
+\SOUL@ttwidth=\dimen127
+\SOUL@uldp=\dimen128
+\SOUL@ulht=\dimen129
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algcompatible.sty
+Package: algcompatible 
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count120
+\c@ALG@rem=\count121
+\c@ALG@nested=\count122
+\ALG@tlm=\skip54
+\ALG@thistlm=\skip55
+\c@ALG@Lnr=\count123
+\c@ALG@blocknr=\count124
+\c@ALG@storecount=\count125
+\c@ALG@tmpcounter=\count126
+\ALG@tmplength=\skip56
+)
+Document Style - algorithmic compatible environments for the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+\@float@every@algorithm=\toks25
+\c@algorithm=\count127
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count128
+\c@ALC@line=\count129
+\c@ALC@rem=\count130
+\c@ALC@depth=\count131
+\ALC@tlm=\skip57
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:51: LaTeX Error: Command \algorithmicindent already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \newlength{\algorithmicindent}
+                                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:52: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \setlength{\algorithmicindent}{0pt}
+                                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:66: LaTeX Error: Command \algorithmicrequire already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 ...nd{\algorithmicrequire}{\textbf{Require:}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:67: LaTeX Error: Command \algorithmicensure already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...mand{\algorithmicensure}{\textbf{Ensure:}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:68: LaTeX Error: Command \algorithmiccomment already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \newcommand{\algorithmiccomment}[1]{\{#1\}}
+                                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:69: LaTeX Error: Command \algorithmicend already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \newcommand{\algorithmicend}{\textbf{end}}
+                                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:70: LaTeX Error: Command \algorithmicif already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \newcommand{\algorithmicif}{\textbf{if}}
+                                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:71: LaTeX Error: Command \algorithmicthen already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 \newcommand{\algorithmicthen}{\textbf{then}}
+                                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:72: LaTeX Error: Command \algorithmicelse already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 \newcommand{\algorithmicelse}{\textbf{else}}
+                                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:75: LaTeX Error: Command \algorithmicfor already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \newcommand{\algorithmicfor}{\textbf{for}}
+                                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:76: LaTeX Error: Command \algorithmicforall already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 ...mand{\algorithmicforall}{\textbf{for all}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:77: LaTeX Error: Command \algorithmicdo already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 \newcommand{\algorithmicdo}{\textbf{do}}
+                                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:79: LaTeX Error: Command \algorithmicwhile already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 ...command{\algorithmicwhile}{\textbf{while}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:81: LaTeX Error: Command \algorithmicloop already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \newcommand{\algorithmicloop}{\textbf{loop}}
+                                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:83: LaTeX Error: Command \algorithmicrepeat already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 ...mmand{\algorithmicrepeat}{\textbf{repeat}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:84: LaTeX Error: Command \algorithmicuntil already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 ...command{\algorithmicuntil}{\textbf{until}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:229: LaTeX Error: Command \algorithmic already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 {\end{list}}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen130
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen131
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count132
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count133
+\leftroot@=\count134
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count135
+\DOTSCASE@=\count136
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box33
+\strutbox@=\box34
+\big@size=\dimen132
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count137
+\c@MaxMatrixCols=\count138
+\dotsspace@=\muskip11
+\c@parentequation=\count139
+\dspbrk@lvl=\count140
+\tag@help=\toks27
+\row@=\count141
+\column@=\count142
+\maxfields@=\count143
+\andhelp@=\toks28
+\eqnshift@=\dimen133
+\alignsep@=\dimen134
+\tagshift@=\dimen135
+\tagwidth@=\dimen136
+\totwidth@=\dimen137
+\lineht@=\dimen138
+\@envbody=\toks29
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks31
+\thm@bodyfont=\toks32
+\thm@headfont=\toks33
+\thm@notefont=\toks34
+\thm@headpunct=\toks35
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks36
+LaTeX Info: Redefining \qed on input line 274.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count144
+\decimalpart=\count145
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+
+./_region_.tex:21: LaTeX Error: Command \vec already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 }
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+(/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/preview.sty
+Package: preview 2017/04/24 12.1 (AUCTeX/preview-latex)
+ (/usr/share/texlive/texmf-dist/tex/generic/luatex85/luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+) (/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/prtightpage.def
+\PreviewBorder=\dimen139
+) (/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count146
+\hfuzz=\dimen140
+(/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/prauctex.cfg)) (/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/prfootnotes.def)
+\pr@snippet=\count147
+\pr@box=\box35
+\pr@output=\toks37
+
+Preview: Fontsize 12pt
+Preview: PDFoutput 1
+) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count148
+\scratchdimen=\dimen141
+\scratchbox=\box36
+\nofMPsegments=\count149
+\nofMParguments=\count150
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count151
+\MPscratchDim=\dimen142
+\MPnumerator=\count152
+\makeMPintoPDFobject=\count153
+\everyMPtoPDFconversion=\toks39
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\AtBeginShipoutBox=\box37
+Package hyperref Info: Link coloring OFF on input line 89.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count154
+)
+LaTeX Info: Redefining \ref on input line 89.
+LaTeX Info: Redefining \pageref on input line 89.
+LaTeX Info: Redefining \nameref on input line 89.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: Incompatible package detected (regarding \caption).
+(caption)             \caption = \protected\long macro:->\pr@protect@domacro {}{##1{}}\pr@\caption .
+
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+Package caption Info: End \AtBeginDocument code.
+ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-3) 
+./_region_.tex:100: Preview: Snippet 1 started.
+<-><->
+      
+l.100 Miguel Molinos$
+                     ^a$,
+Not a real error.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 100.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 100.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Preview: Tightpage -32891 -32891 32891 32891
+./_region_.tex:100: Preview: Snippet 1 ended.(511125+0x328655).
+<-><->
+      
+l.100 Miguel Molinos$^a$
+                        ,
+Not a real error.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+./_region_.tex:101: Preview: Snippet 2 started.
+<-><->
+      
+l.101 and Pedro Navas$
+                      ^a$\footnote{Corresponding author: p.navas@upm.es}
+Not a real error.
+
+./_region_.tex:101: Preview: Snippet 2 ended.(511125+0x328655).
+<-><->
+      
+l.101 and Pedro Navas$^a$
+                         \footnote{Corresponding author: p.navas@upm.es}
+Not a real error.
+
+[2]
+./_region_.tex:101: Preview: Snippet 3 started.
+<-><->
+      
+l.101 and Pedro Navas$^a$\footnote
+                                  {Corresponding author: p.navas@upm.es}
+Not a real error.
+
+./_region_.tex:101: Preview: Snippet 3 ended.(623265+0x311300).
+<-><->
+      
+l.101 ...ote{Corresponding author: p.navas@upm.es}
+                                                  
+Not a real error.
+
+[3]
+./_region_.tex:125: Preview: Snippet 4 started.
+<-><->
+      
+l.125 \end{frontmatter}
+                       
+Not a real error.
+
+./_region_.tex:125: Preview: Snippet 4 ended.(435343+0x317040).
+<-><->
+      
+l.125 \end{frontmatter}
+                       
+Not a real error.
+
+[4]
+./_region_.tex:130: Preview: Snippet 5 started.
+<-><->
+      
+l.130 \section
+              {Introduction}
+Not a real error.
+
+./_region_.tex:130: Preview: Snippet 5 ended.(546132+0x25559040).
+<-><->
+      
+l.130 \section{Introduction}
+                            
+Not a real error.
+
+[5
+
+]
+
+Package natbib Warning: Citation `Nairn_2006' on page 2 undefined on input line 143.
+
+
+Package natbib Warning: Citation `Nairn_2003' on page 2 undefined on input line 148.
+
+
+Package natbib Warning: Citation `Nairn_2002' on page 2 undefined on input line 150.
+
+
+Package natbib Warning: Citation `Nairn_2004' on page 2 undefined on input line 152.
+
+./_region_.tex:167: Preview: Snippet 6 started.
+<-><->
+      
+l.167 \section
+              {The meshfree methodology}
+Not a real error.
+
+./_region_.tex:167: Preview: Snippet 6 ended.(546132+152916x25559040).
+<-><->
+      
+l.167 \section{The meshfree methodology}
+                                        
+Not a real error.
+
+[6
+
+]
+
+LaTeX Warning: Reference `sec:2.1' on page 3 undefined on input line 173.
+
+
+LaTeX Warning: Reference `sec:2.2' on page 3 undefined on input line 175.
+
+
+LaTeX Warning: Reference `sec:2.3' on page 3 undefined on input line 177.
+
+./_region_.tex:179: Preview: Snippet 7 started.
+<-><->
+      
+l.179 \subsection
+                 {The Material Point Method}
+Not a real error.
+
+./_region_.tex:179: Preview: Snippet 7 ended.(546132+0x25559040).
+<-><->
+      
+l.179 \subsection{The Material Point Method}
+                                            
+Not a real error.
+
+[7
+
+]
+
+Package natbib Warning: Citation `Sulsky1994' on page 3 undefined on input line 182.
+
+./_region_.tex:193: Preview: Snippet 8 started.
+<-><->
+      
+l.193 forces $
+              f_I$, accelerations $a_I$ and velocities $v_I$. And second the
+Not a real error.
+
+./_region_.tex:193: Preview: Snippet 8 ended.(546132+152916x694773).
+<-><->
+      
+l.193 forces $f_I$
+                  , accelerations $a_I$ and velocities $v_I$. And second the
+Not a real error.
+
+[8]
+./_region_.tex:193: Preview: Snippet 9 started.
+<-><->
+      
+l.193 forces $f_I$, accelerations $
+                                   a_I$ and velocities $v_I$. And second the
+Not a real error.
+
+./_region_.tex:193: Preview: Snippet 9 ended.(338603+117964x719438).
+<-><->
+      
+l.193 forces $f_I$, accelerations $a_I$
+                                        and velocities $v_I$. And second the
+Not a real error.
+
+[9]
+./_region_.tex:193: Preview: Snippet 10 started.
+<-><->
+      
+l.193 ..._I$, accelerations $a_I$ and velocities $
+                                                  v_I$. And second the
+Not a real error.
+
+./_region_.tex:193: Preview: Snippet 10 ended.(338603+117964x687489).
+<-><->
+      
+l.193 ... accelerations $a_I$ and velocities $v_I$
+                                                  . And second the
+Not a real error.
+
+[10]
+./_region_.tex:195: Preview: Snippet 11 started.
+<-><->
+      
+l.195 ...e continuum, and store the local state ($
+                                                  \sigma_p,
+Not a real error.
+
+./_region_.tex:196: Preview: Snippet 11 ended.(338603+219909x1769362).
+<-><->
+      
+l.196 \varepsilon_p$
+                    ). Without loosing generality, the MPM algorithm
+Not a real error.
+
+[11]
+
+LaTeX Warning: Reference `eq:Predictor-velocity' on page 3 undefined on input line 206.
+
+./_region_.tex:207: Preview: Snippet 12 started.
+<-><->
+      
+l.207 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:210: Preview: Snippet 12 ended.(1979779+0x25559040).
+<-><->
+      
+l.210 \end{equation}
+                    
+Not a real error.
+
+[12
+
+]
+./_region_.tex:215: Preview: Snippet 13 started.
+<-><->
+      
+l.215 FEM-like way, where nodal forces $
+                                        \vec{f}_{I}^{k+1}$ are computed thor...
+Not a real error.
+
+./_region_.tex:215: Preview: Snippet 13 ended.(768079+213206x1512117).
+<-><->
+      
+l.215 ...y, where nodal forces $\vec{f}_{I}^{k+1}$
+                                                   are computed thorough the
+Not a real error.
+
+[13]
+./_region_.tex:218: Preview: Snippet 14 started.
+<-><->
+      
+l.218 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:221: Preview: Snippet 14 ended.(2181922+0x25559040).
+<-><->
+      
+l.221 \end{equation}
+                    
+Not a real error.
+
+[14
+
+]
+./_region_.tex:223: Preview: Snippet 15 started.
+<-><->
+      
+l.223 \begin{align}
+                   
+Not a real error.
+
+./_region_.tex:233: Preview: Snippet 15 ended.(6935555+0x25559040).
+<-><->
+      
+l.233 \end{align}
+                 
+Not a real error.
+
+[15
+
+]
+
+LaTeX Warning: Reference `sec:expl-pred-corr' on page 4 undefined on input line 234.
+
+./_region_.tex:236: Preview: Snippet 16 started.
+<-><->
+      
+l.236 \subsection
+                 {Spatial discretization : Local-\textit{max-ent} approximants}
+Not a real error.
+
+./_region_.tex:236: Preview: Snippet 16 ended.(546132+152916x25559040).
+<-><->
+      
+l.236 ...on : Local-\textit{max-ent} approximants}
+                                                  
+Not a real error.
+
+[16
+
+]
+
+Package natbib Warning: Citation `Arroyo2006' on page 4 undefined on input line 239.
+
+./_region_.tex:241: Preview: Snippet 17 started.
+<-><->
+      
+l.241 ...interpret the nodal of a shape function $
+                                                  N_I$ as
+Not a real error.
+
+./_region_.tex:241: Preview: Snippet 17 ended.(537395+117964x931839).
+<-><->
+      
+l.241 ...rpret the nodal of a shape function $N_I$
+                                                   as
+Not a real error.
+
+[17]
+
+Package natbib Warning: Citation `Jaynes1957' on page 4 undefined on input line 246.
+
+./_region_.tex:250: Preview: Snippet 18 started.
+<-><->
+      
+l.250 \begin{align*}
+                    
+Not a real error.
+
+./_region_.tex:260: Preview: Snippet 18 ended.(7413785+0x23547359).
+<-><->
+      
+l.260 \end{align*}
+                  
+Not a real error.
+
+[18]
+./_region_.tex:261: Preview: Snippet 19 started.
+<-><->
+      
+l.261 where $
+             H(N_I)$ is the entropy of the system of nodes following the
+Not a real error.
+
+./_region_.tex:261: Preview: Snippet 19 ended.(589824+196608x2229533).
+<-><->
+      
+l.261 where $H(N_I)$
+                     is the entropy of the system of nodes following the
+Not a real error.
+
+[19]
+
+Package natbib Warning: Citation `Shannon1948' on page 4 undefined on input line 262.
+
+./_region_.tex:262: Preview: Snippet 20 started.
+<-><->
+      
+l.262 ... Shannon (1948) \cite{Shannon1948}, and $
+                                                  U(\vec{x}_p,N_I) =
+Not a real error.
+
+./_region_.tex:263: Preview: Snippet 20 ended.(623265+229381x9688657).
+<-><->
+      
+l.263 \sum_I N_I |\vec{x}_p - \vec{x}_I |^2$
+                                             a
+Not a real error.
+
+[20]
+./_region_.tex:265: Preview: Snippet 21 started.
+<-><->
+      
+l.265 ...on} parameter between the two criterion $
+                                                  \beta$
+Not a real error.
+
+./_region_.tex:265: Preview: Snippet 21 ended.(546132+152916x478317).
+<-><->
+      
+l.265 ...rameter between the two criterion $\beta$
+                                                  
+Not a real error.
+
+[21]
+./_region_.tex:266: Preview: Snippet 22 started.
+<-><->
+      
+l.266 has Pareto optimal values in the range $
+                                              (0,\infty)$. The unique
+Not a real error.
+
+./_region_.tex:266: Preview: Snippet 22 ended.(589824+196608x2115344).
+<-><->
+      
+l.266 ... optimal values in the range $(0,\infty)$
+                                                  . The unique
+Not a real error.
+
+[22]
+./_region_.tex:267: Preview: Snippet 23 started.
+<-><->
+      
+l.267 solution of the local max-ent problem (LME)$
+                                                  _\beta$ is
+Not a real error.
+
+./_region_.tex:267: Preview: Snippet 23 ended.(246125+219909x372284).
+<-><->
+      
+l.267 ...f the local max-ent problem (LME)$_\beta$
+                                                   is
+Not a real error.
+
+[23]
+./_region_.tex:268: Preview: Snippet 24 started.
+<-><->
+      
+l.268  \begin{equation}
+                       
+Not a real error.
+
+./_region_.tex:272: Preview: Snippet 24 ended.(2666006+0x25559040).
+<-><->
+      
+l.272 \end{equation}
+                    
+Not a real error.
+
+[24
+
+]
+./_region_.tex:273: Preview: Snippet 25 started.
+<-><->
+      
+l.273 where $
+             Z(\vec{x},\vec{\lambda}^*)$ is the \textit{partition function} ...
+Not a real error.
+
+./_region_.tex:273: Preview: Snippet 25 ended.(768079+196608x2725504).
+<-><->
+      
+l.273 where $Z(\vec{x},\vec{\lambda}^*)$
+                                         is the \textit{partition function} ...
+Not a real error.
+
+[25]
+./_region_.tex:274: Preview: Snippet 26 started.
+<-><->
+      
+l.274 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:277: Preview: Snippet 26 ended.(2486007+0x25559040).
+<-><->
+      
+l.277 \end{equation}
+                    
+Not a real error.
+
+[26
+
+]
+./_region_.tex:278: Preview: Snippet 27 started.
+<-><->
+      
+l.278 and evaluated in the unique minimiser $
+                                             \vec{\lambda}^*$ for the functi...
+Not a real error.
+
+./_region_.tex:278: Preview: Snippet 27 ended.(768079+0x760490).
+<-><->
+      
+l.278 ...in the unique minimiser $\vec{\lambda}^*$
+                                                   for the function $\log
+Not a real error.
+
+[27]
+./_region_.tex:278: Preview: Snippet 28 started.
+<-><->
+      
+l.278 ...iser $\vec{\lambda}^*$ for the function $
+                                                  \log
+Not a real error.
+
+./_region_.tex:279: Preview: Snippet 28 ended.(768079+196608x3539909).
+<-><->
+      
+l.279 Z(\vec{x}, \vec{\lambda})$
+                                . The traditional way to obtain
+Not a real error.
+
+[28]
+
+LaTeX Warning: Reference `eq:LME-J' on page 4 undefined on input line 280.
+
+./_region_.tex:281: Preview: Snippet 29 started.
+<-><->
+      
+l.281 increments of $
+                     \partial\vec{\lambda}$ in a Newton-Raphson
+Not a real error.
+
+./_region_.tex:281: Preview: Snippet 29 ended.(768079+0x898470).
+<-><->
+      
+l.281 increments of $\partial\vec{\lambda}$
+                                            in a Newton-Raphson
+Not a real error.
+
+[29]
+./_region_.tex:282: Preview: Snippet 30 started.
+<-><->
+      
+l.282 approach. Where $
+                       \tens{J}$ is the Hessian matrix, defined by:
+Not a real error.
+
+./_region_.tex:282: Preview: Snippet 30 ended.(539580+0x456932).
+<-><->
+      
+l.282 approach. Where $\tens{J}$
+                                 is the Hessian matrix, defined by:
+Not a real error.
+
+[30]
+./_region_.tex:283: Preview: Snippet 31 started.
+<-><->
+      
+l.283 \begin{eqnarray}
+                      
+Not a real error.
+
+./_region_.tex:289: Preview: Snippet 31 ended.(4456759+0x25559040).
+<-><->
+      
+l.289 \end{eqnarray}
+                    
+Not a real error.
+
+[31
+
+
+]
+./_region_.tex:290: Preview: Snippet 32 started.
+<-><->
+      
+l.290 The value of $
+                    \tens{J}$ can be employed to get the first derivatives o...
+Not a real error.
+
+./_region_.tex:290: Preview: Snippet 32 ended.(539580+0x456932).
+<-><->
+      
+l.290 The value of $\tens{J}$
+                              can be employed to get the first derivatives o...
+Not a real error.
+
+[32]
+./_region_.tex:290: Preview: Snippet 33 started.
+<-><->
+      
+l.290 ...first derivatives of the shape function $
+                                                  \nabla
+Not a real error.
+
+./_region_.tex:291: Preview: Snippet 33 ended.(537395+198697x1665436).
+<-><->
+      
+l.291 N^*_I$
+            ,
+Not a real error.
+
+[33]
+./_region_.tex:292: Preview: Snippet 34 started.
+<-><->
+      
+l.292 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:295: Preview: Snippet 34 ended.(2486007+0x25559040).
+<-><->
+      
+l.295 \end{equation}
+                    
+Not a real error.
+
+[34
+
+]
+./_region_.tex:297: Preview: Snippet 35 started.
+<-><->
+      
+l.297 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:300: Preview: Snippet 35 ended.(1146880+0x25559040).
+<-><->
+      
+l.300 \end{equation}
+                    
+Not a real error.
+
+[35
+
+]
+
+LaTeX Warning: Reference `eq:LME-grad-p' on page 4 undefined on input line 301.
+
+./_region_.tex:301: Preview: Snippet 36 started.
+<-><->
+      
+l.301 ...ME-grad-p}, rearranging and considering $
+                                                  \beta$ as a
+Not a real error.
+
+./_region_.tex:301: Preview: Snippet 36 ended.(546132+152916x478317).
+<-><->
+      
+l.301 ...d-p}, rearranging and considering $\beta$
+                                                   as a
+Not a real error.
+
+[36]
+
+Package natbib Warning: Citation `Arroyo2006' on page 4 undefined on input line 302.
+
+./_region_.tex:304: Preview: Snippet 37 started.
+<-><->
+      
+l.304 \begin{eqnarray}
+                      
+Not a real error.
+
+./_region_.tex:307: Preview: Snippet 37 ended.(859194+0x25559040).
+<-><->
+      
+l.307 \end{eqnarray}
+                    
+Not a real error.
+
+[37
+
+]
+./_region_.tex:308: Preview: Snippet 38 started.
+<-><->
+      
+l.308 The regularization parameter $
+                                    \beta$ of LME shape functions may be
+Not a real error.
+
+./_region_.tex:308: Preview: Snippet 38 ended.(546132+152916x478317).
+<-><->
+      
+l.308 The regularization parameter $\beta$
+                                           of LME shape functions may be
+Not a real error.
+
+[38]
+./_region_.tex:309: Preview: Snippet 39 started.
+<-><->
+      
+l.309 ...by adjusting a dimensionless parameter, $
+                                                  \gamma=\beta h^2$
+Not a real error.
+
+./_region_.tex:309: Preview: Snippet 39 ended.(623265+152916x2710911).
+<-><->
+      
+l.309 ...mensionless parameter, $\gamma=\beta h^2$
+                                                  
+Not a real error.
+
+[39]
+
+Package natbib Warning: Citation `Arroyo2006' on page 4 undefined on input line 310.
+
+./_region_.tex:310: Preview: Snippet 40 started.
+<-><->
+      
+l.310 \cite{Arroyo2006}, where $
+                                h$ is defined as a measure of the nodal
+Not a real error.
+
+./_region_.tex:310: Preview: Snippet 40 ended.(546132+0x443274).
+<-><->
+      
+l.310 \cite{Arroyo2006}, where $h$
+                                   is defined as a measure of the nodal
+Not a real error.
+
+[40]
+./_region_.tex:311: Preview: Snippet 41 started.
+<-><->
+      
+l.311 spacing. Since  $
+                       N_I$ is defined in the entire domain, in practice,
+Not a real error.
+
+./_region_.tex:311: Preview: Snippet 41 ended.(537395+117964x931839).
+<-><->
+      
+l.311 spacing. Since  $N_I$
+                            is defined in the entire domain, in practice,
+Not a real error.
+
+[41]
+./_region_.tex:312: Preview: Snippet 42 started.
+<-><->
+      
+l.312 the shape function decay $
+                                \exp(-\beta \vec{r} )$ is truncated  by  a
+Not a real error.
+
+./_region_.tex:312: Preview: Snippet 42 ended.(589824+196608x3233767).
+<-><->
+      
+l.312 ...pe function decay $\exp(-\beta \vec{r} )$
+                                                   is truncated  by  a
+Not a real error.
+
+[42]
+./_region_.tex:313: Preview: Snippet 43 started.
+<-><->
+      
+l.313 given tolerance, 10$
+                          ^{-6}$, for example,  would ensure a reasonable
+Not a real error.
+
+./_region_.tex:313: Preview: Snippet 43 ended.(623265+0x744572).
+<-><->
+      
+l.313 given tolerance, 10$^{-6}$
+                                , for example,  would ensure a reasonable
+Not a real error.
+
+[43]
+
+Package natbib Warning: Citation `Arroyo2006' on page 4 undefined on input line 314.
+
+./_region_.tex:318: Preview: Snippet 44 started.
+<-><->
+      
+l.318 \subsection
+                 {Fracture modelling approach}
+Not a real error.
+
+./_region_.tex:318: Preview: Snippet 44 ended.(546132+152916x25559040).
+<-><->
+      
+l.318 \subsection{Fracture modelling approach}
+                                              
+Not a real error.
+
+[44
+
+]
+
+Package natbib Warning: Citation `Navas_2017_ES' on page 4 undefined on input line 323.
+
+
+Package natbib Warning: Citation `Pandolfi_2012' on page 4 undefined on input line 326.
+
+
+Package natbib Warning: Citation `Navas_2017_ES' on page 4 undefined on input line 327.
+
+
+Package natbib Warning: Citation `Navas_2018_ES' on page 4 undefined on input line 334.
+
+./_region_.tex:336: Preview: Snippet 45 started.
+<-><->
+      
+l.336 \begin{align}
+                   
+Not a real error.
+
+./_region_.tex:342: Preview: Snippet 45 ended.(4777460+0x25559040).
+<-><->
+      
+l.342 \end{align}
+                 
+Not a real error.
+
+[45
+
+]
+./_region_.tex:343: Preview: Snippet 46 started.
+<-><->
+      
+l.343 where $
+             B_{\epsilon}(x_p^{k+1})$ is the sphere of radius $\epsilon$
+Not a real error.
+
+./_region_.tex:343: Preview: Snippet 46 ended.(649479+296364x2928050).
+<-><->
+      
+l.343 where $B_{\epsilon}(x_p^{k+1})$
+                                      is the sphere of radius $\epsilon$
+Not a real error.
+
+[46]
+./_region_.tex:343: Preview: Snippet 47 started.
+<-><->
+      
+l.343 ...on}(x_p^{k+1})$ is the sphere of radius $
+                                                  \epsilon$
+Not a real error.
+
+./_region_.tex:343: Preview: Snippet 47 ended.(338603+0x310929).
+<-><->
+      
+l.343 ...k+1})$ is the sphere of radius $\epsilon$
+                                                  
+Not a real error.
+
+[47]
+./_region_.tex:344: Preview: Snippet 48 started.
+<-><->
+      
+l.344 centered at $
+                   x_p^{k+1}$ known as the $\epsilon$-neighborhood of the
+Not a real error.
+
+./_region_.tex:344: Preview: Snippet 48 ended.(649479+296364x1486176).
+<-><->
+      
+l.344 centered at $x_p^{k+1}$
+                              known as the $\epsilon$-neighborhood of the
+Not a real error.
+
+[48]
+./_region_.tex:344: Preview: Snippet 49 started.
+<-><->
+      
+l.344 centered at $x_p^{k+1}$ known as the $
+                                            \epsilon$-neighborhood of the
+Not a real error.
+
+./_region_.tex:344: Preview: Snippet 49 ended.(338603+0x310929).
+<-><->
+      
+l.344 ...ed at $x_p^{k+1}$ known as the $\epsilon$
+                                                  -neighborhood of the
+Not a real error.
+
+[49]
+./_region_.tex:345: Preview: Snippet 50 started.
+<-><->
+      
+l.345 material point, $
+                       m_p^{k+1}$ is the mass of the neighborhood at step
+Not a real error.
+
+./_region_.tex:345: Preview: Snippet 50 ended.(649479+296364x1722147).
+<-><->
+      
+l.345 material point, $m_p^{k+1}$
+                                  is the mass of the neighborhood at step
+Not a real error.
+
+[50]
+./_region_.tex:346: Preview: Snippet 51 started.
+<-><->
+      
+l.346 $
+       k+1$, $W_q^{k+1}$ is the current free-energy density per unit mass as
+Not a real error.
+
+./_region_.tex:346: Preview: Snippet 51 ended.(546132+60072x1760351).
+<-><->
+      
+l.346 $k+1$
+           , $W_q^{k+1}$ is the current free-energy density per unit mass as
+Not a real error.
+
+[51]
+./_region_.tex:346: Preview: Snippet 52 started.
+<-><->
+      
+l.346 $k+1$, $
+              W_q^{k+1}$ is the current free-energy density per unit mass as
+Not a real error.
+
+./_region_.tex:346: Preview: Snippet 52 ended.(649479+296364x1882527).
+<-><->
+      
+l.346 $k+1$, $W_q^{k+1}$
+                         is the current free-energy density per unit mass as
+Not a real error.
+
+[52]
+./_region_.tex:347: Preview: Snippet 53 started.
+<-><->
+      
+l.347 the material point $
+                          x_q^{k+1}$ of the neighborhood, finally
+Not a real error.
+
+./_region_.tex:347: Preview: Snippet 53 ended.(649479+296364x1486176).
+<-><->
+      
+l.347 the material point $x_q^{k+1}$
+                                     of the neighborhood, finally
+Not a real error.
+
+[53]
+./_region_.tex:348: Preview: Snippet 54 started.
+<-><->
+      
+l.348 $
+       C_{\epsilon}$ is a normalizing constant. This configuration
+Not a real error.
+
+./_region_.tex:348: Preview: Snippet 54 ended.(537395+117964x808885).
+<-><->
+      
+l.348 $C_{\epsilon}$
+                     is a normalizing constant. This configuration
+Not a real error.
+
+[54]
+
+LaTeX Warning: Reference `fig:Failed-particles' on page 5 undefined on input line 349.
+
+./_region_.tex:351: Preview: Snippet 55 started.
+<-><->
+      
+l.351 \begin{figure}
+                    
+Not a real error.
+
+<Figures/Particle-failed.png, id=207, 557.2017pt x 521.7894pt>
+File: Figures/Particle-failed.png Graphic file (type png)
+<use Figures/Particle-failed.png>
+Package pdftex.def Info: Figures/Particle-failed.png  used on input line 353.
+(pdftex.def)             Requested size: 195.0pt x 182.60513pt.
+./_region_.tex:358: Preview: Snippet 55 ended.(14195434+0x25559040).
+<-><->
+      
+l.358 \end{figure}
+                  
+Not a real error.
+
+[55
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.358 \end{figure}
+                  
+
+
+ <./Figures/Particle-failed.png>]
+./_region_.tex:360: Preview: Snippet 56 started.
+<-><->
+      
+l.360 The material point fails when $
+                                     G_p^{k+1}$ surpasses a critical energy
+Not a real error.
+
+./_region_.tex:360: Preview: Snippet 56 ended.(649479+296364x1655994).
+<-><->
+      
+l.360 The material point fails when $G_p^{k+1}$
+                                                surpasses a critical energy
+Not a real error.
+
+[56]
+./_region_.tex:361: Preview: Snippet 57 started.
+<-><->
+      
+l.361 ... measures the material-specific energy, $
+                                                  G_F$. The
+Not a real error.
+
+./_region_.tex:361: Preview: Snippet 57 ended.(537395+117964x1070075).
+<-><->
+      
+l.361 ...sures the material-specific energy, $G_F$
+                                                  . The
+Not a real error.
+
+[57]
+
+Package natbib Warning: Citation `Schmidt_2009' on page 5 undefined on input line 363.
+
+
+Package natbib Warning: Citation `Navas_2017_ES' on page 5 undefined on input line 374.
+
+
+Package natbib Warning: Citation `Ortiz_1999' on page 5 undefined on input line 378.
+
+./_region_.tex:382: Preview: Snippet 58 started.
+<-><->
+      
+l.382 unit of area, $
+                     G_F$. As we can see, a cohesive crack appears when the
+Not a real error.
+
+./_region_.tex:382: Preview: Snippet 58 ended.(537395+117964x1070075).
+<-><->
+      
+l.382 unit of area, $G_F$
+                         . As we can see, a cohesive crack appears when the
+Not a real error.
+
+[58]
+./_region_.tex:383: Preview: Snippet 59 started.
+<-><->
+      
+l.383 maximum tensile strength, $
+                                 f_t$ is reached. Once the opening
+Not a real error.
+
+./_region_.tex:383: Preview: Snippet 59 ended.(546132+152916x613490).
+<-><->
+      
+l.383 maximum tensile strength, $f_t$
+                                      is reached. Once the opening
+Not a real error.
+
+[59]
+./_region_.tex:384: Preview: Snippet 60 started.
+<-><->
+      
+l.384 displacement $
+                    w$ takes the value of the critical crack displacement
+Not a real error.
+
+./_region_.tex:384: Preview: Snippet 60 ended.(338603+0x571613).
+<-><->
+      
+l.384 displacement $w$
+                       takes the value of the critical crack displacement
+Not a real error.
+
+[60]
+./_region_.tex:385: Preview: Snippet 61 started.
+<-><->
+      
+l.385 $
+       w_c$, a stress-free crack is attained. For intermediate values,
+Not a real error.
+
+./_region_.tex:385: Preview: Snippet 61 ended.(338603+117964x824492).
+<-><->
+      
+l.385 $w_c$
+           , a stress-free crack is attained. For intermediate values,
+Not a real error.
+
+[61]
+./_region_.tex:386: Preview: Snippet 62 started.
+<-><->
+      
+l.386 $
+       w_n$, a damage value between zero and one represents the extension to
+Not a real error.
+
+./_region_.tex:386: Preview: Snippet 62 ended.(338603+117964x921219).
+<-><->
+      
+l.386 $w_n$
+           , a damage value between zero and one represents the extension to
+Not a real error.
+
+[62]
+./_region_.tex:389: Preview: Snippet 63 started.
+<-><->
+      
+l.389 \begin{figure}
+                    
+Not a real error.
+
+<Figures/Damage.pdf, id=239, 190.95741pt x 161.78944pt>
+File: Figures/Damage.pdf Graphic file (type pdf)
+<use Figures/Damage.pdf>
+Package pdftex.def Info: Figures/Damage.pdf  used on input line 391.
+(pdftex.def)             Requested size: 195.0pt x 165.21559pt.
+./_region_.tex:396: Preview: Snippet 63 ended.(13055793+0x25559040).
+<-><->
+      
+l.396 \end{figure}
+                  
+Not a real error.
+
+[63
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.396 \end{figure}
+                  
+
+ <./Figures/Damage.pdf>]
+
+Package natbib Warning: Citation `Navas_2017_ES' on page 5 undefined on input line 401.
+
+./_region_.tex:402: Preview: Snippet 64 started.
+<-><->
+      
+l.402 energy density in the $
+                             \epsilon$-neighborhood of the material point
+Not a real error.
+
+./_region_.tex:402: Preview: Snippet 64 ended.(338603+0x310929).
+<-><->
+      
+l.402 energy density in the $\epsilon$
+                                      -neighborhood of the material point
+Not a real error.
+
+[64]
+./_region_.tex:403: Preview: Snippet 65 started.
+<-><->
+      
+l.403 $
+       \vec{x}_p^{k+1}$ can be obtained as,
+Not a real error.
+
+./_region_.tex:403: Preview: Snippet 65 ended.(649479+296364x1486176).
+<-><->
+      
+l.403 $\vec{x}_p^{k+1}$
+                        can be obtained as,
+Not a real error.
+
+[65]
+./_region_.tex:404: Preview: Snippet 66 started.
+<-><->
+      
+l.404 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:409: Preview: Snippet 66 ended.(2453763+0x25559040).
+<-><->
+      
+l.409 \end{equation}
+                    
+Not a real error.
+
+[66
+
+]
+./_region_.tex:410: Preview: Snippet 67 started.
+<-><->
+      
+l.410 where $
+             \tens{\sigma}_{q,I}$ is the maximum principal stress of each
+Not a real error.
+
+./_region_.tex:410: Preview: Snippet 67 ended.(338603+219909x1175147).
+<-><->
+      
+l.410 where $\tens{\sigma}_{q,I}$
+                                  is the maximum principal stress of each
+Not a real error.
+
+[67]
+./_region_.tex:411: Preview: Snippet 68 started.
+<-><->
+      
+l.411 material point in the $
+                             \epsilon$-neighborhood. Here
+Not a real error.
+
+./_region_.tex:411: Preview: Snippet 68 ended.(338603+0x310929).
+<-><->
+      
+l.411 material point in the $\epsilon$
+                                      -neighborhood. Here
+Not a real error.
+
+[68]
+
+Package natbib Warning: Citation `Navas_2017_ES' on page 5 undefined on input line 412.
+
+./_region_.tex:412: Preview: Snippet 69 started.
+<-><->
+      
+l.412 ...2017_ES} introduces an effective strain $
+                                                  \varepsilon_q$,
+Not a real error.
+
+./_region_.tex:412: Preview: Snippet 69 ended.(338603+219909x660640).
+<-><->
+      
+l.412 ...duces an effective strain $\varepsilon_q$
+                                                  ,
+Not a real error.
+
+[69]
+./_region_.tex:414: Preview: Snippet 70 started.
+<-><->
+      
+l.414 $
+       \delta W_q = \sigma_{q,1} \delta\varepsilon_q$. Now with the assumption
+Not a real error.
+
+./_region_.tex:414: Preview: Snippet 70 ended.(546132+219909x4636057).
+<-><->
+      
+l.414 ...a W_q = \sigma_{q,1} \delta\varepsilon_q$
+                                                  . Now with the assumption
+Not a real error.
+
+[70]
+./_region_.tex:416: Preview: Snippet 71 started.
+<-><->
+      
+l.416 is constant in the neighborhood of $
+                                          \vec{x}_p^{k+1}$, the equation
+Not a real error.
+
+./_region_.tex:416: Preview: Snippet 71 ended.(649479+296364x1486176).
+<-><->
+      
+l.416 ... in the neighborhood of $\vec{x}_p^{k+1}$
+                                                  , the equation
+Not a real error.
+
+[71]
+
+LaTeX Warning: Reference `eq:variation-averaged-strain-energy-density' on page 5 undefined on input line 417.
+
+./_region_.tex:419: Preview: Snippet 72 started.
+<-><->
+      
+l.419 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:424: Preview: Snippet 72 ended.(2453763+0x25559040).
+<-><->
+      
+l.424 \end{equation}
+                    
+Not a real error.
+
+[72
+
+]
+./_region_.tex:426: Preview: Snippet 73 started.
+<-><->
+      
+l.426 material point $
+                      \vec{x}_p^{k+1}$:
+Not a real error.
+
+./_region_.tex:426: Preview: Snippet 73 ended.(649479+296364x1486176).
+<-><->
+      
+l.426 material point $\vec{x}_p^{k+1}$
+                                      :
+Not a real error.
+
+[73]
+./_region_.tex:427: Preview: Snippet 74 started.
+<-><->
+      
+l.427 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:432: Preview: Snippet 74 ended.(2414442+0x25559040).
+<-><->
+      
+l.432 \end{equation}
+                    
+Not a real error.
+
+[74
+
+]
+./_region_.tex:433: Preview: Snippet 75 started.
+<-><->
+      
+l.433 where $
+             m_p$ can be computed as:
+Not a real error.
+
+./_region_.tex:433: Preview: Snippet 75 ended.(338603+219909x986738).
+<-><->
+      
+l.433 where $m_p$
+                  can be computed as:
+Not a real error.
+
+[75]
+./_region_.tex:434: Preview: Snippet 76 started.
+<-><->
+      
+l.434 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:437: Preview: Snippet 76 ended.(2260340+0x25559040).
+<-><->
+      
+l.437 \end{equation}
+                    
+Not a real error.
+
+[76
+
+]
+./_region_.tex:439: Preview: Snippet 77 started.
+<-><->
+      
+l.439 link it with the averaged strain energy as $
+                                                  \delta W_{\epsilon,p} =
+Not a real error.
+
+./_region_.tex:440: Preview: Snippet 77 ended.(546132+219909x5258014).
+<-><->
+      
+l.440 ...sigma}_{\epsilon,p}\ \delta\varepsilon_p$
+                                                  . The fracture
+Not a real error.
+
+[77]
+./_region_.tex:441: Preview: Snippet 78 started.
+<-><->
+      
+l.441 criterion is defined as once $
+                                    \tens{\sigma}_{\epsilon,p}^{k+1}$
+Not a real error.
+
+./_region_.tex:441: Preview: Snippet 78 ended.(649479+296364x1514483).
+<-><->
+      
+l.441 ...s once $\tens{\sigma}_{\epsilon,p}^{k+1}$
+                                                  
+Not a real error.
+
+[78]
+./_region_.tex:442: Preview: Snippet 79 started.
+<-><->
+      
+l.442 surpasses the tensile strength, $
+                                       f_t$, the softening behaviour is
+Not a real error.
+
+./_region_.tex:442: Preview: Snippet 79 ended.(546132+152916x613490).
+<-><->
+      
+l.442 surpasses the tensile strength, $f_t$
+                                           , the softening behaviour is
+Not a real error.
+
+[79]
+./_region_.tex:444: Preview: Snippet 80 started.
+<-><->
+      
+l.444  \begin{equation}
+                       
+Not a real error.
+
+./_region_.tex:447: Preview: Snippet 80 ended.(2035262+0x25559040).
+<-><->
+      
+l.447  \end{equation}
+                     
+Not a real error.
+
+[80
+
+]
+./_region_.tex:448: Preview: Snippet 81 started.
+<-><->
+      
+l.448 where $
+             \chi_p$ is the damage variable of each material point $p$,
+Not a real error.
+
+./_region_.tex:448: Preview: Snippet 81 ended.(338603+219909x795595).
+<-><->
+      
+l.448 where $\chi_p$
+                     is the damage variable of each material point $p$,
+Not a real error.
+
+[81]
+./_region_.tex:448: Preview: Snippet 82 started.
+<-><->
+      
+l.448 ... damage variable of each material point $
+                                                  p$,
+Not a real error.
+
+./_region_.tex:448: Preview: Snippet 82 ended.(338603+152916x386477).
+<-><->
+      
+l.448 ...amage variable of each material point $p$
+                                                  ,
+Not a real error.
+
+[82]
+
+LaTeX Warning: Reference `fig:Damage-ft-wc' on page 5 undefined on input line 451.
+
+./_region_.tex:452: Preview: Snippet 83 started.
+<-><->
+      
+l.452  \begin{equation}
+                       
+Not a real error.
+
+./_region_.tex:456: Preview: Snippet 83 ended.(1836065+0x25559040).
+<-><->
+      
+l.456  \end{equation}
+                     
+Not a real error.
+
+[83
+
+]
+
+Package natbib Warning: Citation `Bazant83' on page 6 undefined on input line 458.
+
+
+Package natbib Warning: Citation `Navas_2017_ES' on page 6 undefined on input line 458.
+
+./_region_.tex:459: Preview: Snippet 84 started.
+<-><->
+      
+l.459 introduced a band width $
+                               h_{\epsilon}$. The effective fracture strain
+Not a real error.
+
+./_region_.tex:459: Preview: Snippet 84 ended.(546132+117964x701234).
+<-><->
+      
+l.459 introduced a band width $h_{\epsilon}$
+                                            . The effective fracture strain
+Not a real error.
+
+[84]
+./_region_.tex:460: Preview: Snippet 85 started.
+<-><->
+      
+l.460 $
+       \varepsilon_{\epsilon,f}$ is defined as the difference between the
+Not a real error.
+
+./_region_.tex:460: Preview: Snippet 85 ended.(338603+219909x1098461).
+<-><->
+      
+l.460 $\varepsilon_{\epsilon,f}$
+                                 is defined as the difference between the
+Not a real error.
+
+[85]
+./_region_.tex:461: Preview: Snippet 86 started.
+<-><->
+      
+l.461 strain at crack initialization, $
+                                       \varepsilon_1(\vec{x}_p^{0})$, and
+Not a real error.
+
+./_region_.tex:461: Preview: Snippet 86 ended.(623265+296364x2021341).
+<-><->
+      
+l.461 ...alization, $\varepsilon_1(\vec{x}_p^{0})$
+                                                  , and
+Not a real error.
+
+[86]
+./_region_.tex:462: Preview: Snippet 87 started.
+<-><->
+      
+l.462 the current strain, $
+                           \varepsilon_1(\vec{x}_p^{k+1})$, for material
+Not a real error.
+
+./_region_.tex:462: Preview: Snippet 87 ended.(649479+296364x2756750).
+<-><->
+      
+l.462 ... strain, $\varepsilon_1(\vec{x}_p^{k+1})$
+                                                  , for material
+Not a real error.
+
+[87]
+./_region_.tex:463: Preview: Snippet 88 started.
+<-><->
+      
+l.463 point $
+             p$. Also, $\varepsilon_{\epsilon,f}$ can be represented as the
+Not a real error.
+
+./_region_.tex:463: Preview: Snippet 88 ended.(338603+152916x386477).
+<-><->
+      
+l.463 point $p$
+               . Also, $\varepsilon_{\epsilon,f}$ can be represented as the
+Not a real error.
+
+[88]
+./_region_.tex:463: Preview: Snippet 89 started.
+<-><->
+      
+l.463 point $p$. Also, $
+                        \varepsilon_{\epsilon,f}$ can be represented as the
+Not a real error.
+
+./_region_.tex:463: Preview: Snippet 89 ended.(338603+219909x1098461).
+<-><->
+      
+l.463 point $p$. Also, $\varepsilon_{\epsilon,f}$
+                                                  can be represented as the
+Not a real error.
+
+[89]
+./_region_.tex:464: Preview: Snippet 90 started.
+<-><->
+      
+l.464 current crack opening $
+                             w_n$ within the band width,
+Not a real error.
+
+./_region_.tex:464: Preview: Snippet 90 ended.(338603+117964x921219).
+<-><->
+      
+l.464 current crack opening $w_n$
+                                  within the band width,
+Not a real error.
+
+[90]
+./_region_.tex:465: Preview: Snippet 91 started.
+<-><->
+      
+l.465 $
+       h_{\epsilon}$. Therefore,
+Not a real error.
+
+./_region_.tex:465: Preview: Snippet 91 ended.(546132+117964x701234).
+<-><->
+      
+l.465 $h_{\epsilon}$
+                    . Therefore,
+Not a real error.
+
+[91]
+./_region_.tex:466: Preview: Snippet 92 started.
+<-><->
+      
+l.466 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:470: Preview: Snippet 92 ended.(1607690+0x25559040).
+<-><->
+      
+l.470 \end{equation}
+                    
+Not a real error.
+
+[92
+
+]
+
+LaTeX Warning: Reference `eq:effective-fracture-strain' on page 6 undefined on input line 471.
+
+
+LaTeX Warning: Reference `eq:damaged-variable-chi' on page 6 undefined on input line 472.
+
+./_region_.tex:474: Preview: Snippet 93 started.
+<-><->
+      
+l.474 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:477: Preview: Snippet 93 ended.(1801113+0x25559040).
+<-><->
+      
+l.477 \end{equation}
+                    
+Not a real error.
+
+[93
+
+]
+./_region_.tex:481: Preview: Snippet 94 started.
+<-><->
+      
+l.481 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:484: Preview: Snippet 94 ended.(1170181+0x25559040).
+<-><->
+      
+l.484 \end{equation}
+                    
+Not a real error.
+
+[94
+
+]
+./_region_.tex:486: Preview: Snippet 95 started.
+<-><->
+      
+l.486 \section
+              {Cases of study and discussion}
+Not a real error.
+
+./_region_.tex:486: Preview: Snippet 95 ended.(546132+152916x25559040).
+<-><->
+      
+l.486 \section{Cases of study and discussion}
+                                             
+Not a real error.
+
+[95
+
+]
+./_region_.tex:489: Preview: Snippet 96 started.
+<-><->
+      
+l.489 \subsection
+                 {Comparison with analytical solution}
+Not a real error.
+
+./_region_.tex:489: Preview: Snippet 96 ended.(546132+152916x25559040).
+<-><->
+      
+l.489 ...tion{Comparison with analytical solution}
+                                                  
+Not a real error.
+
+[96
+
+]
+./_region_.tex:492: Preview: Snippet 97 started.
+<-><->
+      
+l.492 \subsection
+                 {Brazilian test}
+Not a real error.
+
+./_region_.tex:492: Preview: Snippet 97 ended.(546132+0x25559040).
+<-><->
+      
+l.492 \subsection{Brazilian test}
+                                 
+Not a real error.
+
+[97
+
+]
+./_region_.tex:495: Preview: Snippet 98 started.
+<-><->
+      
+l.495 \begin{figure}
+                    
+Not a real error.
+
+<Figures/Brazilian.pdf, id=381, 181.80661pt x 257.1134pt>
+File: Figures/Brazilian.pdf Graphic file (type pdf)
+<use Figures/Brazilian.pdf>
+Package pdftex.def Info: Figures/Brazilian.pdf  used on input line 497.
+(pdftex.def)             Requested size: 117.00119pt x 165.46219pt.
+./_region_.tex:500: Preview: Snippet 98 ended.(12285522+0x25559040).
+<-><->
+      
+l.500 \end{figure}
+                  
+Not a real error.
+
+[98
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.500 \end{figure}
+                  
+
+ <./Figures/Brazilian.pdf>]
+./_region_.tex:502: Preview: Snippet 99 started.
+<-><->
+      
+l.502 \subsection
+                 {Drop-weight impact test}
+Not a real error.
+
+./_region_.tex:502: Preview: Snippet 99 ended.(546132+152916x25559040).
+<-><->
+      
+l.502 \subsection{Drop-weight impact test}
+                                          
+Not a real error.
+
+[99
+
+]
+./_region_.tex:505: Preview: Snippet 100 started.
+<-><->
+      
+l.505 \begin{figure}
+                    
+Not a real error.
+
+<Figures/Drop_weight.pdf, id=401, 1295.99269pt x 658.31584pt>
+File: Figures/Drop_weight.pdf Graphic file (type pdf)
+<use Figures/Drop_weight.pdf>
+Package pdftex.def Info: Figures/Drop_weight.pdf  used on input line 507.
+(pdftex.def)             Requested size: 312.00119pt x 158.48119pt.
+./_region_.tex:510: Preview: Snippet 100 ended.(11828015+0x25559040).
+<-><->
+      
+l.510 \end{figure}
+                  
+Not a real error.
+
+[100
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+
+\pr@endbox ...y \pr@markerbox }\else \box \pr@box 
+                                                  \fi }\global \advance \pr@...
+l.510 \end{figure}
+                  
+
+ <./Figures/Drop_weight.pdf>]
+./_region_.tex:514: Preview: Snippet 101 started.
+<-><->
+      
+l.514 \section
+              {Conclusions}
+Not a real error.
+
+./_region_.tex:514: Preview: Snippet 101 ended.(546132+0x25559040).
+<-><->
+      
+l.514 \section{Conclusions}
+                           
+Not a real error.
+
+[101
+
+]
+./_region_.tex:518: Preview: Snippet 102 started.
+<-><->
+      
+l.518 \section
+              *{Acknowledgements}
+Not a real error.
+
+./_region_.tex:518: Preview: Snippet 102 ended.(546132+152916x25559040).
+<-><->
+      
+l.518 \section*{Acknowledgements}
+                                 
+Not a real error.
+
+[102]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ­ in font cmr12!
+
+./_region_.tex:528: Preview: Snippet 103 started.
+<-><->
+      
+l.528 \section
+              {Explicit Predictor-Corrector algorithm}
+Not a real error.
+
+./_region_.tex:528: Preview: Snippet 103 ended.(546132+152916x25559040).
+<-><->
+      
+l.528 ...n{Explicit Predictor-Corrector algorithm}
+                                                  
+Not a real error.
+
+[103
+
+]
+./_region_.tex:531: Preview: Snippet 104 started.
+<-><->
+      
+l.531 \begin{algorithm}
+                       
+Not a real error.
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 534.
+
+./_region_.tex:543: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.543     \begin
+                {equation*}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:543: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.543     \begin
+                {equation*}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:543: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.543     \begin
+                {equation*}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:548: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.548     A
+           t the fixed boundary, set $\vec{v}_{I}^{pred} = 0$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:548: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.548     A
+           t the fixed boundary, set $\vec{v}_{I}^{pred} = 0$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:548: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.548     A
+           t the fixed boundary, set $\vec{v}_{I}^{pred} = 0$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:564: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.564     \STATE
+                 \textbf{Balance of forces calculation}:\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:564: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.564     \STATE
+                 \textbf{Balance of forces calculation}:\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:564: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.564     \STATE
+                 \textbf{Balance of forces calculation}:\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:565: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.565     C
+           alculate the total grid nodal force $\vec{f}_{I}^{k+1} =
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:565: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.565     C
+           alculate the total grid nodal force $\vec{f}_{I}^{k+1} =
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:565: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.565     C
+           alculate the total grid nodal force $\vec{f}_{I}^{k+1} =
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:569: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.569     \begin
+                {equation*}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:569: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.569     \begin
+                {equation*}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:569: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.569     \begin
+                {equation*}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./_region_.tex:586: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.586   \end{algorithmic}
+                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./_region_.tex:587: Extra }, or forgotten \endgroup.
+\sf@endfloatbox ...gefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.587 \end{algorithm}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./_region_.tex:587: Preview: Snippet 104 ended.(33126891+0x25559040).
+<-><->
+      
+l.587 \end{algorithm}
+                     
+Not a real error.
+
+[104
+
+]
+./_region_.tex:587: Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.587 \end{algorithm}
+                     
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+./_region_.tex:587: LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.587 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./_region_.tex:587: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.587 \end{algorithm}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+./_region_.tex:590: Preview: Snippet 105 started.
+<-><->
+      
+l.590 \section
+              {Eigensoftening Algorithm}
+Not a real error.
+
+./_region_.tex:590: Preview: Snippet 105 ended.(546132+152916x25559040).
+<-><->
+      
+l.590 \section{Eigensoftening Algorithm}
+                                        
+Not a real error.
+
+[105
+
+]
+./_region_.tex:593: Preview: Snippet 106 started.
+<-><->
+      
+l.593 \begin{algorithm}
+                       
+Not a real error.
+
+./_region_.tex:607: Undefined control sequence.
+<argument> $\chi _p = 0$ \AND 
+                              $\epsilon _{f,p} = 0$
+l.607 ...f{$\chi_p = 0$ \AND $\epsilon_{f,p} = 0$}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./_region_.tex:618: Undefined control sequence.
+l.618     \Else[$\chi_p \neq 1$ \AND
+                                     $\epsilon_{f,p} > 0$]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./_region_.tex:624: Extra }, or forgotten \endgroup.
+\sf@endfloatbox ...gefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.624 \end{algorithm}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./_region_.tex:624: Preview: Snippet 106 ended.(25739949+0x25559040).
+<-><->
+      
+l.624 \end{algorithm}
+                     
+Not a real error.
+
+[106
+
+
+]
+./_region_.tex:624: Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.624 \end{algorithm}
+                     
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+./_region_.tex:624: LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.624 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./_region_.tex:624: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.624 \end{algorithm}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+No file _region_.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 629.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 629.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 629.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 629.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 629.
+ ) 
+Here is how much of TeX's memory you used:
+ 9525 strings out of 492982
+ 139183 string characters out of 6134895
+ 237247 words of memory out of 5000000
+ 12907 multiletter control sequences out of 15000+600000
+ 14145 words of font info for 53 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 45i,18n,42p,517b,503s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on _region_.pdf (106 pages, 347584 bytes).
+PDF statistics:
+ 492 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+
