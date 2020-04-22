@@ -47,9 +47,11 @@
   }
 }
 
-\modulolinenumbers[5]
 
 \journal{Engineering Fracture Mechanics}
+
+
+\modulolinenumbers[5]
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% Elsevier bibliography styles
@@ -91,7 +93,7 @@
 
 %% Group authors per affiliation:
 \author{
-Miguel Molinos$^a$\footnote{Corresponding author: m.molinos@outlook.es},
+Miguel Molinos$^a$,
 and Pedro Navas$^a$\footnote{Corresponding author: p.navas@upm.es}
  }
  \address{
@@ -158,8 +160,6 @@ such as stress or strain levels near or at the crack set compared to
 experimental measures are still lacking. Having in mind that the
 eigenerosion approach was intended for perfectly brittle fracture, an
 eigensoftening concept is developed for quasi-brittle materials
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The meshfree methodology}
@@ -235,9 +235,7 @@ The complete pseudo-algorithm it is summarized in \ref{sec:expl-pred-corr}.
 \label{sec:2.2}
 
 Local maximum-entropy (or local \textit{max-ent}) approximation scheme
-was introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} as a bridge
-between finite elements and meshfree methods. The key idea of the 
-shape functions is to interpret the nodal of a shape function $N_I$ as
+was introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} as a bridge between finite elements and meshfree methods. The key idea of the  shape functions is to interpret the nodal of a shape function $N_I$ as
 a probability. This allow us to introduce two important limits:
 the principle of maximum-entropy (\textit{max-ent}) statistical
 inference stated by \cite{Jaynes1957}, and the Delaunay triangulation
