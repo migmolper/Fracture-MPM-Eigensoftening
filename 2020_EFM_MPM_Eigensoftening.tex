@@ -98,7 +98,8 @@ Miguel Molinos$^a$,
 and Pedro Navas$^a$\footnote{Corresponding author: p.navas@upm.es}
  }
  \address{
- $^a$ ETSI Caminos, Canales y Puertos, Universidad Polit\'ectnica de Madrid.\\ c. Prof. Aranguren 3, 28040 Madrid, Spain
+ $^a$ ETSI Caminos, Canales y Puertos, Universidad Polit\'ectnica de Madrid.\\
+ c. Prof. Aranguren 3, 28040 Madrid, Spain
 }
 
 \begin{abstract}
@@ -132,24 +133,52 @@ effective way can be considered as one of the original drivers for
 developing novel spatial discretization methods such as meshfree
 methods like the material point method (MPM). Presence of cracks are a
 violation of the continuity requirement of the finite element method
-(FEM).  
+(FEM). To overcome it, numerous of numerical artifacts has been
+proposed with the aim of reproduce such a complex behaviour. This
+techniques vary from employing cohesive approaches
+\cite{Barenblatt,Hilleborg_1976}, by adaptively inserting cohesive
+elements \cite{Ortiz_1999,Pandolfi_2002,Ruiz_2000} at solid elements
+boundaries, or handling arbitrary cracks paths by level set
+representation of the fracture surface \cite{Belytschko_03}.
+
+The severe
+limitations of the mesh-dependent methods to simulate fracture
+process, have motivated the development of mesh-free technique to
+reproduce crack propagation such the element-free Galerkin method
+(EFGM) \cite{BELYTSCHKO_1995,BELYTSCHKO_2000,Zhuang_2012,Muthu_2013},
+the smoothed particle hydrodynamics (SPH) \cite{Wang_2020,Wang_2019},
+the optimal transportation meshfree method (OTM)
+\cite{Li2010,Li_2012,Pandolfi_2013,Li_2015} or peridynamics
+\cite{HA_2011,RABCZUK_2017}. 
 
 By contrast, MPM does not suffer from the above difficulty since the
-continuity requirement is less restrictive. Regarding fracture, it can
-be described in two ways. One is to remove the restriction of the single-valued velocity field close to the crack by using two or
-more sets of nodes \cite{Nairn_2006}. This method is based in to
-assign different labels to distinguish if the material points and
-nodes are in the same side of the crack or not. Under this approach
-the crack surface is described with line segments in 2D and triangle
-patches in 3D cases. This method was named as ``CRAcks with Material
-Points (CRAMP)'' \cite{Nairn_2003}. In this method, the criteria for
-crack propagation is based on such parameters as energy release rate
+continuity requirement is less restrictive. Fracture can be described
+in two ways. One is to remove the restriction of the single-valued
+velocity field close to the crack by using two or more sets of nodes
+\cite{Nairn_2006}. This method is based in to assign different labels
+to distinguish if the material points and nodes are in the same side
+of the crack or not. Under this approach the crack surface is
+described with line segments in 2D and triangle patches in 3D
+cases. This method was named as ``CRAcks with Material Points
+(CRAMP)'' \cite{Nairn_2003}. In this method, the criteria for crack
+propagation is based on such parameters as energy release rate
 analyzed by Tan \& Nairn (2002)\cite{Nairn_2002}, and the stress
 intensity factor or the J-integral discussed by Guo \& Nairn
-(2004)\cite{Nairn_2004}.
+(2004)\cite{Nairn_2004}. The other approach is to use failed material
+points to describe the crack evolution. In this method, the formation
+of failed points describes the nucleation of cracks, and thereafter its propagation and
+branching. Consequently, the position of the crack does not need to be
+explicitly stated. This represents a significant advantage over the
+``CRAMP''. Under this approach, the prediction the failure evolution
+employing a decohesion model has been discussed by Chen {\it et al.}\cite{Zhenmao_2005} or
+Schreyer {\it et al.}\cite{Schreyer_2002}. And has been successfully
+employed to simulate the fracture of brittle materials by Chen {\it et
+  al.} \cite{Chen_2002,Chen_2003} and Sulsky \& Schreyer
+(2004)\nocite{Sulsky_2004}.
 
-and the other is to use failed material points to
-describe the crack evolution.
+
+\cite{Belytschko_04,Schmidt_2009,Pandolfi_2012}
+
 
 The erosion of the material point means that each material point can
 be either intact or be completely failed or eroded and has no load
@@ -167,8 +196,8 @@ eigensoftening concept is developed for quasi-brittle materials
 The aim of this section is to provide an overview of the special
 techniques employed to face the fracture problem under the MPM
 framework. In consequence it is structured as follows: first in
-\ref{sec:2.1} we summarize the explicit-predictor algorithm for the
-MPM, next the local \textit{max-ent} approximants are introduced in
+\ref{sec:2.1} the explicit-predictor algorithm for the
+MPM will be exposed, next the local \textit{max-ent} approximants are introduced in
 \ref{sec:2.2} as an accurate alternative technique to interpolate data
 between particles and nodes, and finally the fracture algorithms based
 in the eigendeformations are presented in \ref{sec:2.3}.
@@ -196,8 +225,8 @@ process, where particle data is projected to the grid nodes, (ii) an
 Eulerian step, where balance of momentum equation is expressed as a
 nodal equilibrium equation thorough a FEM-like procedure, and finally
 (iii) a Lagrangian advection of the particles. In the present research
-we will adopt a explicit predictor-corrector time integration
-scheme. The purpose of this choice is motivated due its proved
+a explicit predictor-corrector time integration
+scheme is adopted. The purpose of this choice is motivated due its proved
 robustness and stability in numerical calculations. In the first stage
 (i), the nodal velocity predictor is computed following
 \eqref{eq:Predictor-velocity}, 
@@ -376,7 +405,7 @@ FEM \cite{Ortiz_1999}. This gradual failure criterion is plotted in
 figure \label{fig:Damage-ft-wc}, where a linear decreasing cohesive
 law is presented to illustrate the concept here described. In the
 picture, the shaded area represents the static fracture energy per
-unit of area, $G_F$. As we can see, a cohesive crack appears when the
+unit of area, $G_F$. Notice how a cohesive crack appears when the
 maximum tensile strength, $f_t$ is reached. Once the opening
 displacement $w$ takes the value of the critical crack displacement
 $w_c$, a stress-free crack is attained. For intermediate values,
@@ -419,7 +448,7 @@ as follows
   \frac{\delta \tens{\epsilon}_p}{m_p} \sum_{x_q^{k+1} \in
   B_{\epsilon}(x_p^{k+1})} m_q \tens{\sigma}_{q,I}. 
 \end{equation}
-Consequently we can define an equivalent critical stress at the
+Consequently it is possible to define an equivalent critical stress at the
 material point $\vec{x}_p^{k+1}$:
 \begin{equation}
   \label{eq:equivalent-critical-stress}
@@ -589,9 +618,9 @@ The first author acknowledges the fellowship Agustín de Betancourt 262390106114
 \label{sec:eigens-algor-1}
 
 \begin{algorithm}
-  \caption{Compute damage parameter $\chi_P^{k+1}$}
+  \caption{Compute damage parameter $\chi_p^{k+1}$}
   \label{alg-eigens}
-  \begin{algorithmic}[1]
+  \begin{algorithmic}
     \Require Particle status\\
     Number of particles: $N_p$\\
     $\epsilon$-neighbourhood of each particle $p$ : $B_{\epsilon,p}$\\

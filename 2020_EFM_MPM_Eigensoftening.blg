@@ -3,50 +3,53 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: 2020_EFM_MPM_Eigensoftening.aux
 The style file: elsarticle-num.bst
 Database file #1: Biblio/Biblio.bib
-I was expecting a `,' or a `}'---line 214 of file Biblio/Biblio.bib
+I was expecting a `,' or a `}'---line 326 of file Biblio/Biblio.bib
  : 
  : author = {Schreyer, H.L. and Sulsky, D.L. and Zhou, S.-J},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 14 entries,
+Warning--empty author in Schreyer_2002
+Warning--empty title in Schreyer_2002
+Warning--empty journal in Schreyer_2002
+You've used 37 entries,
             2937 wiz_defined-function locations,
-            865 strings with 9185 characters,
-and the built_in function-call counts, 3770 in all, are:
-= -- 393
-> -- 104
+            1042 strings with 14172 characters,
+and the built_in function-call counts, 11015 in all, are:
+= -- 1135
+> -- 337
 < -- 0
-+ -- 44
-- -- 30
-* -- 258
-:= -- 547
-add.period$ -- 19
-call.type$ -- 14
-change.case$ -- 14
++ -- 137
+- -- 100
+* -- 872
+:= -- 1551
+add.period$ -- 55
+call.type$ -- 37
+change.case$ -- 37
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 99
-empty$ -- 400
-format.name$ -- 41
-if$ -- 969
+cite$ -- 40
+duplicate$ -- 288
+empty$ -- 1151
+format.name$ -- 132
+if$ -- 2799
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 14
-newline$ -- 56
-num.names$ -- 14
-pop$ -- 65
+int.to.str$ -- 37
+missing$ -- 37
+newline$ -- 144
+num.names$ -- 36
+pop$ -- 174
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 253
+skip$ -- 658
 stack$ -- 0
-substring$ -- 210
-swap$ -- 23
+substring$ -- 714
+swap$ -- 77
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 28
-width$ -- 16
-write$ -- 130
+warning$ -- 3
+while$ -- 80
+width$ -- 39
+write$ -- 344
 (There was 1 error message)

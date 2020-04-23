@@ -5,6 +5,131 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{Barenblatt}
+G.~Barenblatt, The mathematical theory of equilibrium cracks in brittle
+  fracture., Advances in Applied Mechanics 7 (1962) 55--129.
+
+\bibitem{Hilleborg_1976}
+A.~Hillerborg, M.~Mod\'eer, P.~Petersson, Analysis of crack formation and crack
+  growth in concrete by means of fracture mechanics and finite elements.,
+  Cement and Concrete Research. 6 (1976) 773--782.
+
+\bibitem{Ortiz_1999}
+M.~Ortiz, A.~Pandolfi, Finite-deformation irreversible cohesive elements for
+  three-dimensional crack-propagation analysis., International Journal for
+  Numerical Methods in Engineering. 44 (1999) 1267--1282.
+
+\bibitem{Pandolfi_2002}
+A.~Pandolfi, M.~Ortiz, An efficient adaptive procedure for three-dimensional
+  fragmentation simulations., Engineering with Computers. 18(2) (2002)
+  148--159.
+
+\bibitem{Ruiz_2000}
+G.~Ruiz, M.~Ortiz, A.~Pandolfi, Three-dimensional finite-element simulation of
+  the dynamic {Brazilian} tests on concrete cylinders, {International Journal
+  for Numerical Methods in Engineering} 48 (2000) 963--994.
+
+\bibitem{Belytschko_03}
+T.~Belytschko, H.~Chen, J.~Xu, G.~Zi, Dynamic crack propagation based on loss
+  of hyperbolicity and a new discontinuous enrichment., International Journal
+  for Numerical Methods in Engineering. 58 (2003) 1873--1905.
+
+\bibitem{BELYTSCHKO_1995}
+T.~Belytschko, Y.~Lu, L.~Gu, M.~Tabbara,
+  \href{http://www.sciencedirect.com/science/article/pii/0020768394002822}{Element-free
+  galerkin methods for static and dynamic fracture}, International Journal of
+  Solids and Structures 32~(17) (1995) 2547 -- 2570.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/0020-7683(94)00282-2}
+  {\path{doi:https://doi.org/10.1016/0020-7683(94)00282-2}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/0020768394002822}
+
+\bibitem{BELYTSCHKO_2000}
+T.~Belytschko, D.~Organ, C.~Gerlach,
+  \href{http://www.sciencedirect.com/science/article/pii/S004578250080002X}{Element-free
+  galerkin methods for dynamic fracture in concrete}, Computer Methods in
+  Applied Mechanics and Engineering 187~(3) (2000) 385 -- 399.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/S0045-7825(00)80002-X}
+  {\path{doi:https://doi.org/10.1016/S0045-7825(00)80002-X}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S004578250080002X}
+
+\bibitem{Zhuang_2012}
+X.~Zhuang, C.~Augarde, K.~Mathisen, Fracture modeling using meshless methods
+  and level sets in 3d: Framework and modeling, International Journal for
+  Numerical Methods in Engineering 92 (2012) 969--998.
+\newblock \href {http://dx.doi.org/10.1002/nme.4365}
+  {\path{doi:10.1002/nme.4365}}.
+
+\bibitem{Muthu_2013}
+N.~Muthu, S.~Maiti, B.~Falzon, I.~Guiamatsia, A comparison of stress intensity
+  factors obtained through crack closure integral and other approaches using
+  extended element-free galerkin method, Computational Mechanics 52.
+\newblock \href {http://dx.doi.org/10.1007/s00466-013-0834-y}
+  {\path{doi:10.1007/s00466-013-0834-y}}.
+
+\bibitem{Wang_2020}
+Y.~Wang, H.~T. Tran, G.~D. Nguyen, P.~G. Ranjith, H.~H. Bui,
+  \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/nag.3069}{Simulation of
+  mixed-mode fracture using sph particles with an embedded fracture process
+  zone}, International Journal for Numerical and Analytical Methods in
+  Geomechanics n/a~(n/a).
+\newblock \href
+  {http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/nag.3069}
+  {\path{arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1002/nag.3069}},
+  \href {http://dx.doi.org/10.1002/nag.3069} {\path{doi:10.1002/nag.3069}}.
+\newline\urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/nag.3069}
+
+\bibitem{Wang_2019}
+Y.~Wang, H.~Bui, G.~Nguyen, P.~Ranjith, A new sph-based continuum framework
+  with an embedded fracture process zone for modelling rock fracture,
+  International Journal of Solids and Structures 159 (2019) 40--57.
+\newblock \href {http://dx.doi.org/10.1016/j.ijsolstr.2018.09.019}
+  {\path{doi:10.1016/j.ijsolstr.2018.09.019}}.
+
+\bibitem{Li2010}
+B.~Li, F.~Habbal, M.~Ortiz,
+  \href{http://doi.wiley.com/10.1002/nme.2869}{{Optimal transportation meshfree
+  approximation schemes for fluid and plastic flows}}, International Journal
+  for Numerical Methods in Engineering 83~(12) (2010) 1541--1579.
+\newblock \href {http://dx.doi.org/10.1002/nme.2869}
+  {\path{doi:10.1002/nme.2869}}.
+\newline\urlprefix\url{http://doi.wiley.com/10.1002/nme.2869}
+
+\bibitem{Li_2012}
+B.~Li, A.~Kadane, G.~Ravichandran, M.~Ortiz, Verification and validation of the
+  optimal-transportation meshfree (otm) simulation of terminal ballistics.,
+  International Journal for Impact Engineering 42 (2012) 25--36.
+
+\bibitem{Pandolfi_2013}
+A.~Pandolfi, B.~Li, M.~Ortiz, Modeling fracture by material-point erosion.,
+  International Journal of fracture 184 (2013) 3--16.
+
+\bibitem{Li_2015}
+B.~Li, A.~Pandolfi, M.~Ortiz, Material-point erosion simulation of dynamic
+  fragmentation of metals., Mechanics of Materials 80 (2015) 288--297.
+
+\bibitem{HA_2011}
+Y.~D. Ha, F.~Bobaru,
+  \href{http://www.sciencedirect.com/science/article/pii/S0013794410004959}{Characteristics
+  of dynamic brittle fracture captured with peridynamics}, Engineering Fracture
+  Mechanics 78~(6) (2011) 1156 -- 1168.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.engfracmech.2010.11.020}
+  {\path{doi:https://doi.org/10.1016/j.engfracmech.2010.11.020}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0013794410004959}
+
+\bibitem{RABCZUK_2017}
+T.~Rabczuk, H.~Ren,
+  \href{http://www.sciencedirect.com/science/article/pii/S0013795217306907}{A
+  peridynamics formulation for quasi-static fracture and contact in rock},
+  Engineering Geology 225 (2017) 42 -- 48, special Issue: Characterisation of
+  Fractures in Rock: from Theory to Practice (ROCKFRAC).
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.enggeo.2017.05.001}
+  {\path{doi:https://doi.org/10.1016/j.enggeo.2017.05.001}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0013795217306907}
+
 \bibitem{Nairn_2006}
 Y.~GUO, J.~Nairn, Three-dimensional dynamic fracture analysis using the
   material point method, Computer Modeling in Engineering & Sciences 16.
@@ -28,6 +153,52 @@ H.~Tan, J.~Nairn, Hierarchical, adaptive, material point method for dynamic
 Y.~GUO, J.~Nairn, Calculation of j-integral and stress intensity factors using
   the material point method, CMES. Computer Modeling in Engineering & Sciences
   6.
+
+\bibitem{Zhenmao_2005}
+Z.~Chen, L.~Shen, Y.-W. Mai, Y.-G. Shen, A bifurcation-based decohesion model
+  for simulating the transition from localization to decohesion with the mpm,
+  Zeitschrift fur Angewandte Mathematik und Physik 56 (2005) 908--930.
+\newblock \href {http://dx.doi.org/10.1007/s00033-005-3011-0}
+  {\path{doi:10.1007/s00033-005-3011-0}}.
+
+\bibitem{Schreyer_2002}
+
+
+\bibitem{Chen_2002}
+Z.~Chen, W.~Hu, L.~Shen, X.~An, R.~Brannon, An evaluation of the mpm for
+  simulating dynamic failure with damage diffusion, Engineering Fracture
+  Mechanics 69 (2002) 1873--1890.
+\newblock \href {http://dx.doi.org/10.1016/S0013-7944(02)00066-8}
+  {\path{doi:10.1016/S0013-7944(02)00066-8}}.
+
+\bibitem{Chen_2003}
+Z.~Chen, R.~Feng, X.~An, L.~Shen, A computational model for impact failure with
+  shear‐induced dilatancy, International Journal for Numerical Methods in
+  Engineering 56 (2003) 1979 -- 1997.
+\newblock \href {http://dx.doi.org/10.1002/nme.651}
+  {\path{doi:10.1002/nme.651}}.
+
+\bibitem{Sulsky_2004}
+S.~DL, L.~Schreyer, Mpm simulation of dynamic material failure with a
+  decohesion constitutive model, European Journal of Mechanics - A/Solids 23
+  (2004) 423--445.
+\newblock \href {http://dx.doi.org/10.1016/j.euromechsol.2004.02.007}
+  {\path{doi:10.1016/j.euromechsol.2004.02.007}}.
+
+\bibitem{Belytschko_04}
+T.~Rabczuk, T.~Belytschko, Cracking particles: a simplified meshfree method for
+  arbitrary evolving cracks., International Journal for Numerical Methods in
+  Engineering. 61 (2004) 2316--2343.
+
+\bibitem{Schmidt_2009}
+B.~Schmidt, F.~Fraternali, M.~Ortiz, Eigenfracture: an eigendeformation
+  approach to variational fracture., SIAM J. Multiscale Model. Simul. 7 (2009)
+  1237--1266.
+
+\bibitem{Pandolfi_2012}
+A.~Pandolfi, M.~Ortiz, An eigenerosion approach to brittle fracture.,
+  International Journal for Numerical Methods in Engineering 92 (2012)
+  694--714.
 
 \bibitem{Sulsky1994}
 D.~L. Sulsky, H.~Schreyer, Z.~Chen, {A particle method for history-dependent
@@ -58,26 +229,11 @@ P.~Navas, R.~Yu, B.~Li, G.~Ruiz, Modeling the dynamic fracture in concrete: an
 \newblock \href {http://dx.doi.org/10.1016/j.ijimpeng.2017.11.004}
   {\path{doi:10.1016/j.ijimpeng.2017.11.004}}.
 
-\bibitem{Pandolfi_2012}
-A.~Pandolfi, M.~Ortiz, An eigenerosion approach to brittle fracture.,
-  International Journal for Numerical Methods in Engineering 92 (2012)
-  694--714.
-
 \bibitem{Navas_2018_ES}
 P.~Navas, R.~Yu, G.~Ruiz, Meshfree modeling of the dynamic mixed-mode fracture
   in frc through an eigensoftening approach, Engineering Structures 172.
 \newblock \href {http://dx.doi.org/10.1016/j.engstruct.2018.06.010}
   {\path{doi:10.1016/j.engstruct.2018.06.010}}.
-
-\bibitem{Schmidt_2009}
-B.~Schmidt, F.~Fraternali, M.~Ortiz, Eigenfracture: an eigendeformation
-  approach to variational fracture., SIAM J. Multiscale Model. Simul. 7 (2009)
-  1237--1266.
-
-\bibitem{Ortiz_1999}
-M.~Ortiz, A.~Pandolfi, Finite-deformation irreversible cohesive elements for
-  three-dimensional crack-propagation analysis., International Journal for
-  Numerical Methods in Engineering. 44 (1999) 1267--1282.
 
 \bibitem{Bazant83}
 Z.~Ba\v{z}ant, B.~Oh, Crack band theory for fracture in concrete., Materials
