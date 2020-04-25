@@ -130,72 +130,89 @@ Material Point Method \sep Solid Dynamics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{sec:1}
+Presence of cracks are a violation of the continuity requirement of
+the finite element method (FEM). To overcome it, numerous of numerical
+artifacts has been proposed with the aim of reproducing  such a
+complex behaviour. This techniques vary from employing cohesive
+approaches \cite{Barenblatt,Hilleborg_1976}, by adaptively inserting
+cohesive elements \cite{Ortiz_1999,Pandolfi_2002,Ruiz_2000} at solid
+elements boundaries, or handling arbitrary cracks paths by level set
+representation of the fracture surface \cite{Belytschko_03}.  
 
 The simulation of fracture propagation in a more accurate and
 effective way can be considered as one of the original drivers for
 developing novel spatial discretization methods such as meshfree
-methods like the material point method (MPM). Presence of cracks are a
-violation of the continuity requirement of the finite element method
-(FEM). To overcome it, numerous of numerical artifacts has been
-proposed with the aim of reproduce such a complex behaviour. This
-techniques vary from employing cohesive approaches
-\cite{Barenblatt,Hilleborg_1976}, by adaptively inserting cohesive
-elements \cite{Ortiz_1999,Pandolfi_2002,Ruiz_2000} at solid elements
-boundaries, or handling arbitrary cracks paths by level set
-representation of the fracture surface \cite{Belytschko_03}.
-
-The severe
-limitations of the mesh-dependent methods to simulate fracture
-process, have motivated the development of mesh-free technique to
-reproduce crack propagation such the element-free Galerkin method
-(EFGM) \cite{BELYTSCHKO_1995,BELYTSCHKO_2000,Zhuang_2012,Muthu_2013},
+techniques. Some examples of it are the material
+point method (MPM) \cite{Schreyer_2002,Chen_2002,Nairn_2003,Zhenmao_2005}, the
+element-free Galerkin method (EFGM) \cite{BELYTSCHKO_1995,BELYTSCHKO_2000,Zhuang_2012,Muthu_2013},
 the smoothed particle hydrodynamics (SPH) \cite{Wang_2020,Wang_2019},
 the optimal transportation meshfree method (OTM)
 \cite{Li2010,Li_2012,Pandolfi_2013,Li_2015} or peridynamics
-\cite{HA_2011,RABCZUK_2017}. 
+\cite{HA_2011,RABCZUK_2017} among others. 
 
-By contrast, MPM does not suffer from the above difficulty since the
-continuity requirement is less restrictive. Fracture can be described
-in two ways. One is to remove the restriction of the single-valued
-velocity field close to the crack by using two or more sets of nodes
-\cite{Nairn_2006}. This method is based in to assign different labels
-to distinguish if the material points and nodes are in the same side
-of the crack or not. Under this approach the crack surface is
-described with line segments in 2D and triangle patches in 3D
-cases. This method was named as ``CRAcks with Material Points
-(CRAMP)'' \cite{Nairn_2003}. In this method, the criteria for crack
-propagation is based on such parameters as energy release rate
-analyzed by Tan \& Nairn (2002)\cite{Nairn_2002}, and the stress
-intensity factor or the J-integral discussed by Guo \& Nairn
+Fracture can be described in two ways. One is to remove the
+restriction of the single-valued velocity field close to the crack by
+using two or more sets of nodes \cite{Nairn_2006}. This method is
+based in to assign different labels to distinguish if the material
+points and nodes are in the same side of the crack or not. Under this
+approach the crack surface is described with line segments in 2D and
+triangle patches in 3D cases. This method was named as ``CRAcks with
+Material Points (CRAMP)'' \cite{Nairn_2003}. In this method, the
+criteria for crack propagation is based on such parameters as energy
+release rate analyzed by Tan \& Nairn (2002)\cite{Nairn_2002}, and the
+stress intensity factor or the J-integral discussed by Guo \& Nairn 
 (2004)\cite{Nairn_2004}. The other approach is to use failed material
 points to describe the crack evolution. In this method, the formation
-of failed points describes the nucleation of cracks, and thereafter its propagation and
-branching. Consequently, the position of the crack does not need to be
-explicitly stated. This represents a significant advantage over the
-``CRAMP''. Under this approach, the prediction the failure evolution
-employing a decohesion model has been discussed by Chen {\it et al.}\cite{Zhenmao_2005} or
-Schreyer {\it et al.}\cite{Schreyer_2002}. And has been successfully
-employed to simulate the fracture of brittle materials by Chen {\it et
-  al.} \cite{Chen_2002,Chen_2003} and Sulsky \& Schreyer
-(2004)\nocite{Sulsky_2004}.
+of failed points describes the nucleation of cracks, and thereafter
+its propagation and branching. Consequently, the position of the crack
+does not need to be explicitly stated. This represents a significant
+advantage over the ``CRAMP''. Under this approach, the prediction the
+failure evolution employing a decohesion model has been discussed by
+Chen {\it et al.}\cite{Zhenmao_2005} or Schreyer {\it et
+  al.}\cite{Schreyer_2002}. And has been successfully employed to
+simulate the fracture of brittle materials by Chen {\it et al.}
+\cite{Chen_2002,Chen_2003} and Sulsky \& Schreyer
+\cite{Sulsky_2004}. Similar to this approach, Schmidt {\it et al.}
+\cite{Schmidt_2009} introduced the concept of eigenfracture, where
+they approximate the crack set by means of eigen-deformations, wich
+enable the material to develop displacement jumps at no cost of local
+elastic energy. Later, the eigenerosion approach to brittle facture
+was developed by Pandolfi {\it et al.}
+\cite{Pandolfi_2012,Pandolfi_2013}. In this technique the erosion of
+the material point means that each material point can be either intact
+or be completely failed or eroded and has no load bearing
+capacity. This method has been successfully applied to simulate high
+complex phenomena such dynamic fragmentation of metals \cite{Li_2015},
+nonetheless in quasi-brittle materials, simulations performed with
+this approach exhibit an overestimation of tensile stress and the
+strain peaks. To overcome this limitation, Navas {\it et al.}
+\cite{Navas_2017_ES,Navas2018a} introduced the concept of
+eigensoftening. Engineered for quasi-brittle materials, this approach
+is devoted to capture the gradual rather than abrupt dissipation of
+the fracture energy. It is inspired in the concept of the crack band
+model \cite{Bazant83}, since energy dissipation is thorough the
+softened (or failed) volume. Due to the similarities between the OTM, 
+where this procedure was developed, and the MPM, we propose 
 
+To overcome the difficulties of the e
 
-\cite{Belytschko_04,Schmidt_2009,Pandolfi_2012}
+In the present research we will introduce the 
 
+In the current work we attempt to model the fracture propagation
+employing the MPM and introducing both eigenerosion
+ and eigensoftening \cite{Navas_2017_ES,Navas_2018_ES} and the concept of the
+eigenfracture under this framework.  
 
-The erosion of the material point means that each material point can
-be either intact or be completely failed or eroded and has no load
-bearing capacity, Even thought the method has been successfully
-applied to dynamic fragmentation of metals, quantitative validations,
-such as stress or strain levels near or at the crack set compared to
-experimental measures are still lacking. Having in mind that the
-eigenerosion approach was intended for perfectly brittle fracture, an
+Even thought the method has been successfully applied to dynamic
+fragmentation of metals, quantitative validations, such as stress or 
+strain levels near or at the crack set compared to experimental
+measures are still lacking. Having in mind that the eigenerosion
+approach was intended for perfectly brittle fracture, an
 eigensoftening concept is developed for quasi-brittle materials
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The meshfree methodology}
 \label{sec:2}
-
 The aim of this section is to provide an overview of the special
 techniques employed to face the fracture problem under the MPM
 framework. In consequence it is structured as follows: first in
@@ -207,7 +224,6 @@ in the eigendeformations are presented in \ref{sec:2.3}.
 
 \subsection{The Material Point Method}
 \label{sec:2.1}
-
 The MPM~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian method
 where particles carries on all the physical information and a set of
 background nodes is employed to compute the equilibrium
@@ -289,11 +305,11 @@ competing objectives, a Pareto set is defined as,
 \end{align*}
 where $H(N_I)$ is the entropy of the system of nodes following the
 definition given by Shannon (1948) \cite{Shannon1948}, and $U(\vec{x}_p,N_I) =
-\sum_I N_I |\vec{x}_p - \vec{x}_I |^2$ a 
-magnitude of the shape function width. The regularization o
-\textit{thermalization} parameter between the two criterion $\beta$
-has Pareto optimal values in the range $(0,\infty)$. The unique
-solution of the local max-ent problem (LME)$_\beta$ is
+\sum_I N_I |\vec{x}_p - \vec{x}_I |^2$ a magnitude of the shape
+function width. The regularization o \textit{thermalization} parameter
+between the two criterion $\beta$ has Pareto optimal values in the
+range $(0,\infty)$. The unique solution of the local \textit{max-ent} problem
+(LME)$_\beta$ is,
  \begin{equation}
   \label{eq:LME-p}
 N_I^*(\vec{x})=\frac{\exp\left[ -\beta \; |\vec{x}-\vec{x}_I|^2 +
@@ -337,11 +353,11 @@ expression for the gradient of the shape function.
 The regularization parameter $\beta$ of LME shape functions may be
 controlled by adjusting a dimensionless parameter, $\gamma=\beta h^2$
 \cite{Arroyo2006}, where $h$ is defined as a measure of the nodal
-spacing. Since  $N_I$ is defined in the entire domain, in practice,
+spacing. Since $N_I$ is defined in the entire domain, in practice,
 the shape function decay $\exp(-\beta \vec{r} )$ is truncated  by  a
-given tolerance, 10$^{-6}$, for example,  would ensure a reasonable
+given tolerance, 10$^{-6}$, for example, would ensure a reasonable
 range of neighbours, see \cite{Arroyo2006} for details. This tolerance defines
-the limit values of the influence radius and is used thereafter to
+a limit values of the influence radius and is used thereafter to
 find the neighbour nodes of a given integration point.
 
 \subsection{Fracture modelling approach}
@@ -657,4 +673,4 @@ The first author acknowledges the fellowship Agustín de Betancourt 262390106114
 \bibliography{Biblio/Biblio} 
 
 \end{document}
-\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-660) }
+\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-676) }
