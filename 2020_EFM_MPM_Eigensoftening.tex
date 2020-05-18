@@ -13,10 +13,13 @@
 
 \usepackage{cancel}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Init macros math
+
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage{xstring}
 
-\newcommand{\vec}[1]{
+\newcommand{\vect}[1]{
   \ensuremath{\mathbf{{#1}}}
 }
 \newcommand{\tens}[1]{
@@ -47,6 +50,124 @@
     {3}{\ensuremath{\int_{\varOmega}{#2}\ d\varOmega}}
   }
 }
+% End macros math
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Init glossaries
+\usepackage[acronym]{glossaries}
+
+\makeglossaries
+
+\newglossaryentry{domain}
+{
+  name=$\varOmega$,
+  description={Continuum domain}
+}
+
+\newglossaryentry{contour}
+{
+  name=$\partial\varOmega$,
+  description={Boundary of the continuum domain $\varOmega$. Also
+    defined as $\Gamma$}
+}
+
+\newglossaryentry{dirichlet-boundary}
+{
+  name=$ \Gamma_d$,
+  description={Essential or Dirichlet boundary conditions over $\partial\varOmega$}
+}
+
+\newglossaryentry{neumann-boundary}
+{
+  name=$ \Gamma_n$,
+  description={Natural or Nemann boundary conditions over $\partial\varOmega$}
+}
+
+\newglossaryentry{rho}
+{
+  name=$\rho$,
+  description={Describes the scalar density field}
+}
+
+\newglossaryentry{a}
+{
+  name=$\vect{a}$,
+  description={First order tensor which describes the acceleration field}
+}
+
+\newglossaryentry{v}
+{
+  name=$\vect{v}$,
+  description={First order tensor which describes the velocity field}
+}
+
+\newglossaryentry{u}
+{
+  name=$\vect{u}$,
+  description={First order tensor which describes the displacement field}
+}
+
+\newglossaryentry{x}
+{
+  name=$\vect{x}$,
+  description={First order tensor which describes the global coordinates field}
+}
+
+\newglossaryentry{xi}
+{
+  name=$\vect{\xi}$,
+  description={First order tensor which describes the local coordinates field}
+}
+
+
+\newglossaryentry{stress}
+{
+  name=$\tens{\sigma}$,
+  description={Second order tensor which means the Cauchy stress tensor}
+}
+
+
+\newglossaryentry{strain}
+{
+  name=$\tens{\varepsilon}$,
+  description={Second order tensor which means the Cauchy strain tensor}
+}
+
+
+\newglossaryentry{Constitutive}
+{
+  name=$\tens{D}$,
+  description={Four order tensor which means the constitutive response
+    of the material}
+}
+
+
+\newglossaryentry{LME-beta}
+{
+  name=$\beta$,
+  description={Regularization or thermalization parameter of the
+    LME$_{\beta}$ Pareto set}
+}
+
+\newacronym{mpm}{MPM}{Material Point Method}
+\newacronym{otm}{OTM}{Optimal Transportation Meshfree}
+\newacronym{sph}{SPH}{Smoothed Particle Hydrodynamics}
+\newacronym{fem}{FEM}{Finite Element Method}
+\newacronym{efgm}{EFGM}{Element-Free Galerkin Method}
+\newacronym{lme}{LME}{Local Maximum-Entropy}
+\newacronym{flip}{FLIP}{Fluid Implicit Particle}
+\newacronym{gimp}{GIMP}{Generalized Interpolation Material Point}
+\newacronym{igimp}{iGIMP}{Implicit GIMP}
+\newacronym{ugimp}{uGIMP}{Uniform GIMP}
+\newacronym{ddmp}{DDMP}{Dual Domain Material Point}
+\newacronym{ctls}{CTLS}{Conservative Taylor Least Squares}
+\newacronym{npc}{NPC}{Newmark Predictor-Corrector}
+\newacronym{fe}{FE}{Forward Euler}
+
+% End glossaries
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 \journal{Engineering Fracture Mechanics}
@@ -105,14 +226,14 @@ and Pedro Navas$^a$\footnote{Corresponding author: p.navas@upm.es}
 \begin{abstract}
   The objective of this work is to introduce an alternative
   technique to address the fracture process of brittle and
-  quasi-brittle materials under the material point method (MPM)
+  quasi-brittle materials under the \acrfull{mpm} 
   framework. With this purpose the eigensoftening algorithm, developed
-  originally for the optimal transportation meshfree (OTM)
-  approximation scheme, is extended to the MPM with the aim of present
-  a suitable alternative to the existing fracture algorithms developed
-  for the MPM. The good fitting in the predictions made by the
-  eigensoftening algorithm against both analytical and experimental
-  results proofs the well performance of the method under challenging loads.
+  originally for the \acrfull{otm} approximation scheme, is extended
+  to the \acrshort{mpm} with the aim of present a suitable alternative to the
+  existing fracture algorithms developed for the \acrshort{mpm}. The good fitting
+  in the predictions made by the eigensoftening algorithm against both
+  analytical and experimental results proofs the well performance of
+  the method under challenging loads.
 \end{abstract}
 
 \begin{keyword}
@@ -127,8 +248,8 @@ Material Point Method \sep Solid Dynamics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{sec:1}
-Presence of cracks are a violation of the continuity requirement of
-the finite element method (FEM). To overcome it, numerous of numerical
+Presence of cracks are a violation of the continuity requirement in
+\acrfull{fem}. To overcome it, numerous of numerical
 artifacts has been proposed with the aim of reproducing  such a
 complex behaviour. This techniques vary from employing cohesive
 approaches \cite{Barenblatt,Hilleborg_1976}, by adaptively inserting
@@ -139,12 +260,10 @@ representation of the fracture surface \cite{Belytschko_03}.
 The simulation of fracture propagation in a more accurate and
 effective way can be considered as one of the original drivers for
 developing novel spatial discretization methods such as meshfree
-techniques. Some examples of it are the material
-point method (MPM) \cite{Schreyer_2002,Chen_2002,Nairn_2003,Zhenmao_2005}, the
-element-free Galerkin method (EFGM) \cite{BELYTSCHKO_1995,BELYTSCHKO_2000,Zhuang_2012,Muthu_2013},
-the smoothed particle hydrodynamics (SPH) \cite{Wang_2020,Wang_2019},
-the optimal transportation meshfree method (OTM)
-\cite{Li2010,Li_2012,Pandolfi_2013,Li_2015} or peridynamics
+techniques. Some examples of it are the \acrfull{mpm}
+\cite{Schreyer_2002,Chen_2002,Nairn_2003,Zhenmao_2005}, the \acrfull{efgm}  \cite{BELYTSCHKO_1995,BELYTSCHKO_2000,Zhuang_2012,Muthu_2013},
+the \acrfull{sph} \cite{Wang_2020,Wang_2019},
+the \acrfull{otm} \cite{Li2010,Li_2012,Pandolfi_2013,Li_2015} or Peridynamics
 \cite{HA_2011,RABCZUK_2017} among others. 
 
 Fracture can be described in two ways. One is to remove the
@@ -188,20 +307,20 @@ eigensoftening. Engineered for quasi-brittle materials, this approach
 is devoted to capture the gradual rather than abrupt dissipation of
 the fracture energy. It is inspired in the concept of the crack band
 model \cite{Bazant83}, since energy dissipation is thorough the
-softened (or failed) volume. Due to the similarities between the OTM, 
-where this procedure was developed, and the MPM, we propose
+softened (or failed) volume. Due to the similarities between the \acrshort{otm}, 
+where this procedure was developed, and the \acrshort{mpm}, we propose
 
 
 The eigensoftening algorithm together with a explicit predictor
 corrector and the local \textit{max-ent} approximation technique
-offers a new perspective in the MPM fracture simulation.
+offers a new perspective in the \acrshort{mpm} fracture simulation.
 
 To overcome the difficulties of the e
 
 In the present research we will introduce the 
 
 In the current work we attempt to model the fracture propagation
-employing the MPM and introducing both eigenerosion and eigensoftening
+employing the \acrshort{mpm} and introducing both eigenerosion and eigensoftening
 \cite{Navas_2017_ES,Navas_2018_ES} and the concept of the
 eigenfracture under this framework.
 
@@ -218,31 +337,30 @@ This document is structured as follows
 \section{The meshfree methodology}
 \label{sec:2}
 The aim of this section is to provide an overview of the special
-techniques employed to face the fracture problem under the MPM
+techniques employed to face the fracture problem under the \acrshort{mpm}
 framework. In consequence it is structured as follows: first in
-\ref{sec:2.1} the explicit-predictor algorithm for the
-MPM will be exposed, next the local \textit{max-ent} approximants are introduced in
+\ref{sec:2.1} the explicit-predictor algorithm for the \acrshort{mpm} will be exposed, next the local \textit{max-ent} approximants are introduced in
 \ref{sec:2.2} as an accurate alternative technique to interpolate data
 between particles and nodes, and finally the fracture algorithms based
 in the eigendeformations are presented in \ref{sec:2.3}.
 
 \subsection{The Material Point Method}
 \label{sec:2.1}
-The MPM~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian method
+The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian method
 where particles carries on all the physical information and a set of
 background nodes is employed to compute the equilibrium
-equation. Since the MPM possesses the advantages of both Lagrangian
-and Eulerian descriptions, no element distortion exists in the MPM,
+equation. Since the \acrshort{mpm} possesses the advantages of both Lagrangian
+and Eulerian descriptions, no element distortion exists in the \acrshort{mpm},
 therefore it is an appropriate and efficient method in solving
 problems involving extremely large deformation and moving
 discontinuities such fracture evolution. For the spatial
 discretization, two sets of points are introduced in 
-the MPM. First, the nodes. This points are considered fixed in the
+the \acrshort{mpm}. First, the nodes. This points are considered fixed in the
 space and are in charge of computing all the kinematic fields such
 forces $f_I$, accelerations $a_I$ and velocities $v_I$. And second the
 material points or particles. They are in charge of the discretization
 of the continuum, and store the local state ($\sigma_p,
-\varepsilon_p$). Without loosing generality, the MPM algorithm
+\varepsilon_p$). Without loosing generality, the \acrshort{mpm} algorithm
 can be described with three main steps: (i) a variational recovery
 process, where particle data is projected to the grid nodes, (ii) an
 Eulerian step, where balance of momentum equation is expressed as a
@@ -313,7 +431,7 @@ definition given by Shannon (1948) \cite{Shannon1948}, and $U(\vec{x}_p,N_I) =
 function width. The regularization o \textit{thermalization} parameter
 between the two criterion $\beta$ has Pareto optimal values in the
 range $(0,\infty)$. The unique solution of the local \textit{max-ent} problem
-(LME)$_\beta$ is,
+ \acrshort{lme}$_\beta$ is,
  \begin{equation}
   \label{eq:LME-p}
 N_I^*(\vec{x})=\frac{\exp\left[ -\beta \; |\vec{x}-\vec{x}_I|^2 +
@@ -354,7 +472,7 @@ expression for the gradient of the shape function.
   \label{eq:LME-gradp} 
 \nabla N^*_I &=& -N^*_I \,  (\tens{J}^*)^{-1} \,  (\vec{x} - \vec{x}_I)
 \end{eqnarray}
-The regularization parameter $\beta$ of LME shape functions may be
+The regularization parameter $\beta$ of \acrshort{lme} shape functions may be
 controlled by adjusting a dimensionless parameter, $\gamma=\beta h^2$
 \cite{Arroyo2006}, where $h$ is defined as a measure of the nodal
 spacing. Since $N_I$ is defined in the entire domain, in practice,
@@ -366,7 +484,7 @@ find the neighbour nodes of a given integration point.
 
 \subsection{Fracture modelling approach}
 \label{sec:2.3}
-Within the context of MPM formulation, fracture can be modelled by
+Within the context of \acrshort{mpm} formulation, fracture can be modelled by
 failing particles according to a suitable criterion. When material
 points are failed, they are assumed to have a null stress
 tensor. Navas {\it et al.} (2017)\cite{Navas_2017_ES} developed a
@@ -536,18 +654,26 @@ variables,
 \section{Cases of study and discussion}
 \label{sec:3}
 
-\subsection{Comparison with analytical solution}
-\label{sec:3.1}
+\subsection{Edge-cracked square panel in mode I}
+\label{sec:edge-cracked-square-I}
 
-\subsection{Brazilian test}
-\label{sec:3.2}
+This problem is devoted to compare the develop of both linear shape
+functions and the \acrshort{lme}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.3\textwidth]{Figures/Brazilian}
-  \caption{Geometry and boundary condition of the Brazilian test.}
-  \label{fig:geometry-brazilian-test}
+  \includegraphics[width=0.8\textwidth]{Figures/Mode_I}
+  \caption{Geometry and boundary condition of the drop-weight impact test.}
+  \label{fig:geometry-cracked-panel-mode-I}
 \end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{Figures/Reactions_displacements_square_panel_mode_I}
+  \caption{Geometry and boundary condition of the drop-weight impact test.}
+  \label{fig:geometry-cracked-panel-mode-I}
+\end{figure}
+
 
 \subsection{Drop-weight impact test}
 \label{sec:3.3}
@@ -566,7 +692,11 @@ variables,
 
 
 \section*{Acknowledgements}
-The first author acknowledges the fellowship Agustín de Betancourt 262390106114.
+The financial support to develop this research from the Ministerio de
+Ciencia e Innovaci\'on, under Grant No. BIA-2016-76253 is greatly
+appreciated. The first and the second authors also acknowledge the
+fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
+(FJCI-2017–31544) respectively.
 
 \appendix
 %\addappheadtotoc

@@ -3,6 +3,8 @@
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("elsarticle" "preprint" "12pt" "a4paper")))
+   (TeX-add-to-alist 'LaTeX-provided-package-options
+                     '(("glossaries" "acronym")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
@@ -28,7 +30,8 @@
     "amsmath"
     "amsthm"
     "amssymb"
-    "xstring")
+    "xstring"
+    "glossaries")
    (TeX-add-symbols
     '("Deriv" ["argument"] 2)
     '("Integral" 2)
@@ -39,7 +42,7 @@
     '("Vector" 1)
     '("Matrix" 1)
     '("tens" 1)
-    '("vec" 1))
+    '("vect" 1))
    (LaTeX-add-labels
     "sec:1"
     "sec:2"
@@ -70,9 +73,8 @@
     "eq:damage-variable-chi-II"
     "eq:damage-variable-chi-III"
     "sec:3"
-    "sec:3.1"
-    "sec:3.2"
-    "fig:geometry-brazilian-test"
+    "sec:edge-cracked-square-I"
+    "fig:geometry-cracked-panel-mode-I"
     "sec:3.3"
     "fig:geometry-drop-weight-impact-test"
     "sec:6"
