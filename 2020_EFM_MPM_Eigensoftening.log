@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  19 MAY 2020 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  19 MAY 2020 23:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -897,20 +897,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 482--501
  []
 
 [6]
-<Particle-failed.png, id=256, 557.2017pt x 521.7894pt>
-File: Particle-failed.png Graphic file (type png)
-<use Particle-failed.png>
-Package pdftex.def Info: Particle-failed.png  used on input line 519.
+<Figure-Particle-failed.png, id=256, 557.2017pt x 521.7894pt>
+File: Figure-Particle-failed.png Graphic file (type png)
+<use Figure-Particle-failed.png>
+Package pdftex.def Info: Figure-Particle-failed.png  used on input line 519.
 (pdftex.def)             Requested size: 195.0pt x 182.60513pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 510--538
 
  []
 
-<Damage.pdf, id=260, 190.95741pt x 161.78944pt>
-File: Damage.pdf Graphic file (type pdf)
-<use Damage.pdf>
-Package pdftex.def Info: Damage.pdf  used on input line 558.
+<Figure-Damage.pdf, id=260, 190.95741pt x 161.78944pt>
+File: Figure-Damage.pdf Graphic file (type pdf)
+<use Figure-Damage.pdf>
+Package pdftex.def Info: Figure-Damage.pdf  used on input line 558.
 (pdftex.def)             Requested size: 195.0pt x 165.21559pt.
 [7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure.
 1}) has been already used, duplicate ignored
@@ -918,59 +918,60 @@ Package pdftex.def Info: Damage.pdf  used on input line 558.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.591 \end{equation}
-                     <./Particle-failed.png>] [9pdfTeX warning (ext4): destinat
-ion with the same identifier (name{figure.2}) has been already used, duplicate 
-ignored
+                     <./Figure-Particle-failed.png>] [9pdfTeX warning (ext4): d
+estination with the same identifier (name{figure.2}) has been already used, dup
+licate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.625  \end{equation}
-                      <./Damage.pdf>]
-<Mode_I.pdf, id=324, 350.46571pt x 400.10464pt>
-File: Mode_I.pdf Graphic file (type pdf)
-<use Mode_I.pdf>
-Package pdftex.def Info: Mode_I.pdf  used on input line 688.
+                      <./Figure-Damage.pdf>]
+<Figure-Mode_I.pdf, id=324, 350.46571pt x 400.10464pt>
+File: Figure-Mode_I.pdf Graphic file (type pdf)
+<use Figure-Mode_I.pdf>
+Package pdftex.def Info: Figure-Mode_I.pdf  used on input line 688.
 (pdftex.def)             Requested size: 155.99762pt x 178.0979pt.
  [10]
-<Reactions_displacements_square_panel_mode_I.png, id=336, 462.528pt x 346.896pt
->
-File: Reactions_displacements_square_panel_mode_I.png Graphic file (type png)
-<use Reactions_displacements_square_panel_mode_I.png>
-Package pdftex.def Info: Reactions_displacements_square_panel_mode_I.png  used 
-on input line 709.
-(pdftex.def)             Requested size: 312.00119pt x 234.01236pt.
-<./Edge_cracked_square_panel_in_mode_I_Stress_0100.png, id=339, 1086.0575pt x 6
-24.3325pt>
-File: ./Edge_cracked_square_panel_in_mode_I_Stress_0100.png Graphic file (type 
-png)
-<use ./Edge_cracked_square_panel_in_mode_I_Stress_0100.png>
-Package pdftex.def Info: ./Edge_cracked_square_panel_in_mode_I_Stress_0100.png 
- used on input line 718.
-(pdftex.def)             Requested size: 272.99881pt x 156.9306pt.
-<./Edge_cracked_square_panel_in_mode_I_Stress_0250.png, id=340, 1086.0575pt x 6
-24.3325pt>
-File: ./Edge_cracked_square_panel_in_mode_I_Stress_0250.png Graphic file (type 
-png)
-<use ./Edge_cracked_square_panel_in_mode_I_Stress_0250.png>
-Package pdftex.def Info: ./Edge_cracked_square_panel_in_mode_I_Stress_0250.png 
- used on input line 719.
-(pdftex.def)             Requested size: 272.99881pt x 156.9306pt.
-<./Edge_cracked_square_panel_in_mode_I_Stress_0398.png, id=341, 1086.0575pt x 6
-24.3325pt>
-File: ./Edge_cracked_square_panel_in_mode_I_Stress_0398.png Graphic file (type 
-png)
-<use ./Edge_cracked_square_panel_in_mode_I_Stress_0398.png>
-Package pdftex.def Info: ./Edge_cracked_square_panel_in_mode_I_Stress_0398.png 
- used on input line 720.
-(pdftex.def)             Requested size: 272.99881pt x 156.9306pt.
 
+./2020_EFM_MPM_Eigensoftening.tex:709: LaTeX Error: File `Figure-Reactions-mode
+-I' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.709 ...h=0.8\textwidth]{Figure-Reactions-mode-I}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./Figure-Stress-0100-mode-I.png, id=338, 1086.0575pt x 624.3325pt>
+File: ./Figure-Stress-0100-mode-I.png Graphic file (type png)
+<use ./Figure-Stress-0100-mode-I.png>
+Package pdftex.def Info: ./Figure-Stress-0100-mode-I.png  used on input line 71
+8.
+(pdftex.def)             Requested size: 272.99881pt x 156.9306pt.
+<./Figure-Stress-0250-mode-I.png, id=339, 1086.0575pt x 624.3325pt>
+File: ./Figure-Stress-0250-mode-I.png Graphic file (type png)
+<use ./Figure-Stress-0250-mode-I.png>
+Package pdftex.def Info: ./Figure-Stress-0250-mode-I.png  used on input line 71
+9.
+(pdftex.def)             Requested size: 272.99881pt x 156.9306pt.
+<./Figure-Stress-0398-mode-I.png, id=340, 1086.0575pt x 624.3325pt>
+File: ./Figure-Stress-0398-mode-I.png Graphic file (type png)
+<use ./Figure-Stress-0398-mode-I.png>
+Package pdftex.def Info: ./Figure-Stress-0398-mode-I.png  used on input line 72
+0.
+(pdftex.def)             Requested size: 272.99881pt x 156.9306pt.
 
 LaTeX Warning: Float too large for page by 1.23625pt on input line 726.
 
-<./Drop_weight.pdf, id=344, 1295.99269pt x 658.31584pt>
-File: ./Drop_weight.pdf Graphic file (type pdf)
-<use ./Drop_weight.pdf>
-Package pdftex.def Info: ./Drop_weight.pdf  used on input line 735.
+<./Figure-Drop-weight.pdf, id=343, 1295.99269pt x 658.31584pt>
+File: ./Figure-Drop-weight.pdf Graphic file (type pdf)
+<use ./Figure-Drop-weight.pdf>
+Package pdftex.def Info: ./Figure-Drop-weight.pdf  used on input line 735.
 (pdftex.def)             Requested size: 312.00119pt x 158.48119pt.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
@@ -981,28 +982,26 @@ Missing character: There is no “ in font cmr12!
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.752 
-       <./Mode_I.pdf>] [12pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.4}) has been already used, duplicate ignored
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.752 
+       <./Figure-Mode_I.pdf>] [12pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.752 
+       <./Figure-Stress-0100-mode-I.png> <./Figure-Stress-0250-mode-I.png> <./F
+igure-Stress-0398-mode-I.png>] [13pdfTeX warning (ext4): destination with the s
+ame identifier (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.758 \clearpage
-                 <./Reactions_displacements_square_panel_mode_I.png>] [13pdfTeX
- warning (ext4): destination with the same identifier (name{figure.5}) has been
- already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.758 \clearpage
-                 <./Edge_cracked_square_panel_in_mode_I_Stress_0100.png> <./Edg
-e_cracked_square_panel_in_mode_I_Stress_0250.png> <./Edge_cracked_square_panel_
-in_mode_I_Stress_0398.png>] [14pdfTeX warning (ext4): destination with the same
- identifier (name{figure.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.758 \clearpage
-                 <./Drop_weight.pdf>]
+                 <./Figure-Drop-weight.pdf>]
 
 ./2020_EFM_MPM_Eigensoftening.tex:765: LaTeX Error: \thealgorithm undefined.
 
@@ -1195,9 +1194,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--71
 science / article / pii /
  []
 
-[15
+[14
 
-] [16pdfTeX warning (ext4): destination with the same identifier (name{algocf.1
+] [15pdfTeX warning (ext4): destination with the same identifier (name{algocf.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1221,7 +1220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--81
 science / article / pii /
  []
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{algocf.2})
+[16pdfTeX warning (ext4): destination with the same identifier (name{algocf.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1281,7 +1280,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--157
 science / article / pii /
  []
 
-[18]
+[17]
 ./2020_EFM_MPM_Eigensoftening.bbl:160: Misplaced alignment tab character &.
 l.160 ...ethod, Computer Modeling in Engineering &
                                                    Sciences 16.
@@ -1335,14 +1334,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--208
  / doi / abs / 10 . 1002 / nme .
  []
 
-[19])
+[18])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 864.
-[20]
+[19]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 864.
  (./2020_EFM_MPM_Eigensoftening.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 864.
@@ -1360,10 +1359,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 864.
  ) 
 Here is how much of TeX's memory you used:
- 14011 strings out of 492982
- 208937 string characters out of 6134895
- 378040 words of memory out of 5000000
- 17196 multiletter control sequences out of 15000+600000
+ 14018 strings out of 492982
+ 208563 string characters out of 6134895
+ 377040 words of memory out of 5000000
+ 17192 multiletter control sequences out of 15000+600000
  14314 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,21n,38p,1992b,650s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1411,10 +1410,10 @@ type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb>
-Output written on 2020_EFM_MPM_Eigensoftening.pdf (20 pages, 555371 bytes).
+Output written on 2020_EFM_MPM_Eigensoftening.pdf (19 pages, 513616 bytes).
 PDF statistics:
- 615 PDF objects out of 1000 (max. 8388607)
- 551 compressed objects within 6 object streams
- 133 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 547 compressed objects within 6 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
