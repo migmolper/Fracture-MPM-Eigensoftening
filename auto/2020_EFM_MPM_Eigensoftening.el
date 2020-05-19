@@ -2,15 +2,15 @@
  "2020_EFM_MPM_Eigensoftening"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("elsarticle" "12pt" "a4paper")))
+                     '(("elsarticle" "preprint" "12pt" "a4paper")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("amsmath" "fleqn" "tbtags") ("algorithm2e" "linesnumbered" "ruled" "vlined") ("glossaries" "acronym")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -81,6 +81,6 @@
     "sec:eigens-algor-1"
     "alg-eigens")
    (LaTeX-add-bibliographies
-    "Biblio/Biblio"))
+    "Biblio"))
  :latex)
 

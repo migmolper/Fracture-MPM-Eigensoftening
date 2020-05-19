@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  19 MAY 2020 21:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  19 MAY 2020 23:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -441,10 +441,10 @@ Package: relsize 2013/03/29 ver 4.1
 \algocf@algoframe=\box41
 \algocf@algobox=\box42
 )
-./2020_EFM_MPM_Eigensoftening.tex:58: Undefined control sequence.
+./2020_EFM_MPM_Eigensoftening.tex:57: Undefined control sequence.
 <recently read> \algnewcommand 
                                
-l.58 \algnewcommand
+l.57 \algnewcommand
                    \INPUT{\item[\textbf{Input:}]}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -452,14 +452,62 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:58: Undefined control sequence.
-l.58 \algnewcommand\INPUT
+./2020_EFM_MPM_Eigensoftening.tex:57: Undefined control sequence.
+l.57 \algnewcommand\INPUT
                          {\item[\textbf{Input:}]}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:57: LaTeX Error: Lonely \item--perhaps a miss
+ing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \algnewcommand\INPUT{\item[\textbf{Input:}]
+                                                }%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][]
+ []
+
+./2020_EFM_MPM_Eigensoftening.tex:58: Undefined control sequence.
+l.58 \algnewcommand
+                   \OUTPUT{\item[\textbf{Output:}]}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./2020_EFM_MPM_Eigensoftening.tex:58: Undefined control sequence.
+l.58 \algnewcommand\OUTPUT
+                          {\item[\textbf{Output:}]}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:58: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \algnewcommand\OUTPUT{\item[\textbf{Output:}]
+                                                  }%
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 ./2020_EFM_MPM_Eigensoftening.tex:58: LaTeX Error: Lonely \item--perhaps a miss
@@ -469,61 +517,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58 \algnewcommand\INPUT{\item[\textbf{Input:}]
-                                                }%
+l.58 \algnewcommand\OUTPUT{\item[\textbf{Output:}]
+                                                  }%
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 Underfull \hbox (badness 10000) detected at line 58
-[][]
- []
-
-./2020_EFM_MPM_Eigensoftening.tex:59: Undefined control sequence.
-l.59 \algnewcommand
-                   \OUTPUT{\item[\textbf{Output:}]}%
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./2020_EFM_MPM_Eigensoftening.tex:59: Undefined control sequence.
-l.59 \algnewcommand\OUTPUT
-                          {\item[\textbf{Output:}]}%
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./2020_EFM_MPM_Eigensoftening.tex:59: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59 \algnewcommand\OUTPUT{\item[\textbf{Output:}]
-                                                  }%
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./2020_EFM_MPM_Eigensoftening.tex:59: LaTeX Error: Lonely \item--perhaps a miss
-ing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59 \algnewcommand\OUTPUT{\item[\textbf{Output:}]
-                                                  }%
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 59
 [][]
  []
 
@@ -698,12 +698,12 @@ Package: glossary-tree 2017/11/14 v4.35 (NLCT)
 \openout6 = `2020_EFM_MPM_Eigensoftening.glo'.
 
 Package glossaries Info: Writing glossary file 2020_EFM_MPM_Eigensoftening.glo 
-on input line 65.
+on input line 64.
 \glo@acronym@file=\write7
 \openout7 = `2020_EFM_MPM_Eigensoftening.acn'.
 
 Package glossaries Info: Writing glossary file 2020_EFM_MPM_Eigensoftening.acn 
-on input line 65.
+on input line 64.
 
 (./2020_EFM_MPM_Eigensoftening.aux
 
@@ -712,20 +712,20 @@ LaTeX Warning: Label `fig:Damage-ft-wc' multiply defined.
 )
 \openout1 = `2020_EFM_MPM_Eigensoftening.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count167
@@ -757,7 +757,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring OFF on input line 215.
+Package hyperref Info: Link coloring OFF on input line 214.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -767,9 +767,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count173
 )
-LaTeX Info: Redefining \ref on input line 215.
-LaTeX Info: Redefining \pageref on input line 215.
-LaTeX Info: Redefining \nameref on input line 215.
+LaTeX Info: Redefining \ref on input line 214.
+LaTeX Info: Redefining \pageref on input line 214.
+LaTeX Info: Redefining \nameref on input line 214.
 
 (./2020_EFM_MPM_Eigensoftening.out) (./2020_EFM_MPM_Eigensoftening.out)
 \@outlinefile=\write8
@@ -778,76 +778,76 @@ LaTeX Info: Redefining \nameref on input line 215.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 254.
+(hyperref)                removing `superscript' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 254.
+(hyperref)                removing `\@ifnextchar' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 254.
+(hyperref)                removing `superscript' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 254.
+(hyperref)                removing `\@ifnextchar' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 254.
+(hyperref)                removing `superscript' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 254.
+(hyperref)                removing `superscript' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 253.
 
 [1
 
 \openout5 = `2020_EFM_MPM_Eigensoftening.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 254.
+LaTeX Font Info:    Try loading font information for U+msa on input line 253.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 254.
+LaTeX Font Info:    Try loading font information for U+msb on input line 253.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 261--277
+Underfull \hbox (badness 10000) in paragraph at lines 260--276
 
  []
 
@@ -859,119 +859,118 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 278--301
+Underfull \hbox (badness 10000) in paragraph at lines 277--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--319
+Underfull \hbox (badness 10000) in paragraph at lines 301--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--331
+Underfull \hbox (badness 10000) in paragraph at lines 319--330
 
  []
 
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 351.
+(hyperref)                removing `\acrshort' on input line 350.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrlong' on input line 351.
+(hyperref)                removing `\acrlong' on input line 350.
 
 [4]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrlong' on input line 403.
+(hyperref)                removing `\acrlong' on input line 402.
 
 
 LaTeX Warning: Reference `eq:LME-scheme-pareto-set' on page 5 undefined on inpu
-t line 438.
+t line 437.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 483--502
+Underfull \hbox (badness 10000) in paragraph at lines 482--501
 
  []
 
 [6]
-<Figures/Particle-failed.png, id=256, 557.2017pt x 521.7894pt>
-File: Figures/Particle-failed.png Graphic file (type png)
-<use Figures/Particle-failed.png>
-Package pdftex.def Info: Figures/Particle-failed.png  used on input line 520.
+<Particle-failed.png, id=256, 557.2017pt x 521.7894pt>
+File: Particle-failed.png Graphic file (type png)
+<use Particle-failed.png>
+Package pdftex.def Info: Particle-failed.png  used on input line 519.
 (pdftex.def)             Requested size: 195.0pt x 182.60513pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--539
+Underfull \hbox (badness 10000) in paragraph at lines 510--538
 
  []
 
-<Figures/Damage.pdf, id=260, 190.95741pt x 161.78944pt>
-File: Figures/Damage.pdf Graphic file (type pdf)
-<use Figures/Damage.pdf>
-Package pdftex.def Info: Figures/Damage.pdf  used on input line 559.
+<Damage.pdf, id=260, 190.95741pt x 161.78944pt>
+File: Damage.pdf Graphic file (type pdf)
+<use Damage.pdf>
+Package pdftex.def Info: Damage.pdf  used on input line 558.
 (pdftex.def)             Requested size: 195.0pt x 165.21559pt.
 [7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.592 \end{equation}
-                     <./Figures/Particle-failed.png>] [9pdfTeX warning (ext4): 
-destination with the same identifier (name{figure.2}) has been already used, du
-plicate ignored
+l.591 \end{equation}
+                     <./Particle-failed.png>] [9pdfTeX warning (ext4): destinat
+ion with the same identifier (name{figure.2}) has been already used, duplicate 
+ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.626  \end{equation}
-                      <./Figures/Damage.pdf>]
-<Figures/Mode_I.pdf, id=324, 350.46571pt x 400.10464pt>
-File: Figures/Mode_I.pdf Graphic file (type pdf)
-<use Figures/Mode_I.pdf>
-Package pdftex.def Info: Figures/Mode_I.pdf  used on input line 689.
+l.625  \end{equation}
+                      <./Damage.pdf>]
+<Mode_I.pdf, id=324, 350.46571pt x 400.10464pt>
+File: Mode_I.pdf Graphic file (type pdf)
+<use Mode_I.pdf>
+Package pdftex.def Info: Mode_I.pdf  used on input line 688.
 (pdftex.def)             Requested size: 155.99762pt x 178.0979pt.
  [10]
-<Figures/Reactions_displacements_square_panel_mode_I.png, id=336, 462.528pt x 3
-46.896pt>
-File: Figures/Reactions_displacements_square_panel_mode_I.png Graphic file (typ
-e png)
-<use Figures/Reactions_displacements_square_panel_mode_I.png>
-Package pdftex.def Info: Figures/Reactions_displacements_square_panel_mode_I.pn
-g  used on input line 710.
+<Reactions_displacements_square_panel_mode_I.png, id=336, 462.528pt x 346.896pt
+>
+File: Reactions_displacements_square_panel_mode_I.png Graphic file (type png)
+<use Reactions_displacements_square_panel_mode_I.png>
+Package pdftex.def Info: Reactions_displacements_square_panel_mode_I.png  used 
+on input line 709.
 (pdftex.def)             Requested size: 312.00119pt x 234.01236pt.
-<./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0100.png, id=339, 1086.05
-75pt x 624.3325pt>
-File: ./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0100.png Graphic fil
-e (type png)
-<use ./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0100.png>
-Package pdftex.def Info: ./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0
-100.png  used on input line 719.
+<./Edge_cracked_square_panel_in_mode_I_Stress_0100.png, id=339, 1086.0575pt x 6
+24.3325pt>
+File: ./Edge_cracked_square_panel_in_mode_I_Stress_0100.png Graphic file (type 
+png)
+<use ./Edge_cracked_square_panel_in_mode_I_Stress_0100.png>
+Package pdftex.def Info: ./Edge_cracked_square_panel_in_mode_I_Stress_0100.png 
+ used on input line 718.
 (pdftex.def)             Requested size: 272.99881pt x 156.9306pt.
-<./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0250.png, id=340, 1086.05
-75pt x 624.3325pt>
-File: ./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0250.png Graphic fil
-e (type png)
-<use ./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0250.png>
-Package pdftex.def Info: ./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0
-250.png  used on input line 720.
+<./Edge_cracked_square_panel_in_mode_I_Stress_0250.png, id=340, 1086.0575pt x 6
+24.3325pt>
+File: ./Edge_cracked_square_panel_in_mode_I_Stress_0250.png Graphic file (type 
+png)
+<use ./Edge_cracked_square_panel_in_mode_I_Stress_0250.png>
+Package pdftex.def Info: ./Edge_cracked_square_panel_in_mode_I_Stress_0250.png 
+ used on input line 719.
 (pdftex.def)             Requested size: 272.99881pt x 156.9306pt.
-<./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0398.png, id=341, 1086.05
-75pt x 624.3325pt>
-File: ./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0398.png Graphic fil
-e (type png)
-<use ./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0398.png>
-Package pdftex.def Info: ./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0
-398.png  used on input line 721.
+<./Edge_cracked_square_panel_in_mode_I_Stress_0398.png, id=341, 1086.0575pt x 6
+24.3325pt>
+File: ./Edge_cracked_square_panel_in_mode_I_Stress_0398.png Graphic file (type 
+png)
+<use ./Edge_cracked_square_panel_in_mode_I_Stress_0398.png>
+Package pdftex.def Info: ./Edge_cracked_square_panel_in_mode_I_Stress_0398.png 
+ used on input line 720.
 (pdftex.def)             Requested size: 272.99881pt x 156.9306pt.
 
 
-LaTeX Warning: Float too large for page by 1.23625pt on input line 727.
+LaTeX Warning: Float too large for page by 1.23625pt on input line 726.
 
-<Figures/Drop_weight.pdf, id=344, 1295.99269pt x 658.31584pt>
-File: Figures/Drop_weight.pdf Graphic file (type pdf)
-<use Figures/Drop_weight.pdf>
-Package pdftex.def Info: Figures/Drop_weight.pdf  used on input line 736.
+<./Drop_weight.pdf, id=344, 1295.99269pt x 658.31584pt>
+File: ./Drop_weight.pdf Graphic file (type pdf)
+<use ./Drop_weight.pdf>
+Package pdftex.def Info: ./Drop_weight.pdf  used on input line 735.
 (pdftex.def)             Requested size: 312.00119pt x 158.48119pt.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
@@ -981,58 +980,57 @@ Missing character: There is no “ in font cmr12!
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.753 
-       <./Figures/Mode_I.pdf>] [12pdfTeX warning (ext4): destination with the s
-ame identifier (name{figure.4}) has been already used, duplicate ignored
+l.752 
+       <./Mode_I.pdf>] [12pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.759 \clearpage
-                 <./Figures/Reactions_displacements_square_panel_mode_I.png>]
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
- has been already used, duplicate ignored
+l.758 \clearpage
+                 <./Reactions_displacements_square_panel_mode_I.png>] [13pdfTeX
+ warning (ext4): destination with the same identifier (name{figure.5}) has been
+ already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.759 \clearpage
-                 <./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0100.png
-> <./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0250.png> <./Figures/Ed
-ge_cracked_square_panel_in_mode_I_Stress_0398.png>] [14pdfTeX warning (ext4): d
-estination with the same identifier (name{figure.6}) has been already used, dup
-licate ignored
+l.758 \clearpage
+                 <./Edge_cracked_square_panel_in_mode_I_Stress_0100.png> <./Edg
+e_cracked_square_panel_in_mode_I_Stress_0250.png> <./Edge_cracked_square_panel_
+in_mode_I_Stress_0398.png>] [14pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.759 \clearpage
-                 <./Figures/Drop_weight.pdf>]
+l.758 \clearpage
+                 <./Drop_weight.pdf>]
 
-./2020_EFM_MPM_Eigensoftening.tex:766: LaTeX Error: \thealgorithm undefined.
+./2020_EFM_MPM_Eigensoftening.tex:765: LaTeX Error: \thealgorithm undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.766   \renewcommand{\thealgorithm}
+l.765   \renewcommand{\thealgorithm}
                                     {}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:768: LaTeX Error: Environment algorithmic und
+./2020_EFM_MPM_Eigensoftening.tex:767: LaTeX Error: Environment algorithmic und
 efined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.768   \begin{algorithmic}
+l.767   \begin{algorithmic}
                            [1]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./2020_EFM_MPM_Eigensoftening.tex:770: Undefined control sequence.
-l.770     \STATE
+./2020_EFM_MPM_Eigensoftening.tex:769: Undefined control sequence.
+l.769     \STATE
                  \textbf{Update mass matrix}:
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1040,8 +1038,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:775: Undefined control sequence.
-l.775     \STATE
+./2020_EFM_MPM_Eigensoftening.tex:774: Undefined control sequence.
+l.774     \STATE
                  \textbf{Explicit Newmark Predictor}:\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1049,8 +1047,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:780: Undefined control sequence.
-l.780     \STATE
+./2020_EFM_MPM_Eigensoftening.tex:779: Undefined control sequence.
+l.779     \STATE
                  \textbf{Impose essential boundary conditions}:\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1058,8 +1056,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:783: Undefined control sequence.
-l.783     \STATE
+./2020_EFM_MPM_Eigensoftening.tex:782: Undefined control sequence.
+l.782     \STATE
                  \textbf{Deformation tensor increment calculation}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1067,8 +1065,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:790: Undefined control sequence.
-l.790     \STATE
+./2020_EFM_MPM_Eigensoftening.tex:789: Undefined control sequence.
+l.789     \STATE
                  \textbf{Update the density field}:
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1076,8 +1074,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:795: Undefined control sequence.
-l.795     \STATE
+./2020_EFM_MPM_Eigensoftening.tex:794: Undefined control sequence.
+l.794     \STATE
                  \textbf{Compute stress field and update damage parameter}:\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1085,10 +1083,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:797: Undefined control sequence.
+./2020_EFM_MPM_Eigensoftening.tex:796: Undefined control sequence.
 <recently read> \STATE 
                        
-l.797     \STATE
+l.796     \STATE
                  \textbf{Balance of forces calculation}:\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1096,8 +1094,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:801: Undefined control sequence.
-l.801     \STATE
+./2020_EFM_MPM_Eigensoftening.tex:800: Undefined control sequence.
+l.800     \STATE
                  \textbf{Explicit Newmark Corrector}:\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1105,8 +1103,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:806: Undefined control sequence.
-l.806     \STATE
+./2020_EFM_MPM_Eigensoftening.tex:805: Undefined control sequence.
+l.805     \STATE
                  \textbf{Update particles lagrangian quantities}:
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1114,8 +1112,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:818: Undefined control sequence.
-l.818     \STATE
+./2020_EFM_MPM_Eigensoftening.tex:817: Undefined control sequence.
+l.817     \STATE
                  \textbf{Reset nodal values}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1124,24 +1122,24 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./2020_EFM_MPM_Eigensoftening.tex:819: LaTeX Error: \begin{lrbox} on input line
- 765 ended by \end{algorithmic}.
+./2020_EFM_MPM_Eigensoftening.tex:818: LaTeX Error: \begin{lrbox} on input line
+ 764 ended by \end{algorithmic}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.819   \end{algorithmic}
+l.818   \end{algorithmic}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Float too large for page by 9.82542pt on input line 820.
+LaTeX Warning: Float too large for page by 9.82542pt on input line 819.
 
-./2020_EFM_MPM_Eigensoftening.tex:828: Undefined control sequence.
-l.828   \KwInput
+./2020_EFM_MPM_Eigensoftening.tex:827: Undefined control sequence.
+l.827   \KwInput
                 {For each $p$, $\epsilon$-neighbourhood, $f_{t,p}$, $h_{\eps...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1149,8 +1147,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:829: Undefined control sequence.
-l.829   \KwOutput
+./2020_EFM_MPM_Eigensoftening.tex:828: Undefined control sequence.
+l.828   \KwOutput
                  {Return damage parameter $\chi := \{\chi_p\}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1158,10 +1156,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:858: Undefined control sequence.
+./2020_EFM_MPM_Eigensoftening.tex:857: Undefined control sequence.
 <argument> $\chi _p = 0$ \AND 
                               $\epsilon _{f,p} = 0$
-l.858   \caption
+l.857   \caption
                 {Compute damage parameter $\chi_p^{k+1}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1169,10 +1167,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:858: Undefined control sequence.
+./2020_EFM_MPM_Eigensoftening.tex:857: Undefined control sequence.
 <argument> $\chi _p \neq 1$ \AND 
                                  $\epsilon _{f,p} > 0$
-l.858   \caption
+l.857   \caption
                 {Compute damage parameter $\chi_p^{k+1}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1343,12 +1341,12 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 865.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 864.
 [20]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 865.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 864.
  (./2020_EFM_MPM_Eigensoftening.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 865.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 865.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 864.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 864.
 Package rerunfilecheck Info: File `2020_EFM_MPM_Eigensoftening.out' has not cha
 nged.
 (rerunfilecheck)             Checksum: 7E9B762C9C4F0FE432E8ABC3F38882F4;771.
@@ -1359,13 +1357,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 865.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 864.
  ) 
 Here is how much of TeX's memory you used:
  14011 strings out of 492982
- 209162 string characters out of 6134895
- 377823 words of memory out of 5000000
- 17194 multiletter control sequences out of 15000+600000
+ 208937 string characters out of 6134895
+ 378040 words of memory out of 5000000
+ 17196 multiletter control sequences out of 15000+600000
  14314 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,21n,38p,1992b,650s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1413,7 +1411,7 @@ type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb>
-Output written on 2020_EFM_MPM_Eigensoftening.pdf (20 pages, 555398 bytes).
+Output written on 2020_EFM_MPM_Eigensoftening.pdf (20 pages, 555371 bytes).
 PDF statistics:
  615 PDF objects out of 1000 (max. 8388607)
  551 compressed objects within 6 object streams
