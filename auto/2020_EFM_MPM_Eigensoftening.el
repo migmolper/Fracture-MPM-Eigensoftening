@@ -2,9 +2,9 @@
  "2020_EFM_MPM_Eigensoftening"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("elsarticle" "preprint" "12pt" "a4paper")))
+                     '(("elsarticle" "12pt" "a4paper")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("glossaries" "acronym")))
+                     '(("amsmath" "fleqn" "tbtags") ("algorithm2e" "linesnumbered" "ruled" "vlined") ("glossaries" "acronym")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
@@ -19,18 +19,17 @@
     "lineno"
     "hyperref"
     "float"
-    "subfig"
+    "graphicx"
+    "subfigure"
     "color"
     "soul"
-    "algcompatible"
-    "algorithm"
-    "algorithmic"
-    "algpseudocode"
     "cancel"
     "amsmath"
+    "mathtools"
     "amsthm"
     "amssymb"
     "xstring"
+    "algorithm2e"
     "glossaries")
    (TeX-add-symbols
     '("Deriv" ["argument"] 2)
@@ -54,11 +53,9 @@
     "eq:LME-scheme-pareto-set"
     "eq:LME-p"
     "eq:LME-Z"
+    "eq:LME-gradp"
     "eq:LME-J"
     "eq:LME-r"
-    "eq:LME-grad-p"
-    "eq:LME-f"
-    "eq:LME-gradp"
     "sec:2.3"
     "eq:energy-release-EE"
     "fig:Failed-particles"
@@ -75,9 +72,11 @@
     "sec:3"
     "sec:edge-cracked-square-I"
     "fig:geometry-cracked-panel-mode-I"
+    "fig:Reactions-cracked-panel-mode-I"
+    "fig:Stress-cracked-panel-mode-I"
     "sec:3.3"
     "fig:geometry-drop-weight-impact-test"
-    "sec:6"
+    "sec:4"
     "sec:expl-pred-corr"
     "sec:eigens-algor-1"
     "alg-eigens")

@@ -34,6 +34,31 @@ T.~Belytschko, H.~Chen, J.~Xu, G.~Zi, Dynamic crack propagation based on loss
   of hyperbolicity and a new discontinuous enrichment., International Journal
   for Numerical Methods in Engineering. 58 (2003) 1873--1905.
 
+\bibitem{Schreyer_2002}
+
+
+\bibitem{Chen_2002}
+Z.~Chen, W.~Hu, L.~Shen, X.~An, R.~Brannon, An evaluation of the mpm for
+  simulating dynamic failure with damage diffusion, Engineering Fracture
+  Mechanics 69 (2002) 1873--1890.
+\newblock \href {http://dx.doi.org/10.1016/S0013-7944(02)00066-8}
+  {\path{doi:10.1016/S0013-7944(02)00066-8}}.
+
+\bibitem{Nairn_2003}
+J.~Nairn, \href{http://www.techscience.com/CMES/v4n6/33290}{Material point
+  method calculations with explicit cracks}, Computer Modeling in Engineering
+  \& Sciences 4~(6) (2003) 649--664.
+\newblock \href {http://dx.doi.org/10.3970/cmes.2003.004.649}
+  {\path{doi:10.3970/cmes.2003.004.649}}.
+\newline\urlprefix\url{http://www.techscience.com/CMES/v4n6/33290}
+
+\bibitem{Zhenmao_2005}
+Z.~Chen, L.~Shen, Y.-W. Mai, Y.-G. Shen, A bifurcation-based decohesion model
+  for simulating the transition from localization to decohesion with the mpm,
+  Zeitschrift fur Angewandte Mathematik und Physik 56 (2005) 908--930.
+\newblock \href {http://dx.doi.org/10.1007/s00033-005-3011-0}
+  {\path{doi:10.1007/s00033-005-3011-0}}.
+
 \bibitem{BELYTSCHKO_1995}
 T.~Belytschko, Y.~Lu, L.~Gu, M.~Tabbara,
   \href{http://www.sciencedirect.com/science/article/pii/0020768394002822}{Element-free
@@ -134,14 +159,6 @@ T.~Rabczuk, H.~Ren,
 Y.~GUO, J.~Nairn, Three-dimensional dynamic fracture analysis using the
   material point method, Computer Modeling in Engineering & Sciences 16.
 
-\bibitem{Nairn_2003}
-J.~Nairn, \href{http://www.techscience.com/CMES/v4n6/33290}{Material point
-  method calculations with explicit cracks}, Computer Modeling in Engineering
-  \& Sciences 4~(6) (2003) 649--664.
-\newblock \href {http://dx.doi.org/10.3970/cmes.2003.004.649}
-  {\path{doi:10.3970/cmes.2003.004.649}}.
-\newline\urlprefix\url{http://www.techscience.com/CMES/v4n6/33290}
-
 \bibitem{Nairn_2002}
 H.~Tan, J.~Nairn, Hierarchical, adaptive, material point method for dynamic
   energy release rate calculations, Computer Methods in Applied Mechanics and
@@ -153,23 +170,6 @@ H.~Tan, J.~Nairn, Hierarchical, adaptive, material point method for dynamic
 Y.~GUO, J.~Nairn, Calculation of j-integral and stress intensity factors using
   the material point method, CMES. Computer Modeling in Engineering & Sciences
   6.
-
-\bibitem{Zhenmao_2005}
-Z.~Chen, L.~Shen, Y.-W. Mai, Y.-G. Shen, A bifurcation-based decohesion model
-  for simulating the transition from localization to decohesion with the mpm,
-  Zeitschrift fur Angewandte Mathematik und Physik 56 (2005) 908--930.
-\newblock \href {http://dx.doi.org/10.1007/s00033-005-3011-0}
-  {\path{doi:10.1007/s00033-005-3011-0}}.
-
-\bibitem{Schreyer_2002}
-
-
-\bibitem{Chen_2002}
-Z.~Chen, W.~Hu, L.~Shen, X.~An, R.~Brannon, An evaluation of the mpm for
-  simulating dynamic failure with damage diffusion, Engineering Fracture
-  Mechanics 69 (2002) 1873--1890.
-\newblock \href {http://dx.doi.org/10.1016/S0013-7944(02)00066-8}
-  {\path{doi:10.1016/S0013-7944(02)00066-8}}.
 
 \bibitem{Chen_2003}
 Z.~Chen, R.~Feng, X.~An, L.~Shen, A computational model for impact failure with
@@ -185,11 +185,6 @@ S.~DL, L.~Schreyer, Mpm simulation of dynamic material failure with a
 \newblock \href {http://dx.doi.org/10.1016/j.euromechsol.2004.02.007}
   {\path{doi:10.1016/j.euromechsol.2004.02.007}}.
 
-\bibitem{Belytschko_04}
-T.~Rabczuk, T.~Belytschko, Cracking particles: a simplified meshfree method for
-  arbitrary evolving cracks., International Journal for Numerical Methods in
-  Engineering. 61 (2004) 2316--2343.
-
 \bibitem{Schmidt_2009}
 B.~Schmidt, F.~Fraternali, M.~Ortiz, Eigenfracture: an eigendeformation
   approach to variational fracture., SIAM J. Multiscale Model. Simul. 7 (2009)
@@ -200,18 +195,46 @@ A.~Pandolfi, M.~Ortiz, An eigenerosion approach to brittle fracture.,
   International Journal for Numerical Methods in Engineering 92 (2012)
   694--714.
 
-\bibitem{Sulsky1994}
-D.~L. Sulsky, H.~Schreyer, Z.~Chen, {A particle method for history-dependent
-  materials}, {Computer Methods in Applied Mechanics and Engineering} 118~(1)
-  (1994) 179--196.
-\newblock \href {http://dx.doi.org/10.1016/0045-7825(94)90112-0}
-  {\path{doi:10.1016/0045-7825(94)90112-0}}.
+\bibitem{Zhang_EE_2020}
+K.~Zhang, S.-L. Shen, A.~Zhou,
+  \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.6381}{Dynamic
+  brittle fracture with eigenerosion enhanced material point method},
+  International Journal for Numerical Methods in Engineering n/a~(n/a).
+\newblock \href
+  {http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.6381}
+  {\path{arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.6381}},
+  \href {http://dx.doi.org/10.1002/nme.6381} {\path{doi:10.1002/nme.6381}}.
+\newline\urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.6381}
+
+\bibitem{Navas_2017_ES}
+P.~Navas, R.~Yu, B.~Li, G.~Ruiz, Modeling the dynamic fracture in concrete: an
+  eigensoftening meshfree approach, International Journal of Impact Engineering
+  113.
+\newblock \href {http://dx.doi.org/10.1016/j.ijimpeng.2017.11.004}
+  {\path{doi:10.1016/j.ijimpeng.2017.11.004}}.
+
+\bibitem{Navas2018a}
+P.~Navas, S.~L{\'{o}}pez-Querol, R.~C. Yu, M.~Pastor, {Optimal transportation
+  meshfree method in geotechnical engineering problems under large deformation
+  regime}, International Journal for Numerical Methods in Engineering\href
+  {http://dx.doi.org/10.1002/nme.5841} {\path{doi:10.1002/nme.5841}}.
+
+\bibitem{Bazant83}
+Z.~Ba\v{z}ant, B.~Oh, Crack band theory for fracture in concrete., Materials
+  and Structures. 16 (1983) 155--177.
 
 \bibitem{Arroyo2006}
 M.~Arroyo, M.~Ortiz, {Local maximum-entropy approximation schemes: A seamless
   bridge between finite elements and meshfree methods}, International Journal
   for Numerical Methods in Engineering\href
   {http://dx.doi.org/10.1002/nme.1534} {\path{doi:10.1002/nme.1534}}.
+
+\bibitem{Sulsky1994}
+D.~L. Sulsky, H.~Schreyer, Z.~Chen, {A particle method for history-dependent
+  materials}, {Computer Methods in Applied Mechanics and Engineering} 118~(1)
+  (1994) 179--196.
+\newblock \href {http://dx.doi.org/10.1016/0045-7825(94)90112-0}
+  {\path{doi:10.1016/0045-7825(94)90112-0}}.
 
 \bibitem{Jaynes1957}
 E.~Jaynes, {Information Theory and Statistical Mechanics}, The Physical Review
@@ -222,21 +245,16 @@ C.~E. Shannon, {A Mathematical Theory of Communication}, Bell System Technical
   Journal\href {http://dx.doi.org/10.1002/j.1538-7305.1948.tb01338.x}
   {\path{doi:10.1002/j.1538-7305.1948.tb01338.x}}.
 
-\bibitem{Navas_2017_ES}
-P.~Navas, R.~Yu, B.~Li, G.~Ruiz, Modeling the dynamic fracture in concrete: an
-  eigensoftening meshfree approach, International Journal of Impact Engineering
-  113.
-\newblock \href {http://dx.doi.org/10.1016/j.ijimpeng.2017.11.004}
-  {\path{doi:10.1016/j.ijimpeng.2017.11.004}}.
-
 \bibitem{Navas_2018_ES}
 P.~Navas, R.~Yu, G.~Ruiz, Meshfree modeling of the dynamic mixed-mode fracture
   in frc through an eigensoftening approach, Engineering Structures 172.
 \newblock \href {http://dx.doi.org/10.1016/j.engstruct.2018.06.010}
   {\path{doi:10.1016/j.engstruct.2018.06.010}}.
 
-\bibitem{Bazant83}
-Z.~Ba\v{z}ant, B.~Oh, Crack band theory for fracture in concrete., Materials
-  and Structures. 16 (1983) 155--177.
+\bibitem{Wobbes2020}
+E.~Wobbes, R.~Tielen, M.~M{\"{o}}ller, C.~Vuik, {Comparison and unification of
+  material-point and optimal transportation meshfree methods}, Computational
+  Particle Mechanics\href {http://dx.doi.org/10.1007/s40571-020-00316-7}
+  {\path{doi:10.1007/s40571-020-00316-7}}.
 
 \end{thebibliography}

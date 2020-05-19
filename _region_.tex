@@ -1,22 +1,20 @@
-\message{ !name(2020_EFM_MPM_Eigensoftening.tex)}\documentclass[preprint,12pt,a4paper]{elsarticle}
-
-\usepackage{lineno,hyperref}
+\message{ !name(2020_EFM_MPM_Eigensoftening.tex)}% \documentclass[preprint,12pt,a4paper]{elsarticle}
+\documentclass[12pt,a4paper]{elsarticle}
+\usepackage{lineno}
+\usepackage{hyperref}
 \usepackage{float}
 \usepackage{subfig}
+\usepackage{subfigure} % subfiguras
 \usepackage{color}
 \usepackage{soul}
-
-\usepackage{algcompatible}
-\usepackage{algorithm}
-\usepackage{algorithmic}
-\usepackage{algpseudocode}
-
 \usepackage{cancel}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Init macros math
 
-\usepackage{amsmath,amsthm,amssymb}
+\usepackage[fleqn,tbtags]{amsmath}
+\usepackage{mathtools}
+\usepackage{amsthm,amssymb}
 \usepackage{xstring}
 
 \newcommand{\vect}[1]{
@@ -52,6 +50,12 @@
 }
 % End macros math
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\usepackage{algorithm,algcompatible}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\algnewcommand\INPUT{\item[\textbf{Input:}]}%
+\algnewcommand\OUTPUT{\item[\textbf{Output:}]}%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Init glossaries
@@ -216,10 +220,14 @@
 
 \title{LME-MPM applied to quasi-brittle fracture.}
 
+% \title{An enhanced EigenMPM }
+
 %% Group authors per affiliation:
 \author{
-Miguel Molinos$^a$,
-and Pedro Navas$^a$\footnote{Corresponding author: p.navas@upm.es}
+Miguel Molinos$^a$\footnote{Corresponding author: m.molinos@alumnos.upm.es},
+Pedro Navas$^a$\footnote{Corresponding author: p.navas@upm.es},
+Diego Manzanal$^a$,
+and Manuel Pastor$^a$
  }
  \address{
  $^a$ ETSI Caminos, Canales y Puertos, Universidad Polit\'ectnica de Madrid.\\
@@ -232,11 +240,12 @@ and Pedro Navas$^a$\footnote{Corresponding author: p.navas@upm.es}
   quasi-brittle materials under the \acrfull{mpm} 
   framework. With this purpose the eigensoftening algorithm, developed
   originally for the \acrfull{otm} approximation scheme, is extended
-  to the \acrshort{mpm} with the aim of present a suitable alternative to the
-  existing fracture algorithms developed for the \acrshort{mpm}. The good fitting
-  in the predictions made by the eigensoftening algorithm against both
-  analytical and experimental results proofs the well performance of
-  the method under challenging loads.
+  to the \acrshort{mpm} with the aim of present a suitable alternative
+  to the existing fracture algorithms developed for the
+  \acrshort{mpm}. The good fitting in the predictions made by the
+  eigensoftening algorithm against both analytical and experimental
+  results proofs the well performance of the method under challenging
+  loads.
 \end{abstract}
 
 \begin{keyword}
@@ -253,256 +262,248 @@ Material Point Method \sep Solid Dynamics
 \label{sec:1}
 Presence of cracks are a violation of the continuity requirement in
 \acrfull{fem}. To overcome it, numerous of numerical
-artifacts has been proposed with the aim of reproducing  such a
-complex behaviour. This techniques vary from employing cohesive
+artifacts has been proposed with the aim of reproducing such a
+complex behaviour. These techniques vary from employing cohesive
 approaches \cite{Barenblatt,Hilleborg_1976}, by adaptively inserting
 cohesive elements \cite{Ortiz_1999,Pandolfi_2002,Ruiz_2000} at solid
 elements boundaries, or handling arbitrary cracks paths by level set
-representation of the fracture surface \cite{Belytschko_03}.  
+representation of the fracture surface \cite{Belytschko_03}. The
+simulation of fracture propagation in a more accurate and effective
+way can be considered as one of the original drivers for developing
+novel spatial discretization methods like meshfree techniques. Some
+examples of it are the \acrfull{mpm}
+\cite{Schreyer_2002,Chen_2002,Nairn_2003,Zhenmao_2005}, the
+\acrfull{efgm} \cite{BELYTSCHKO_1995,BELYTSCHKO_2000,Zhuang_2012,Muthu_2013}, the
+\acrfull{sph} \cite{Wang_2020,Wang_2019}, the \acrfull{otm} \cite{Li2010,Li_2012,Pandolfi_2013,Li_2015} or Peridynamics
+\cite{HA_2011,RABCZUK_2017} among others. \\
 
-The simulation of fracture propagation in a more accurate and
-effective way can be considered as one of the original drivers for
-developing novel spatial discretization methods such as meshfree
-techniques. Some examples of it are the \acrfull{mpm}
-\cite{Schreyer_2002,Chen_2002,Nairn_2003,Zhenmao_2005}, the \acrfull{efgm}  \cite{BELYTSCHKO_1995,BELYTSCHKO_2000,Zhuang_2012,Muthu_2013},
-the \acrfull{sph} \cite{Wang_2020,Wang_2019},
-the \acrfull{otm} \cite{Li2010,Li_2012,Pandolfi_2013,Li_2015} or Peridynamics
-\cite{HA_2011,RABCZUK_2017} among others. 
+Regarding \acrshort{mpm}, fracture can be described numerically in
+two ways. One is the ``CRAcks with Material Points (CRAMP)''
+\cite{Nairn_2003,Nairn_2006} and consist in to remove the restriction
+of the single-valued velocity field close to the crack thorough two or
+more sets of nodes. In this method, different labels are assigned to the material points
+and nodes to distinguish if they are in the same side of the crack or
+not. Under this approach crack surface is described with line segments
+in 2D and triangle patches in 3D cases. The chosen criteria for crack
+propagation is based on such parameters as energy release rate
+analyzed by Tan \& Nairn (2002)\cite{Nairn_2002}, and the stress
+intensity factor or the J-integral discussed by Guo \& Nairn
+(2004)\cite{Nairn_2004}. The other approach is to introduce failed
+material points to describe the crack evolution. In this method, the
+formation of failed points describes the nucleation of cracks, and
+thereafter its propagation and branching. Consequently, the position
+of the crack does not need to be explicitly stated. These represents
+significant advantages over the ``CRAMP''. Under this approach, the
+prediction of failure evolution is computed with a decohesion model,
+which has been discussed by Chen {\it et al.}\cite{Zhenmao_2005} and
+Schreyer {\it et al.}\cite{Schreyer_2002}. And has been successfully
+employed to simulate the fracture of brittle materials by Chen {\it et
+  al.} \cite{Chen_2002,Chen_2003} and Sulsky \& Schreyer
+\cite{Sulsky_2004}.\\
 
-Fracture can be described in two ways. One is to remove the
-restriction of the single-valued velocity field close to the crack by
-using two or more sets of nodes \cite{Nairn_2006}. This method is
-based in to assign different labels to distinguish if the material
-points and nodes are in the same side of the crack or not. Under this
-approach the crack surface is described with line segments in 2D and
-triangle patches in 3D cases. This method was named as ``CRAcks with
-Material Points (CRAMP)'' \cite{Nairn_2003}. In this method, the
-criteria for crack propagation is based on such parameters as energy
-release rate analyzed by Tan \& Nairn (2002)\cite{Nairn_2002}, and the
-stress intensity factor or the J-integral discussed by Guo \& Nairn 
-(2004)\cite{Nairn_2004}. The other approach is to use failed material
-points to describe the crack evolution. In this method, the formation
-of failed points describes the nucleation of cracks, and thereafter
-its propagation and branching. Consequently, the position of the crack
-does not need to be explicitly stated. This represents a significant
-advantage over the ``CRAMP''. Under this approach, the prediction the
-failure evolution employing a decohesion model has been discussed by
-Chen {\it et al.}\cite{Zhenmao_2005} or Schreyer {\it et
-  al.}\cite{Schreyer_2002}. And has been successfully employed to
-simulate the fracture of brittle materials by Chen {\it et al.}
-\cite{Chen_2002,Chen_2003} and Sulsky \& Schreyer
-\cite{Sulsky_2004}. Similar to this approach, Schmidt {\it et al.}
+Similar to this approach, Schmidt {\it et al.}
 \cite{Schmidt_2009} introduced the concept of eigenfracture, where
 they approximate the crack set by means of eigen-deformations, wich
 enable the material to develop displacement jumps at no cost of local
 elastic energy. Later, the eigenerosion approach to brittle facture
 was developed by Pandolfi {\it et al.}
 \cite{Pandolfi_2012,Pandolfi_2013}. In this technique the erosion of
-the material point means that each material point can be either intact
-or be completely failed or eroded and has no load bearing
+the material point means that each material point can be either intact or be completely failed or eroded and has no load bearing
 capacity. This method has been successfully applied to simulate high
-complex phenomena such dynamic fragmentation of metals \cite{Li_2015},
-nonetheless in quasi-brittle materials, simulations performed with
-this approach exhibit an overestimation of tensile stress and the
-strain peaks. To overcome this limitation, Navas {\it et al.}
-\cite{Navas_2017_ES,Navas2018a} introduced the concept of
-eigensoftening. Engineered for quasi-brittle materials, this approach
-is devoted to capture the gradual rather than abrupt dissipation of
-the fracture energy. It is inspired in the concept of the crack band
-model \cite{Bazant83}, since energy dissipation is thorough the
-softened (or failed) volume. Due to the similarities between the \acrshort{otm}, 
-where this procedure was developed, and the \acrshort{mpm}, we propose
+complex phenomena such dynamic fragmentation of metals
+\cite{Li_2015}. Recently, Zhang {\it et al.}
+\cite{Zhang_EE_2020} adopted the eigenerosion to resolve the dynamic
+fracture of brittle materials in the \acrshort{mpm}
+framework. Nonetheless, in quasi-brittle materials simulations
+performed with this approach exhibit an overestimation of tensile
+stress and the strain peaks. And conventional \acrshort{mpm}/\acrshort{gimp} always
+faces stress oscillations.\\
 
+To overcome the limitations observed in the EigenMPM
+\cite{Zhang_EE_2020}. The present research propose the eigensoftening
+algorithm developed by Navas {\it et al.}
+\cite{Navas_2017_ES,Navas2018a} for the \acrshort{otm} framework and
+engineered for quasi-brittle materials. Inspired in the concept of the
+crack band model \cite{Bazant83}, since energy dissipation is thorough
+the softened (or failed) volume, it is able to capture the gradual rather than abrupt
+dissipation of the fracture energy. Second, to mitigate stress
+oscillations the \acrfull{lme} approximation technique
+\cite{Arroyo2006} to deal with tensile instabilities, such those that
+occurs when particles crosses an element boundary.\\
 
-The eigensoftening algorithm together with a explicit predictor
-corrector and the local \textit{max-ent} approximation technique
-offers a new perspective in the \acrshort{mpm} fracture simulation.
-
-To overcome the difficulties of the e
-
-In the present research we will introduce the 
-
-In the current work we attempt to model the fracture propagation
-employing the \acrshort{mpm} and introducing both eigenerosion and eigensoftening
-\cite{Navas_2017_ES,Navas_2018_ES} and the concept of the
-eigenfracture under this framework.
-
-Even thought the method has been successfully applied to dynamic
-fragmentation of metals, quantitative validations, such as stress or 
-strain levels near or at the crack set compared to experimental
-measures are still lacking. Having in mind that the eigenerosion
-approach was intended for perfectly brittle fracture, an
-eigensoftening concept is developed for quasi-brittle materials.
-
-This document is structured as follows 
+The paper is structured as follows. First meshfree methodology,
+eigenerosion and eigensoftening algorithms are presented in Section
+\ref{sec:2}. Then, both approaches are compared and verified by means of
+comparisons with analytical and experimental results in Section
+\ref{sec:3}. Finally, relevant conclusions are exposed in Section \ref{sec:4}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The meshfree methodology}
 \label{sec:2}
+
 The aim of this section is to provide an overview of the special
 techniques employed to face the fracture problem under the \acrshort{mpm}
 framework. In consequence it is structured as follows: first in
-\ref{sec:2.1} the explicit-predictor algorithm for the \acrshort{mpm} will be exposed, next the local \textit{max-ent} approximants are introduced in
-\ref{sec:2.2} as an accurate alternative technique to interpolate data
-between particles and nodes, and finally the fracture algorithms based
-in the eigendeformations are presented in \ref{sec:2.3}.
+\ref{sec:2.1} the \acrfull{npc} algorithm for the \acrshort{mpm}
+will be exposed, next the \acrshort{lme} approximants are
+introduced in \ref{sec:2.2} as an accurate alternative technique to
+interpolate data between particles and nodes, and finally fracture
+algorithms based in the eigendeformation concept are presented in \ref{sec:2.3}.
 
-\subsection{The Material Point Method}
+\subsection{The \acrshort{mpm} time integration : A \acrlong{npc}  scheme}
 \label{sec:2.1}
-The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian method
-where particles carries on all the physical information and a set of
-background nodes is employed to compute the equilibrium
-equation. Since the \acrshort{mpm} possesses the advantages of both Lagrangian
-and Eulerian descriptions, no element distortion exists in the \acrshort{mpm},
-therefore it is an appropriate and efficient method in solving
-problems involving extremely large deformation and moving
-discontinuities such fracture evolution. For the spatial
-discretization, two sets of points are introduced in 
-the \acrshort{mpm}. First, the nodes. This points are considered fixed in the
-space and are in charge of computing all the kinematic fields such
-forces $f_I$, accelerations $a_I$ and velocities $v_I$. And second the
-material points or particles. They are in charge of the discretization
-of the continuum, and store the local state ($\sigma_p,
-\varepsilon_p$). Without loosing generality, the \acrshort{mpm} algorithm
+The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian
+method where moving material points, henceforth particles, carries on
+all the physical information of the local state ($\sigma_p,
+\varepsilon_p$) and a set of fixed background nodes is employed to
+compute the balance of momentum equation. Since the \acrshort{mpm}
+possesses the advantages of both Lagrangian and Eulerian descriptions,
+no element distortion takes place in the \acrshort{mpm}. Therefore it
+is an appropriate and efficient method to solve problems with moving
+discontinuities such as fracture evolution.\\
+Without loosing generality, the \acrshort{mpm} algorithm
 can be described with three main steps: (i) a variational recovery
 process, where particle data is projected to the grid nodes, (ii) an
 Eulerian step, where balance of momentum equation is expressed as a
-nodal equilibrium equation thorough a FEM-like procedure, and finally
+nodal equilibrium equation in a FEM-like procedure, and finally
 (iii) a Lagrangian advection of the particles. In the present research
-a explicit predictor-corrector time integration
-scheme is adopted. The purpose of this choice is motivated due its proved
-robustness and stability in numerical calculations. In the first stage
-(i), the nodal velocity predictor is computed following
-\eqref{eq:Predictor-velocity}, 
+a explicit predictor-corrector time integration scheme is adopted. The
+purposes of this choice is motivated due its proved robustness and
+stability for dynamic computations. In the first stage, the nodal
+velocity predictor is computed following \eqref{eq:Predictor-velocity}, 
 \begin{equation}
   \label{eq:Predictor-velocity}
-  \vec{\tilde{v}}_I^{k+1} = \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}
+  \vec{\tilde{v}}_I^{k+1} = \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{\tens{m}_I^{k+1}}\ .
 \end{equation}
 This way of computing the nodal predictor is both numerically stable
-and minimize the computational effort. Once nodal velocity are
-obtained, the essential boundary conditions are imposed. And in the
-following, a Eulerian phase (ii) is computed in the set of nodes in a
-FEM-like way, where nodal forces $\vec{f}_{I}^{k+1}$ are computed thorough the
-equilibrium equation. Next the nodal velocities are corrected in a
-\textit{corrector} stage,
+and minimise the computational effort. Once nodal velocities are
+obtained, the essential boundary conditions are imposed. After that, a
+Eulerian phase is computed in the set of nodes in a
+\acrshort{fem}-like way, where nodal forces $\vec{f}_{I}^{k+1}$ are
+computed thorough the equilibrium equation. Next the nodal velocities
+are corrected in a \textit{corrector} stage,
 \begin{equation}
   \label{eq:Corrector-velocity}
-  \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}
+  \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\
+  \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}\ .
 \end{equation}
-Finally updated the particles are advected in the Lagrangian stage (iii) using nodal values as,
+Finally updated the particles are advected in the Lagrangian stage as
 \begin{align}
   \label{eq:Update-lagrangian-pce}
-        &\vec{a}_p^{k+1} = \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+        &\vec{a}_p^{k+1} =
+          \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\ ,\\
       &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
         \frac{N_{Ip}^k\
-        \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+        \vec{f}_{I}^{k}}{\tens{m}_I^k}\ ,\\
       &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
          N_{Ip}^k\ \vec{v}_{I}^{k} +
         \frac{1}{2}\Delta t^2\ \frac{N_{Ip}^k\
-        \vec{f}_{I}^{k}}{\tens{m}_I^k} 
+        \vec{f}_{I}^{k}}{\tens{m}_I^k}\ .
 \end{align}
-The complete pseudo-algorithm it is summarized in \ref{sec:expl-pred-corr}.
+The complete pseudo-algorithm it is summarised in \ref{sec:expl-pred-corr}.
 
-\subsection{Spatial discretization : Local-\textit{max-ent} approximants}
+\subsection{Spatial interpolation technique : \acrlong{lme} approximants}
 \label{sec:2.2}
-Local maximum-entropy (or local \textit{max-ent}) approximation scheme
-was introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} as a bridge
-between finite elements and meshfree methods. The key idea of the
-shape functions is to interpret the nodal of a shape function $N_I$ as
-a probability. This allow us to introduce two important limits:
-maximum-entropy (\textit{max-ent}) limit, and the Delaunay triangulation
-which ensures the minimal width of the shape function. The first
-limit ensures a \textit{unbiased statistical inference} based on the
-nodal data as ensures the Jayne's\cite{Jaynes1957} principle of
-\textit{maximum entropy}, the second limit warrant the \textit{least
-  width} shape function support. To reach to a compromise between two
-competing objectives, a Pareto set is defined as, 
+\acrfull{lme} approximation scheme was introduced by Arroyo \& Ortiz
+(2006)\cite{Arroyo2006} as a bridge between finite elements and
+meshfree methods. The key idea under this interpolation technique is
+the interpretation of each nodal value $N_I$ as a
+probability. Related with this definition, two important limits are
+introduced. First the maximum-entropy (\textit{max-ent}) limit, which
+ensures a \textit{unbiased statistical inference} based on the nodal
+data as states the Jayne's\cite{Jaynes1957} principle of
+\textit{maximum entropy}. And second the Delaunay triangulation that
+warranties the \textit{least width} shape function support. To reach
+to a compromise between two competing objectives, a Pareto set is
+defined as,
 \begin{align*}
   \label{eq:LME-scheme-pareto-set}
   \text{(LME)}_{\beta} \hspace{0.15cm} &\text{For fixed} \hspace{0.15cm}
-  \vec{x} \hspace{0.15cm} \text{minimise} \hspace{0.15cm} f_{\beta}(\vec{x}_p, N_I) = \beta U(\vec{x}_p,N_I) - H(N_I) \\
-  &\text{subject to}\
-  \begin{cases}
-    N_I \ge 0, \hspace{0.15cm} \text{I=1, ..., n} \\[1em]   
-    \sum\limits_{I=1}^{N_n}{N_I} = 1 \\[1em]   
-    \sum\limits_{I=1}^{N_n}{N_I \vec{x}_I} = \vec{x} \\
-  \end{cases}
-\end{align*}
+                                         \vec{x} \hspace{0.15cm} \text{minimise} \hspace{0.15cm} f_{\beta}(\vec{x}_p, N_I) \coloneqq \beta U(\vec{x}_p,N_I) - H(N_I) \\
+                                       &\text{subject to}\
+                                         \begin{cases}
+                                           N_I \ge 0, \hspace{0.15cm} \text{I=1, ..., n} \\[1em]   
+                                           \sum\limits_{I=1}^{N_n}{N_I} = 1 \\[1em]   
+                                           \sum\limits_{I=1}^{N_n}{N_I \vec{x}_I} = \vec{x} \\
+                                         \end{cases}
+\end{align*}            
 where $H(N_I)$ is the entropy of the system of nodes following the
-definition given by Shannon (1948) \cite{Shannon1948}, and $U(\vec{x}_p,N_I) =
-\sum_I N_I |\vec{x}_p - \vec{x}_I |^2$ a magnitude of the shape
-function width. The regularization o \textit{thermalization} parameter
-between the two criterion $\beta$ has Pareto optimal values in the
-range $(0,\infty)$. The unique solution of the local \textit{max-ent} problem
- \acrshort{lme}$_\beta$ is,
+definition given by Shannon (1948) \cite{Shannon1948}, the shape
+function width is defined as $U(\vec{x}_p,N_I) \coloneqq
+\sum_I N_I |\vec{x}_p - \vec{x}_I |^2$, and $\beta$ is a
+regularization o \textit{thermalization} parameter such that for
+Pareto optimal solutions $\beta \in
+(0,\infty)$. Notice that $\beta$ has units of $[L]^{-2}$,
+therefore it can be controlled by adjusting a dimensionless parameter,
+$\gamma=\beta h^2$ \cite{Arroyo2006}, where $h$ is defined as a
+suitable measure of the nodal spacing. With the restrictions exposed in
+\eqref{eq:LME-scheme-pareto-set}, the unique solution of the local
+\textit{max-ent} problem \acrshort{lme}$_\beta$ is,
  \begin{equation}
   \label{eq:LME-p}
 N_I^*(\vec{x})=\frac{\exp\left[ -\beta \; |\vec{x}-\vec{x}_I|^2 +
-    \vec{\lambda}^* \cdot (\vec{x}-\vec{x}_I) \right] } {Z(\vec{x},\vec{\lambda}^*)}
+    \vec{\lambda}^* \cdot (\vec{x}-\vec{x}_I) \right] } {Z(\vec{x},\vec{\lambda}^*)},
 \end{equation}
 where $Z(\vec{x},\vec{\lambda}^*)$ is the \textit{partition function} defined as,
 \begin{equation}
   \label{eq:LME-Z}
-Z(\vec{x}, {\vec{\lambda}}) = \sum_{I=1}^{N_n}{ \exp \left[ -\beta \; |\vec{x}-\vec{x}_I|^2 + \vec{\lambda} \cdot (\vec{x}-\vec{x}_I)  \right]}
+Z(\vec{x}, {\vec{\lambda}}) = \sum_{I=1}^{N_n}{ \exp \left[ -\beta \; |\vec{x}-\vec{x}_I|^2 + \vec{\lambda} \cdot (\vec{x}-\vec{x}_I)  \right]},
 \end{equation}
-and evaluated in the unique minimiser $\vec{\lambda}^*$ for the function $\log
-Z(\vec{x}, \vec{\lambda})$. The traditional way to obtain
-such a minimiser is using (\ref{eq:LME-J}) to calculate small
-increments of $\partial\vec{\lambda}$ in a Newton-Raphson
-approach. Where $\tens{J}$ is the Hessian matrix, defined by:
-\begin{eqnarray}
-  \label{eq:LME-J} 
-  \tens{J}(\vec{x}, \vec{\lambda},\beta) &\equiv& \frac{\partial
-                                                  \vec{r}}{\partial \vec{\lambda}}\\
-  \label{eq:LME-r}
-  \vec{r}(\vec{x},\vec{\lambda},\beta) &\equiv& \frac{\partial \log{ Z(   \vec{x},\vec{\lambda}})}{\partial \vec{\lambda}}  = \sum_I^{N_n} p_I(\vec{x},\vec{\lambda},\beta) \, (\vec{x} - \vec{x}_I)
-\end{eqnarray}
-The value of $\tens{J}$ can be employed to get the first derivatives of the shape function $\nabla
-N^*_I$,
-\begin{equation}
-  \label{eq:LME-grad-p}
-\nabla N^*_I = N^*_I  \, \left(\nabla f^*_I-\sum_J^{N_n} N^*_J \, \nabla f^*_J\right)
-\end{equation}
-where
-\begin{equation}
-  \label{eq:LME-f}
-f^*_I(\vec{x},  \vec{\lambda},\beta)=-\beta \, |\vec{x}-\vec{x}_I|^2 + \vec{\lambda}^*  \,  (\vec{x}-\vec{x}_I)
-\end{equation}
-Employing the chain rule over \eqref{eq:LME-grad-p}, rearranging and considering $\beta$ as a
-constant, Arroyo and Ortiz~\cite{Arroyo2006} obtained the following
-expression for the gradient of the shape function.
+and a Lagrange multiplier $\vec{\lambda}^*$ such minimise the function $\log
+Z(\vec{x}, \vec{\lambda})$.
+The traditional way to compute the optimal value of $\vec{\lambda}^*$
+is thorough a Newton-Raphson procedure, or in more challenging
+scenarios by a combination of the Newton-Raphson and the Nelder-Mead
+Simplex algorithms \cite{Navas2018a}. Nonetheless, since finite
+strains are not involved in the present research, Newton-Raphson is an
+enough efficient method. For an uniform nodal spacing, $\beta$ can be
+considered constant, thus first derivatives of the interpolation technique $\nabla
+N^*_I$ can be obtained 
+by evaluating the following expression
 \begin{eqnarray}
   \label{eq:LME-gradp} 
 \nabla N^*_I &=& -N^*_I \,  (\tens{J}^*)^{-1} \,  (\vec{x} - \vec{x}_I)
 \end{eqnarray}
-The regularization parameter $\beta$ of \acrshort{lme} shape functions may be
-controlled by adjusting a dimensionless parameter, $\gamma=\beta h^2$
-\cite{Arroyo2006}, where $h$ is defined as a measure of the nodal
-spacing. Since $N_I$ is defined in the entire domain, in practice,
-the shape function decay $\exp(-\beta \vec{r} )$ is truncated  by  a
-given tolerance, 10$^{-6}$, for example, would ensure a reasonable
-range of neighbours, see \cite{Arroyo2006} for details. This tolerance defines
-a limit values of the influence radius and is used thereafter to
-find the neighbour nodes of a given integration point.
+where $\tens{J}$ is the Hessian matrix, defined by
+\begin{eqnarray}
+  \label{eq:LME-J} 
+  \tens{J}(\vec{x}, \vec{\lambda},\beta) &\equiv& \frac{\partial
+                                                  \vec{r}}{\partial \vec{\lambda}},\\
+  \label{eq:LME-r}
+  \vec{r}(\vec{x},\vec{\lambda},\beta) &\equiv& \frac{\partial \log{ Z(   \vec{x},\vec{\lambda}})}{\partial \vec{\lambda}}  = \sum_I^{N_n} p_I(\vec{x},\vec{\lambda},\beta) \, (\vec{x} - \vec{x}_I).
+\end{eqnarray}
+An additional remark concerning the support of the interpolation
+function is that in practice the value of $N_I$ decay exponentially following $\exp(-\beta \vec{r}
+)$. In this sense
+a good practice is to truncate it under a tolerance, 10$^{-6}$ would ensure a reasonable
+range of neighbours, see \cite{Arroyo2006} for details. This tolerance
+defines a limit value of the influence radius to find the neighbour
+nodes of a given integration point.
 
 \subsection{Fracture modelling approach}
 \label{sec:2.3}
-Within the context of \acrshort{mpm} formulation, fracture can be modelled by
-failing particles according to a suitable criterion. When material
-points are failed, they are assumed to have a null stress
-tensor. Navas {\it et al.} (2017)\cite{Navas_2017_ES} developed a
-eigensoftening algorithm as an extension for quasi-brittle materials
+Within the context of \acrshort{mpm} formulation, fracture can be
+modelled by failing particles according to a suitable failure
+criterion. When material points are failed, they are assumed to have
+null stress tensor. To reproduce this behaviour in the present
+research, the eigensoftening algorithm is introduced in the 
+\acrshort{mpm} framework as an alternative approach to the decohesion
+model \cite{Zhenmao_2005,Schreyer_2002}. The eigensoftening concept
+was originally developed by Navas {\it et al.}
+(2017)\cite{Navas_2017_ES} as an extension for quasi-brittle materials
 of the eigenerosion proposed by Pandolfi \& Ortiz
 (2012)\cite{Pandolfi_2012} for fracture of brittle materials. A
-comparison between both in \cite{Navas_2017_ES} shows that
-the eigenerosion algorithm significantly overestimates the tensile
+comparison between both in \cite{Navas_2017_ES} shows that the
+eigenerosion algorithm significantly overestimates the tensile  
 stress and the strain peaks, while it captures the forces and crack
 patterns accurately. On the other hand eigensoftening algorithm agree
 very well with experimental results in all the aspects. Furthermore,
-this algorithm has also proof its accuracy for complex fracture
+this algorithm has proof its accuracy for complex fracture
 patters such the present in fiber reinforces concrete (FRC),
 \cite{Navas_2018_ES}.\\
 
+The key idea behind the eigenerosion algorithm is the computation of the
+energy-release rate attendant to the failure of material point $p$,
 \begin{align}
   \label{eq:energy-release-EE}
 &G_p^{k+1} = \frac{C_{\epsilon}}{m_p^{k+1}}  \sum_{x_q^{k+1} \in
@@ -510,13 +511,11 @@ patters such the present in fiber reinforces concrete (FRC),
 &m_p^{k+1} =  \sum_{x_q^{k+1} \in
   B_{\epsilon}(x_p^{k+1})} m_q  
 \end{align}
-where $B_{\epsilon}(x_p^{k+1})$ is the sphere of radius $\epsilon$
-centered at $x_p^{k+1}$ known as the $\epsilon$-neighborhood of the
-material point, $m_p^{k+1}$ is the mass of the neighborhood at step
-$k+1$, $W_q^{k+1}$ is the current free-energy density per unit mass as
-the material point $x_q^{k+1}$ of the neighborhood, finally
-$C_{\epsilon}$ is a normalizing constant. This configuration
-conveniently is sketched in Figure \ref{fig:Failed-particles}.
+where $B_{\epsilon}(x_p^{k+1})$ is a $^n$dimensional sphere of radius $\epsilon$
+centered at $x_p^{k+1}$. The particles which lies under this sphere are
+known as the $\epsilon$-neighborhood of the material point, see
+\cite{Pandolfi_2012}, this concept is conveniently is sketched in
+Figure \ref{fig:Failed-particles}.
 %%%%%%%%%%%
 \begin{figure}
   \centering
@@ -527,34 +526,35 @@ conveniently is sketched in Figure \ref{fig:Failed-particles}.
   \label{fig:Failed-particles}
 \end{figure}
 %%%%%%%%%%%
-The material point fails when $G_p^{k+1}$ surpasses a critical energy
-release rate that measures the material-specific energy, $G_F$. The
-convergence of this approach has been analyzed by Schmidt {\it et al.}
-(2009)\cite{Schmidt_2009}, who proof that it converges to the Griffith
+Other parameters are, the mass of the neighborhood $m_p^{k+1}$, the
+current free-energy density per unit mass  $W_q^{k+1}$ and finally a
+normalizing constant $C_{\epsilon}$. 
+The failure criterion consist in to consider the material point fails
+when $G_p^{k+1}$ surpasses a critical energy release rate that
+measures the material-specific energy, $G_F$. The convergence of this
+approach has been analyzed by Schmidt {\it et al.}
+(2009)\cite{Schmidt_2009}, who proofed that it converges to the Griffith
 fracture when discretization size tends to zero. It is necessary to
 point out that when a material point overpass the critical energy, its
-contribution to the internal forces vector  is set to zero, but its
-contribution to the mass matrix is maintained. The mass of a material
-point is discarded only when an eroded material point is not connected
-to any nodes.\\
+contribution to the internal forces vector is set to zero, but its
+contribution to the mass matrix is preserved.\\
 
-As can be noticed, in the eigenerosion algorithm an energetic
-criterion is adopted. Due to that fact, unrealistic stress
-concentration (higher than tensile strength) in quasi-brittle materials, see
-\cite{Navas_2017_ES}. To overcome this limitation, the aforementioned
-authors proposed the concept of eigensoftening to take in to account
-the gradual failure in quasi-brittle materials. The concept is
-inspired in the cohesive fracture widely employed in the context of
-FEM \cite{Ortiz_1999}. This gradual failure criterion is plotted in
-figure \label{fig:Damage-ft-wc}, where a linear decreasing cohesive
-law is presented to illustrate the concept here described. In the
-picture, the shaded area represents the static fracture energy per
-unit of area, $G_F$. Notice how a cohesive crack appears when the
-maximum tensile strength, $f_t$ is reached. Once the opening
-displacement $w$ takes the value of the critical crack displacement
-$w_c$, a stress-free crack is attained. For intermediate values,
-$w_n$, a damage value between zero and one represents the extension to
-which the material has failed.
+As can be noticed, the eigenerosion algorithm relies over an energetic
+failure criterion. Because of this, unrealistic stress
+concentration (higher than tensile strength) appears in quasi-brittle
+materials \cite{Navas_2017_ES}. To overcome this limitation, the
+aforementioned authors proposed the concept of eigensoftening to take
+in to account the gradual failure in quasi-brittle materials. The idea
+behind this concept is inspired in the cohesive fracture. This gradual
+failure criterion is plotted in figure \label{fig:Damage-ft-wc}, where
+a linear decreasing cohesive law is presented to illustrate the
+concept earlier described. In the picture, the shaded region represents
+the static fracture energy per unit of area, $G_F$. Notice how a
+cohesive crack appears when the maximum tensile strength, $f_t$ is
+reached. Once the opening displacement $w$ reach the value of the
+critical crack displacement $w_c$, a stress-free crack is
+attained. For intermediate values, $w_n$, a damage value between zero
+and one represents the extension to which the material has failed.
 %%%%%%%%%%%
 \begin{figure}
   \centering
@@ -568,24 +568,24 @@ which the material has failed.
 For the eigensoftening algorithm, a strength criterion for crack
 initialization was adopted. Particularly the maximum principal stress
 theory for brittle fracture was considered by authors
-\cite{Navas_2017_ES}. With that purpose, the variation of the averaged strain
-energy density in the $\epsilon$-neighborhood of the material point
-$\vec{x}_p^{k+1}$ can be obtained as,
+\cite{Navas_2017_ES}. With that purpose, the variation of the averaged
+strain energy density in the $\epsilon$-neighborhood of the material point
+$\vec{x}_p^{k+1}$ can be obtained as
 \begin{equation}
   \label{eq:variation-averaged-strain-energy-density}
   \delta W_{\epsilon,p} = \frac{\partial G_p}{C_{\epsilon}} =
   \frac{1}{m_p} \sum_{x_q^{k+1} \in
-  B_{\epsilon}(x_p^{k+1})} m_q \tens{\sigma}_{q,I} \delta \tens{\epsilon}_q
+  B_{\epsilon}(x_p^{k+1})} m_q \tens{\sigma}_{q,I} \delta \tens{\epsilon}_q,
 \end{equation}
 where $\tens{\sigma}_{q,I}$ is the maximum principal stress of each
-material point in the $\epsilon$-neighborhood. Here
-\cite{Navas_2017_ES} introduces an effective strain $\varepsilon_q$,
-such the variation of the local strain energy can be obtained as
-$\delta W_q = \sigma_{q,1} \delta\varepsilon_q$. Now with the assumption
-that the effective strain of each material point at every time step
-is constant in the neighborhood of $\vec{x}_p^{k+1}$, the equation
+material point in the $\epsilon$-neighborhood. In this point in
+introduced an effective strain $\varepsilon_q$, such the variation of
+the local strain energy can be obtained as $\delta W_q = \sigma_{q,1}
+\delta\varepsilon_q$. Now with the assumption that the effective
+strain of each material point at every time step is constant in the
+neighborhood of $\vec{x}_p^{k+1}$, the equation 
 \eqref{eq:variation-averaged-strain-energy-density} can be simplified
-as follows
+ to
 \begin{equation}
   \label{eq:variation-averaged-strain-energy-density-simpli}
   \delta W_{\epsilon,p} =
@@ -593,47 +593,49 @@ as follows
   B_{\epsilon}(x_p^{k+1})} m_q \tens{\sigma}_{q,I}. 
 \end{equation}
 Consequently it is possible to define an equivalent critical stress at the
-material point $\vec{x}_p^{k+1}$:
+material point $\vec{x}_p^{k+1}$as
 \begin{equation}
   \label{eq:equivalent-critical-stress}
   \tens{\sigma}_{\epsilon,p} =
   \frac{1}{m_p} \sum_{x_q^{k+1} \in
   B_{\epsilon}(x_p^{k+1})} m_q \tens{\sigma}_{q,I}, 
 \end{equation}
-where $m_p$ can be computed as:
+where $m_p$ is the total mass of the $\epsilon$-neighborhood
 \begin{equation}
   \label{eq:averaged-mass}
   m_p = \sum_{x_q^{k+1} \in B_{\epsilon}(x_p^{k+1})} m_q.
 \end{equation}
-This definition of the equivalent critical stress allow us to
-link it with the averaged strain energy as $\delta W_{\epsilon,p} =
- \tens{\sigma}_{\epsilon,p}\ \delta\varepsilon_p$. The fracture
-criterion is defined as once $\tens{\sigma}_{\epsilon,p}^{k+1}$
-surpasses the tensile strength, $f_t$, the softening behaviour is
-activated, which in turn causes a reduction of the initial forces as,
+This definition of the equivalent critical stress leads to a
+definition of the averaged strain energy in terms of the averaged
+strain as $\delta W_{\epsilon,p} =
+ \tens{\sigma}_{\epsilon,p}\ \delta\varepsilon_p$. The softening behaviour is
+activated once $\tens{\sigma}_{\epsilon,p}^{k+1}$ surpasses the
+tensile strength, $f_t$. This consists in a reduction of the internal
+forces as,
  \begin{equation}
    \label{eq:f-int-damaged}
-   f^{int}_I = \sum_p (1 - \chi_p)\ \tens{\sigma}_{p}^{k+1} \cdot \Grad{N_{Ip}}
+   f^{int}_I = \sum_p (1 - \chi_p)\ \tens{\sigma}_{p}^{k+1} \cdot
+   \Grad{N_{Ip}}\ \Omega_p
  \end{equation}
-where $\chi_p$ is the damage variable of each material point $p$,
-ranges between zero (an intact material) and one (completely failed
-material points). For the case of a linear softening such the sketched
-in the Figure \ref{fig:Damage-ft-wc}, it is calculated as,
+where $\chi_p$ and $\Omega_p$ are respectively the damage or softening
+variable and the volume for each material point $p$. $\chi_p$ takes
+values between zero (an intact material) and one (completely failed
+material points). For the case of a linear softening such the sketched in the Figure \ref{fig:Damage-ft-wc}, $\chi_p$ is computed as,
  \begin{equation}
    \label{eq:damaged-variable-chi}
    1 - \chi = \frac{f_n}{f_t} = 1 - \frac{w_n}{w_c}\ \rightarrow\ \chi
    = \frac{w_n}{w_c}.
  \end{equation}
- 
-Following Bazant~\cite{Bazant83} crack-model, \cite{Navas_2017_ES}
-introduced a band width $h_{\epsilon}$, which has values between two
-and four times the maximum size of the aggregates for the
-concrete. The effective fracture strain $\varepsilon_{\epsilon,f}$ is
-defined as the difference between the strain at crack initialization,
-$\varepsilon_1(\vec{x}_p^{0})$, and the current strain, $\varepsilon_1(\vec{x}_p^{k+1})$, for material
-point $p$. Also, $\varepsilon_{\epsilon,f}$ can be represented as the
-current crack opening $w_n$ within the band width,
-$h_{\epsilon}$. Therefore,
+In analogy to the band crack model presented by
+Bazant~\cite{Bazant83}, Navas {\it et al.} \cite{Navas_2018_ES}
+\cite{Navas_2017_ES} introduced a band width parameter $h_{\epsilon}$.
+Concerning this parameter, a typical value of it is between two and
+four times the maximum size of the aggregates, in the case of
+concrete as brittle material. The effective fracture strain
+$\varepsilon_{\epsilon,f}$ is defined as the difference between the strain at crack initialization,
+$\varepsilon_1(\vec{x}_p^{0})$, and the current strain, $\varepsilon_1(\vec{x}_p^{k+1})$, for material point $p$. Also,
+$\varepsilon_{\epsilon,f}$ can be represented as the current crack
+opening $w_n$ within the band width, $h_{\epsilon}$. Therefore, 
 \begin{equation}
   \label{eq:effective-fracture-strain}
   \varepsilon_{\epsilon,f} = \varepsilon_1(\vec{x}_p^{k+1}) -
@@ -644,11 +646,11 @@ Introducing \eqref{eq:effective-fracture-strain} in
 as,
 \begin{equation}
   \label{eq:damage-variable-chi-II}
-\chi = \frac{\varepsilon_{\epsilon,f}\ h^{\epsilon}}{w_c}  
+\chi = \frac{\varepsilon_{\epsilon,f}\ h^{\epsilon}}{w_c}.  
 \end{equation}
-for the case of a linear softening behaviour. In a more general case,
-the damage variable can be expressed in terms of the following
-variables,
+The function of $\chi$ presented in \eqref{eq:damage-variable-chi-III}
+represents a linear softening behaviour. For a general case, the
+damage variable can be expressed in terms of the following variables,
 \begin{equation}
   \label{eq:damage-variable-chi-III}
   \chi = \chi(\varepsilon_{\epsilon,f}, h^{\epsilon}, f_t, w_c, G_f)
@@ -657,29 +659,78 @@ variables,
 \section{Cases of study and discussion}
 \label{sec:3}
 
+As noticed in \cite{Zhang_EE_2020}, the EigenMPM have two important
+shortcomings. The first is the presence of stress instabilities even
+with \acrshort{gimp} shape functions. To overcome it, \acrshort{lme}
+approximants are introduced as an
+alternative to the existing interpolation techniques. Its
+impressive performance mitigating spurious stress oscillations
+\cite{Wobbes2020} under the \acrshort{mpm} framework help to enhance
+notoriously the quality of the results as we can see in Section
+\ref{sec:edge-cracked-square-I}. Where both interpolation techniques
+are compared by carry out an eigenerosion simulation. The second
+limitation is concerning its inability to simulate properly quasi-brittle
+fracture \cite{Navas_2018_ES}. It can be solved thorough the
+eigensoftening algorithm described in Section \ref{sec:2.3}. A proof
+of it is exposed in Section \ref{sec:3.3}, where experimental results
+of a drop-weight impact test are compared with those produced by
+eigensoftening computations.
+
 \subsection{Edge-cracked square panel in mode I}
 \label{sec:edge-cracked-square-I}
 
-This problem is devoted to compare the develop of both linear shape
-functions and the \acrshort{lme}
-
+This problem here presented is devoted to compare how much \acrshort{lme}
+approximants are able to improve the result \textit{versus} standard
+linear interpolation. It consists in a square plate of size $H = 1$ containing
+an initial edge crack of length $0.25 \cdot H$ loaded in a pure mode I
+by displacement control on the outer flanks of the plate, Figure
+\ref{fig:geometry-cracked-panel-mode-I}.
+%%%%%%%%%%%
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\textwidth]{Figures/Mode_I}
+  \includegraphics[width=0.4\textwidth]{Figures/Mode_I}
   \caption{Geometry and boundary condition of the drop-weight impact test.}
   \label{fig:geometry-cracked-panel-mode-I}
 \end{figure}
+%%%%%%%%%%%
+The constitutive model consider for numerical experiment is a
+linear-elastic Hookean material, where Young's modulus $E = 1.06$, the Poisson's ratio
+$\mu = 0.333$, and critical energy-release rate $G_c = 0.0001$. 
+
+Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
+presence of wiggles in the loading and also in the unloading regions
+of the curve when a linear interpolation technique is employed. In
+contrast with it \acrshort{lme} simulation does not exhibit this
+accuracy and remains rectilinear during loading and unloading. An
+important consideration regarding the presence of oscillations once
+both parts of the panel are separated. Is that they should not be
+attributed to the eigenerosion algorithm since the fracture process is
+over. They are due to the dynamic nature of the simulation.  
 
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/Reactions_displacements_square_panel_mode_I}
-  \caption{Geometry and boundary condition of the drop-weight impact test.}
-  \label{fig:geometry-cracked-panel-mode-I}
+  \caption{Evolution of the reaction forces plotted \textit{versus}
+    the imposed displacement for linear interpolation technique and
+    the \acrshort{lme} approximants.}
+  \label{fig:Reactions-cracked-panel-mode-I}
 \end{figure}
 
+\begin{figure}
+\centering
+\subfigure[t1]{\includegraphics[width=0.7\textwidth]{./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0100.png}}
+\subfigure[t2]{\includegraphics[width=0.7\textwidth]{./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0250.png}}
+\subfigure[t3]{\includegraphics[width=0.7\textwidth]{./Figures/Edge_cracked_square_panel_in_mode_I_Stress_0398.png}}
+\caption{Legos.}
+\label{fig:Stress-cracked-panel-mode-I}
+\end{figure}
+
+Edge_cracked_square_panel_in_mode_I_Stress_0250.png
+Edge_cracked_square_panel_in_mode_I_Stress_0398.png
 
 \subsection{Drop-weight impact test}
 \label{sec:3.3}
+
 
 \begin{figure}
   \centering
@@ -691,7 +742,7 @@ functions and the \acrshort{lme}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
-\label{sec:6}
+\label{sec:4}
 
 
 \section*{Acknowledgements}
@@ -774,40 +825,43 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 \label{sec:eigens-algor-1}
 
 \begin{algorithm}
+  \DontPrintSemicolon
+  \KwInput{For each $p$, $\epsilon$-neighbourhood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+  \KwOutput{Return damage parameter $\chi := \{\chi_p\}$}
+  % \KwData{Testing set $x$}
+  $\chi_p \leftarrow \chi_p^{k}$ \;
+  \For{$p$ to $N_p$}
+  {
+    \If{$\chi_p = 0$ \AND $\epsilon_{f,p} = 0$}
+    {
+      \For{$q \in B_{\epsilon,p}$}
+      {
+        $\sigma_{q,I} \leftarrow \text{getEigenvaluesOf}(\sigma_{q})$ \;
+        \If{$\chi_q < 1$}
+        {
+          $\sum m_p\sigma_{p,I} \leftarrow \sum m_p\sigma_{p,I} + m_q\sigma_{q,I}$ \;
+        }
+        $m_p \leftarrow m_p + m_q$ \;
+      }
+      $\sigma_{p,\epsilon} \leftarrow \frac{1}{m_p} \sum m_p\sigma_{p,I}$\;
+      \If{$\sigma_{p,\epsilon} > f_{t,p}$}
+      {
+        $\epsilon_{f,p} = \epsilon_{I,p}$ \;  
+      }
+      \ElseIf{$\chi_p \neq 1$ \AND $\epsilon_{f,p} > 0$}
+      {
+        $\chi_p^{k+1} \leftarrow \min\Big \{1 , \max \{\chi_p^{k},
+        \frac{(\epsilon_{I,p}- \epsilon_{f,p})\ h_{\epsilon,p}}{w_c}
+        \} \Big \}$ \;
+      }
+    }
+  }
   \caption{Compute damage parameter $\chi_p^{k+1}$}
   \label{alg-eigens}
-  \begin{algorithmic}
-    \Require Particle status\\
-    Number of particles: $N_p$\\
-    $\epsilon$-neighbourhood of each particle $p$ : $B_{\epsilon,p}$\\
-    \Require Material data\\
-    Tensile strength: $f_{t,p}$\\
-    Bandwidth of the cohesive fracture: $h_{\epsilon,p}$ \\
-    Critical opening displacement: $w_c$\\ 
-    \Ensure Return damage parameter $\chi := \{\chi_p\}$
-    \State $\chi_p \leftarrow \chi_p^{k}$
-    \For{$p$ to $N_p$}
-    \If{$\chi_p = 0$ \AND $\epsilon_{f,p} = 0$}
-    \For{$q \in B_{\epsilon,p}$}
-    \If{$\chi_q < 1$}    
-    \State $\sum m_p\sigma_{p,I} \leftarrow \sum m_p\sigma_{p,I} + m_q\sigma_{q,I}$
-    \EndIf    
-    \State $m_p \leftarrow m_p + m_q$
-    \EndFor
-    \State $\sigma_{p,\epsilon} \leftarrow \frac{1}{m_p} \sum m_p\sigma_{p,I}$
-    \If{$\sigma_{p,\epsilon} > f_{t,p}$}
-    \State $\epsilon_{f,p} = \epsilon_{I,p}$   
-    \EndIf        
-    \Else[$\chi_p \neq 1$ \AND $\epsilon_{f,p} > 0$]
-    \State $\chi_p^{k+1} \leftarrow \min\Big \{1 , \max \{\chi_p^{k},
-    \frac{(\epsilon_{I,p}- \epsilon_{f,p})\ h_{\epsilon,p}}{w_c} \} \Big \}$    
-    \EndIf    
-    \EndFor
-  \end{algorithmic}
 \end{algorithm}
 
 % name your BibTeX data base
 \bibliography{Biblio/Biblio} 
 
 \end{document}
-\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-813) }
+\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-867) }

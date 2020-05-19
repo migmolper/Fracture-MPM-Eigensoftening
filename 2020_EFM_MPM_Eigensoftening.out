@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{The meshfree methodology}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{The Material Point Method}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Spatial discretization : Local-max-ent approximants}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.1}{The mpm time integration : A npc scheme}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Spatial interpolation technique : lme approximants}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Fracture modelling approach}{section.2}% 5
 \BOOKMARK [1][-]{section.3}{Cases of study and discussion}{}% 6
 \BOOKMARK [2][-]{subsection.3.1}{Edge-cracked square panel in mode I}{section.3}% 7
