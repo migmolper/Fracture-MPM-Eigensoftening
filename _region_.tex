@@ -52,10 +52,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%\usepackage{algorithm,algcompatible}
-\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
-\algnewcommand\INPUT{\item[\textbf{Input:}]}%
-\algnewcommand\OUTPUT{\item[\textbf{Output:}]}%
+% \usepackage{algorithm,algcompatible}
+
+\usepackage{blindtext}
+\usepackage[linesnumbered,boxed]{algorithm2e}
+
+\SetAlCapSkip{1em}
+
+\SetKwInput{KwInput}{Input}
+\SetKwInput{KwOutput}{Output}
+
+% \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+% \algnewcommand\INPUT{\item[\textbf{Input:}]}%
+% \algnewcommand\OUTPUT{\item[\textbf{Output:}]}%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Init glossaries
@@ -519,7 +528,7 @@ Figure \ref{fig:Failed-particles}.
 %%%%%%%%%%%
 \begin{figure}
   \centering
-  \includegraphics[width=0.5\textwidth]{Particle-failed}
+  \includegraphics[width=0.5\textwidth]{Figure-Particle-failed}
   \caption{Scheme of a linear cohesive law, where the shaded area is
     $G_f$, $f_t$ is the tensile strength, and $w_c$ is the critical
     opening displacement.}
@@ -558,7 +567,7 @@ and one represents the extension to which the material has failed.
 %%%%%%%%%%%
 \begin{figure}
   \centering
-  \includegraphics[width=0.5\textwidth]{Damage}
+  \includegraphics[width=0.5\textwidth]{Figure-Damage}
   \caption{Scheme of a linear cohesive law, where the shaded area is
     $G_f$, $f_t$ is the tensile strength, and $w_c$ is the critical
     opening displacement.}
@@ -667,7 +676,7 @@ alternative to the existing interpolation techniques. Its
 impressive performance mitigating spurious stress oscillations
 \cite{Wobbes2020} under the \acrshort{mpm} framework help to enhance
 notoriously the quality of the results as we can see in Section
-\ref{sec:edge-cracked-square-I}. Where both interpolation techniques
+\ref{sec:3.1}. Where both interpolation techniques
 are compared by carry out an eigenerosion simulation. The second
 limitation is concerning its inability to simulate properly quasi-brittle
 fracture \cite{Navas_2018_ES}. It can be solved thorough the
@@ -677,7 +686,7 @@ of a drop-weight impact test are compared with those produced by
 eigensoftening computations.
 
 \subsection{Edge-cracked square panel in mode I}
-\label{sec:edge-cracked-square-I}
+\label{sec:3.1}
 
 This problem here presented is devoted to compare how much \acrshort{lme}
 approximants are able to improve the result \textit{versus} standard
@@ -685,57 +694,82 @@ linear interpolation. It consists in a square plate of size $H = 1$ containing
 an initial edge crack of length $0.25 \cdot H$ loaded in a pure mode I
 by displacement control on the outer flanks of the plate, Figure
 \ref{fig:geometry-cracked-panel-mode-I}.
-%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\textwidth]{Mode_I}
+  \includegraphics[width=0.4\textwidth]{Figure-Mode_I}
   \caption{Geometry and boundary condition of the drop-weight impact test.}
   \label{fig:geometry-cracked-panel-mode-I}
 \end{figure}
-%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The constitutive model consider for numerical experiment is a
-linear-elastic Hookean material, where Young's modulus $E = 1.06$, the Poisson's ratio
-$\mu = 0.333$, and critical energy-release rate $G_c = 0.0001$. 
+linear-elastic Hookean material, where Young's modulus $E = 1.06$, the
+Poisson's ratio $\mu = 0.333$, and critical energy-release rate $G_c =
+0.0001$.
+This set of parameters was taken from \cite{Pandolfi_2012}. In
+\acrshort{mpm}, two different discretization are required. In one hand
+a cartesian grid of nodes is consider with a nodal spacing value of
+0.025. On the other hand, the plate will be modeled with a initial
+layout of four particles per element and occupying the Gauss quadrature
+positions.
 
 Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
-presence of wiggles in the loading and also in the unloading regions
-of the curve when a linear interpolation technique is employed. In
-contrast with it \acrshort{lme} simulation does not exhibit this
-accuracy and remains rectilinear during loading and unloading. An
-important consideration regarding the presence of oscillations once
-both parts of the panel are separated. Is that they should not be
-attributed to the eigenerosion algorithm since the fracture process is
-over. They are due to the dynamic nature of the simulation.  
-
+presence of wiggles in both loading and fracture stages
+in the reaction-displacements curve when linear interpolation technique is employed. In
+contrast, \acrshort{lme} simulation does not exhibit these spurious
+oscillations and remains linear. Besides that, linear interpolation
+produces stiffer results than \acrshort{lme}. This can be attributed
+to imprecision in the stress field due to grid-crossing phenomena.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\textwidth]{Reactions_displacements_square_panel_mode_I}
+  \includegraphics[width=0.8\textwidth]{Figure-Reactions-Mode-I}
   \caption{Evolution of the reaction forces plotted \textit{versus}
     the imposed displacement for linear interpolation technique and
     the \acrshort{lme} approximants.}
   \label{fig:Reactions-cracked-panel-mode-I}
 \end{figure}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+On the other hand, Figure \ref{fig:Stress-cracked-panel-mode-I}
+exhibits more clearly the difference between linear interpolation and
+\acrshort{lme}, since numerical instability becomes rather significant
+when particles crosses the boundary of the element in the linear
+case. Although this behavior does not affect significantly to the peak
+stress value in a hookean material \cite{Zhang_EE_2020}, if
+hyperelastic materials are consider for future simulations,
+inaccuracies in the stress field could affect dramatically to the
+final result. On the other hand \acrshort{lme} produces soft stress
+field evolution even after breaking    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
-\subfigure[t1]{\includegraphics[width=0.7\textwidth]{./Edge_cracked_square_panel_in_mode_I_Stress_0100.png}}
-\subfigure[t2]{\includegraphics[width=0.7\textwidth]{./Edge_cracked_square_panel_in_mode_I_Stress_0250.png}}
-\subfigure[t3]{\includegraphics[width=0.7\textwidth]{./Edge_cracked_square_panel_in_mode_I_Stress_0398.png}}
+\subfigure[t = 25]{\includegraphics[width=0.7\textwidth]{./Figure-Stress-0100-mode-I.png}}
+\subfigure[t = 60]{\includegraphics[width=0.7\textwidth]{./Figure-Stress-0250-mode-I.png}}
+\subfigure[t = 100]{\includegraphics[width=0.7\textwidth]{./Figure-Stress-0398-mode-I.png}}
 \caption{Evolution of the stress tensor magnitude for linear
   interpolation (pictures in the left side), and \acrshort{lme}
   (pictures in the right side). Both simulations performed with an
   eigenerosion algorithm.}
 \label{fig:Stress-cracked-panel-mode-I}
 \end{figure}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+An important consideration regarding the presence of oscillations once
+both parts of the panel are separated, Figure
+\ref{fig:Reactions-cracked-panel-mode-I}. These phenomena should not be
+attributed to the eigenerosion algorithm since the fracture process is
+over. They are due to the dynamic nature of the solver.  
 
 \subsection{Drop-weight impact test}
-\label{sec:3.3}
+\label{sec:3.2}
+
+Once the accuracy of the \acrshort{lme} approximants have been proven
+in Section \ref{sec:3.1}, henceforth will be adopted without comparing
+with linear interpolation. Therefore this section is devoted
 
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\textwidth]{./Drop_weight}
+  \includegraphics[width=0.8\textwidth]{./Figure-Drop-weight}
   \caption{Geometry and boundary condition of the drop-weight impact test.}
   \label{fig:geometry-drop-weight-impact-test}
 \end{figure}
@@ -865,4 +899,4 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 \bibliography{Biblio} 
 
 \end{document}
-\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-868) }
+\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-902) }
