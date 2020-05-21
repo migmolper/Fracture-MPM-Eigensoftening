@@ -735,13 +735,12 @@ by displacement control on the outer flanks of the plate, Figure
 The constitutive model consider for numerical experiment is a
 linear-elastic Hookean material, where Young's modulus \gls{E} = 1.06, the
 Poisson's ratio \gls{nu} = 0.333, and critical energy-release rate
-\gls{Gf} = 0.0001.
-This set of parameters was taken from \cite{Pandolfi_2012}. In
+\gls{Gf} = 0.0001. This set of parameters was taken from \cite{Pandolfi_2012}. In
 \acrshort{mpm}, two different discretization are required. In one hand
 a cartesian grid of nodes is consider with a nodal spacing value of
 0.025. On the other hand, the plate will be modeled with a initial
 layout of four particles per element and occupying the Gauss quadrature
-positions.
+positions.\\
 
 Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
 presence of wiggles in both loading and fracture stages
@@ -749,7 +748,7 @@ in the reaction-displacements curve when linear interpolation technique is emplo
 contrast, \acrshort{lme} simulation does not exhibit these spurious
 oscillations and remains linear. Besides that, linear interpolation
 produces stiffer results than \acrshort{lme}. This can be attributed
-to imprecision in the stress field due to grid-crossing phenomena.
+to imprecision in the stress field due to grid-crossing phenomena.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
@@ -769,7 +768,7 @@ stress value in a hookean material \cite{Zhang_EE_2020}, if
 hyperelastic materials are consider for future simulations,
 inaccuracies in the stress field could affect dramatically to the
 final result. On the other hand \acrshort{lme} produces soft stress
-field evolution even after breaking    
+field evolution even after breaking.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
@@ -802,7 +801,14 @@ conducted under impact loading. This kinds of experiments are
 challenging to reproduce numerically with an explicit solver since
 fracture occurs in a period of milliseconds and high strength
 materials are involved. Accordingly, really small time steps are
-required to achieve a simulation numerically stable.
+required to achieve a simulation numerically stable. Additionally,
+this kind of simulations traditionally require the implementation of
+contact algorithm to reproduce the hammer impact in the beam. In the
+\acrshort{mpm}, the implementation of this feature can be bypassed to
+obtain preliminary results. Nevertheless, this kind of algorithm could
+be implemented to get ever more accurate solutions. Although this is
+out of the scope of this document, future research of authors will overcome this
+limitation.\\
 
 As in the study of Zhang {\it et al.} \cite{Zhang_2009,Zhang_2010a},
 an impact hammer of 120.6 kg was employed to drop it at an impact
@@ -879,7 +885,10 @@ supports. Therefore, this results can be improved in future research
 by a suitable contact algorithm.\\
 
 And finally horizontal stress distributions and crack propagation are
-extracted, see Figure \ref{fig:Stress-vs-damage-impact-test}. 
+extracted, see Figure \ref{fig:Stress-vs-damage-impact-test}. Compared
+with results obtained by \cite{Navas_2017_ES}, stress evolution
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
@@ -1007,4 +1016,4 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 \bibliography{Biblio} 
 
 \end{document}
-\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1010) }
+\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1019) }

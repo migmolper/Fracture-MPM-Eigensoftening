@@ -210,10 +210,22 @@
 % End glossaries
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\PNA}[1]{
+  \textcolor{red}{{#1}}
+}
 
+\newcommand{\MMP}[1]{
+  \textcolor{blue}{{#1}}
+}
 
-\journal{Engineering Fracture Mechanics}
+\newcommand{\DM}[1]{
+  \textcolor{gree}{{#1}}
+}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \journal{Engineering Fracture Mechanics}
+\journal{Computers and Structures}
 
 \modulolinenumbers[5]
 
@@ -376,8 +388,8 @@ comparisons with analytical and experimental results in Section
 \section{The meshfree methodology}
 \label{sec:2}
 
-The aim of this section is to provide an overview of the special
-techniques employed to face the fracture problem under the \acrshort{mpm}
+The aim of this section is to describe and introduce some special
+techniques required to face the fracture problem under the \acrshort{mpm}
 framework. In consequence it is structured as follows: first in
 \ref{sec:2.1} the \acrfull{npc} algorithm for the \acrshort{mpm}
 will be exposed, next the \acrshort{lme} approximants are
@@ -390,8 +402,7 @@ algorithms based in the eigendeformation concept are presented in \ref{sec:2.3}.
 The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian
 method where moving material points, henceforth particles, carries on
 all the physical information of the local state ($\sigma_p,
-\varepsilon_p$) and a set of fixed background nodes is employed to
-compute the balance of momentum equation. Since the \acrshort{mpm}
+\varepsilon_p$) and a set of fixed background nodes are introduced to compute the balance of momentum equation. Since the \acrshort{mpm} 
 possesses the advantages of both Lagrangian and Eulerian descriptions,
 no element distortion takes place in the \acrshort{mpm}. Therefore it
 is an appropriate and efficient method to solve problems with moving
@@ -741,11 +752,12 @@ positions.\\
 
 Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
 presence of wiggles in both loading and fracture stages
-in the reaction-displacements curve when linear interpolation technique is employed. In
-contrast, \acrshort{lme} simulation does not exhibit these spurious
-oscillations and remains linear. Besides that, linear interpolation
-produces stiffer results than \acrshort{lme}. This can be attributed
-to imprecision in the stress field due to grid-crossing phenomena.\\
+in the reaction-displacements curve when linear interpolation
+technique is used. In contrast, \acrshort{lme} simulation does not
+exhibit these spurious oscillations and remains linear. Besides that,
+linear interpolation produces stiffer results than
+\acrshort{lme}. This can be attributed to imprecision in the stress
+field due to grid-crossing phenomena.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
@@ -846,7 +858,7 @@ Value &    2368    &     102.7    &      5.4     &  141  &   31  &  12 \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 For the present research, a 2D setting of the experiment has been
 adopted. Both the hammer and the concrete beam are explicitly
-represented. Several levels of discretization are employed to assess
+represented. Several levels of discretization were required to assess
 the objectiveness of the obtained results. The results here exposed
 are from a discretization of 30616 material points and 6297 nodes. To
 achieve better results, an unestructured grid layout has been adopted
@@ -878,14 +890,21 @@ feasible explanation to this unexpected result can due the composite
 nature of the concrete. Another discrepancy is in the much higher
 values of maximum impact and reaction forces in numerical than in
 experimental. In this case, this is a consequence of over-rigidity
-supports. Therefore, this results can be improved in future research
+in the supports. Therefore, this results can be improved in future research
 by a suitable contact algorithm.\\
 
 And finally horizontal stress distributions and crack propagation are
-extracted, see Figure \ref{fig:Stress-vs-damage-impact-test}. Compared
-with results obtained by \cite{Navas_2017_ES}, stress evolution
-
-
+extracted, see Figure \ref{fig:Stress-vs-damage-impact-test}. Stress
+evolution agrees with the results obtained by \cite{Navas_2017_ES}
+under the \acrshort{otm} framework. Two additional considerations about
+this results are concerning the interpolation technique. In one hand,
+in the opposite to the \acrshort{ugimp} shape function, \acrshort{lme}
+allows unstructured grids. This is a remarkable benefit for this kind
+of simulations since the majority of the computational effort is
+clearly localised in a tiny region of the domain. And in the other
+hand there is the possibility to reduce the shape function support to avoid
+a material point in one side of the crack is affected by those in the
+other side of the crack. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
@@ -900,9 +919,26 @@ with results obtained by \cite{Navas_2017_ES}, stress evolution
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 \label{sec:4}
+Based on the EigenMPM approach to fracture proposed by Zhang {\it et al.}
+\cite{Zhang_EE_2020}, we have proposed two addition improvements which
+solves the shortcomings presented in the original concept. First by
+bring to the \acrshort{mpm} framework the concept of eigensoftening,
+which allow to consider gradual failure process of each material
+point. This concept can be compared with cohesive law in the context
+of cohesive fracture. Furthermore, more elaborated damage curves can
+be designed to describe the failure process in sophisticated
+materials. In this direction, an interesting future improvement of the
+algorithm would be the ability to simulate of crack patterns in
+composite material such carbon fiber. This leads a challenging
+research topic. Secondly, \acrshort{lme} is employed to remove from
+the solution those wiggles due to inaccuracies in the stress
+integration. This interpolation technique could help to improve the
+results in fracture propagation by adapting it thorough the
+deformation gradient. \textit{A priori} this will enhance the already
+impressive localisation properties of eigensoftening and eigenerosion
+algorithms. 
 
 \section*{Acknowledgements}
 The financial support to develop this research from the Ministerio de
@@ -920,7 +956,7 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 \label{sec:expl-pred-corr}
 \begin{algorithm}[H]
   \DontPrintSemicolon
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% º
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \textbf{Update mass matrix :} $ \tens{m}_{I} = N_{Ip}^{k}\ m_p$ \;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \textbf{Explicit Newmark Predictor :}

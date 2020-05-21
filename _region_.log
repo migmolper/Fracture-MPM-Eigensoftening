@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  21 MAY 2020 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  21 MAY 2020 16:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2548,27 +2548,27 @@ l.733 \end{figure}
 
  <./Figure-Mode_I.pdf>]
 
-Package natbib Warning: Citation `Pandolfi_2012' on page 7 undefined on input line 739.
+Package natbib Warning: Citation `Pandolfi_2012' on page 7 undefined on input line 738.
 
 
-LaTeX Warning: Reference `fig:Reactions-cracked-panel-mode-I' on page 8 undefined on input line 746.
+LaTeX Warning: Reference `fig:Reactions-cracked-panel-mode-I' on page 8 undefined on input line 745.
 
-./_region_.tex:754: Preview: Snippet 103 started.
+./_region_.tex:753: Preview: Snippet 103 started.
 <-><->
       
-l.754 \begin{figure}
+l.753 \begin{figure}
                     
 Not a real error.
 
 <Figure-Reactions-Mode-I.png, id=453, 462.528pt x 346.896pt>
 File: Figure-Reactions-Mode-I.png Graphic file (type png)
 <use Figure-Reactions-Mode-I.png>
-Package pdftex.def Info: Figure-Reactions-Mode-I.png  used on input line 756.
+Package pdftex.def Info: Figure-Reactions-Mode-I.png  used on input line 755.
 (pdftex.def)             Requested size: 312.00119pt x 234.01236pt.
-./_region_.tex:761: Preview: Snippet 103 ended.(17691889+0x25559040).
+./_region_.tex:760: Preview: Snippet 103 ended.(17691889+0x25559040).
 <-><->
       
-l.761 \end{figure}
+l.760 \end{figure}
                   
 Not a real error.
 
@@ -2578,43 +2578,43 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has
 
 \pr@endbox ...y \pr@markerbox }\else \box \pr@box 
                                                   \fi }\global \advance \pr@...
-l.761 \end{figure}
+l.760 \end{figure}
                   
 
 
  <./Figure-Reactions-Mode-I.png>]
 
-LaTeX Warning: Reference `fig:Stress-cracked-panel-mode-I' on page 8 undefined on input line 763.
+LaTeX Warning: Reference `fig:Stress-cracked-panel-mode-I' on page 8 undefined on input line 762.
 
 
-Package natbib Warning: Citation `Zhang_EE_2020' on page 8 undefined on input line 768.
+Package natbib Warning: Citation `Zhang_EE_2020' on page 8 undefined on input line 767.
 
-./_region_.tex:774: Preview: Snippet 104 started.
+./_region_.tex:773: Preview: Snippet 104 started.
 <-><->
       
-l.774 \begin{figure}
+l.773 \begin{figure}
                     
 Not a real error.
 
 <./Figure-Stress-0100-mode-I.png, id=465, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0100-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0100-mode-I.png>
-Package pdftex.def Info: ./Figure-Stress-0100-mode-I.png  used on input line 776.
+Package pdftex.def Info: ./Figure-Stress-0100-mode-I.png  used on input line 775.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
 <./Figure-Stress-0250-mode-I.png, id=466, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0250-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0250-mode-I.png>
-Package pdftex.def Info: ./Figure-Stress-0250-mode-I.png  used on input line 777.
+Package pdftex.def Info: ./Figure-Stress-0250-mode-I.png  used on input line 776.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
 <./Figure-Stress-0398-mode-I.png, id=467, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0398-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0398-mode-I.png>
-Package pdftex.def Info: ./Figure-Stress-0398-mode-I.png  used on input line 778.
+Package pdftex.def Info: ./Figure-Stress-0398-mode-I.png  used on input line 777.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
-./_region_.tex:784: Preview: Snippet 104 ended.(40200662+0x25559040).
+./_region_.tex:783: Preview: Snippet 104 ended.(40200662+0x25559040).
 <-><->
       
-l.784 \end{figure}
+l.783 \end{figure}
                   
 Not a real error.
 
@@ -2624,7 +2624,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has
 
 \pr@endbox ...y \pr@markerbox }\else \box \pr@box 
                                                   \fi }\global \advance \pr@...
-l.784 \end{figure}
+l.783 \end{figure}
                   
 
 
@@ -2633,19 +2633,19 @@ l.784 \end{figure}
 
  <./Figure-Stress-0100-mode-I.png> <./Figure-Stress-0250-mode-I.png> <./Figure-Stress-0398-mode-I.png>]
 
-LaTeX Warning: Reference `fig:Reactions-cracked-panel-mode-I' on page 8 undefined on input line 788.
+LaTeX Warning: Reference `fig:Reactions-cracked-panel-mode-I' on page 8 undefined on input line 787.
 
-./_region_.tex:792: Preview: Snippet 105 started.
+./_region_.tex:791: Preview: Snippet 105 started.
 <-><->
       
-l.792 \subsection
+l.791 \subsection
                  {Drop-weight impact test}
 Not a real error.
 
-./_region_.tex:792: Preview: Snippet 105 ended.(546132+152916x25559040).
+./_region_.tex:791: Preview: Snippet 105 ended.(546132+152916x25559040).
 <-><->
       
-l.792 \subsection{Drop-weight impact test}
+l.791 \subsection{Drop-weight impact test}
                                           
 Not a real error.
 
@@ -2653,33 +2653,33 @@ Not a real error.
 
 ]
 
-LaTeX Warning: Reference `sec:3.1' on page 8 undefined on input line 796.
+LaTeX Warning: Reference `sec:3.1' on page 8 undefined on input line 795.
 
 
-Package natbib Warning: Citation `Zhang_2009' on page 8 undefined on input line 807.
+Package natbib Warning: Citation `Zhang_2009' on page 9 undefined on input line 813.
 
 
-Package natbib Warning: Citation `Zhang_2010a' on page 8 undefined on input line 807.
+Package natbib Warning: Citation `Zhang_2010a' on page 9 undefined on input line 813.
 
 
-LaTeX Warning: Reference `fig:geometry-drop-weight-impact-test' on page 8 undefined on input line 813.
+LaTeX Warning: Reference `fig:geometry-drop-weight-impact-test' on page 9 undefined on input line 819.
 
-./_region_.tex:815: Preview: Snippet 106 started.
+./_region_.tex:821: Preview: Snippet 106 started.
 <-><->
       
-l.815 \begin{figure}
+l.821 \begin{figure}
                     
 Not a real error.
 
-<./Figure-impact-test.pdf, id=485, 1295.99269pt x 658.31584pt>
+<./Figure-impact-test.pdf, id=486, 1295.99269pt x 658.31584pt>
 File: ./Figure-impact-test.pdf Graphic file (type pdf)
 <use ./Figure-impact-test.pdf>
-Package pdftex.def Info: ./Figure-impact-test.pdf  used on input line 817.
+Package pdftex.def Info: ./Figure-impact-test.pdf  used on input line 823.
 (pdftex.def)             Requested size: 312.00119pt x 158.48119pt.
-./_region_.tex:820: Preview: Snippet 106 ended.(11955446+0x25559040).
+./_region_.tex:826: Preview: Snippet 106 ended.(11955446+0x25559040).
 <-><->
       
-l.820 \end{figure}
+l.826 \end{figure}
                   
 Not a real error.
 
@@ -2689,27 +2689,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has
 
 \pr@endbox ...y \pr@markerbox }\else \box \pr@box 
                                                   \fi }\global \advance \pr@...
-l.820 \end{figure}
+l.826 \end{figure}
                   
 
  <./Figure-impact-test.pdf>]
 
-Package natbib Warning: Citation `Navas_2017_ES' on page 8 undefined on input line 823.
+Package natbib Warning: Citation `Navas_2017_ES' on page 9 undefined on input line 829.
 
 
-LaTeX Warning: Reference `tab:concrete-properties' on page 8 undefined on input line 826.
+LaTeX Warning: Reference `tab:concrete-properties' on page 9 undefined on input line 832.
 
-./_region_.tex:829: Preview: Snippet 107 started.
+./_region_.tex:835: Preview: Snippet 107 started.
 <-><->
       
-l.829 \begin{table}
+l.835 \begin{table}
                    
 Not a real error.
 
-./_region_.tex:842: Preview: Snippet 107 ended.(4232893+0x25559040).
+./_region_.tex:848: Preview: Snippet 107 ended.(4232893+0x25559040).
 <-><->
       
-l.842 \end{table}
+l.848 \end{table}
                  
 Not a real error.
 
@@ -2719,44 +2719,44 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has 
 
 \pr@endbox ...y \pr@markerbox }\else \box \pr@box 
                                                   \fi }\global \advance \pr@...
-l.842 \end{table}
+l.848 \end{table}
                  
 
 ]
-./_region_.tex:851: Preview: Snippet 108 started.
+./_region_.tex:857: Preview: Snippet 108 started.
 <-><->
       
-l.851 ...ace of the hammer. For this simulation, $
+l.857 ...ace of the hammer. For this simulation, $
                                                   \gamma$ was
 Not a real error.
 
-./_region_.tex:851: Preview: Snippet 108 ended.(338603+152916x442200).
+./_region_.tex:857: Preview: Snippet 108 ended.(338603+152916x442200).
 <-><->
       
-l.851 ...the hammer. For this simulation, $\gamma$
+l.857 ...the hammer. For this simulation, $\gamma$
                                                    was
 Not a real error.
 
 [108]
 
-LaTeX Warning: Reference `fig:Reactions-Forces-impact-test' on page 9 undefined on input line 858.
+LaTeX Warning: Reference `fig:Reactions-Forces-impact-test' on page 9 undefined on input line 864.
 
-./_region_.tex:860: Preview: Snippet 109 started.
+./_region_.tex:866: Preview: Snippet 109 started.
 <-><->
       
-l.860 \begin{figure}
+l.866 \begin{figure}
                     
 Not a real error.
 
-<Figure-impact-test-Forces-Time.png, id=504, 462.528pt x 346.896pt>
+<Figure-impact-test-Forces-Time.png, id=505, 462.528pt x 346.896pt>
 File: Figure-impact-test-Forces-Time.png Graphic file (type png)
 <use Figure-impact-test-Forces-Time.png>
-Package pdftex.def Info: Figure-impact-test-Forces-Time.png  used on input line 862.
+Package pdftex.def Info: Figure-impact-test-Forces-Time.png  used on input line 868.
 (pdftex.def)             Requested size: 312.00119pt x 234.01236pt.
-./_region_.tex:867: Preview: Snippet 109 ended.(17691889+0x25559040).
+./_region_.tex:873: Preview: Snippet 109 ended.(17691889+0x25559040).
 <-><->
       
-l.867 \end{figure}
+l.873 \end{figure}
                   
 Not a real error.
 
@@ -2766,40 +2766,43 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has
 
 \pr@endbox ...y \pr@markerbox }\else \box \pr@box 
                                                   \fi }\global \advance \pr@...
-l.867 \end{figure}
+l.873 \end{figure}
                   
 
 
  <./Figure-impact-test-Forces-Time.png>]
 
-LaTeX Warning: Reference `fig:Stress-vs-damage-impact-test' on page 9 undefined on input line 882.
+LaTeX Warning: Reference `fig:Stress-vs-damage-impact-test' on page 9 undefined on input line 888.
 
-./_region_.tex:884: Preview: Snippet 110 started.
+
+Package natbib Warning: Citation `Navas_2017_ES' on page 9 undefined on input line 889.
+
+./_region_.tex:893: Preview: Snippet 110 started.
 <-><->
       
-l.884 \begin{figure}
+l.893 \begin{figure}
                     
 Not a real error.
 
-<./Figure-impact-test-Damage-vs-Stress-0060.png, id=513, 1238.6275pt x 624.3325pt>
+<./Figure-impact-test-Damage-vs-Stress-0060.png, id=514, 1238.6275pt x 624.3325pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0060.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0060.png>
-Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0060.png  used on input line 886.
+Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0060.png  used on input line 895.
 (pdftex.def)             Requested size: 323.70071pt x 163.16095pt.
-<./Figure-impact-test-Damage-vs-Stress-0080.png, id=514, 1238.6275pt x 624.3325pt>
+<./Figure-impact-test-Damage-vs-Stress-0080.png, id=515, 1238.6275pt x 624.3325pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0080.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0080.png>
-Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0080.png  used on input line 887.
+Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0080.png  used on input line 896.
 (pdftex.def)             Requested size: 323.70071pt x 163.16095pt.
-<./Figure-impact-test-Damage-vs-Stress-0100.png, id=515, 1238.6275pt x 624.3325pt>
+<./Figure-impact-test-Damage-vs-Stress-0100.png, id=516, 1238.6275pt x 624.3325pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0100.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0100.png>
-Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0100.png  used on input line 888.
+Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0100.png  used on input line 897.
 (pdftex.def)             Requested size: 323.70071pt x 163.16095pt.
-./_region_.tex:894: Preview: Snippet 110 ended.(40103267+0x25559040).
+./_region_.tex:903: Preview: Snippet 110 ended.(40103267+0x25559040).
 <-><->
       
-l.894 \end{figure}
+l.903 \end{figure}
                   
 Not a real error.
 
@@ -2809,7 +2812,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has
 
 \pr@endbox ...y \pr@markerbox }\else \box \pr@box 
                                                   \fi }\global \advance \pr@...
-l.894 \end{figure}
+l.903 \end{figure}
                   
 
 
@@ -2817,34 +2820,34 @@ l.894 \end{figure}
 
 
  <./Figure-impact-test-Damage-vs-Stress-0060.png> <./Figure-impact-test-Damage-vs-Stress-0080.png> <./Figure-impact-test-Damage-vs-Stress-0100.png>]
-./_region_.tex:898: Preview: Snippet 111 started.
+./_region_.tex:907: Preview: Snippet 111 started.
 <-><->
       
-l.898 \section
+l.907 \section
               {Conclusions}
 Not a real error.
 
-./_region_.tex:898: Preview: Snippet 111 ended.(546132+0x25559040).
+./_region_.tex:907: Preview: Snippet 111 ended.(546132+0x25559040).
 <-><->
       
-l.898 \section{Conclusions}
+l.907 \section{Conclusions}
                            
 Not a real error.
 
 [111
 
 ]
-./_region_.tex:901: Preview: Snippet 112 started.
+./_region_.tex:910: Preview: Snippet 112 started.
 <-><->
       
-l.901 \section
+l.910 \section
               *{Acknowledgements}
 Not a real error.
 
-./_region_.tex:901: Preview: Snippet 112 ended.(546132+152916x25559040).
+./_region_.tex:910: Preview: Snippet 112 ended.(546132+152916x25559040).
 <-><->
       
-l.901 \section*{Acknowledgements}
+l.910 \section*{Acknowledgements}
                                  
 Not a real error.
 
@@ -2853,314 +2856,314 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
 
-./_region_.tex:913: Preview: Snippet 113 started.
+./_region_.tex:922: Preview: Snippet 113 started.
 <-><->
       
-l.913 \section
+l.922 \section
               {Explicit Newmark Predictor-Corrector algorithm}
 Not a real error.
 
-./_region_.tex:913: Preview: Snippet 113 ended.(546132+152916x25559040).
+./_region_.tex:922: Preview: Snippet 113 ended.(546132+152916x25559040).
 <-><->
       
-l.913 ...it Newmark Predictor-Corrector algorithm}
+l.922 ...it Newmark Predictor-Corrector algorithm}
                                                   
 Not a real error.
 
 [113
 
 ]
-./_region_.tex:918: Preview: Snippet 114 started.
+./_region_.tex:927: Preview: Snippet 114 started.
 <-><->
       
-l.918     \textbf{Update mass matrix :} $
+l.927     \textbf{Update mass matrix :} $
                                           \tens{m}_{I} = N_{Ip}^{k}\ m_p$ \;
 Not a real error.
 
-./_region_.tex:918: Preview: Snippet 114 ended.(649479+300642x4543983).
+./_region_.tex:927: Preview: Snippet 114 ended.(649479+300642x4543983).
 <-><->
       
-l.918 ...trix :} $ \tens{m}_{I} = N_{Ip}^{k}\ m_p$
+l.927 ...trix :} $ \tens{m}_{I} = N_{Ip}^{k}\ m_p$
                                                    \;
 Not a real error.
 
 [114]
-./_region_.tex:921: Preview: Snippet 115 started.
+./_region_.tex:930: Preview: Snippet 115 started.
 <-><->
       
-l.921     \begin{equation*}
+l.930     \begin{equation*}
                            
 Not a real error.
 
-./_region_.tex:923: Preview: Snippet 115 ended.(1914243+0x23248920).
+./_region_.tex:932: Preview: Snippet 115 ended.(1914243+0x23248920).
 <-><->
       
-l.923     \end{equation*}
+l.932     \end{equation*}
                          \;
 Not a real error.
 
 [115]
-./_region_.tex:926: Preview: Snippet 116 started.
+./_region_.tex:935: Preview: Snippet 116 started.
 <-><->
       
-l.926     boundary, set $
+l.935     boundary, set $
                          \vec{v}_{I}^{pred} = 0$.\;
 Not a real error.
 
-./_region_.tex:926: Preview: Snippet 116 ended.(736915+213206x2946412).
+./_region_.tex:935: Preview: Snippet 116 ended.(736915+213206x2946412).
 <-><->
       
-l.926     boundary, set $\vec{v}_{I}^{pred} = 0$
+l.935     boundary, set $\vec{v}_{I}^{pred} = 0$
                                                 .\;
 Not a real error.
 
 [116]
-./_region_.tex:929: Preview: Snippet 117 started.
+./_region_.tex:938: Preview: Snippet 117 started.
 <-><->
       
-l.929     \begin{equation*}
+l.938     \begin{equation*}
                            
 Not a real error.
 
-./_region_.tex:933: Preview: Snippet 117 ended.(1433795+0x23248920).
+./_region_.tex:942: Preview: Snippet 117 ended.(1433795+0x23248920).
 <-><->
       
-l.933     \end{equation*}
+l.942     \end{equation*}
                           \;
 Not a real error.
 
 [117]
-./_region_.tex:935: Preview: Snippet 118 started.
+./_region_.tex:944: Preview: Snippet 118 started.
 <-><->
       
-l.935     \textbf{Update the density field :} $
+l.944     \textbf{Update the density field :} $
                                                \rho_p^{k+1} =
 Not a real error.
 
-./_region_.tex:936: Preview: Snippet 118 ended.(909420+637008x6349002).
+./_region_.tex:945: Preview: Snippet 118 ended.(909420+637008x6349002).
 <-><->
       
-l.936 ...lta\tens{\varepsilon}_{p}^{k+1}\right]}.$
+l.945 ...lta\tens{\varepsilon}_{p}^{k+1}\right]}.$
                                                   \;
 Not a real error.
 
 [118]
-./_region_.tex:941: Preview: Snippet 119 started.
+./_region_.tex:950: Preview: Snippet 119 started.
 <-><->
       
-l.941     nodal force $
+l.950     nodal force $
                        \vec{f}_{I}^{k+1} = \vec{f}_{I}^{int,k+1} + \vec{f}_{...
 Not a real error.
 
-./_region_.tex:941: Preview: Snippet 119 ended.(768079+213206x8332064).
+./_region_.tex:950: Preview: Snippet 119 ended.(768079+213206x8332064).
 <-><->
       
-l.941 ...f}_{I}^{int,k+1} + \vec{f}_{I}^{ext,k+1}$
+l.950 ...f}_{I}^{int,k+1} + \vec{f}_{I}^{ext,k+1}$
                                                   .\;
 Not a real error.
 
 [119]
-./_region_.tex:944: Preview: Snippet 120 started.
+./_region_.tex:953: Preview: Snippet 120 started.
 <-><->
       
-l.944     \begin{equation*}
+l.953     \begin{equation*}
                            
 Not a real error.
 
-./_region_.tex:946: Preview: Snippet 120 ended.(2116386+0x23248920).
+./_region_.tex:955: Preview: Snippet 120 ended.(2116386+0x23248920).
 <-><->
       
-l.946     \end{equation*}
+l.955     \end{equation*}
                          \;
 Not a real error.
 
 [120]
-./_region_.tex:949: Preview: Snippet 121 started.
+./_region_.tex:958: Preview: Snippet 121 started.
 <-><->
       
-l.949     \begin{align*}
+l.958     \begin{align*}
                         
 Not a real error.
 
-./_region_.tex:958: Preview: Snippet 121 ended.(6935555+0x14991578).
+./_region_.tex:967: Preview: Snippet 121 ended.(6935555+0x14991578).
 <-><->
       
-l.958     \end{align*}
+l.967     \end{align*}
                       \;
 Not a real error.
 
 [121]
-./_region_.tex:967: Preview: Snippet 122 started.
+./_region_.tex:976: Preview: Snippet 122 started.
 <-><->
       
-l.967 \section
+l.976 \section
               {Eigensoftening Algorithm}
 Not a real error.
 
-./_region_.tex:967: Preview: Snippet 122 ended.(546132+152916x25559040).
+./_region_.tex:976: Preview: Snippet 122 ended.(546132+152916x25559040).
 <-><->
       
-l.967 \section{Eigensoftening Algorithm}
+l.976 \section{Eigensoftening Algorithm}
                                         
 Not a real error.
 
 [122
 
 ]
-./_region_.tex:972: Preview: Snippet 123 started.
+./_region_.tex:981: Preview: Snippet 123 started.
 <-><->
       
-l.972 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.981 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
-./_region_.tex:972: Preview: Snippet 123 ended.(338603+152916x386477).
+./_region_.tex:981: Preview: Snippet 123 ended.(338603+152916x386477).
 <-><->
       
-l.972 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.981 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
 [123]
-./_region_.tex:972: Preview: Snippet 124 started.
+./_region_.tex:981: Preview: Snippet 124 started.
 <-><->
       
-l.972 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.981 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
-./_region_.tex:972: Preview: Snippet 124 ended.(338603+0x310929).
+./_region_.tex:981: Preview: Snippet 124 ended.(338603+0x310929).
 <-><->
       
-l.972 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.981 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
 [124]
-./_region_.tex:972: Preview: Snippet 125 started.
+./_region_.tex:981: Preview: Snippet 125 started.
 <-><->
       
-l.972 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.981 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
-./_region_.tex:972: Preview: Snippet 125 ended.(546132+219909x1048643).
+./_region_.tex:981: Preview: Snippet 125 ended.(546132+219909x1048643).
 <-><->
       
-l.972 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.981 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
 [125]
-./_region_.tex:972: Preview: Snippet 126 started.
+./_region_.tex:981: Preview: Snippet 126 started.
 <-><->
       
-l.972 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.981 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
-./_region_.tex:972: Preview: Snippet 126 ended.(546132+219909x1136387).
+./_region_.tex:981: Preview: Snippet 126 ended.(546132+219909x1136387).
 <-><->
       
-l.972 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.981 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
 [126]
-./_region_.tex:972: Preview: Snippet 127 started.
+./_region_.tex:981: Preview: Snippet 127 started.
 <-><->
       
-l.972 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.981 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
-./_region_.tex:972: Preview: Snippet 127 ended.(338603+117964x824492).
+./_region_.tex:981: Preview: Snippet 127 ended.(338603+117964x824492).
 <-><->
       
-l.972 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.981 ...hood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
 [127]
-./_region_.tex:973: Preview: Snippet 128 started.
+./_region_.tex:982: Preview: Snippet 128 started.
 <-><->
       
-l.973 ...rn damage parameter $\chi := \{\chi_p\}$}
+l.982 ...rn damage parameter $\chi := \{\chi_p\}$}
                                                   
 Not a real error.
 
-./_region_.tex:973: Preview: Snippet 128 ended.(589824+219909x3314163).
+./_region_.tex:982: Preview: Snippet 128 ended.(589824+219909x3314163).
 <-><->
       
-l.973 ...rn damage parameter $\chi := \{\chi_p\}$}
+l.982 ...rn damage parameter $\chi := \{\chi_p\}$}
                                                   
 Not a real error.
 
 [128]
-./_region_.tex:975: Preview: Snippet 129 started.
+./_region_.tex:984: Preview: Snippet 129 started.
 <-><->
       
-l.975   $
+l.984   $
          \chi_p \leftarrow \chi_p^{k}$ \;
 Not a real error.
 
-./_region_.tex:975: Preview: Snippet 129 ended.(649479+296364x2838129).
+./_region_.tex:984: Preview: Snippet 129 ended.(649479+296364x2838129).
 <-><->
       
-l.975   $\chi_p \leftarrow \chi_p^{k}$
+l.984   $\chi_p \leftarrow \chi_p^{k}$
                                        \;
 Not a real error.
 
 [129]
-./_region_.tex:1002: Preview: Snippet 130 started.
+./_region_.tex:1011: Preview: Snippet 130 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 130 ended.(338603+152916x386477).
+./_region_.tex:1011: Preview: Snippet 130 ended.(338603+152916x386477).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [130]
-./_region_.tex:1002: Preview: Snippet 131 started.
+./_region_.tex:1011: Preview: Snippet 131 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 131 ended.(537395+219909x929807).
+./_region_.tex:1011: Preview: Snippet 131 ended.(537395+219909x929807).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [131]
-./_region_.tex:1002: Preview: Snippet 132 started.
+./_region_.tex:1011: Preview: Snippet 132 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 132 ended.(506811+219909x2216435).
+./_region_.tex:1011: Preview: Snippet 132 ended.(506811+219909x2216435).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [132]
-./_region_.tex:1002: Undefined control sequence.
+./_region_.tex:1011: Undefined control sequence.
 <argument> \emph {$\chi _p = 0$ \AND 
                                      $\epsilon _{f,p} = 0$}
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3168,160 +3171,160 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./_region_.tex:1002: Preview: Snippet 133 started.
+./_region_.tex:1011: Preview: Snippet 133 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 133 ended.(506811+219909x2494149).
+./_region_.tex:1011: Preview: Snippet 133 ended.(506811+219909x2494149).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [133]
-./_region_.tex:1002: Preview: Snippet 134 started.
+./_region_.tex:1011: Preview: Snippet 134 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 134 ended.(537395+219909x2608934).
+./_region_.tex:1011: Preview: Snippet 134 ended.(537395+219909x2608934).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [134]
-./_region_.tex:1002: Preview: Snippet 135 started.
+./_region_.tex:1011: Preview: Snippet 135 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 135 ended.(589824+219909x9504110).
+./_region_.tex:1011: Preview: Snippet 135 ended.(589824+219909x9504110).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [135]
-./_region_.tex:1002: Preview: Snippet 136 started.
+./_region_.tex:1011: Preview: Snippet 136 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 136 ended.(506811+219909x2203540).
+./_region_.tex:1011: Preview: Snippet 136 ended.(506811+219909x2203540).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [136]
-./_region_.tex:1002: Preview: Snippet 137 started.
+./_region_.tex:1011: Preview: Snippet 137 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 137 ended.(589829+219909x10592714).
+./_region_.tex:1011: Preview: Snippet 137 ended.(589829+219909x10592714).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [137]
-./_region_.tex:1002: Preview: Snippet 138 started.
+./_region_.tex:1011: Preview: Snippet 138 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 138 ended.(453288+219909x5119093).
+./_region_.tex:1011: Preview: Snippet 138 ended.(453288+219909x5119093).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [138]
-./_region_.tex:1002: Preview: Snippet 139 started.
+./_region_.tex:1011: Preview: Snippet 139 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 139 ended.(647518+413189x6556593).
+./_region_.tex:1011: Preview: Snippet 139 ended.(647518+413189x6556593).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [139]
-./_region_.tex:1002: Preview: Snippet 140 started.
+./_region_.tex:1011: Preview: Snippet 140 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 140 ended.(546132+219909x3215252).
+./_region_.tex:1011: Preview: Snippet 140 ended.(546132+219909x3215252).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [140]
-./_region_.tex:1002: Preview: Snippet 141 started.
+./_region_.tex:1011: Preview: Snippet 141 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 141 ended.(338603+219909x3170424).
+./_region_.tex:1011: Preview: Snippet 141 ended.(338603+219909x3170424).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [141]
-./_region_.tex:1002: Preview: Snippet 142 started.
+./_region_.tex:1011: Preview: Snippet 142 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 142 ended.(546133+219909x2216435).
+./_region_.tex:1011: Preview: Snippet 142 ended.(546133+219909x2216435).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [142]
-./_region_.tex:1002: Undefined control sequence.
+./_region_.tex:1011: Undefined control sequence.
 <argument> \emph {$\chi _p \neq 1$ \AND 
                                         $\epsilon _{f,p} > 0$}
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3329,47 +3332,47 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./_region_.tex:1002: Preview: Snippet 143 started.
+./_region_.tex:1011: Preview: Snippet 143 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 143 ended.(506811+219909x2494149).
+./_region_.tex:1011: Preview: Snippet 143 ended.(506811+219909x2494149).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [143]
-./_region_.tex:1002: Preview: Snippet 144 started.
+./_region_.tex:1011: Preview: Snippet 144 started.
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 144 ended.(904403+511188x13394320).
+./_region_.tex:1011: Preview: Snippet 144 ended.(904403+511188x13394320).
 <-><->
       
-l.1002   \caption
+l.1011   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [144]
-./_region_.tex:1002: Preview: Snippet 145 started.
+./_region_.tex:1011: Preview: Snippet 145 started.
 <-><->
       
-l.1002   \caption{Compute damage parameter $
+l.1011   \caption{Compute damage parameter $
                                             \chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1002: Preview: Snippet 145 ended.(649479+296364x1531004).
+./_region_.tex:1011: Preview: Snippet 145 ended.(649479+296364x1531004).
 <-><->
       
-l.1002 ...{Compute damage parameter $\chi_p^{k+1}$
+l.1011 ...{Compute damage parameter $\chi_p^{k+1}$
                                                   }
 Not a real error.
 
@@ -3383,19 +3386,19 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1009.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1009.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1009.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1009.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1018.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1018.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1018.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1018.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1009.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1018.
  ) 
 Here is how much of TeX's memory you used:
  14340 strings out of 492982
  213660 string characters out of 6134895
- 374432 words of memory out of 5000000
+ 373432 words of memory out of 5000000
  17585 multiletter control sequences out of 15000+600000
  14145 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3412,9 +3415,9 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist,
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on _region_.pdf (145 pages, 782339 bytes).
+Output written on _region_.pdf (145 pages, 782343 bytes).
 PDF statistics:
- 714 PDF objects out of 1000 (max. 8388607)
+ 715 PDF objects out of 1000 (max. 8388607)
  464 compressed objects within 5 object streams
  52 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
