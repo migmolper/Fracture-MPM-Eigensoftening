@@ -2,8 +2,8 @@ This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: 2020_EFM_MPM_Eigensoftening.aux
 The style file: elsarticle-num.bst
-Database file #1: Biblio/Biblio.bib
-I was expecting a `,' or a `}'---line 339 of file Biblio/Biblio.bib
+Database file #1: Biblio.bib
+I was expecting a `,' or a `}'---line 339 of file Biblio.bib
  : 
  : author = {Schreyer, H.L. and Sulsky, D.L. and Zhou, S.-J},
 (Error may have been on previous line)
@@ -11,45 +11,45 @@ I'm skipping whatever remains of this entry
 Warning--empty author in Schreyer_2002
 Warning--empty title in Schreyer_2002
 Warning--empty journal in Schreyer_2002
-You've used 39 entries,
+You've used 41 entries,
             2937 wiz_defined-function locations,
-            1055 strings with 14758 characters,
-and the built_in function-call counts, 11475 in all, are:
-= -- 1177
-> -- 366
+            1067 strings with 15064 characters,
+and the built_in function-call counts, 12132 in all, are:
+= -- 1241
+> -- 395
 < -- 0
-+ -- 148
-- -- 109
-* -- 910
-:= -- 1623
-add.period$ -- 58
-call.type$ -- 39
-change.case$ -- 39
++ -- 159
+- -- 118
+* -- 962
+:= -- 1718
+add.period$ -- 60
+call.type$ -- 41
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 300
-empty$ -- 1192
-format.name$ -- 143
-if$ -- 2920
+cite$ -- 44
+duplicate$ -- 316
+empty$ -- 1256
+format.name$ -- 154
+if$ -- 3080
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 39
-newline$ -- 152
-num.names$ -- 38
-pop$ -- 185
+int.to.str$ -- 41
+missing$ -- 41
+newline$ -- 158
+num.names$ -- 40
+pop$ -- 195
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 699
+skip$ -- 733
 stack$ -- 0
-substring$ -- 683
-swap$ -- 85
+substring$ -- 739
+swap$ -- 87
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 80
-width$ -- 41
-write$ -- 364
+while$ -- 86
+width$ -- 43
+write$ -- 380
 (There was 1 error message)

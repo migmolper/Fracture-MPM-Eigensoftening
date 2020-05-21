@@ -5,6 +5,7 @@
 \usepackage{graphicx} % figuras
 % \usepackage{subfig}
 \usepackage{subfigure} % subfiguras
+\usepackage{multirow} 
 \usepackage{color}
 \usepackage{soul}
 \usepackage{cancel}
@@ -97,12 +98,6 @@
   description={Natural or Nemann boundary conditions over $\partial\varOmega$}
 }
 
-\newglossaryentry{rho}
-{
-  name=$\rho$,
-  description={Describes the scalar density field}
-}
-
 \newglossaryentry{a}
 {
   name=$\vect{a}$,
@@ -147,7 +142,6 @@
   description={Second order tensor which means the Cauchy strain tensor}
 }
 
-
 \newglossaryentry{Constitutive}
 {
   name=$\tens{D}$,
@@ -155,12 +149,47 @@
     of the material}
 }
 
-
 \newglossaryentry{LME-beta}
 {
   name=$\beta$,
   description={Regularization or thermalization parameter of the
     LME$_{\beta}$ Pareto set}
+}
+
+\newglossaryentry{rho}
+{
+  name=$\rho$,
+  description={Describes the scalar density field}
+}
+
+\newglossaryentry{fc}
+{
+  name=f$_c$,
+  description={Compressive strenght}
+}
+
+\newglossaryentry{ft}
+{
+  name=f$_t$,
+  description={Tensile strenght}
+}
+
+\newglossaryentry{Gf}
+{
+  name=G$_F$,
+  description={Specific fracture energy}
+}
+
+\newglossaryentry{E}
+{
+  name=E,
+  description={Elastic modulus}
+}
+
+\newglossaryentry{nu}
+{
+  name=$\nu$,
+  description={Poisson ratio}
 }
 
 \newacronym{mpm}{MPM}{Material Point Method}
@@ -661,6 +690,7 @@ damage variable can be expressed in terms of the following variables,
   \label{eq:damage-variable-chi-III}
   \chi = \chi(\varepsilon_{\epsilon,f}, h^{\epsilon}, f_t, w_c, G_f)
 \end{equation}
+Implementation details can be consulted in \ref{sec:eigens-algor-1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Cases of study and discussion}
 \label{sec:3}
@@ -700,15 +730,14 @@ by displacement control on the outer flanks of the plate, Figure
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The constitutive model consider for numerical experiment is a
-linear-elastic Hookean material, where Young's modulus $E = 1.06$, the
-Poisson's ratio $\mu = 0.333$, and critical energy-release rate $G_c =
-0.0001$.
-This set of parameters was taken from \cite{Pandolfi_2012}. In
+linear-elastic Hookean material, where Young's modulus \gls{E} = 1.06, the
+Poisson's ratio \gls{nu} = 0.333, and critical energy-release rate
+\gls{Gf} = 0.0001. This set of parameters was taken from \cite{Pandolfi_2012}. In
 \acrshort{mpm}, two different discretization are required. In one hand
 a cartesian grid of nodes is consider with a nodal spacing value of
 0.025. On the other hand, the plate will be modeled with a initial
 layout of four particles per element and occupying the Gauss quadrature
-positions.
+positions.\\
 
 Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
 presence of wiggles in both loading and fracture stages
@@ -716,7 +745,7 @@ in the reaction-displacements curve when linear interpolation technique is emplo
 contrast, \acrshort{lme} simulation does not exhibit these spurious
 oscillations and remains linear. Besides that, linear interpolation
 produces stiffer results than \acrshort{lme}. This can be attributed
-to imprecision in the stress field due to grid-crossing phenomena.
+to imprecision in the stress field due to grid-crossing phenomena.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
@@ -736,13 +765,13 @@ stress value in a hookean material \cite{Zhang_EE_2020}, if
 hyperelastic materials are consider for future simulations,
 inaccuracies in the stress field could affect dramatically to the
 final result. On the other hand \acrshort{lme} produces soft stress
-field evolution even after breaking    
+field evolution even after breaking.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
-\subfigure[t = 25]{\includegraphics[width=0.7\textwidth]{./Figure-Stress-0100-mode-I.png}}
-\subfigure[t = 60]{\includegraphics[width=0.7\textwidth]{./Figure-Stress-0250-mode-I.png}}
-\subfigure[t = 100]{\includegraphics[width=0.7\textwidth]{./Figure-Stress-0398-mode-I.png}}
+\subfigure[t = 25]{\includegraphics[width=0.73\textwidth]{./Figure-Stress-0100-mode-I.png}}
+\subfigure[t = 60]{\includegraphics[width=0.73\textwidth]{./Figure-Stress-0250-mode-I.png}}
+\subfigure[t = 100]{\includegraphics[width=0.73\textwidth]{./Figure-Stress-0398-mode-I.png}}
 \caption{Evolution of the stress tensor magnitude for linear
   interpolation (pictures in the left side), and \acrshort{lme}
   (pictures in the right side). Both simulations performed with an
@@ -761,21 +790,119 @@ over. They are due to the dynamic nature of the solver.
 
 Once the accuracy of the \acrshort{lme} approximants have been proven
 in Section \ref{sec:3.1}, henceforth will be adopted without comparing
-with linear interpolation. Therefore this section is devoted
+with linear interpolation. Therefore this section is devoted to proof
+the accuracy of the eigensoftening algorithm to simulate the behavior
+of quasi-brittle materials under dynamic loading. An example of this
+load case is the three-point bending test on a notched beam is
+conducted under impact loading. This kinds of experiments are
+challenging to reproduce numerically with an explicit solver since
+fracture occurs in a period of milliseconds and high strength
+materials are involved. Accordingly, really small time steps are
+required to achieve a simulation numerically stable. Additionally,
+this kind of simulations traditionally require the implementation of
+contact algorithm to reproduce the hammer impact in the beam. In the
+\acrshort{mpm}, the implementation of this feature can be bypassed to
+obtain preliminary results. Nevertheless, this kind of algorithm could
+be implemented to get ever more accurate solutions. Although this is
+out of the scope of this document, future research of authors will overcome this
+limitation.\\
 
-
+As in the study of Zhang {\it et al.} \cite{Zhang_2009,Zhang_2010a},
+an impact hammer of 120.6 kg was employed to drop it at an impact
+speed of 881 mm/s. The beam dimensions where 100 mm x 100 mm (B x D)
+in cross section, and 420 mm in total lenght (L). The initial
+notch-depth ratio was approximately 0.5, and the span, S, was fixed at
+300 mm during the tests, see Figure
+\ref{fig:geometry-drop-weight-impact-test}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\textwidth]{./Figure-Drop-weight}
+  \includegraphics[width=0.8\textwidth]{./Figure-impact-test}
   \caption{Geometry and boundary condition of the drop-weight impact test.}
   \label{fig:geometry-drop-weight-impact-test}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The material adopted for the simulation was characterised by Navas
+{\it et al.}~\cite{Navas_2017_ES}, and the material properties, such
+as the material density, \gls{rho}, the compressive strenght, \gls{fc},
+the tensile strenght \gls{ft}, the specific fracture energy, \gls{Gf},
+and the elastic modulus \gls{E} are given in table \ref{tab:concrete-properties}.\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
+\begin{table}
+  \centering
+  \begin{tabular}[]{c c c c c c c}
+    \hline
+      &   $\rho$   & $\text{f}_c$ & $\text{f}_t$ & $G_F$ &   E   & $\text{d}_{max}$ \\
+      & (kg/m$^3$) &     (MPa)    &     (MPa)    & (N/m) & (GPa) & (mm) \\
+    \hline
+Value &    2368    &     102.7    &      5.4     &  141  &   31  &  12 \\
+    \hline
+  \end{tabular}
+  \caption[Mechanical properties of thje concrete]{Mechanical
+    properties of the high strenght concrete.}
+  \label{tab:concrete-properties}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For the present research, a 2D setting of the experiment has been
+adopted. Both the hammer and the concrete beam are explicitly
+represented. Several levels of discretization are employed to assess
+the objectiveness of the obtained results. The results here exposed
+are from a discretization of 30616 material points and 6297 nodes. To
+achieve better results, an unestructured grid layout has been adopted
+focusing the minimum nodal spacing, 0.47 mm, in the middle of the beam and in
+the impact surface of the hammer. For this simulation, $\gamma$ was
+fixed to 6.\\
+
+First the reaction and impact forces are validated against their
+experimental counterparts. Since the impact forces applied by the
+hammer and the reaction forces at the two supports were experimentally
+measured, they are compared with numerical ones in Figure
+\ref{fig:Reactions-Forces-impact-test}. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{Figure-impact-test-Forces-Time}
+  \caption{Evolution of the reaction forces plotted \textit{versus}
+    the imposed displacement for linear interpolation technique and
+    the \acrshort{lme} approximants.}
+  \label{fig:Reactions-Forces-impact-test}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Note that the general trend of both forces are correctly
+captured. Observe that in experimental solution the delay between
+impact peak and reactions peak does not agree with the numerical
+ones. On the other hand, if the delay is computed analytically through
+concrete wave speed is much closer to the numerical results. A
+feasible explanation to this unexpected result can due the composite
+nature of the concrete. Another discrepancy is in the much higher
+values of maximum impact and reaction forces in numerical than in
+experimental. In this case, this is a consequence of over-rigidity
+supports. Therefore, this results can be improved in future research
+by a suitable contact algorithm.\\
+
+And finally horizontal stress distributions and crack propagation are
+extracted, see Figure \ref{fig:Stress-vs-damage-impact-test}. Compared
+with results obtained by \cite{Navas_2017_ES}, stress evolution
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\centering
+\subfigure[t = 0.27 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0060}}
+\subfigure[t = 0.36 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0080}}
+\subfigure[t = 0.45 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0100}}
+\caption{Evolution of the stress tensor magnitude for linear
+  interpolation (pictures in the left side), and \acrshort{lme}
+  (pictures in the right side). Both simulations performed with an
+  eigenerosion algorithm.}
+\label{fig:Stress-vs-damage-impact-test}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 \label{sec:4}
-
 
 \section*{Acknowledgements}
 The financial support to develop this research from the Ministerio de
@@ -789,12 +916,9 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 %\appendixpage
 %\renewcommand{\theequation}{\Alph{section}.\arabic{equation}}
 
-\clearpage
-
-\section{Explicit Predictor-Corrector algorithm}
+\section{Explicit Newmark Predictor-Corrector algorithm}
 \label{sec:expl-pred-corr}
-
-\begin{algorithm}
+\begin{algorithm}[H]
   \DontPrintSemicolon
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% º
     \textbf{Update mass matrix :} $ \tens{m}_{I} = N_{Ip}^{k}\ m_p$ \;
@@ -842,14 +966,14 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
     \textbf{Reset nodal values}\;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \label{alg-epc}
-    \caption{Explicit Predictor-Corrector scheme}
+    \caption{Explicit Newmark Predictor-Corrector scheme}
 \end{algorithm} 
 
 
 \section{Eigensoftening Algorithm}
 \label{sec:eigens-algor-1}
 
-\begin{algorithm}
+\begin{algorithm}[H]
   \DontPrintSemicolon
   \KwInput{For each $p$, $\epsilon$-neighbourhood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
   \KwOutput{Return damage parameter $\chi := \{\chi_p\}$}
