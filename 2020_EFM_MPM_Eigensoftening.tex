@@ -73,6 +73,21 @@
 
 \makeglossaries
 
+\newacronym{mpm}{MPM}{Material Point Method}
+\newacronym{otm}{OTM}{Optimal Transportation Meshfree}
+\newacronym{sph}{SPH}{Smoothed Particle Hydrodynamics}
+\newacronym{fem}{FEM}{Finite Element Method}
+\newacronym{efgm}{EFGM}{Element-Free Galerkin Method}
+\newacronym{lme}{LME}{Local Maximum-Entropy}
+\newacronym{flip}{FLIP}{Fluid Implicit Particle}
+\newacronym{gimp}{GIMP}{Generalized Interpolation Material Point}
+\newacronym{igimp}{iGIMP}{Implicit GIMP}
+\newacronym{ugimp}{uGIMP}{Uniform GIMP}
+\newacronym{ddmp}{DDMP}{Dual Domain Material Point}
+\newacronym{ctls}{CTLS}{Conservative Taylor Least Squares}
+\newacronym{npc}{NPC}{Newmark Predictor-Corrector}
+\newacronym{fe}{FE}{Forward Euler}
+
 \newglossaryentry{domain}
 {
   name=$\varOmega$,
@@ -192,20 +207,20 @@
   description={Poisson ratio}
 }
 
-\newacronym{mpm}{MPM}{Material Point Method}
-\newacronym{otm}{OTM}{Optimal Transportation Meshfree}
-\newacronym{sph}{SPH}{Smoothed Particle Hydrodynamics}
-\newacronym{fem}{FEM}{Finite Element Method}
-\newacronym{efgm}{EFGM}{Element-Free Galerkin Method}
-\newacronym{lme}{LME}{Local Maximum-Entropy}
-\newacronym{flip}{FLIP}{Fluid Implicit Particle}
-\newacronym{gimp}{GIMP}{Generalized Interpolation Material Point}
-\newacronym{igimp}{iGIMP}{Implicit GIMP}
-\newacronym{ugimp}{uGIMP}{Uniform GIMP}
-\newacronym{ddmp}{DDMP}{Dual Domain Material Point}
-\newacronym{ctls}{CTLS}{Conservative Taylor Least Squares}
-\newacronym{npc}{NPC}{Newmark Predictor-Corrector}
-\newacronym{fe}{FE}{Forward Euler}
+
+\newglossaryentry{gamma-npc}
+{
+  name=$\gamma$,
+  description={Time integration parameter for the \acrshort{npc} algorithm}
+}
+
+
+\newglossaryentry{gamma-lme}
+{
+  name=$\widehat{\gamma}$,
+  description={Dimensionless parameter to control the value of the
+    thermalization parameter $\beta$ of the \acrshort{lme} shape functions.}
+}
 
 % End glossaries
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -393,18 +408,20 @@ framework. In consequence, this section is structured as follows: first, in
 will be exposed; next the \acrshort{lme} approximants are
 introduced in \ref{sec:2.2} as an accurate alternative technique to
 interpolate data between particles and nodes, and finally fracture
-algorithms based on the eigendeformation concept are presented in \ref{sec:2.3}.
+algorithms based on the eigendeformation concept are presented in
+\ref{sec:2.3}.
 
 \subsection{The \acrshort{mpm} time integration : A \acrlong{npc}  scheme}
 \label{sec:2.1}
 The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian
-method where moving material points, henceforth in this research, particles will carry on
-all the physical information of the local state ($\sigma_p,
-\varepsilon_p$) and a set of fixed background nodes will be introduced to compute the balance of momentum equation. Since the \acrshort{mpm} 
-possesses the advantages of both Lagrangian and Eulerian descriptions,
-no element distortion takes place in the \acrshort{mpm}. Therefore, it
-is an appropriate and efficient method to solve problems with moving
-discontinuities such as fracture evolution.\\
+method where moving material points, henceforth in this research,
+particles \MMP{($\square_p$)} will carry on all the physical information of the local state ($\sigma_p,
+\varepsilon_p$) and a set of fixed background nodes \MMP{($\square_I$)} will
+be introduced to compute the balance of momentum equation. Since the
+\acrshort{mpm} possesses the advantages of both Lagrangian and
+Eulerian descriptions, no element distortion takes place in the
+\acrshort{mpm}. Therefore, it is an appropriate and efficient method
+to solve problems with moving discontinuities such as fracture evolution.\\
 Without loosing generality, the \acrshort{mpm} algorithm
 can be described with three main steps: (i) a variational recovery
 process, where particle data is projected to the grid nodes, (ii) an
@@ -413,13 +430,18 @@ nodal equilibrium equation in a FEM-like procedure, and finally
 (iii) a Lagrangian advection of the particles. In the present research,
 an explicit predictor-corrector time integration scheme is adopted. The
 purposes of this choice is motivated due to its proved robustness and
-stability for dynamic computations. In the first stage, the nodal
-velocity predictor is computed following \eqref{eq:Predictor-velocity}: 
+stability for dynamic computations. \MMP{In the first stage, the nodal
+velocity predictor $ \vec{\tilde{v}}_I^{k+1}$ is computed thorough
+nodal velocities $\vec{v}_I$ and accelerations $\vec{a}_I$ evaluated
+in the $k$ time step},
 \begin{equation}
   \label{eq:Predictor-velocity}
-  \vec{\tilde{v}}_I^{k+1} = \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{\tens{m}_I^{k+1}}\ .
+  \vec{\tilde{v}}_I^{k+1} = \frac{N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{\tens{m}_I^{k+1}}\ .
 \end{equation}
-\PNA{EXPLICAR NOTACION, CUIDADO CON EL GAMMA} This way of computing the nodal predictor is numerically stable
+\MMP{Where \gls{gamma-npc} is an user-defined parameter (typically adopted as
+0.5), $\tens{m}_I$ represents the lumped mass matrix, and $N_{Ip}^{k}$ is
+the nodal contribution of the shape function evaluated in the particle
+coordinates $\vec{x}_p^k$.} This way of computing the nodal predictor is numerically stable
 as well as minimises the computational effort. Once nodal velocities are
 obtained, the essential boundary conditions are imposed. After that, an
 Eulerian phase is computed in the set of nodes in a
@@ -477,11 +499,15 @@ function width is defined as $U(\vec{x}_p,N_I) \coloneqq
 \sum_I N_I |\vec{x}_p - \vec{x}_I |^2$, and $\beta$ is a
 regularization o \textit{thermalization} parameter such that for
 Pareto optimal solutions $\beta \in
-(0,\infty)$. Notice that $\beta$ has units of $[L]^{-2}$,
-therefore it can be controlled by adjusting a dimensionless parameter,
-$\gamma=\beta h^2$ \cite{Arroyo2006}, where $h$ is defined as a
-suitable measure of the nodal spacing. With the restrictions exposed in
-\eqref{eq:LME-scheme-pareto-set}, the unique solution of the local
+(0,\infty)$.\MMP{Notice that $\beta$ has units of $[L]^{-2}$,
+therefore it can be controlled by adjusting a dimensionless
+parameter\footnote{To avoid confusion with the \gls{gamma-npc} parameter of
+  the \acrshort{npc}, the dimensionless parameter defined in Arroyo \&
+  Ortiz \cite{Arroyo2006} as $\gamma$ will be represent by
+  \gls{gamma-lme} to preserve as much as possible the original notation.},
+$\widehat{\gamma}=\beta h^2$}, where $h$ is defined as a
+suitable measure of the nodal spacing. With the restrictions of the
+Pareto set, the unique solution of the local
 \textit{max-ent} problem \acrshort{lme}$_\beta$ is,
  \begin{equation}
   \label{eq:LME-p}
@@ -699,7 +725,31 @@ damage variable can be expressed in terms of the following variables,
   \label{eq:damage-variable-chi-III}
   \chi = \chi(\varepsilon_{\epsilon,f}, h^{\epsilon}, f_t, w_c, G_f)
 \end{equation}
-Implementation details can be consulted in \ref{sec:eigens-algor-1}
+Implementation details can be consulted in \ref{sec:eigens-algor-1}.
+
+\MMP{
+\subsection{$\epsilon$-neighborhood reconstruction : A node-linked method}
+\label{sec:epsil-neighb-reconst}
+Since this operation could be extremely demanding, optimal
+numerical implementation should be employed. In opposite with the Cell-linked
+method proposed by Allen \& Tildesley \cite{Allen_et_al_1989} where
+the definition of a numerical tolerance is required for auxiliar
+algorithms like Crossing Number \cite{Shimrat_1962} or Correct
+Even-Odd \cite{Galetzka_et_al_2017}. To avoid these error prone
+techniques, the method here proposed exploits the meshfree benefits of
+the \acrshort{lme} approximants to introduce a node-linked method. Due
+to the global definition of this interpolation technique, the classical
+interpretation of the \acrshort{fem} element typically adopted in
+\acrshort{mpm} simulations is not required anymore, instead a linked
+list of tributary nodes is reconstructed with the closest node as
+starting point at each time step. Therefore, each node is assigned an
+unique linked-list of those particles which are closest to it. This
+approach allows to reconstruct easily a search list with the support
+of the initial connectivity of the mesh and offers a suitable basis
+for an easy implementation of other interpolation techniques with
+minimum coding effort. A detailed explanation of the proposed
+algorithm can be found in \ref{sec:node-linked-method-1}.
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Cases of study and discussion}
 \label{sec:3}
@@ -861,7 +911,7 @@ the objectiveness of the obtained results. The results here exposed
 are from a discretization of 30616 material points and 6297 nodes. To
 achieve better results, an unestructured grid layout has been adopted
 focusing the minimum nodal spacing, 0.47 mm, in the middle of the beam and in
-the impact surface of the hammer. For this simulation, $\gamma$ was
+the impact surface of the hammer. For this simulation, \gls{gamma-lme} was
 fixed to 6.\\
 
 First the reaction and impact forces are validated against their
@@ -1003,7 +1053,6 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
     \caption{Explicit Newmark Predictor-Corrector scheme}
 \end{algorithm} 
 
-
 \section{Eigensoftening Algorithm}
 \label{sec:eigens-algor-1}
 
@@ -1041,7 +1090,36 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
   }
   \caption{Compute damage parameter $\chi_p^{k+1}$}
   \label{alg-eigens}
+  \caption{Eigensoftening algorithm}
 \end{algorithm}
+
+\section{Node-linked method for $\epsilon$-neighborhood reconstruction}
+\label{sec:node-linked-method-1}
+\begin{algorithm}[H]
+  \DontPrintSemicolon
+  \KwInput{$I_0$ : Closest node for each particle}
+  \KwInput{$I_{Nodes}$ : List of nodes close to each node}
+  \KwInput{$Particles_I$ : List of particles close to each node}
+  \KwOutput{$\text{neighborhood}_{\epsilon}$ : $\epsilon$-neighborhood for each particle}
+  \For{$p$ to $N_p$}
+  {
+    For each $p$ get $I_0$\;
+    Eval $I_{Nodes}(I_0)$ \;
+    \For{$k \in I_{Nodes}(I_0)$}
+    {
+      $\text{neighborhood}_{\epsilon}^{k+1}$ = $\text{neighborhood}_{\epsilon}^{k} \cup Particles_I(k)$
+    }
+    \For{$p_{\epsilon} \in \text{neighborhood}_{\epsilon}$}
+    {
+      \If{$distance(p_{\epsilon},p) > \epsilon $}
+      {
+        pop $p_{\epsilon}$ from neighborhood$_{\epsilon}$\;
+      }      
+    }
+    
+  }  
+  \caption{$\epsilon$-neighborhood reconstruction algorithm}
+\end{algorithm} 
 
 % name your BibTeX data base
 \bibliography{Biblio} 

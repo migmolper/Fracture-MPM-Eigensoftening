@@ -223,6 +223,12 @@ P.~Navas, S.~L{\'{o}}pez-Querol, R.~C. Yu, M.~Pastor, {Optimal transportation
 Z.~Ba\v{z}ant, B.~Oh, Crack band theory for fracture in concrete., Materials
   and Structures. 16 (1983) 155--177.
 
+\bibitem{Molinos2020}
+M.~Molinos, P.~Navas, M.~Pastor, M.~Mart\'in~Stickle, {On the dynamic
+  assessment of the Local-Maximum Entropy Material Point Method through an
+  Explicit Predictor-Corrector Scheme}, {Computer Methods in Applied Mechanics
+  and Engineering} Under review (2020) --.
+
 \bibitem{Arroyo2006}
 M.~Arroyo, M.~Ortiz, {Local maximum-entropy approximation schemes: A seamless
   bridge between finite elements and meshfree methods}, International Journal
@@ -250,6 +256,23 @@ P.~Navas, R.~Yu, G.~Ruiz, Meshfree modeling of the dynamic mixed-mode fracture
   in frc through an eigensoftening approach, Engineering Structures 172.
 \newblock \href {http://dx.doi.org/10.1016/j.engstruct.2018.06.010}
   {\path{doi:10.1016/j.engstruct.2018.06.010}}.
+
+\bibitem{Allen_et_al_1989}
+M.~P. Allen, D.~J. Tildesley, Computer Simulation of Liquids, Clarendon Press,
+  USA, 1989.
+
+\bibitem{Shimrat_1962}
+M.~Shimrat, \href{https://doi.org/10.1145/368637.368653}{Algorithm 112:
+  Position of point relative to polygon}, Commun. ACM 5~(8) (1962) 434.
+\newblock \href {http://dx.doi.org/10.1145/368637.368653}
+  {\path{doi:10.1145/368637.368653}}.
+\newline\urlprefix\url{https://doi.org/10.1145/368637.368653}
+
+\bibitem{Galetzka_et_al_2017}
+M.~Galetzka, P.~Glauner, A simple and correct even-odd algorithm for the
+  point-in-polygon problem for complex polygons, 2017.
+\newblock \href {http://dx.doi.org/10.5220/0006040801750178}
+  {\path{doi:10.5220/0006040801750178}}.
 
 \bibitem{Wobbes2020}
 E.~Wobbes, R.~Tielen, M.~M{\"{o}}ller, C.~Vuik, {Comparison and unification of
