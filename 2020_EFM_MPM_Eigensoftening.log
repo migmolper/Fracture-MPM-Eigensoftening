@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  26 MAY 2020 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  26 MAY 2020 14:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -902,11 +902,7 @@ uplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.671 \begin{equation}
-                       <./Figure-Damage.pdf>]
-
-LaTeX Warning: Reference `eq:mass-EE' on page 10 undefined on input line 677.
-
-[10]
+                       <./Figure-Damage.pdf>] [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 735.
@@ -923,7 +919,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Warning: Reference `sec:3.3' on page 11 undefined on input line 774.
 
 [11]
-<Figure-Mode_I.pdf, id=369, 350.46571pt x 400.10464pt>
+<Figure-Mode_I.pdf, id=370, 350.46571pt x 400.10464pt>
 File: Figure-Mode_I.pdf Graphic file (type pdf)
 <use Figure-Mode_I.pdf>
 Package pdftex.def Info: Figure-Mode_I.pdf  used on input line 790.
@@ -933,24 +929,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 781--804
 
  []
 
-<Figure-Reactions-Mode-I.png, id=378, 462.528pt x 346.896pt>
+<Figure-Reactions-Mode-I.png, id=379, 462.528pt x 346.896pt>
 File: Figure-Reactions-Mode-I.png Graphic file (type png)
 <use Figure-Reactions-Mode-I.png>
 Package pdftex.def Info: Figure-Reactions-Mode-I.png  used on input line 816.
 (pdftex.def)             Requested size: 312.00119pt x 234.01236pt.
-<./Figure-Stress-0100-mode-I.png, id=385, 1086.0575pt x 624.3325pt>
+<./Figure-Stress-0100-mode-I.png, id=386, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0100-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0100-mode-I.png>
 Package pdftex.def Info: ./Figure-Stress-0100-mode-I.png  used on input line 83
 6.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
-<./Figure-Stress-0250-mode-I.png, id=386, 1086.0575pt x 624.3325pt>
+<./Figure-Stress-0250-mode-I.png, id=387, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0250-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0250-mode-I.png>
 Package pdftex.def Info: ./Figure-Stress-0250-mode-I.png  used on input line 83
 7.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
-<./Figure-Stress-0398-mode-I.png, id=387, 1086.0575pt x 624.3325pt>
+<./Figure-Stress-0398-mode-I.png, id=388, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0398-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0398-mode-I.png>
 Package pdftex.def Info: ./Figure-Stress-0398-mode-I.png  used on input line 83
@@ -985,11 +981,11 @@ ed
 l.873 
        <./Figure-Stress-0100-mode-I.png> <./Figure-Stress-0250-mode-I.png> <./F
 igure-Stress-0398-mode-I.png>]
-<./Figure-impact-test.pdf, id=425, 1295.99269pt x 658.31584pt>
-File: ./Figure-impact-test.pdf Graphic file (type pdf)
-<use ./Figure-impact-test.pdf>
-Package pdftex.def Info: ./Figure-impact-test.pdf  used on input line 884.
-(pdftex.def)             Requested size: 312.00119pt x 158.48119pt.
+<./Figure-impact-test.png, id=426, 1296.042pt x 658.3797pt>
+File: ./Figure-impact-test.png Graphic file (type png)
+<use ./Figure-impact-test.png>
+Package pdftex.def Info: ./Figure-impact-test.png  used on input line 884.
+(pdftex.def)             Requested size: 312.00119pt x 158.48651pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 874--895
 
@@ -1012,7 +1008,7 @@ l.920
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.920 
-       <./Figure-impact-test.pdf>]
+       <./Figure-impact-test.png>]
 <Figure-impact-test-Forces-Time.png, id=449, 462.528pt x 346.896pt>
 File: Figure-impact-test-Forces-Time.png Graphic file (type png)
 <use Figure-impact-test-Forces-Time.png>
@@ -1293,10 +1289,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1131.
  ) 
 Here is how much of TeX's memory you used:
- 14549 strings out of 492982
- 217485 string characters out of 6134895
- 379229 words of memory out of 5000000
- 17659 multiletter control sequences out of 15000+600000
+ 14548 strings out of 492982
+ 217443 string characters out of 6134895
+ 379121 words of memory out of 5000000
+ 17658 multiletter control sequences out of 15000+600000
  16155 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,21n,38p,1992b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1374,10 +1370,10 @@ nts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb>
-Output written on 2020_EFM_MPM_Eigensoftening.pdf (27 pages, 866278 bytes).
+Output written on 2020_EFM_MPM_Eigensoftening.pdf (27 pages, 979518 bytes).
 PDF statistics:
  791 PDF objects out of 1000 (max. 8388607)
- 705 compressed objects within 8 object streams
+ 704 compressed objects within 8 object streams
  187 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
