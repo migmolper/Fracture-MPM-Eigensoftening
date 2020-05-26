@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  25 MAY 2020 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  26 MAY 2020 14:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -845,21 +845,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 555--574
  []
 
 [6]
-<Figure-Particle-failed.png, id=279, 557.2017pt x 521.7894pt>
+<Figure-Particle-failed.png, id=279, 542.2659pt x 386.1627pt>
 File: Figure-Particle-failed.png Graphic file (type png)
 <use Figure-Particle-failed.png>
 Package pdftex.def Info: Figure-Particle-failed.png  used on input line 592.
-(pdftex.def)             Requested size: 195.0pt x 182.60513pt.
+(pdftex.def)             Requested size: 195.0pt x 138.86526pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 583--611
 
  []
 
-<Figure-Damage.pdf, id=283, 190.95741pt x 161.78944pt>
+<Figure-Damage.pdf, id=283, 192.32654pt x 161.78944pt>
 File: Figure-Damage.pdf Graphic file (type pdf)
 <use Figure-Damage.pdf>
 Package pdftex.def Info: Figure-Damage.pdf  used on input line 631.
-(pdftex.def)             Requested size: 195.0pt x 165.21559pt.
+(pdftex.def)             Requested size: 195.0pt x 164.04788pt.
 [7pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
@@ -872,7 +872,7 @@ uplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.664 \end{equation}
+l.672 \end{equation}
                      <./Figure-Damage.pdf>] [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -889,8 +889,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Warning: Reference `sec:3.3' on page 10 undefined on input line 770.
 
-[10]
-<Figure-Mode_I.pdf, id=364, 350.46571pt x 400.10464pt>
+<Figure-Mode_I.pdf, id=355, 350.46571pt x 400.10464pt>
 File: Figure-Mode_I.pdf Graphic file (type pdf)
 <use Figure-Mode_I.pdf>
 Package pdftex.def Info: Figure-Mode_I.pdf  used on input line 786.
@@ -900,6 +899,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 777--800
 
  []
 
+[10]
 <Figure-Reactions-Mode-I.png, id=373, 462.528pt x 346.896pt>
 File: Figure-Reactions-Mode-I.png Graphic file (type png)
 <use Figure-Reactions-Mode-I.png>
@@ -923,6 +923,7 @@ File: ./Figure-Stress-0398-mode-I.png Graphic file (type png)
 Package pdftex.def Info: ./Figure-Stress-0398-mode-I.png  used on input line 83
 4.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
+
 
 LaTeX Warning: Float too large for page by 21.41342pt on input line 840.
 
@@ -1068,15 +1069,15 @@ and I'll forget about whatever was undefined.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1096.
+(hyperref)                removing `math shift' on input line 1095.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 1096.
+(hyperref)                removing `\epsilon' on input line 1095.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1096.
+(hyperref)                removing `math shift' on input line 1095.
 
 [20pdfTeX warning (ext4): destination with the same identifier (name{algocf.2})
  has been already used, duplicate ignored
@@ -1084,14 +1085,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1122 \end{algorithm}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{algocf.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1122 \end{algorithm}
                       ] (./2020_EFM_MPM_Eigensoftening.bbl [21pdfTeX warning (e
-xt4): destination with the same identifier (name{algocf.4}) has been already us
+xt4): destination with the same identifier (name{algocf.3}) has been already us
 ed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1267,9 +1262,9 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1127.
  ) 
 Here is how much of TeX's memory you used:
  14531 strings out of 492982
- 217180 string characters out of 6134895
- 379916 words of memory out of 5000000
- 17643 multiletter control sequences out of 15000+600000
+ 217187 string characters out of 6134895
+ 379111 words of memory out of 5000000
+ 17644 multiletter control sequences out of 15000+600000
  16155 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,21n,38p,1992b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1347,10 +1342,10 @@ nts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb>
-Output written on 2020_EFM_MPM_Eigensoftening.pdf (26 pages, 891937 bytes).
+Output written on 2020_EFM_MPM_Eigensoftening.pdf (26 pages, 865024 bytes).
 PDF statistics:
- 787 PDF objects out of 1000 (max. 8388607)
- 702 compressed objects within 8 object streams
- 188 named destinations out of 1000 (max. 500000)
+ 786 PDF objects out of 1000 (max. 8388607)
+ 701 compressed objects within 8 object streams
+ 187 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
