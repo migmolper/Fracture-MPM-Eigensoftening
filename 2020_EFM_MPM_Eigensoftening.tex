@@ -240,7 +240,7 @@
 }
 
 \newcommand{\DM}[1]{
-  \textcolor{gree}{{#1}}
+  \textcolor{green}{{#1}}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -483,7 +483,7 @@ ensures a \textit{unbiased statistical inference} based on the nodal
 data as states the Jayne's\cite{Jaynes1957} principle of
 \textit{maximum entropy}. And second the Delaunay triangulation that
 warranties the \textit{least width} shape function support. To reach
-to a compromise between two competing objectives, a Pareto set is
+\DM{delete to} a compromise between two competing objectives, a Pareto set is
 defined as,
 \begin{align*}
   \label{eq:LME-scheme-pareto-set}
@@ -565,12 +565,15 @@ model \cite{Zhenmao_2005,Schreyer_2002}. The eigensoftening concept
 was originally developed by Navas {\it et al.}
 (2017)\cite{Navas_2017_ES} as an extension for quasi-brittle materials
 of the eigenerosion proposed by Pandolfi \& Ortiz
-(2012)\cite{Pandolfi_2012} for fracture of brittle materials. A
+(2012)\cite{Pandolfi_2012} for fracture of brittle materials. \DM{ XXXX I would modify the following  sentence as "The evaluation of both approaches \cite{Navas_2017_ES} show that the
+eigenerosion algorithm significantly overestimates the tensile  
+stress and the strain peaks, meanwhile eigensoftening captures the forces and crack
+patterns accurately XXXXX}. A
 comparison between both in \cite{Navas_2017_ES} shows that the
 eigenerosion algorithm significantly overestimates the tensile  
 stress and the strain peaks, meanwhile eigensoftening captures the forces and crack
 patterns accurately. On the other hand, eigensoftening algorithm agrees
-very well with experimental results in all the aspects. Furthermore,
+very well with experimental results in all the aspects \DM{which aspect?} . Furthermore,
 the accuracy of this algorithm has been proven for complex fracture
 patterns such as the ones obtained with fiber reinforces concrete (FRC),
 \cite{Navas_2018_ES}.\\
@@ -628,8 +631,7 @@ the static fracture energy per unit of area, $G_F$. Notice how a
 cohesive crack appears when the maximum tensile strength, $f_t$, is
 reached. Once the crack, $w_n$, reaches the value of the
 critical crack opening, $w_c$, a stress-free crack is
-attained. For intermediate values a damage value between zero
-and one represents the extension to which the material has failed.
+attained. \DM{ see the following sentence: comma missing? Clarified--->} For intermediate values a damage value between zero and one represents the extension to which the material has failed. \DM{ hasta acá }
 %%%%%%%%%%%
 \begin{figure}
   \centering
@@ -642,8 +644,8 @@ and one represents the extension to which the material has failed.
 %%%%%%%%%%%
 For the eigensoftening algorithm, a strength criterion for crack
 initialization was adopted. Particularly the maximum principal stress
-theory for brittle fracture was considered by authors
-\cite{Navas_2017_ES}. With that purpose, the variation of the averaged
+theory for brittle fracture was considered  \DM{ delete by the authors}  by authors
+\cite{Navas_2017_ES}. With that purpose \DM{ which purpose?}, the variation of the averaged
 strain energy density in the $\epsilon$-neighborhood of the material point
 $\vec{x}_p^{k+1}$ can be obtained as
 \begin{equation}
@@ -674,18 +676,18 @@ material point $\vec{x}_p^{k+1}$ as
   \frac{1}{m_p} \sum_{x_q^{k+1} \in
   B_{\epsilon}(x_p^{k+1})} m_q \tens{\sigma}_{q,I}, 
 \end{equation}
-where $m_p$ is the total mass of the $\epsilon$-neighborhood, defined similarly than in the eigenerosion methodology (Eq.~\eqref{eq:mass-EE}).
+where $m_p$ is the total mass of the $\epsilon$-neighborhood, defined similarly  \DM{ Pondría:  defined similarly TO  the eigenerosion method} than in the eigenerosion methodology (Eq.~\eqref{eq:mass-EE}).
 %\begin{equation}
 %  \label{eq:averaged-mass}
 %  m_p = \sum_{x_q^{k+1} \in B_{\epsilon}(x_p^{k+1})} m_q.
 %\end{equation}
-This definition of the equivalent critical stress leads to a
+This definition \DM{ dos veces definition en la misma oración, podes poner directamente: The equivalent critical stress leads to a definition of the averaged strain energy ... } of the equivalent critical stress leads to a
 definition of the averaged strain energy in terms of the averaged
 strain as $\delta W_{\epsilon,p} =
  \tens{\sigma}_{\epsilon,p}\ \delta\varepsilon_p$. The softening behaviour is
 activated once $\tens{\sigma}_{\epsilon,p}^{k+1}$ surpasses the
 tensile strength, $f_t$. This consists of a reduction of the internal
-forces as,
+forces as, 
  \begin{equation}
    \label{eq:f-int-damaged}
    f^{int}_I = \sum_p (1 - \chi_p)\ \tens{\sigma}_{p}^{k+1} \cdot
@@ -709,7 +711,7 @@ concrete as brittle material. The effective fracture strain
 $\varepsilon_{\epsilon,f}$ is defined as the difference between the strain at crack initialization,
 $\varepsilon_1(\vec{x}_p^{0})$, and the current strain, $\varepsilon_1(\vec{x}_p^{k+1})$, for a material point $p$. Also,
 $\varepsilon_{\epsilon,f}$ can be represented as the current crack
-opening $w_n$ within the band width, $h_{\epsilon}$. Therefore, 
+opening $w_n$ within the band width, $h_{\epsilon}$. \DM{Check band width $h_{\epsilon}$ subindex or superindex? or both. See eq. 18,19 and 20} Therefore, 
 \begin{equation}
   \label{eq:effective-fracture-strain}
   \varepsilon_{\epsilon,f} = \varepsilon_1(\vec{x}_p^{k+1}) -
@@ -744,9 +746,9 @@ techniques, we endeavour to exploit the meshfree benefits of
 the \acrshort{lme} approximants to introduce a node-linked method. Due
 to the global definition of this interpolation technique, the classical
 interpretation of the \acrshort{fem} element typically adopted in
-\acrshort{mpm} simulations is not required anymore. A linked
+\acrshort{mpm} simulations is not required anymore. \DM{Intead, a} linked
 list of tributary nodes is reconstructed with the closest node as
-starting point at each time step instead. Therefore, each node is assigned to an
+starting point at each time step \DM{deleted instead}. Therefore, each node is assigned to an
 unique linked-list of those particles which are closest to it. This
 approach allows to reconstruct easily a search list with the support
 of the initial connectivity of the mesh and offers a suitable basis
@@ -758,32 +760,29 @@ algorithm can be found in \ref{sec:node-linked-method-1}.
 \section{Cases of study and discussion}
 \label{sec:3}
 
-As noticed in \cite{Zhang_EE_2020}, the EigenMPM have two important
-shortcomings. The first is the presence of stress instabilities even
-with \acrshort{gimp} shape functions. To overcome it, \acrshort{lme}
+\DM{The proposed approach to overcome the two main shortcomings of EighenMPM \cite{Zhang_EE_2020} has been evaluated with "two benchmark tests"¿?. } \DM{DELETE: As noticed in \cite{Zhang_EE_2020}, the EigenMPM have two important
+shortcomings}. The first one deals with the presence of stress instabilities provoked by the spatial discretization, appearing even
+when the \acrshort{gimp} shape functions are employed. To overcome it, \acrshort{lme}
 approximants are introduced as an
 alternative to the existing interpolation techniques. Its
-impressive performance mitigating spurious stress oscillations
-\cite{Wobbes2020} under the \acrshort{mpm} framework help to enhance
-notoriously the quality of the results as we can see in Section
-\ref{sec:3.1}. Where both interpolation techniques
-are compared by carry out an eigenerosion simulation. The second
-limitation is concerning its inability to simulate properly quasi-brittle
+performance in mitigating spurious stress oscillations under the \acrshort{mpm}~\cite{Wobbes2020,Molinos2020} framework helps to enhance
+notoriously the quality of the results as it is observed in Section
+\ref{sec:3.1}, where both interpolation techniques
+are compared by carrying out an eigenerosion simulation. The second
+limitation is concerned to its inability to simulate properly quasi-brittle
 fracture \cite{Navas_2018_ES}. It can be solved through the
 eigensoftening algorithm described in Section \ref{sec:2.3}. A proof
 of it is exposed in Section \ref{sec:3.3}, where experimental results
-of a drop-weight impact test are compared with those produced by
-eigensoftening computations.
+of a drop-weight impact test are compared with experimental ones as well as eigensoftening computations. \PNA{FALTA LO DE BUI}.
 
 \subsection{Edge-cracked square panel in mode I}
 \label{sec:3.1}
 
-This problem here presented is devoted to compare how much \acrshort{lme}
-approximants are able to improve the result \textit{versus} standard
-linear interpolation. It consists in a square plate of size $H = 1$ containing
+The aim of the problem presented hereinafter is to assess the capability of the \acrshort{lme}
+approximants to improve the result \textit{versus} the standard linear interpolation. The application consists of a square plate of size $H = 1$ containing
 an initial edge crack of length $0.25 \cdot H$ loaded in a pure mode I
-by displacement control on the outer flanks of the plate, Figure
-\ref{fig:geometry-cracked-panel-mode-I}.
+by displacement control on the outer flanks of the plate (See Figure
+\ref{fig:geometry-cracked-panel-mode-I} for details).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
@@ -792,21 +791,25 @@ by displacement control on the outer flanks of the plate, Figure
   \label{fig:geometry-cracked-panel-mode-I}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The constitutive model consider for numerical experiment is a
-linear-elastic Hookean material, where Young's modulus \gls{E} = 1.06, the
+
+\PNA{UNIDADES} 
+
+\PNA{NOMBRAR ALGO A LOS CASOS ANALITICOS O DE MICHAEL ORTIZ}
+
+The constitutive model considered in the numerical experiment is a
+linear-elastic Hookean material, whose Young's modulus \gls{E} = 1.06, the
 Poisson's ratio \gls{nu} = 0.333, and critical energy-release rate
-\gls{Gf} = 0.0001. This set of parameters was taken from \cite{Pandolfi_2012}. In
-\acrshort{mpm}, two different discretization are required. In one hand
-a cartesian grid of nodes is consider with a nodal spacing value of
+\gls{Gf} = 0.0001. This set of parameters has been previously employed by Pandolfi~\textit{et al.}~\cite{Pandolfi_2012}. In
+\acrshort{mpm}, two different discretization are required. On the one hand,
+a cartesian grid of nodes is considered with a nodal spacing value of
 0.025. On the other hand, the plate will be modeled with a initial
 layout of four particles per element and occupying the Gauss quadrature
 positions.\\
 
 Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
-presence of wiggles in both loading and fracture stages
-in the reaction-displacements curve when linear interpolation
-technique is used. In contrast, \acrshort{lme} simulation does not
-exhibit these spurious oscillations and remains linear. Besides that,
+presence of wiggles in the reaction-displacements curve, in both loading and post-failure stages,
+when linear interpolation technique is used. In contrast, \acrshort{lme} simulation does not
+exhibit these spurious oscillations and remains linear until the failure. About the strength,
 linear interpolation produces stiffer results than
 \acrshort{lme}. This can be attributed to imprecision in the stress
 field due to grid-crossing phenomena.\\
@@ -820,16 +823,16 @@ field due to grid-crossing phenomena.\\
   \label{fig:Reactions-cracked-panel-mode-I}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-On the other hand, Figure \ref{fig:Stress-cracked-panel-mode-I}
+
+Additionally, Figure \ref{fig:Stress-cracked-panel-mode-I}
 exhibits more clearly the difference between linear interpolation and
 \acrshort{lme}, since numerical instability becomes rather significant
 when particles crosses the boundary of the element in the linear
-case. Although this behavior does not affect significantly to the peak
-stress value in a hookean material \cite{Zhang_EE_2020}, if
-hyperelastic materials are consider for future simulations,
-inaccuracies in the stress field could affect dramatically to the
-final result. On the other hand \acrshort{lme} produces soft stress
-field evolution even after breaking.
+case, which is observed at 60 seconds. \PNA{Although, apparently, the differences in the obtained peaks are not extremely significant, it can be owing to the aforementioned hookean material employed~\cite{Zhang_EE_2020}. When more sophisticated constitutive models will be employed, severe
+%if hyperelastic materials are consider for future simulations,
+inaccuracies may appear in the stress field that could affect dramatically to the
+final result. Focusing on the post failure behavior, it can be seen how \acrshort{lme} produces soft stress
+field evolution even after breaking.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
@@ -844,40 +847,28 @@ field evolution even after breaking.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 An important consideration regarding the presence of oscillations once
-both parts of the panel are separated, Figure
+both parts of the panel are separated is observed in Figure
 \ref{fig:Reactions-cracked-panel-mode-I}. These phenomena should not be
 attributed to the eigenerosion algorithm since the fracture process is
-over. They are due to the dynamic nature of the solver.  
+over. They are due to the dynamic nature of the solver: \PNA{once the energy is release dinamically by the crack, the waves propagate along the domain.}
 
 \subsection{Drop-weight impact test}
 \label{sec:3.2}
+\PNA{This section is devoted to proof
+the accuracy of the eigensoftening algorithm within the \acrshort{mpm} framework when the behavior
+of quasi-brittle materials under dynamic loading is simulated. One of the most interesting examples of this
+loading case is the three-point bending test on a concrete notched beam when it is conducted under impact loading. Indeed, this experimental test is appropriate to be reproduced numerically with the explicit solver proposed in this paper since
+fracture occurs in a period of milliseconds and waves propagate fast along the high strength
+materials involved in the aforementioned test.} Accordingly, small time steps are
+required to achieve a numerically stable simulation.\\
 
-Once the accuracy of the \acrshort{lme} approximants have been proven
-in Section \ref{sec:3.1}, henceforth will be adopted without comparing
-with linear interpolation. Therefore this section is devoted to proof
-the accuracy of the eigensoftening algorithm to simulate the behavior
-of quasi-brittle materials under dynamic loading. An example of this
-load case is the three-point bending test on a notched beam is
-conducted under impact loading. This kinds of experiments are
-challenging to reproduce numerically with an explicit solver since
-fracture occurs in a period of milliseconds and high strength
-materials are involved. Accordingly, really small time steps are
-required to achieve a simulation numerically stable. Additionally,
-this kind of simulations traditionally require the implementation of
-contact algorithm to reproduce the hammer impact in the beam. In the
-\acrshort{mpm}, the implementation of this feature can be bypassed to
-obtain preliminary results. Nevertheless, this kind of algorithm could
-be implemented to get ever more accurate solutions. Although this is
-out of the scope of this document, future research of authors will overcome this
-limitation.\\
-
-As in the study of Zhang {\it et al.} \cite{Zhang_2009,Zhang_2010a},
-an impact hammer of 120.6 kg was employed to drop it at an impact
-speed of 881 mm/s. The beam dimensions where 100 mm x 100 mm (B x D)
+An interesting case of this experimental test was reported by Zhang {\it et al.} \cite{Zhang_2009,Zhang_2010a}. As in the aforementioned study,
+an impact hammer of 120.6 kg has been employed in the proposed simulations to drop it at an impact
+speed of 881 mm/s. The beam dimensions were 100 mm x 100 mm (B x D)
 in cross section, and 420 mm in total lenght (L). The initial
 notch-depth ratio was approximately 0.5, and the span, S, was fixed at
-300 mm during the tests, see Figure
-\ref{fig:geometry-drop-weight-impact-test}.
+300 mm during the tests (see Figure
+\ref{fig:geometry-drop-weight-impact-test}).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
@@ -887,10 +878,10 @@ notch-depth ratio was approximately 0.5, and the span, S, was fixed at
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The material adopted for the simulation was characterised by Navas
-{\it et al.}~\cite{Navas_2017_ES}, and the material properties, such
+{\it et al.}~\cite{Navas_2017_ES}, being the material properties, such
 as the material density, \gls{rho}, the compressive strenght, \gls{fc},
 the tensile strenght \gls{ft}, the specific fracture energy, \gls{Gf},
-and the elastic modulus \gls{E} are given in table \ref{tab:concrete-properties}.\\
+and the elastic modulus \gls{E}, provided in table \ref{tab:concrete-properties}.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{table}
@@ -908,17 +899,21 @@ Value &    2368    &     102.7    &      5.4     &  141  &   31  &  12 \\
   \label{tab:concrete-properties}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 For the present research, a 2D setting of the experiment has been
 adopted. Both the hammer and the concrete beam are explicitly
-represented. Several levels of discretization were required to assess
+represented in order to properly capture the impact. Several levels of discretization were required to assess
 the objectiveness of the obtained results. The results here exposed
 are from a discretization of 30616 material points and 6297 nodes. To
 achieve better results, an unestructured grid layout has been adopted
 focusing the minimum nodal spacing, 0.47 mm, in the middle of the beam and in
 the impact surface of the hammer. For this simulation, \gls{gamma-lme} was
-fixed to 6.\\
+fixed to 6. Once the accuracy of the \acrshort{lme} approximants have been proven
+in Section \ref{sec:3.1}, this discretization has been adopted.
+%without comparing
+%with linear interpolation. Therefore \\
 
-First the reaction and impact forces are validated against their
+First, the reaction and impact forces are validated against their
 experimental counterparts. Since the impact forces applied by the
 hammer and the reaction forces at the two supports were experimentally
 measured, they are compared with numerical ones in Figure
@@ -942,19 +937,23 @@ feasible explanation to this unexpected result can due the composite
 nature of the concrete. Another discrepancy is in the much higher
 values of maximum impact and reaction forces in numerical than in
 experimental. In this case, this is a consequence of over-rigidity
-in the supports. Therefore, this results can be improved in future research
-by a suitable contact algorithm.\\
+in the supports. \PNA{Although the traditional \acrshort{mpm} implementation allows collision of two bodies, inaccurate energy conservation is obtained without the implementation of a conservative contact algorithm to reproduce the hammer impact in the beam. %In the
+%%\acrshort{mpm}, the implementation of this feature can be bypassed to obtain preliminary results. Nevertheless, this kind of algorithm could
+%be implemented to get ever more accurate solutions. 
+Despite the observed discrepancies, this is
+out of the scope of this document, although future research of authors will overcome this
+limitation. Similarly, results of support forces will be more realistic when modelled by a suitable contact algorithm instead of avoiding any vertical displacement}.\\
 
-And finally horizontal stress distributions and crack propagation are
-extracted, see Figure \ref{fig:Stress-vs-damage-impact-test}. Stress
+Finally, longitudinal stress distribution and crack propagation are
+depicted in Figure \ref{fig:Stress-vs-damage-impact-test}. Stress
 evolution agrees with the results obtained by \cite{Navas_2017_ES}
 under the \acrshort{otm} framework. Two additional considerations about
-this results are concerning the interpolation technique. In one hand,
+this results are concerning the interpolation technique. On the one hand,
 in the opposite to the \acrshort{ugimp} shape function, \acrshort{lme}
 allows unstructured grids. This is a remarkable benefit for this kind
 of simulations since the majority of the computational effort is
-clearly localised in a tiny region of the domain. And in the other
-hand there is the possibility to reduce the shape function support to avoid
+clearly localised in a tiny region of the domain. On the other
+hand, there is the possibility to reduce the shape function support to avoid
 a material point in one side of the crack is affected by those in the
 other side of the crack. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -973,24 +972,24 @@ other side of the crack.
 
 \section{Conclusions}
 \label{sec:4}
-Based on the EigenMPM approach to fracture proposed by Zhang {\it et al.}
-\cite{Zhang_EE_2020}, we have proposed two addition improvements which
-solves the shortcomings presented in the original concept. First by
-bring to the \acrshort{mpm} framework the concept of eigensoftening,
-which allow to consider gradual failure process of each material
-point. This concept can be compared with a cohesive law in the context
-of cohesive fracture. Furthermore, more elaborated damage curves can
-be designed to describe the failure process in more sophisticated
+\PNA{Based on the EigenMPM approach to fracture proposed by Zhang {\it et al.}
+\cite{Zhang_EE_2020}, two additional improvements have been proposed in the present research in order to 
+solve the shortcomings of the original concept that Zhang {\it et al.} pointed out in the aforementioned paper \cite{Zhang_EE_2020}. 
+
+Firstly, by
+introducing the concept of eigensoftening to the \acrshort{mpm} framework,
+which allows to consider gradual failure process of each material point. This concept is analogous the softening law which is traditionally employed in the context
+of cohesive fracture in \acrfull{fem}. Furthermore, this failure criterion admits the design of more elaborated damage curves, which can be employed in order to describe the failure process in more sophisticated
 materials. In this direction, an interesting future improvement of the
 algorithm would be the ability to simulate of crack patterns in
-composite material such carbon fiber. This leads a challenging
-research topic. Secondly, \acrshort{lme} is employed to remove from
-the solution those wiggles due to inaccuracies in the stress
-integration. This interpolation technique could help to improve
-results in fracture propagation by adapting it through the
-deformation gradient. \textit{A priori} this will enhance the already
-impressive localisation properties of eigensoftening and eigenerosion
-algorithms. 
+composite material such as steel or carbon fiber reinforced concretes\cite{Ruiz2019}. Interesting researches have been done on this field~\cite{Navas_2018_ES}. In addition, the eigensoftening approach can be extrapolated to rock fracture in the same manner the eigenerosion was~\cite{Wang2017}, taking into account that the volumetric stiffness remains in order to support bulk loads. 
+
+Secondly, \acrshort{lme} is employed to remove from
+the solution those wiggles provoked by inaccuracies in the stress integration. This spatial discretization was previously employed within the \acrshort{mpm} framework with excellent results under the elastic regime~\cite{Wobbes2020,Molinos2020}. The traditional time scheme of the \acrshort{mpm} has been improved with a Newmark Predictor Corrector scheme as well. In this research, the aforementioned techniques have helped to improve the
+results in fracture propagation through the eigensoftening and eigenerosion algorithms. Further improvement may be reached by adapting \acrshort{lme} through the
+deformation gradient\MMP{CITA AQUI LOS QUE LO HACEN}. \textit{A priori} this would enhance the localisation properties of the proposed algorithms in more sophisticated domains.
+
+Finally, for better capturing the measurement of forces made in the laboratory, more realistic contact tools have to be developed. Navas~\textif{et al.} demonstrate the importance of the stiffness of the support in order to obtain accurate results of the reaction forces. Interesting contact algorithms within the \acrshort{mpm} methodology are available in the literature \MMP{CITA ALGUNO Y SI SON CONSERVATIVOS EN ENERGIAS, MEJOR}. }
 
 \section*{Acknowledgements}
 The financial support to develop this research from the Ministerio de
