@@ -290,4 +290,46 @@ X.~Zhang, R.~Yu, G.~Ruiz, M.~Tarifa, M.~Camara, Effect of loading rate on crack
   velocities in hsc., International Journal of Impact Engineering 37 (2010)
   359--370.
 
+\bibitem{Ruiz2019}
+G.~Ruiz, A.~[de~la Rosa], L.~Almeida, E.~Poveda, X.~Zhang, M.~Tarifa, Z.~Wu,
+  R.~Yu,
+  \href{http://www.sciencedirect.com/science/article/pii/S0734743X18309977}{Dynamic
+  mixed-mode fracture in scc reinforced with steel fibers: an experimental
+  study}, International Journal of Impact Engineering 129 (2019) 101 -- 111.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.ijimpeng.2019.03.003}
+  {\path{doi:https://doi.org/10.1016/j.ijimpeng.2019.03.003}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0734743X18309977}
+
+\bibitem{Wang2017}
+K.~Wang, W.~Sun,
+  \href{http://www.sciencedirect.com/science/article/pii/S0045782516311537}{A
+  unified variational eigen-erosion framework for interacting brittle fractures
+  and compaction bands in fluid-infiltrating porous media}, Computer Methods in
+  Applied Mechanics and Engineering 318 (2017) 1 -- 32.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.cma.2017.01.017}
+  {\path{doi:https://doi.org/10.1016/j.cma.2017.01.017}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0045782516311537}
+
+\bibitem{Kochmann2019}
+S.~Kumar, K.~Danas, D.~M. Kochmann, {Enhanced local maximum-entropy
+  approximation for stable meshfree simulations}, Computer Methods in Applied
+  Mechanics and Engineering\href {http://dx.doi.org/10.1016/j.cma.2018.10.030}
+  {\path{doi:10.1016/j.cma.2018.10.030}}.
+
+\bibitem{Bardenhagen_Contact_2001}
+S.~Bardenhagen, J.~Guilkey, K.~Roessig, J.~Brackbill, W.~Witzel, J.~Foster, An
+  improved contact algorithm for the material point method and application to
+  stress propagation in granular material, CMES. Computer Modeling in
+  Engineering & Sciences 2.
+\newblock \href {http://dx.doi.org/10.3970/cmes.2001.002.509}
+  {\path{doi:10.3970/cmes.2001.002.509}}.
+
+\bibitem{XZhang_Contact_2011}
+P.~Huang, X.~Zhang, S.~Ma, X.~Huang, Contact algorithms for the material point
+  method in impact and penetration simulation, International Journal for
+  Numerical Methods in Engineering 85 (2011) 498 -- 517.
+\newblock \href {http://dx.doi.org/10.1002/nme.2981}
+  {\path{doi:10.1002/nme.2981}}.
+
 \end{thebibliography}
