@@ -568,15 +568,10 @@ model \cite{Zhenmao_2005,Schreyer_2002}. The eigensoftening concept
 was originally developed by Navas {\it et al.}
 (2017)\cite{Navas_2017_ES} as an extension for quasi-brittle materials
 of the eigenerosion proposed by Pandolfi \& Ortiz
-(2012)\cite{Pandolfi_2012} for fracture of brittle materials. \DM{ XXXX I would modify the following  sentence as "The evaluation of both approaches \cite{Navas_2017_ES} show that the
-eigenerosion algorithm significantly overestimates the tensile  
-stress and the strain peaks, meanwhile eigensoftening captures the forces and crack
-patterns accurately XXXXX}. A
-comparison between both in \cite{Navas_2017_ES} shows that the
-eigenerosion algorithm significantly overestimates the tensile  
-stress and the strain peaks, meanwhile eigensoftening captures the forces and crack
-patterns accurately. On the other hand, eigensoftening algorithm agrees
-very well with experimental results in all the aspects \DM{which aspect?} . Furthermore,
+(2012)\cite{Pandolfi_2012} for fracture of brittle materials.\DM{The
+  evaluation of both approaches \cite{Navas_2017_ES}}\MMP{against
+  experimental measures}\DM{show that the eigenerosion algorithm significantly overestimates the tensile stress and the strain peaks, meanwhile eigensoftening captures the forces and crack
+patterns accurately}. Furthermore,
 the accuracy of this algorithm has been proven for complex fracture
 patterns such as the ones obtained with fiber reinforces concrete (FRC),
 \cite{Navas_2018_ES}.\\
@@ -608,7 +603,9 @@ Figure \ref{fig:Failed-particles}.
 %%%%%%%%%%%
 Other parameters are the mass of the neighborhood $m_p^{k+1}$, the
 current free-energy density per unit mass  $W_q^{k+1}$ and the
-normalizing constant $C_{\epsilon}$, \PNA{which also defines the $\epsilon$-neighborhood size, being $\epsilon = C_\epsilon h$.}
+normalizing constant $C_{\epsilon}$, \PNA{which also defines the
+  $\epsilon$-neighborhood size, being $\epsilon = C_\epsilon h$}, \MMP{ and
+  $h$ is a measure of the distance between nodes.}
 
 The failure criterion consist of considering that a material point is failed
 when $G_p^{k+1}$ surpasses the critical energy release rate that
@@ -632,9 +629,8 @@ a linear decreasing cohesive law is presented to illustrate the
 concept earlier described. In the picture, the shaded region represents
 the static fracture energy per unit of area, $G_F$. Notice how a
 cohesive crack appears when the maximum tensile strength, $f_t$, is
-reached. Once the crack, $w_n$, reaches the value of the
-critical crack opening, $w_c$, a stress-free crack is
-attained. \DM{ see the following sentence: comma missing? Clarified--->} For intermediate values a damage value between zero and one represents the extension to which the material has failed. \DM{ hasta acá }
+reached. Once the crack, $w_n$, reaches the value of the critical
+crack opening, $w_c$, a stress-free crack is attained.
 %%%%%%%%%%%
 \begin{figure}
   \centering
@@ -646,11 +642,10 @@ attained. \DM{ see the following sentence: comma missing? Clarified--->} For int
 \end{figure}
 %%%%%%%%%%%
 For the eigensoftening algorithm, a strength criterion for crack
-initialization was adopted. Particularly the maximum principal stress
-theory for brittle fracture was considered  \DM{ delete by the authors}  by authors
-\cite{Navas_2017_ES}. With that purpose \DM{ which purpose?}, the variation of the averaged
-strain energy density in the $\epsilon$-neighborhood of the material point
-$\vec{x}_p^{k+1}$ can be obtained as
+initialization was adopted. \MMP{Particularly the maximum principal stress
+theory for brittle fracture was considered in \cite{Navas_2017_ES},
+this allows to quantify the variation of the averaged strain energy density in the
+$\epsilon$-neighborhood of the material point $\vec{x}_p^{k+1}$ as}
 \begin{equation}
   \label{eq:variation-averaged-strain-energy-density}
   \delta W_{\epsilon,p} = \frac{\partial G_p}{C_{\epsilon}} =
@@ -679,13 +674,10 @@ material point $\vec{x}_p^{k+1}$ as
   \frac{1}{m_p} \sum_{x_q^{k+1} \in
   B_{\epsilon}(x_p^{k+1})} m_q \tens{\sigma}_{q,I}, 
 \end{equation}
-where $m_p$ is the total mass of the $\epsilon$-neighborhood, defined similarly  \DM{ Pondría:  defined similarly TO  the eigenerosion method} than in the eigenerosion methodology (Eq.~\eqref{eq:mass-EE}).
-%\begin{equation}
-%  \label{eq:averaged-mass}
-%  m_p = \sum_{x_q^{k+1} \in B_{\epsilon}(x_p^{k+1})} m_q.
-%\end{equation}
-This definition \DM{ dos veces definition en la misma oración, podes poner directamente: The equivalent critical stress leads to a definition of the averaged strain energy ... } of the equivalent critical stress leads to a
-definition of the averaged strain energy in terms of the averaged
+where $m_p$ is the total mass of the
+$\epsilon$-neighborhood,\DM{defined similarly to the eigenerosion
+  method (Eq.~\eqref{eq:mass-EE}). The equivalent critical stress
+  leads to a definition of the   averaged strain energy} in terms of the averaged
 strain as $\delta W_{\epsilon,p} =
  \tens{\sigma}_{\epsilon,p}\ \delta\varepsilon_p$. The softening behaviour is
 activated once $\tens{\sigma}_{\epsilon,p}^{k+1}$ surpasses the
@@ -714,7 +706,7 @@ concrete as brittle material. The effective fracture strain
 $\varepsilon_{\epsilon,f}$ is defined as the difference between the strain at crack initialization,
 $\varepsilon_1(\vec{x}_p^{0})$, and the current strain, $\varepsilon_1(\vec{x}_p^{k+1})$, for a material point $p$. Also,
 $\varepsilon_{\epsilon,f}$ can be represented as the current crack
-opening $w_n$ within the band width, $h_{\epsilon}$. Therefore, 
+opening $w_n$ within the band width $h_{\epsilon}$. Therefore, 
 \begin{equation}
   \label{eq:effective-fracture-strain}
   \varepsilon_{\epsilon,f} = \varepsilon_1(\vec{x}_p^{k+1}) -
@@ -736,10 +728,9 @@ damage variable can be expressed in terms of the following variables,
 \end{equation}
 Implementation details can be consulted in \ref{sec:eigens-algor-1}.
 
-
-\subsection{$\epsilon$-neighborhood reconstruction : A node-linked method}
+\subsection{$\epsilon$-neighbourhood reconstruction : A node-linked method}
 \label{sec:epsil-neighb-reconst}
-\PNA{The construction of the $\epsilon$-neighborhood is a major issue of the proposed methodology.} Since this operation could be extremely demanding, optimal
+\PNA{The construction of the $\epsilon$-neighbourhood is a major issue of the proposed methodology.} Since this operation could be extremely demanding, optimal
 numerical implementation should be employed. In opposite with the Cell-linked
 method proposed by Allen \& Tildesley \cite{Allen_et_al_1989} where
 the definition of a numerical tolerance is required for auxiliar
@@ -747,27 +738,46 @@ algorithms like Crossing Number \cite{Shimrat_1962} or Correct
 Even-Odd \cite{Galetzka_et_al_2017}, \PNA{the proposed methodology adopted herein is linked to the shape function neighbourhood. In order to avoid the aforementioned error} prone
 techniques, we endeavour to exploit the meshfree benefits of
 the \acrshort{lme} approximants to introduce a node-linked method. Due
-to the global definition of this interpolation technique, the classical
+to the global support of this interpolation technique, the classical
 interpretation of the \acrshort{fem} element typically adopted in
-\acrshort{mpm} simulations is not required anymore. \DM{Intead, a} linked
-list of tributary nodes is reconstructed with the closest node as
-starting point at each time step \DM{deleted instead}. Therefore, each node is assigned to an
-unique linked-list of those particles which are closest to it. This
-approach allows to reconstruct easily a search list with the support
-of the initial connectivity of the mesh and offers a suitable basis
-for an easy implementation of other interpolation techniques with
-minimum coding effort. A detailed explanation of the proposed
-algorithm can be found in \ref{sec:node-linked-method-1}.
-
+\acrshort{mpm} simulations is not required anymore. Instead, a linked
+list with the surrounding nodes for each node is defined at the initial
+time. Also, each particle has to be associated with the
+closest node instead with the belonging element as heretofore has been
+done.
+\MMP{Now lets define the concept of a particle \textit{tributary nodes} as the
+list of nodes close to it among which the information transfers
+occurs. Once the closest node are defined, the particle
+posses automatically a list of \textit{tributary nodes}. This has two
+immediate benefits, the first is that shape functions with global
+support as \acrshort{lme} are easier to implement,
+and the second is the increase of the efficiency of the $\epsilon$-neighbourhood
+reconstruction. Regarding this last benefit, since the current
+particle has a \textit{tributary nodes} list assigned to it, and
+consequently each node has a linked list with a set of
+\textit{tributary particles}\footnote{Notice that the list of the
+  particles close to each node is unique for each node and is updated
+  in each time step.} close to it, is possible to define efficiently a
+search list with those particles close to the current particle.
+In the end, particles out of the area of influence, Figure
+\ref{fig:Failed-particles}, are pop out of the final
+$\epsilon$-neighbourhood. A final remark about this new approach is
+its ability to reconstruct easily a search list with the support of
+the initial connectivity of the mesh. It provides a suitable basis for
+an easy implementation of other interpolation techniques with minimum
+coding effort. A detailed explanation of the proposed algorithm can be
+found in \ref{sec:node-linked-method-1}.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Cases of study and discussion}
 \label{sec:3}
 
-\DM{The proposed approach to overcome the two main shortcomings of EighenMPM \cite{Zhang_EE_2020} has been evaluated with "two benchmark tests"¿?. } \DM{DELETE: As noticed in \cite{Zhang_EE_2020}, the EigenMPM have two important
-shortcomings}. The first one deals with the presence of stress instabilities provoked by the spatial discretization, appearing even
-when the \acrshort{gimp} shape functions are employed. To overcome it, \acrshort{lme}
-approximants are introduced as an
-alternative to the existing interpolation techniques. Its
+\DM{The proposed approach to overcome the two main shortcomings of
+  EighenMPM \cite{Zhang_EE_2020} has been evaluated with ``three
+  benchmark tests''}.
+The first one deals with the presence of stress
+instabilities provoked by the spatial discretization, appearing even when the \acrshort{gimp} shape functions are employed. To overcome it, \acrshort{lme}
+approximants are introduced as an alternative to the existing interpolation techniques. Its
 performance in mitigating spurious stress oscillations under the \acrshort{mpm}~\cite{Wobbes2020,Molinos2020} framework helps to enhance
 notoriously the quality of the results as it is observed in Section
 \ref{sec:3.1}, where both interpolation techniques
@@ -786,7 +796,7 @@ test and in the second case with a drop-weight impact test.}
 The aim of the problem presented hereinafter is to assess the
 capability of the \acrshort{lme} approximants to improve the result
 \textit{versus} the standard linear interpolation. The application
-consists of a square plate of size $H = 1$ containing an initial edge
+consists of a square plate of size\MMP{$H = 1\ [L] $} containing an initial edge
 crack of length $0.25 \cdot H$ loaded in a pure mode I by displacement
 control on the outer flanks of the plate (See Figure
 \ref{fig:geometry-cracked-panel-mode-I} for details). 
@@ -798,26 +808,26 @@ control on the outer flanks of the plate (See Figure
   \label{fig:geometry-cracked-panel-mode-I}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\PNA{UNIDADES} 
+The constitutive model considered in the numerical experiment is a
+linear-elastic Hookean material, whose Young's modulus \MMP{\gls{E} = 1.06
+$[M] / ([L] \cdot [T]^2)$, the Poisson's ratio \gls{nu} = 0.333, and
+critical energy-release rate \gls{Gf} = 0.0001 $[M] / \cdot
+[T]^2$. The absence of units is due to the current simulation will not be validated against experimental results, where
+scale factor is relevant, but will be against an analytical
+solution provided by Pandolfi \& Ortiz \cite{Pandolfi_2012}.} In
+\acrshort{mpm}, two different discretization are required. On the one hand, a cartesian grid of
+nodes is considered with a nodal spacing value of 0.025. On the other
+hand, the plate will be modeled with a initial layout of four
+particles per element and occupying the Gauss quadrature positions.\\
 
 \PNA{NOMBRAR ALGO A LOS CASOS ANALITICOS O DE MICHAEL ORTIZ}
 
-The constitutive model considered in the numerical experiment is a
-linear-elastic Hookean material, whose Young's modulus \gls{E} = 1.06, the
-Poisson's ratio \gls{nu} = 0.333, and critical energy-release rate
-\gls{Gf} = 0.0001. This set of parameters has been previously employed by Pandolfi~\textit{et al.}~\cite{Pandolfi_2012}. In
-\acrshort{mpm}, two different discretization are required. On the one hand,
-a cartesian grid of nodes is considered with a nodal spacing value of
-0.025. On the other hand, the plate will be modeled with a initial
-layout of four particles per element and occupying the Gauss quadrature
-positions.\\
-
 Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
-presence of wiggles in the reaction-displacements curve, in both loading and post-failure stages,
-when linear interpolation technique is used. In contrast, \acrshort{lme} simulation does not
-exhibit these spurious oscillations and remains linear until the failure. About the strength,
-linear interpolation produces stiffer results than
+presence of wiggles in the reaction-displacements curve, in both
+loading and post-failure stages, when linear interpolation technique
+is used. In contrast, \acrshort{lme} simulation does not exhibit these
+spurious oscillations and remains linear until the failure. About the
+strength, linear interpolation produces stiffer results than
 \acrshort{lme}. This can be attributed to imprecision in the stress
 field due to grid-crossing phenomena.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -830,16 +840,19 @@ field due to grid-crossing phenomena.\\
   \label{fig:Reactions-cracked-panel-mode-I}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 Additionally, Figure \ref{fig:Stress-cracked-panel-mode-I}
 exhibits more clearly the difference between linear interpolation and
 \acrshort{lme}, since numerical instability becomes rather significant
 when particles crosses the boundary of the element in the linear
-case, which is observed at 60 seconds. \PNA{Although, apparently, the differences in the obtained peaks are not extremely significant, it can be owing to the aforementioned hookean material employed~\cite{Zhang_EE_2020}. When more sophisticated constitutive models will be employed, severe
-%if hyperelastic materials are consider for future simulations,
-inaccuracies may appear in the stress field that could affect dramatically to the
-final result. Focusing on the post failure behavior, it can be seen how \acrshort{lme} produces soft stress
-field evolution even after breaking.}
+case, which is observed at 60 seconds. \PNA{Although, apparently, the
+  differences in the obtained peaks are not extremely significant, it
+  can be owing to the aforementioned hookean material
+  employed~\cite{Zhang_EE_2020}. When more sophisticated constitutive
+  models will be employed, severe inaccuracies may appear in the
+  stress field that could affect dramatically to the final 
+  result. Focusing on the post failure behavior, it can be seen how
+  \acrshort{lme} produces soft stress field evolution even after
+  breaking.} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
@@ -865,71 +878,35 @@ over. They are due to the dynamic nature of the solver: \PNA{once the
 \subsection{Semicircular bending test}
 \label{sec:3.2}
 
-% The second application to be considered is a series of semicircular
-% bending tests on Johnstone, which have been carried out by Lim et al.95 The aim of this example is to examine its predictive capability of the SPH model under a wide range
-% of mixed-mode loading conditions. The geometry and boundary conditions of the test in the experiment are shown in
-% Figure 9A. Similar with 3-point bending test, the semicircular specimens with a radius of 47.5 mm and a thickness of
-% 20 mm are supported by two rollers at a span of 47.5 mm and loaded by another roller on its mid-span. Notches with a
-% length of 16.6 mm are created with different notch angles varying from 0 to 60 with respect to the vertical axis to
-% investigate the influences of the notch angles on the peak load (P) and the fracture toughness (KI,KII), which are calcu-
-% lated as follows:
+The second application to be considered is two semicircular
+bending tests on Johnstone, which have been carried out by Lim et
+al.95. Wang {\it et al.}\cite{Wang_2020} proposed it with the aim of
+examine its predictive capability of the \arcshort{sph} model under a
+wide range of mixed-mode loading conditions. Nonetheless, here only
+both extreme cases 0$^º$ and 60$^º$ will be reproduced. 
 
-% where KI and KII are respectively mode I and mode II fracture toughness; r is the specimen radius; t is the specimen
-% thickness; a is the notch length; YI and YII are mode I and mode II normalised stress intensity factor. As the values of YI
-% and YII can be obtained from the data by Lim at al.6 KI and KII can be calculated based on the above equation once the
-% peak load (P) is known. The material properties of Johnstone are listed in Table 1. The friction angle and dilation angle
-% are respectively taken as 33 and 4  for average quality rock masses in Hoek and Brown96 for the following examples.
-% Figure 9 shows the corresponding SPH configuration of the semicircular bending test with a notch angle of 30 . In
-% the tests, a particle discretisation of 0.95 mm is used, resulting in a total number of 3995 SPH particles for generating
-% the specimen. To create accurate notch angles using reasonable particle numbers, the initial SPH arrangement in this
-% test is different from the traditional one such as the 3-point bending test in Section 5.1. The initial location of each SPH
-% particle in semicircular bending tests is related to the notch angle as shown in Figure 9B. Similar to the 3-point bending
-% tests, three layers of boundary particles are generated for simulating the point loading in the experiments. The velocities
-% of the top boundary particles are vx = 0,vy = − 2 mm/s, whereas the velocities of the bottom boundary particles are
-% as vy = 0. As Johnstone rocks are classified as soft rocks with a relatively small elastic Young's modulus, both artificial
-% viscosity and artificial stress are used in this test to stabilise the numerical solutions. The ramp loading is also applied
-% to alleviate the dynamic effect due to the sudden loading. The stresses of boundary particles are updated in the same
-% way as that in the 3-point bending test. The stresses of real particles near the loading particles are recorded during the
-% simulation process, from which the peak load and fracture toughness can be obtained for the comparison with the
-% experimental data.
-% Figure 10 illustrates the progressive development of fracture and the horizontal velocity profile at the failure stage
-% for the semicircular specimen with the rotational angle of 30 . As seen in Figure 10A, some particles near the tip of the
-% notch are first damaged, showing that the fracture is initiated at the location of the notch tip. Then, the fracture propa-
-% gates towards the loading point (Figure 10B–D), and eventually, a vertical curvilinear fracture pattern is formed in the
-% middle of the sample (Figure 10E). The horizontal velocity profile corresponding to Figure 10E is also plotted in
-% Figure 10F. It can be seen that the particles on the left side of the fracture move to the left whereas the particles on the
-% other side move to the right direction; thus, the sample is split into two halves at the end. In this approach, SPH particle
-% itself could not be cracked visually; however, each damaged SPH particle possesses a FPZ, and the material behaviour
-% within the FPZ will contribute to the decrease in the overall stress state of the SPH particle, thereby resulting in the sep-
-% aration between two damaged SPH particles. The same test without using the artificial stress is also plotted in
-% Figure 11. The result remains stable when the fracture is initiated (Figure 11A) but becomes unstable during the post-
-% failure process (Figure 11B,C). Unrealistic fracture and particles clustering are observed in Figure 11B,C, which indi-
-% cates the tensile instability problem is occurred in SPH. By comparing those two results, it can be concluded that the
+The geometry and boundary conditions are sketched in Figure 
+\ref{fig:geometry-Semicircular-bending-test} . Similar with 3-point bending test,
+the semicircular specimens with a radius of 47.5 mm and a thickness of
+20 mm are supported by two rollers at a span of 47.5 mm and loaded by
+another roller on its mid-span. Notches with a length of 16.6 mm are
+created with different notch angles varying from 0 to 60 with
+respect to the vertical axis to investigate the influences of the
+notch angles on the peak load (P).
 
-% tensile instability problem can be completely removed and good numerical stability can be achieved by just adopting
-% this artificial stress term.
-% Figure 12 depicts the comparison of mixed-mode fracture envelope between experiments and SPH simulations for
-% different notch inclination angles α = 0 , 15  , 30  , 45 , 50 and 60 . It shows that the simulation fracture patterns
-% marked as red lines match well with the experimental results shown as black lines. The final fracture pattern is a verti-
-% cal straight line when α = 0 (pure mode I). When α > 0 , the sample is subjected to mixed-mode or pure mode II load-
-% ing, resulting in a curvilinear fracture paths. For all simulation cases, the fractures initiate from the notch tip and then
-% propagate towards upper loading point, while the experiments show that a few fractures tend to initiate behind the
-% notch tip when the notch angle is beyond α =50 . Nevertheless, the simulation results still could successfully predict
-% the overall fracture envelope in experiments and demonstrate the
-% capability of the traditional SPH model for capturing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./Figure-Semicircular-bending-test}
+  \caption{Geometry and boundary condition of the semicircular bending
+    test.}
+  \label{fig:geometry-Semicircular-bending-test}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% the fracture development under various complex loading conditions. In the meanwhile, the comparison of peak load
-% between experiments and simulations for the notch inclination angles varying from 0 to 60 with an internal incre-
-% ment of 5 is plotted in Figure 13A. It is noted here that a notch angle of 54 (instead of 55) is used in the current test
-% as the sample is subjected to pure mode II loading condition when α = 54 .95 The SPH simulation can well capture the
-% increasing trend of the peak load with the increasing notch angles in the experiment. Additionally, Figure 13B com-
-% pares the predictions of fracture toughness in SPH simulation against the experimental results and Lim's theory.95 The
-% simulation results perfectly fall within the experimental data ranges even though the fracture toughness data in the
-% experiments are quite scattered. Nevertheless, the numerical results agree closely with the empirical fracture toughness
-% envelope, which was proposed by Lim et al.95 and represented as a black line Figure 13B. It further confirms that our
-% model could accurately predict the mixed-mode fracture behaviour of rocks in semicircular bending test.
-
-
+The material properties of Johnstone are listed in Table \ref{tab:Johnstone-properties} The friction angle and dilation angle
+are respectively taken as 33 and 4  for average quality rock
+masses in Hoek and Brown96 for the following examples.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{table}
@@ -942,22 +919,82 @@ over. They are due to the dynamic nature of the solver: \PNA{once the
 Value &    1540    &     102.7    &      5.4     &  141  &   31  &  12 \\
     \hline
   \end{tabular}
-  \caption[Mechanical properties of thje concrete]{Material properties of Johnstone.}
+  \caption[Mechanical properties of Johnstone. ]{Material properties of Johnstone.}
   \label{tab:Johnstone-properties}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}
-  \centering
-  \includegraphics[width=0.6\textwidth]{./Figure-Semicircular-bending-test}
-  \caption{Geometry and boundary condition of the semicircular bending
-    test.}
-  \label{fig:geometry-Semicircular-bending-test}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Figure 9 shows the corresponding SPH configuration of the semicircular
+bending test with a notch angle of 30 . In the tests, a particle
+discretisation of 0.95 mm is used, resulting in a total number of 3995
+SPH particles for generating the specimen. To create accurate notch
+angles using reasonable particle numbers, the initial SPH arrangement
+in this test is different from the traditional one such as the 3-point
+bending test in Section 5.1. The initial location of each SPH particle in semicircular bending tests is related to the notch angle as shown in Figure 9B. Similar to the 3-point bending
+tests, three layers of boundary particles are generated for simulating
+the point loading in the experiments. The velocities of the top boundary particles are vx = 0,vy = − 2 mm/s, whereas the velocities of the bottom boundary particles are
+as vy = 0.
 
-\cite{Wang_2020}
+As Johnstone rocks are classified as soft rocks with a relatively
+small elastic Young's modulus, both artificial viscosity and
+artificial stress are used in this test to stabilise the numerical
+solutions. The ramp loading is also applied to alleviate the dynamic
+effect due to the sudden loading.
+
+The stresses of boundary particles are updated in the same way as that
+in the 3-point bending test. The stresses of real particles near the
+loading particles are recorded during the simulation process, from
+which the peak load and fracture toughness can be obtained for the
+comparison with the experimental data.
+
+
+Figure 10 illustrates the progressive development of fracture and the
+horizontal velocity profile at the failure stage for the semicircular specimen with the rotational angle of 30 . As seen in Figure 10A, some particles near the tip of the
+notch are first damaged, showing that the fracture is initiated at the
+location of the notch tip. Then, the fracture propagates towards the
+loading point (Figure 10B–D), and eventually, a vertical curvilinear
+fracture pattern is formed in the middle of the sample (Figure
+10E). The horizontal velocity profile corresponding to Figure 10E is
+also plotted in Figure 10F. It can be seen that the particles on the
+left side of the fracture move to the left whereas the particles on
+the other side move to the right direction; thus, the sample is split
+into two halves at the end. In this approach, SPH particle itself could not be cracked visually; however, each damaged SPH particle possesses a FPZ, and the material behaviour
+within the FPZ will contribute to the decrease in the overall stress
+state of the SPH particle, thereby resulting in the separation between
+two damaged SPH particles. The same test without using the artificial
+stress is also plotted in Figure 11. The result remains stable when
+the fracture is initiated (Figure 11A) but becomes unstable during the
+post-failure process (Figure 11B,C). Unrealistic fracture and
+particles clustering are observed in Figure 11B,C, which indicates the
+tensile instability problem is occurred in SPH. By comparing those two
+results, it can be concluded that the tensile instability problem can
+be completely removed and good numerical stability can be achieved by
+just adopting this artificial stress term. Figure 12 depicts the
+comparison of mixed-mode fracture envelope between experiments and SPH
+simulations for different notch inclination angles α = 0 , 15  ,
+30  , 45 , 50 and 60 . It shows that the simulation fracture
+patterns marked as red lines match well with the experimental results
+shown as black lines. The final fracture pattern is a vertical
+straight line when α = 0 (pure mode I). When α > 0 , the sample is
+subjected to mixed-mode or pure mode II loading, resulting in a curvilinear fracture paths. For all simulation cases, the fractures initiate from the notch tip and then
+propagate towards upper loading point, while the experiments show that
+a few fractures tend to initiate behind the notch tip when the notch angle is beyond α =50 . Nevertheless, the simulation results still could successfully predict
+the overall fracture envelope in experiments and demonstrate the
+capability of the traditional SPH model for capturing the fracture development under various complex loading conditions. In the meanwhile, the comparison of peak load
+between experiments and simulations for the notch inclination angles
+varying from 0 to 60 with an internal increment of 5 is plotted
+in Figure 13A. It is noted here that a notch angle of 54 (instead of
+55) is used in the current test as the sample is subjected to pure
+mode II loading condition when α = 54 .95 The SPH simulation can
+well capture the increasing trend of the peak load with the increasing
+notch angles in the experiment. Additionally, Figure 13B compares the
+predictions of fracture toughness in SPH simulation against the
+experimental results and Lim's theory.95 The simulation results perfectly fall within the experimental data ranges even though the fracture toughness data in the
+experiments are quite scattered. Nevertheless, the numerical results
+agree closely with the empirical fracture toughness envelope, which
+was proposed by Lim et al.95 and represented as a black line Figure
+13B. It further confirms that our model could accurately predict the
+mixed-mode fracture behaviour of rocks in semicircular bending test.
 
 \subsection{Drop-weight impact test}
 \label{sec:3.3}
@@ -1006,7 +1043,6 @@ Value &    2368    &     102.7    &      5.4     &  141  &   31  &  12 \\
   \label{tab:concrete-properties}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 For the present research, a 2D setting of the experiment has been
 adopted. Both the hammer and the concrete beam are explicitly
 represented in order to properly capture the impact. Several levels of discretization were required to assess
@@ -1208,23 +1244,23 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
   \label{alg-eigens}
 \end{algorithm}
 
-\section{Node-linked method for $\epsilon$-neighborhood reconstruction}
+\section{Node-linked method for $\epsilon$-neighbourhood reconstruction}
 \label{sec:node-linked-method-1}
 \begin{algorithm}[H]
   \DontPrintSemicolon
   \KwInput{$I_0$ : Closest node for each particle}
   \KwInput{$I_{Nodes}$ : List of nodes close to each node}
   \KwInput{$Particles_I$ : List of particles close to each node}
-  \KwOutput{$\text{neighborhood}_{\epsilon}$ : $\epsilon$-neighborhood for each particle}
+  \KwOutput{$\text{neighbourhood}_{\epsilon}$ : $\epsilon$-neighbourhood for each particle}
   \For{$p$ to $N_p$}
   {
     For each $p$ get $I_0$\;
     Eval $I_{Nodes}(I_0)$ \;
     \For{$k \in I_{Nodes}(I_0)$}
     {
-      $\text{neighborhood}_{\epsilon}^{k+1}$ = $\text{neighborhood}_{\epsilon}^{k} \cup Particles_I(k)$
+      $\text{neighbourhood}_{\epsilon}^{k+1}$ = $\text{neighbourhood}_{\epsilon}^{k} \cup Particles_I(k)$
     }
-    \For{$p_{\epsilon} \in \text{neighborhood}_{\epsilon}$}
+    \For{$p_{\epsilon} \in \text{neighbourhood}_{\epsilon}$}
     {
       \If{$distance(p_{\epsilon},p) > \epsilon $}
       {
@@ -1241,4 +1277,7 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 \bibliography{Biblio} 
 
 \end{document}
-\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1244) }
+
+
+
+\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1283) }

@@ -3,7 +3,7 @@
 \BOOKMARK [2][-]{subsection.2.1}{The mpm time integration : A npc scheme}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Spatial interpolation technique : lme approximants}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Fracture modelling approach}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{-neighborhood reconstruction : A node-linked method}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.4}{-neighbourhood reconstruction : A node-linked method}{section.2}% 6
 \BOOKMARK [1][-]{section.3}{Cases of study and discussion}{}% 7
 \BOOKMARK [2][-]{subsection.3.1}{Edge-cracked square panel in mode I}{section.3}% 8
 \BOOKMARK [2][-]{subsection.3.2}{Semicircular bending test}{section.3}% 9
@@ -11,4 +11,4 @@
 \BOOKMARK [1][-]{section.4}{Conclusions}{}% 11
 \BOOKMARK [1][-]{appendix.A}{Explicit Newmark Predictor-Corrector algorithm}{}% 12
 \BOOKMARK [1][-]{appendix.B}{Eigensoftening Algorithm}{}% 13
-\BOOKMARK [1][-]{appendix.C}{Node-linked method for -neighborhood reconstruction}{}% 14
+\BOOKMARK [1][-]{appendix.C}{Node-linked method for -neighbourhood reconstruction}{}% 14

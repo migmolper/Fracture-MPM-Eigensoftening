@@ -280,6 +280,16 @@ E.~Wobbes, R.~Tielen, M.~M{\"{o}}ller, C.~Vuik, {Comparison and unification of
   Particle Mechanics\href {http://dx.doi.org/10.1007/s40571-020-00316-7}
   {\path{doi:10.1007/s40571-020-00316-7}}.
 
+\bibitem{LIM_1993}
+I.~Lim, I.~Johnston, S.~Choi,
+  \href{http://www.sciencedirect.com/science/article/pii/001379449390030V}{Stress
+  intensity factors for semi-circular specimens under three-point bending},
+  Engineering Fracture Mechanics 44~(3) (1993) 363 -- 382.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/0013-7944(93)90030-V}
+  {\path{doi:https://doi.org/10.1016/0013-7944(93)90030-V}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/001379449390030V}
+
 \bibitem{Zhang_2009}
 X.~Zhang, G.~Ruiz, R.~Yu, M.~Tarifa, Fracture behaviour of high-strength
   concrete at a wide range of loading rates., International Journal of Impact
