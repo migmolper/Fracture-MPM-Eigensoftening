@@ -822,24 +822,25 @@ control on the outer flanks of the plate (See Figure
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The constitutive model considered in the numerical experiment is a
 linear-elastic Hookean material, whose Young's modulus \MMP{\gls{E} = 1.06
-$[M] / ([L] \cdot [T]^2)$, the Poisson's ratio \gls{nu} = 0.333, and
-critical energy-release rate \gls{Gf} = 0.0001 $[M] / \cdot
-[T]^2$. The absence of units is due to the current simulation will not be validated against experimental results, where
+$[M] [L]^{-1} [T]^{-2}$, the Poisson's ratio \gls{nu} = 0.333, and
+critical energy-release rate \gls{Gf} = 0.0001 $[L]^{2} [T]^{-2}$. The absence of units is due to the current simulation will not be validated against experimental results, where
 scale factor is relevant, but will be against an analytical
 solution provided by Pandolfi \& Ortiz \cite{Pandolfi_2012}.} In
-\acrshort{mpm}, two different discretization are required. On the one hand, a cartesian grid of
-nodes is considered with a nodal spacing value of 0.025. On the other
-hand, the plate will be modeled with a initial layout of four
-particles per element and occupying the Gauss quadrature positions.\\
+\acrshort{mpm}, two different discretization are required. On one
+hand, a cartesian grid of nodes is considered with a nodal spacing
+value of 0.025. On the other hand, the plate will be modeled with a
+initial layout of four particles per element and occupying the Gauss
+quadrature positions.\\
 
-\PNA{NOMBRAR ALGO A LOS CASOS ANALITICOS O DE MICHAEL ORTIZ}
-
-Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
-presence of wiggles in the reaction-displacements curve, in both
-loading and post-failure stages, when linear interpolation technique
-is used. In contrast, \acrshort{lme} simulation does not exhibit these
-spurious oscillations and remains linear until the failure. About the
-strength, linear interpolation produces stiffer results than
+\MMP{Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
+\acrshort{lme}$_{\gamma = 3.5}$ solution has a reaction peak value of 0.03 $[M] [L]
+[T]^{-2}$ for a imposed displacement 0.015 $[L]$ which agrees with the
+analytical solution \cite{Pandolfi_2012}}. It also shows the presence
+of wiggles in the reaction-displacements curve, in both loading and
+post-failure stages, when linear interpolation technique is used. In
+contrast, \acrshort{lme} simulation does not exhibit these spurious
+oscillations and remains linear until the failure. About the strength,
+linear interpolation produces stiffer results than
 \acrshort{lme}. This can be attributed to imprecision in the stress
 field due to grid-crossing phenomena.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

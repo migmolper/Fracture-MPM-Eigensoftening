@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  29 MAY 2020 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  4 JUN 2020 11:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -908,88 +908,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 808--834
 
  []
 
-<Figure-Reactions-Mode-I.png, id=383, 462.528pt x 346.896pt>
+<Figure-Reactions-Mode-I.png, id=385, 462.528pt x 346.896pt>
 File: Figure-Reactions-Mode-I.png Graphic file (type png)
 <use Figure-Reactions-Mode-I.png>
-Package pdftex.def Info: Figure-Reactions-Mode-I.png  used on input line 848.
+Package pdftex.def Info: Figure-Reactions-Mode-I.png  used on input line 849.
 (pdftex.def)             Requested size: 312.00119pt x 234.01236pt.
-<./Figure-Stress-0100-mode-I.png, id=390, 1086.0575pt x 624.3325pt>
+<./Figure-Stress-0100-mode-I.png, id=392, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0100-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0100-mode-I.png>
 Package pdftex.def Info: ./Figure-Stress-0100-mode-I.png  used on input line 87
-1.
+2.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
-<./Figure-Stress-0250-mode-I.png, id=391, 1086.0575pt x 624.3325pt>
+<./Figure-Stress-0250-mode-I.png, id=393, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0250-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0250-mode-I.png>
 Package pdftex.def Info: ./Figure-Stress-0250-mode-I.png  used on input line 87
-2.
+3.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
-<./Figure-Stress-0398-mode-I.png, id=392, 1086.0575pt x 624.3325pt>
+<./Figure-Stress-0398-mode-I.png, id=394, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0398-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0398-mode-I.png>
 Package pdftex.def Info: ./Figure-Stress-0398-mode-I.png  used on input line 87
-3.
+4.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
 
-LaTeX Warning: Float too large for page by 21.41342pt on input line 879.
+LaTeX Warning: Float too large for page by 21.41342pt on input line 880.
 
+[11] [12pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.3}) has been already used, duplicate ignored
 
-Overfull \hbox (3.8473pt too wide) in paragraph at lines 837--888
-[]\OT1/cmr/m/n/12 Figure []4[] clearly shows the pres-ence of wig-gles in the r
-eaction-displacements
- []
-
-[11]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.902 
+       <./Figure-Mode_I.pdf>]
 Missing character: There is no Â in font cmr8!
 Missing character: There is no º in font cmr12!
 Missing character: There is no Â in font cmr8!
 Missing character: There is no º in font cmr12!
-<./Figure-Semicircular-bending-test.png, id=412, 271.0125pt x 239.4546pt>
+<./Figure-Semicircular-bending-test.png, id=422, 271.0125pt x 239.4546pt>
 File: ./Figure-Semicircular-bending-test.png Graphic file (type png)
 <use ./Figure-Semicircular-bending-test.png>
 Package pdftex.def Info: ./Figure-Semicircular-bending-test.png  used on input 
-line 913.
+line 914.
 (pdftex.def)             Requested size: 234.00238pt x 206.76pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.936 
-       <./Figure-Mode_I.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 963--965
+l.957 \subsection{Drop-weight impact test}
+                                          pdfTeX warning (ext4): destination wi
+th the same identifier (name{table.1}) has been already used, duplicate ignored
 
- []
 
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.957 \subsection{Drop-weight impact test}
+                                           <./Figure-Reactions-Mode-I.png>]
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.965 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.1
-}) has been already used, duplicate ignored
+l.957 \subsection{Drop-weight impact test}
+                                           <./Figure-Stress-0100-mode-I.png> <.
+/Figure-Stress-0250-mode-I.png> <./Figure-Stress-0398-mode-I.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 964--966
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.965 
-       <./Figure-Reactions-Mode-I.png>] [14pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.5}) has been already used, duplicate ignor
-ed
+ []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.965 
-       <./Figure-Stress-0100-mode-I.png> <./Figure-Stress-0250-mode-I.png> <./F
-igure-Stress-0398-mode-I.png>]
-<./Figure-impact-test.png, id=454, 1296.042pt x 658.3797pt>
+<./Figure-impact-test.png, id=456, 1296.042pt x 658.3797pt>
 File: ./Figure-impact-test.png Graphic file (type png)
 <use ./Figure-impact-test.png>
-Package pdftex.def Info: ./Figure-impact-test.png  used on input line 976.
+Package pdftex.def Info: ./Figure-impact-test.png  used on input line 977.
 (pdftex.def)             Requested size: 312.00119pt x 158.48651pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--987
+Underfull \hbox (badness 10000) in paragraph at lines 967--988
 
  []
 
@@ -998,16 +992,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 966--987
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1016 
+l.1017 
         <./Figure-Semicircular-bending-test.png>]
-<Figure-impact-test-Forces-Time.png, id=476, 462.528pt x 346.896pt>
+<Figure-impact-test-Forces-Time.png, id=478, 462.528pt x 346.896pt>
 File: Figure-impact-test-Forces-Time.png Graphic file (type png)
 <use Figure-impact-test-Forces-Time.png>
 Package pdftex.def Info: Figure-impact-test-Forces-Time.png  used on input line
- 1025.
+ 1026.
 (pdftex.def)             Requested size: 312.00119pt x 234.01236pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1017--1047
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1048
 
  []
 
@@ -1016,71 +1010,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 1017--1047
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1047 
+l.1048 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1047 
+l.1048 
         <./Figure-impact-test.png>]
-<./Figure-impact-test-Damage-vs-Stress-0060.png, id=491, 1238.6275pt x 624.3325
+<./Figure-impact-test-Damage-vs-Stress-0060.png, id=493, 1238.6275pt x 624.3325
 pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0060.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0060.png>
 Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0060.png  used o
-n input line 1063.
+n input line 1064.
 (pdftex.def)             Requested size: 323.70071pt x 163.16095pt.
-<./Figure-impact-test-Damage-vs-Stress-0080.png, id=492, 1238.6275pt x 624.3325
+<./Figure-impact-test-Damage-vs-Stress-0080.png, id=494, 1238.6275pt x 624.3325
 pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0080.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0080.png>
 Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0080.png  used o
-n input line 1064.
+n input line 1065.
 (pdftex.def)             Requested size: 323.70071pt x 163.16095pt.
-<./Figure-impact-test-Damage-vs-Stress-0100.png, id=493, 1238.6275pt x 624.3325
+<./Figure-impact-test-Damage-vs-Stress-0100.png, id=495, 1238.6275pt x 624.3325
 pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0100.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0100.png>
 Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0100.png  used o
-n input line 1065.
+n input line 1066.
 (pdftex.def)             Requested size: 323.70071pt x 163.16095pt.
 
 
-LaTeX Warning: Float too large for page by 19.92729pt on input line 1071.
+LaTeX Warning: Float too large for page by 19.92729pt on input line 1072.
 
 [17pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1074 \section{Conclusions}
+l.1075 \section{Conclusions}
                              <./Figure-impact-test-Forces-Time.png>] [18pdfTeX 
 warning (ext4): destination with the same identifier (name{figure.9}) has been 
 already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1074 \section{Conclusions}
+l.1075 \section{Conclusions}
                              <./Figure-impact-test-Damage-vs-Stress-0060.png> <
 ./Figure-impact-test-Damage-vs-Stress-0080.png> <./Figure-impact-test-Damage-vs
 -Stress-0100.png>]
 Runaway argument?
 {{Based on the EigenMPM approach to fracture proposed by Zhang {\it e\ETC.
-./2020_EFM_MPM_Eigensoftening.tex:1099: Paragraph ended before \@textcolor was 
+./2020_EFM_MPM_Eigensoftening.tex:1100: Paragraph ended before \@textcolor was 
 complete.
 <to be read again> 
                    \par 
-l.1099 ...hagen_Contact_2001,XZhang_Contact_2011}}
+l.1100 ...hagen_Contact_2001,XZhang_Contact_2011}}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-./2020_EFM_MPM_Eigensoftening.tex:1099: Undefined control sequence.
+./2020_EFM_MPM_Eigensoftening.tex:1100: Undefined control sequence.
 <argument> ...have to be developed. Navas~\textif 
                                                   {et al.} demonstrate the i...
-l.1099 ...hagen_Contact_2001,XZhang_Contact_2011}}
+l.1100 ...hagen_Contact_2001,XZhang_Contact_2011}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1088,18 +1082,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:1099: Too many }'s.
+./2020_EFM_MPM_Eigensoftening.tex:1100: Too many }'s.
 \PNA #1-> \textcolor {red}{{#1}
                                } 
-l.1099 ...hagen_Contact_2001,XZhang_Contact_2011}}
+l.1100 ...hagen_Contact_2001,XZhang_Contact_2011}}
                                                   
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-./2020_EFM_MPM_Eigensoftening.tex:1099: Too many }'s.
+./2020_EFM_MPM_Eigensoftening.tex:1100: Too many }'s.
 \PNA #1-> \textcolor {red}{{#1}}
                                  
-l.1099 ...hagen_Contact_2001,XZhang_Contact_2011}}
+l.1100 ...hagen_Contact_2001,XZhang_Contact_2011}}
                                                   
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -1116,12 +1110,12 @@ Overfull \vbox (1.75684pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1166 \section
+l.1167 \section
                {Eigensoftening Algorithm}]
-./2020_EFM_MPM_Eigensoftening.tex:1201: Undefined control sequence.
+./2020_EFM_MPM_Eigensoftening.tex:1202: Undefined control sequence.
 <argument> $\chi _p = 0$ \AND 
                               $\epsilon _{f,p} = 0$
-l.1201   \caption
+l.1202   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1129,10 +1123,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:1201: Undefined control sequence.
+./2020_EFM_MPM_Eigensoftening.tex:1202: Undefined control sequence.
 <argument> $\chi _p \neq 1$ \AND 
                                  $\epsilon _{f,p} > 0$
-l.1201   \caption
+l.1202   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1141,29 +1135,29 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (5.76389pt too wide) in paragraph at lines 1205--1205
+Overfull \hbox (5.76389pt too wide) in paragraph at lines 1206--1206
 []\OT1/cmr/bx/n/12 Node-linked method for $\OML/cmm/b/it/12 ^^O$\OT1/cmr/bx/n/1
 2 -neighbourhood re-con-struc-
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1205.
+(hyperref)                removing `math shift' on input line 1206.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 1205.
+(hyperref)                removing `\epsilon' on input line 1206.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1205.
+(hyperref)                removing `math shift' on input line 1206.
 
 [22pdfTeX warning (ext4): destination with the same identifier (name{algocf.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1232 \end{algorithm}
+l.1233 \end{algorithm}
                       ] (./2020_EFM_MPM_Eigensoftening.bbl [23pdfTeX warning (e
 xt4): destination with the same identifier (name{algocf.3}) has been already us
 ed, duplicate ignored
@@ -1412,12 +1406,12 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1237.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1238.
 [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1237.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1238.
  (./2020_EFM_MPM_Eigensoftening.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1237.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1237.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1238.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1238.
 
 Package rerunfilecheck Info: File `2020_EFM_MPM_Eigensoftening.out' has not cha
 nged.
@@ -1426,7 +1420,7 @@ nged.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1237.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1238.
  ) 
 Here is how much of TeX's memory you used:
  14661 strings out of 492982
@@ -1513,10 +1507,10 @@ nts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb>
-Output written on 2020_EFM_MPM_Eigensoftening.pdf (29 pages, 1031854 bytes).
+Output written on 2020_EFM_MPM_Eigensoftening.pdf (29 pages, 1020146 bytes).
 PDF statistics:
- 882 PDF objects out of 1000 (max. 8388607)
- 791 compressed objects within 8 object streams
+ 884 PDF objects out of 1000 (max. 8388607)
+ 793 compressed objects within 8 object streams
  200 named destinations out of 1000 (max. 500000)
  178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
