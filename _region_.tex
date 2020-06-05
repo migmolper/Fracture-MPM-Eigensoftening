@@ -206,10 +206,25 @@
   name=$\nu$,
   description={Poisson ratio}
 }
-\begin{itemize}
-\item 
-\end{itemize}
 
+\newglossaryentry{Ceps}
+{
+  name=$C_{\epsilon}$,
+  description={Normalizing constant}
+}
+
+
+\newglossaryentry{heps}
+{
+  name=$h_{\epsilon}$,
+  description={Band width}
+}
+
+\newglossaryentry{Wc}
+{
+  name=$w_{c}$,
+  description={Critical opening displacement}
+}
 
 \newglossaryentry{gamma-npc}
 {
@@ -810,24 +825,25 @@ control on the outer flanks of the plate (See Figure
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The constitutive model considered in the numerical experiment is a
 linear-elastic Hookean material, whose Young's modulus \MMP{\gls{E} = 1.06
-$[M] / ([L] \cdot [T]^2)$, the Poisson's ratio \gls{nu} = 0.333, and
-critical energy-release rate \gls{Gf} = 0.0001 $[M] / \cdot
-[T]^2$. The absence of units is due to the current simulation will not be validated against experimental results, where
+$[M] [L]^{-1} [T]^{-2}$, the Poisson's ratio \gls{nu} = 0.333, and
+critical energy-release rate \gls{Gf} = 0.0001 $[L]^{2} [T]^{-2}$. The absence of units is due to the current simulation will not be validated against experimental results, where
 scale factor is relevant, but will be against an analytical
 solution provided by Pandolfi \& Ortiz \cite{Pandolfi_2012}.} In
-\acrshort{mpm}, two different discretization are required. On the one hand, a cartesian grid of
-nodes is considered with a nodal spacing value of 0.025. On the other
-hand, the plate will be modeled with a initial layout of four
-particles per element and occupying the Gauss quadrature positions.\\
+\acrshort{mpm}, two different discretization are required. On one
+hand, a cartesian grid of nodes is considered with a nodal spacing
+value of 0.025. On the other hand, the plate will be modeled with a
+initial layout of four particles per element and occupying the Gauss
+quadrature positions.\\
 
-\PNA{NOMBRAR ALGO A LOS CASOS ANALITICOS O DE MICHAEL ORTIZ}
-
-Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
-presence of wiggles in the reaction-displacements curve, in both
-loading and post-failure stages, when linear interpolation technique
-is used. In contrast, \acrshort{lme} simulation does not exhibit these
-spurious oscillations and remains linear until the failure. About the
-strength, linear interpolation produces stiffer results than
+\MMP{Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
+\acrshort{lme}$_{\gamma = 3.5}$ solution has a reaction peak value of 0.03 $[M] [L]
+[T]^{-2}$ for a imposed displacement 0.015 $[L]$ which agrees with the
+analytical solution \cite{Pandolfi_2012}}. It also shows the presence
+of wiggles in the reaction-displacements curve, in both loading and
+post-failure stages, when linear interpolation technique is used. In
+contrast, \acrshort{lme} simulation does not exhibit these spurious
+oscillations and remains linear until the failure. About the strength,
+linear interpolation produces stiffer results than
 \acrshort{lme}. This can be attributed to imprecision in the stress
 field due to grid-crossing phenomena.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -879,22 +895,23 @@ over. They are due to the dynamic nature of the solver: \PNA{once the
 \label{sec:3.2}
 
 The second application to be considered is two semicircular
-bending tests on Johnstone, which have been carried out by Lim et
-al.95. Wang {\it et al.}\cite{Wang_2020} proposed it with the aim of
-examine its predictive capability of the \arcshort{sph} model under a
-wide range of mixed-mode loading conditions. Nonetheless, here only
-both extreme cases 0$^º$ and 60$^º$ will be reproduced. 
+bending tests on Johnstone, which have been carried out by Lim {\it et
+  al.} \cite{LIM_1993} and numerically reproduced by Wang {\it et
+  al.}\cite{Wang_2020} under \acrshort{sph} framework within an
+implicit algorithm. The aim of the test is to examine the predictive
+capability of the eigensoftening algorithm under different kind of
+mixed-mode loading conditions. This capability was previously within a
+\acrshort{otm} implementation \cite{Navas_2018_ES}.
 
 The geometry and boundary conditions are sketched in Figure 
-\ref{fig:geometry-Semicircular-bending-test} . Similar with 3-point bending test,
-the semicircular specimens with a radius of 47.5 mm and a thickness of
+\ref{fig:geometry-Semicircular-bending-test}. The experiment consist in two
+semicircular specimens with a radius of 47.5 mm and a thickness of
 20 mm are supported by two rollers at a span of 47.5 mm and loaded by
 another roller on its mid-span. Notches with a length of 16.6 mm are
-created with different notch angles varying from 0 to 60 with
-respect to the vertical axis to investigate the influences of the
-notch angles on the peak load (P).
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+created with different notch angles of 0$^º$ and 60$^º$ with respect
+to the vertical axis to investigate the influences of the
+notch angles on the peak load \ref{fig:plot-Angle-Forces-test}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
   \includegraphics[width=0.6\textwidth]{./Figure-Semicircular-bending-test}
@@ -902,99 +919,78 @@ notch angles on the peak load (P).
     test.}
   \label{fig:geometry-Semicircular-bending-test}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-The material properties of Johnstone are listed in Table \ref{tab:Johnstone-properties} The friction angle and dilation angle
-are respectively taken as 33 and 4  for average quality rock
-masses in Hoek and Brown96 for the following examples.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The material properties of Johnstone are listed in Table \ref{tab:Johnstone-properties}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}
   \centering
-  \begin{tabular}[]{c c c c c c c}
+  \begin{tabular}[]{l l}
     \hline
-      &   $\rho$   & $\text{f}_c$ & $\text{f}_t$ & $G_F$ &   E   & $\text{d}_{max}$ \\
-      & (kg/m$^3$) &     (MPa)    &     (MPa)    & (N/m) & (GPa) & (mm) \\
-    \hline
-Value &    1540    &     102.7    &      5.4     &  141  &   31  &  12 \\
+    Young's modulus (\gls{E})   & 0.4\ $GPa$       \\
+    Poisson ratio (\gls{nu})    & 0.25           \\
+    Density (\gls{rho})         & 1.54\ $g/cm^3$ \\
+    Tensile strength (\gls{ft}) & 0.6\ $MPa$       \\
+    Critical opening displacement (\gls{Wc}) & 0.015\ $mm$ \\
     \hline
   \end{tabular}
   \caption[Mechanical properties of Johnstone. ]{Material properties of Johnstone.}
   \label{tab:Johnstone-properties}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In the tests, particles were uniformly distributed with an almost
+constant separation of 1 mm between them, resulting in a total number of 4672
+\acrshort{mpm} particles for generating the specimen. Additionally a
+regular cartesian background grid of 1917 nodes with 1.5 mm of nodal distance
+was generated. The velocities of the top boundary particles are $v_x$ = 0, $v_y$ = −
+2 mm/s, whereas the velocities of the bottom boundary particles are
+$v_y$ = 0 mm/s. To reduce dynamic effects due to a sudden loading, it
+was preformed within a soft loading ramp. Finally, the model was
+calibrated with a regularization parameter \gls{Ceps} = 1.7 and a
+bandwidth value \gls{heps} = 15.
 
-Figure 9 shows the corresponding SPH configuration of the semicircular
-bending test with a notch angle of 30 . In the tests, a particle
-discretisation of 0.95 mm is used, resulting in a total number of 3995
-SPH particles for generating the specimen. To create accurate notch
-angles using reasonable particle numbers, the initial SPH arrangement
-in this test is different from the traditional one such as the 3-point
-bending test in Section 5.1. The initial location of each SPH particle in semicircular bending tests is related to the notch angle as shown in Figure 9B. Similar to the 3-point bending
-tests, three layers of boundary particles are generated for simulating
-the point loading in the experiments. The velocities of the top boundary particles are vx = 0,vy = − 2 mm/s, whereas the velocities of the bottom boundary particles are
-as vy = 0.
-
-As Johnstone rocks are classified as soft rocks with a relatively
-small elastic Young's modulus, both artificial viscosity and
-artificial stress are used in this test to stabilise the numerical
-solutions. The ramp loading is also applied to alleviate the dynamic
-effect due to the sudden loading.
-
-The stresses of boundary particles are updated in the same way as that
-in the 3-point bending test. The stresses of real particles near the
-loading particles are recorded during the simulation process, from
-which the peak load and fracture toughness can be obtained for the
-comparison with the experimental data.
-
-
-Figure 10 illustrates the progressive development of fracture and the
-horizontal velocity profile at the failure stage for the semicircular specimen with the rotational angle of 30 . As seen in Figure 10A, some particles near the tip of the
-notch are first damaged, showing that the fracture is initiated at the
-location of the notch tip. Then, the fracture propagates towards the
-loading point (Figure 10B–D), and eventually, a vertical curvilinear
-fracture pattern is formed in the middle of the sample (Figure
-10E). The horizontal velocity profile corresponding to Figure 10E is
-also plotted in Figure 10F. It can be seen that the particles on the
-left side of the fracture move to the left whereas the particles on
-the other side move to the right direction; thus, the sample is split
-into two halves at the end. In this approach, SPH particle itself could not be cracked visually; however, each damaged SPH particle possesses a FPZ, and the material behaviour
-within the FPZ will contribute to the decrease in the overall stress
-state of the SPH particle, thereby resulting in the separation between
-two damaged SPH particles. The same test without using the artificial
-stress is also plotted in Figure 11. The result remains stable when
-the fracture is initiated (Figure 11A) but becomes unstable during the
-post-failure process (Figure 11B,C). Unrealistic fracture and
-particles clustering are observed in Figure 11B,C, which indicates the
-tensile instability problem is occurred in SPH. By comparing those two
-results, it can be concluded that the tensile instability problem can
-be completely removed and good numerical stability can be achieved by
-just adopting this artificial stress term. Figure 12 depicts the
-comparison of mixed-mode fracture envelope between experiments and SPH
-simulations for different notch inclination angles α = 0 , 15  ,
-30  , 45 , 50 and 60 . It shows that the simulation fracture
-patterns marked as red lines match well with the experimental results
-shown as black lines. The final fracture pattern is a vertical
-straight line when α = 0 (pure mode I). When α > 0 , the sample is
-subjected to mixed-mode or pure mode II loading, resulting in a curvilinear fracture paths. For all simulation cases, the fractures initiate from the notch tip and then
-propagate towards upper loading point, while the experiments show that
-a few fractures tend to initiate behind the notch tip when the notch angle is beyond α =50 . Nevertheless, the simulation results still could successfully predict
-the overall fracture envelope in experiments and demonstrate the
-capability of the traditional SPH model for capturing the fracture development under various complex loading conditions. In the meanwhile, the comparison of peak load
+Figure \ref{fig:Figure-Angle-Forces-test-damage-pattern} shows the
+comparison of mixed-mode fracture envelope between experiments and
+\acrshort{mpm} simulations for different notch inclination angles
+$\alpha$ = 0$^{\circ}$, 30$^{\circ}$ and 60$^{\circ}$. The final
+fracture pattern is a vertical straight line when $\alpha$ =
+0$^{\circ}$  (pure mode I). When $\alpha$ > 0$^{\circ}$, the sample is
+subjected to mixed-mode. For simulation cases 0$^{\circ}$ and 30$^{\circ}$, the fractures
+initiate from the notch tip and then propagate towards upper loading
+point. Experiments show that a few fractures tend to initiate behind
+notch tip when the notch angle is beyond 50$^{\circ}$, figure
+\ref{fig:Figure-Angle-Forces-test-damage-pattern} demonstrate that
+eigensoftening combined with \acrshort{mpm} is able to reproduce this
+behavior. Therefore, the simulation results predict successfully the
+fracture envelope in experiments and demonstrate the capability of
+the eigensoftening-\acrshort{mpm} model for capturing the fracture
+development under various complex loading conditions. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\centering
+\subfigure[$\alpha$ = 0]{\includegraphics[width=0.49\textwidth]{./Figure-Angle-Forces-test-0-damage-pattern.png}}
+\subfigure[$\alpha$ = 30]{\includegraphics[width=0.49\textwidth]{./Figure-Angle-Forces-test-30-damage-pattern.png}}
+\subfigure[$\alpha$ = 60]{\includegraphics[width=0.49\textwidth]{./Figure-Angle-Forces-test-60-damage-pattern.png}}
+\caption{Crack pattern for different notch inclination angle, and
+  comparison with the experimental results  \cite{LIM_1993}.}
+\label{fig:Figure-Angle-Forces-test-damage-pattern}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Additionally, \ref{fig:plot-Angle-Forces-test} compare the peak load
 between experiments and simulations for the notch inclination angles
-varying from 0 to 60 with an internal increment of 5 is plotted
-in Figure 13A. It is noted here that a notch angle of 54 (instead of
-55) is used in the current test as the sample is subjected to pure
-mode II loading condition when α = 54 .95 The SPH simulation can
-well capture the increasing trend of the peak load with the increasing
-notch angles in the experiment. Additionally, Figure 13B compares the
-predictions of fracture toughness in SPH simulation against the
-experimental results and Lim's theory.95 The simulation results perfectly fall within the experimental data ranges even though the fracture toughness data in the
-experiments are quite scattered. Nevertheless, the numerical results
-agree closely with the empirical fracture toughness envelope, which
-was proposed by Lim et al.95 and represented as a black line Figure
-13B. It further confirms that our model could accurately predict the
-mixed-mode fracture behaviour of rocks in semicircular bending test.
+0$^{\circ}$, 30$^{\circ}$ and 60$^{\circ}$. This figure proofs how the
+eigensoftening-\acrshort{mpm} simulation can well capture the
+increasing trend of the peak load with the increasing notch angles in
+the experiment.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{./Figure-Angle-Forces-test}
+  \caption{Numerical results compared with the experimental results \cite{LIM_1993}.}
+  \label{fig:plot-Angle-Forces-test}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 \subsection{Drop-weight impact test}
 \label{sec:3.3}
@@ -1045,14 +1041,15 @@ Value &    2368    &     102.7    &      5.4     &  141  &   31  &  12 \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 For the present research, a 2D setting of the experiment has been
 adopted. Both the hammer and the concrete beam are explicitly
-represented in order to properly capture the impact. Several levels of discretization were required to assess
-the objectiveness of the obtained results. The results here exposed
-are from a discretization of 30616 material points and 6297 nodes. To
-achieve better results, an unestructured grid layout has been adopted
-focusing the minimum nodal spacing, 0.47 mm, in the middle of the beam and in
-the impact surface of the hammer. For this simulation, \gls{gamma-lme} was
-fixed to 6. Once the accuracy of the \acrshort{lme} approximants have been proven
-in Section \ref{sec:3.1}, this discretization has been adopted.
+represented in order to properly capture the impact. Several levels of
+discretization were required to assess the objectiveness of the
+obtained results. The results here exposed are from a discretization
+of 30616 material points and 6297 nodes. To achieve better results, an
+unestructured grid layout has been adopted focusing the minimum nodal
+spacing, 0.47 mm, in the middle of the beam and in the impact surface
+of the hammer. For this simulation, \gls{gamma-lme} was fixed to
+6. Once the accuracy of the \acrshort{lme} approximants have been
+proven in Section \ref{sec:3.1}, this discretization has been adopted.
 %without comparing
 %with linear interpolation. Therefore \\
 
@@ -1280,4 +1277,4 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 
 
 
-\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1283) }
+\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1280) }

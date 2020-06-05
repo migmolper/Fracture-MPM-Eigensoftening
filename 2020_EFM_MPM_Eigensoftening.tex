@@ -907,7 +907,7 @@ semicircular specimens with a radius of 47.5 mm and a thickness of
 another roller on its mid-span. Notches with a length of 16.6 mm are
 created with different notch angles of 0$^º$ and 60$^º$ with respect
 to the vertical axis to investigate the influences of the
-notch angles on the peak load.
+notch angles on the peak load \ref{fig:plot-Angle-Forces-test}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
@@ -934,23 +934,58 @@ The material properties of Johnstone are listed in Table \ref{tab:Johnstone-prop
   \label{tab:Johnstone-properties}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 In the tests, particles were uniformly distributed with an almost
 constant separation of 1 mm between them, resulting in a total number of 4672
 \acrshort{mpm} particles for generating the specimen. Additionally a
 regular cartesian background grid of 1917 nodes with 1.5 mm of nodal distance
- was generated.
+was generated. The velocities of the top boundary particles are $v_x$ = 0, $v_y$ = −
+2 mm/s, whereas the velocities of the bottom boundary particles are
+$v_y$ = 0 mm/s. To reduce dynamic effects due to a sudden loading, it
+was preformed within a soft loading ramp. Finally, the model was
+calibrated with a regularization parameter \gls{Ceps} = 1.7 and a
+bandwidth value \gls{heps} = 15.
 
-% The velocities of the top boundary particles are vx =
-% 0,vy = − 2 mm/s, whereas the velocities of the bottom boundary
-% particles are as vy = 0.
-
-%     \gls{heps}
-%     \gls{Ceps}
-
-% As Johnstone rocks are classified as soft rocks with a relatively
-% small elastic Young's modulus. Ramp loading is applied to alleviate the dynamic
-% effect due to the sudden loading.
+Figure \ref{fig:Figure-Angle-Forces-test-damage-pattern} shows the
+comparison of mixed-mode fracture envelope between experiments and
+\acrshort{mpm} simulations for different notch inclination angles
+$\alpha$ = 0$^{\circ}$, 30$^{\circ}$ and 60$^{\circ}$. The final
+fracture pattern is a vertical straight line when $\alpha$ =
+0$^{\circ}$  (pure mode I). When $\alpha$ > 0$^{\circ}$, the sample is
+subjected to mixed-mode. For simulation cases 0$^{\circ}$ and 30$^{\circ}$, the fractures
+initiate from the notch tip and then propagate towards upper loading
+point. Experiments show that a few fractures tend to initiate behind
+notch tip when the notch angle is beyond 50$^{\circ}$, figure
+\ref{fig:Figure-Angle-Forces-test-damage-pattern} demonstrate that
+eigensoftening combined with \acrshort{mpm} is able to reproduce this
+behavior. Therefore, the simulation results predict successfully the
+fracture envelope in experiments and demonstrate the capability of
+the eigensoftening-\acrshort{mpm} model for capturing the fracture
+development under various complex loading conditions. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\centering
+\subfigure[$\alpha$ = 0]{\includegraphics[width=0.49\textwidth]{./Figure-Angle-Forces-test-0-damage-pattern.png}}
+\subfigure[$\alpha$ = 30]{\includegraphics[width=0.49\textwidth]{./Figure-Angle-Forces-test-30-damage-pattern.png}}
+\subfigure[$\alpha$ = 60]{\includegraphics[width=0.49\textwidth]{./Figure-Angle-Forces-test-60-damage-pattern.png}}
+\caption{Crack pattern for different notch inclination angle, and
+  comparison with the experimental results  \cite{LIM_1993}.}
+\label{fig:Figure-Angle-Forces-test-damage-pattern}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Additionally, \ref{fig:plot-Angle-Forces-test} compare the peak load
+between experiments and simulations for the notch inclination angles
+0$^{\circ}$, 30$^{\circ}$ and 60$^{\circ}$. This figure proofs how the
+eigensoftening-\acrshort{mpm} simulation can well capture the
+increasing trend of the peak load with the increasing notch angles in
+the experiment.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{./Figure-Angle-Forces-test}
+  \caption{Numerical results compared with the experimental results \cite{LIM_1993}.}
+  \label{fig:plot-Angle-Forces-test}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 

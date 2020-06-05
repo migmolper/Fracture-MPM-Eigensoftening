@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  29 MAY 2020 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  5 JUN 2020 10:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -590,38 +590,20 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.210 \item
-           
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 211.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 211.
-LaTeX Font Info:    Try loading font information for U+msa on input line 285.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 300.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 285.
+LaTeX Font Info:    Try loading font information for U+msb on input line 300.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) )
 (\end occurred when \iffalse on line 74 was incomplete)
 Beginning to dump on file prv_2020_EFM_MPM_Eigensoftening.fmt
- (preloaded format=prv_2020_EFM_MPM_Eigensoftening 2020.5.29)
-20523 strings of total length 315847
-358546 memory locations dumped; current usage is 601&353371
-16861 multiletter control sequences
+ (preloaded format=prv_2020_EFM_MPM_Eigensoftening 2020.6.5)
+20596 strings of total length 316868
+358893 memory locations dumped; current usage is 418&353929
+16937 multiletter control sequences
 \font\nullfont=nullfont
 \font\OMX/cmex/m/n/10=cmex10
 \font\tenln=line10
@@ -639,12 +621,12 @@ Beginning to dump on file prv_2020_EFM_MPM_Eigensoftening.fmt
 \font\OMS/cmsy/m/n/10=cmsy10
 \font\OT1/cmr/m/n/12=cmr12
 \font\SOUL@tt=ectt1000
-\font\OMS/cmsy/m/n/12=cmsy10 at 12.0pt
 \font\OT1/cmr/m/n/8=cmr8
 \font\OT1/cmr/m/n/6=cmr6
 \font\OML/cmm/m/it/12=cmmi12
 \font\OML/cmm/m/it/8=cmmi8
 \font\OML/cmm/m/it/6=cmmi6
+\font\OMS/cmsy/m/n/12=cmsy10 at 12.0pt
 \font\OMS/cmsy/m/n/8=cmsy8
 \font\OMS/cmsy/m/n/6=cmsy6
 \font\OMX/cmex/m/n/12=cmex10 at 12.0pt

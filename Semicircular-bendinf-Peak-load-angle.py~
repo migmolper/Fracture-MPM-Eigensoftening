@@ -1,0 +1,15 @@
+import pandas as pd
+import numpy as np
+import matplotlib as mpl
+mpl.use('pgf')
+import matplotlib.pyplot as plt
+
+Experimental_data = pd.read_csv("Experimental_results.txt", header=None)
+
+ExpDat_angles = Experimental_data[0].to_numpy()
+ExpDat_P = Experimental_data[1].to_numpy()
+
+plt.scatter(ExpDat_angles,ExpDat_P,label=r'Data \cite{}')
+plt.legend()
+plt.savefig('fig.pgf')
+plt.show()
