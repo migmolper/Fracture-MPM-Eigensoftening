@@ -34,6 +34,37 @@ T.~Belytschko, H.~Chen, J.~Xu, G.~Zi, Dynamic crack propagation based on loss
   of hyperbolicity and a new discontinuous enrichment., International Journal
   for Numerical Methods in Engineering. 58 (2003) 1873--1905.
 
+\bibitem{HUANG_2018}
+J.~Huang,
+  \href{http://www.sciencedirect.com/science/article/pii/S0045794917318084}{An
+  efficient morphology generation and level set representation of cementitious
+  microstructures with arbitrarily shaped aggregates and cracks via extended
+  finite elements}, Computers & Structures 206 (2018) 122 -- 144.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.compstruc.2018.05.010}
+  {\path{doi:https://doi.org/10.1016/j.compstruc.2018.05.010}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0045794917318084}
+
+\bibitem{NAGASHIMA_2016}
+T.~Nagashima, M.~Sawada,
+  \href{http://www.sciencedirect.com/science/article/pii/S0045794915002862}{Development
+  of a damage propagation analysis system based on level set xfem using the
+  cohesive zone model}, Computers & Structures 174 (2016) 42 -- 53, cIVIL-COMP.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.compstruc.2015.10.005}
+  {\path{doi:https://doi.org/10.1016/j.compstruc.2015.10.005}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0045794915002862}
+
+\bibitem{YUN_2019}
+K.~Yun, Z.~Wang, M.~Chang, J.~Liu, T.-J. Kim, N.~Son, K.~Ji, S.~Ronald,
+  \href{http://www.sciencedirect.com/science/article/pii/S004579491831513X}{A
+  computational methodology for simulating quasi-brittle fracture problems},
+  Computers & Structures 215 (2019) 65 -- 79.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.compstruc.2019.02.003}
+  {\path{doi:https://doi.org/10.1016/j.compstruc.2019.02.003}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S004579491831513X}
+
 \bibitem{Schreyer_2002}
 
 

@@ -77,6 +77,7 @@
 \newacronym{otm}{OTM}{Optimal Transportation Meshfree}
 \newacronym{sph}{SPH}{Smoothed Particle Hydrodynamics}
 \newacronym{fem}{FEM}{Finite Element Method}
+\newacronym{xfem}{XFEM}{Extended Finite Element Method}
 \newacronym{efgm}{EFGM}{Element-Free Galerkin Method}
 \newacronym{lme}{LME}{Local Maximum-Entropy}
 \newacronym{flip}{FLIP}{Fluid Implicit Particle}
@@ -232,7 +233,6 @@
   description={Time integration parameter for the \acrshort{npc} algorithm}
 }
 
-
 \newglossaryentry{gamma-lme}
 {
   name=$\widehat{\gamma}$,
@@ -346,15 +346,22 @@ Material Point Method \sep Solid Dynamics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{sec:1}
-The presence of cracks is a violation of the continuity requirement of the
-\acrfull{fem}. To overcome this issue, numerous numerical
+\DM{The failure mechanisms of quasi-brittle materials and the  crack propagation have been studied from different fields such as materials science, structural engineering, earth science and petroleum engineering . The prediction of crack propagation has been approached with different numerical techniques. The \acrfull{fem} is widely used in industrial application. However,} the presence of cracks is a violation of the continuity requirement of the \acrshort{fem}. To overcome this issue, numerous numerical
 artifacts have been proposed with the aim of reproducing such a
 complex behaviour. These techniques vary from the employment of cohesive
-approaches~\cite{Barenblatt,Hilleborg_1976}, \PNA{to the gradual insertion of}
+approaches~\cite{Barenblatt,Hilleborg_1976}, or \PNA{to the gradual insertion of}
 cohesive elements \cite{Ortiz_1999,Pandolfi_2002,Ruiz_2000} at solid
-elements boundaries, or handling arbitrary crack paths by level set
-representation of the fracture surface~\cite{Belytschko_03}. The
-simulation of fracture propagation in a more accurate and effective
+elements boundaries. To alleviate these shortcomings of the
+\acrshort{fem}, the \acrfull{xfem} in conjunction with level set
+technique was introduced by Belytschko {\it et al.}
+\cite{Belytschko_03} to handle arbitrary crack paths level
+set. \MMP{Some relevant contributions to the \acrshort{xfem} are the
+modeling micro-scale crack propagation \cite{HUANG_2018}, the
+introduction of a cohesive zone model \cite{NAGASHIMA_2016}, and more
+recently improving it capability to predict the crack path in 3D cases
+\cite{YUN_2019}.}
+
+The simulation of fracture propagation in a more accurate and effective
 way can be considered as one of the \PNA{ongoing goals} of the development of novel spatial discretization methods like meshfree techniques. Some
 examples of it are the \acrfull{mpm}
 \cite{Schreyer_2002,Chen_2002,Nairn_2003,Zhenmao_2005}, the
@@ -362,7 +369,7 @@ examples of it are the \acrfull{mpm}
 \acrfull{sph} \cite{Wang_2020,Wang_2019}, the \acrfull{otm} \cite{Li2010,Li_2012,Pandolfi_2013,Li_2015} or Peridynamics
 \cite{HA_2011,RABCZUK_2017} among others. \\
 
-Regarding \acrshort{mpm}, fracture \PNA{has been treated numerically through two different ways}. On the one hand, the ``CRAcks with Material Points (CRAMP)'' is proposed~\cite{Nairn_2003,Nairn_2006}. \PNA{The basis of this methodology consist of the removal of} the restriction
+\MMP{Concerning} \acrshort{mpm}, fracture \PNA{has been treated numerically through two different ways}. On the one hand, the ``CRAcks with Material Points (CRAMP)'' is proposed~\cite{Nairn_2003,Nairn_2006}. \PNA{The basis of this methodology consist of the removal of} the restriction
 of the single-valued velocity field close to the crack through, at least, two sets of nodes. In this method, different labels are assigned to the material points
 and nodes to distinguish if they are in the same side of the crack or
 not. Under this approach, crack surface is described with line segments
@@ -501,7 +508,7 @@ ensures a \textit{unbiased statistical inference} based on the nodal
 data as states the Jayne's\cite{Jaynes1957} principle of
 \textit{maximum entropy}. And second the Delaunay triangulation that
 warranties the \textit{least width} shape function support. To reach
-\DM{delete to} a compromise between two competing objectives, a Pareto set is
+a compromise between two competing objectives, a Pareto set is
 defined as,
 \begin{align*}
   \label{eq:LME-scheme-pareto-set}
@@ -952,8 +959,8 @@ Figure \ref{fig:Figure-Angle-Forces-test-damage-pattern} shows the
 comparison of mixed-mode fracture envelope between experiments and
 \acrshort{mpm} simulations for different notch inclination angles
 $\alpha$ = 0$^{\circ}$, 30$^{\circ}$ and 60$^{\circ}$. The final
-fracture pattern is a vertical straight line when $\alpha$ =
-0$^{\circ}$  (pure mode I). When $\alpha$ > 0$^{\circ}$, the sample is
+fracture pattern is a vertical straight line when $\alpha$ = 0$^{\circ}$  (pure mode I). 
+When $\alpha$ > 0$^{\circ}$, the sample is
 subjected to mixed-mode. For simulation cases 0$^{\circ}$ and 30$^{\circ}$, the fractures
 initiate from the notch tip and then propagate towards upper loading
 point. Experiments show that a few fractures tend to initiate behind
@@ -1112,14 +1119,22 @@ other side of the crack.
 
 \section{Conclusions}
 \label{sec:4}
-\PNA{Based on the EigenMPM approach to fracture proposed by Zhang {\it et al.}
+
+\DM{Cometario general: Pienso que hay que estructurar un poco la conclusión. No agregar tantas citas. Acá estás concluyendo tu trabajo. Iría de lo general a lo particular. Pondría claramente en cada parrafo cual es el aporte. Con tantas citas no queda claro que hiciste vos y que los otros. Las citas estarán puestas cuando vos comenzaste a hablar de lo que hiciete en el cuerpo del documento. Acá las citas minimas y tus aportes.
+Imagino un primer parrafo asi diciendo cuales son las limitaciones ...propuesta modificable...:}
+
+\DM{The paper proposes the eigensoftening algorithm in a \acrshort{MPM} framework for quasi-brittle materials to overcome the limitations observed in the EigenMPM \cite{Zhang_EE_2020}. The overestimation of tensile 
+stress and strain peaks in the fracture mechanism of quasi-brittle materials and the stress oscillations observed with conventional \acrshort{mpm}/\acrshort{gimp} are faced.  }
+
+\PNA{Based on the EigenMPM approach to fracture proposed by Zhang {\it et al.} 
 \cite{Zhang_EE_2020}, two additional improvements have been proposed in the present research in order to 
-solve the shortcomings of the original concept that Zhang {\it et al.} pointed out in the aforementioned paper \cite{Zhang_EE_2020}. 
+solve the shortcomings of the original concept that Zhang {\it et al.} pointed out in the aforementioned paper \cite{Zhang_EE_2020}. }
+
 
 Firstly, by
 introducing the concept of eigensoftening to the \acrshort{mpm} framework,
 which allows to consider gradual failure process of each material point. This concept is analogous the softening law which is traditionally employed in the context
-of cohesive fracture in \acrfull{fem}. Furthermore, this failure criterion admits the design of more elaborated damage curves, which can be employed in order to describe the failure process in more sophisticated
+of cohesive fracture in \acrshort{fem}. Furthermore, this failure criterion admits the design of more elaborated damage curves, which can be employed in order to describe the failure process in more sophisticated
 materials. In this direction, an interesting future improvement of the
 algorithm would be the ability to simulate of crack patterns in
 composite material such as steel or carbon fiber reinforced concretes\cite{Ruiz2019}. Interesting researches have been done on this field~\cite{Navas_2018_ES}. In addition, the eigensoftening approach can be extrapolated to rock fracture in the same manner the eigenerosion was~\cite{Wang2017}, taking into account that the volumetric stiffness remains in order to support bulk loads. 
@@ -1135,7 +1150,7 @@ developed. Navas~\textif{et al.} demonstrate the importance of the
 stiffness of the support in order to obtain accurate results of the
 reaction forces. Interesting contact algorithms within the
 \acrshort{mpm} methodology are available in the literature
-\cite{Bardenhagen_Contact_2001,XZhang_Contact_2011}}
+\cite{Bardenhagen_Contact_2001,XZhang_Contact_2011}
 
 \section*{Acknowledgements}
 The financial support to develop this research from the Ministerio de
@@ -1277,4 +1292,4 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 
 
 
-\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1280) }
+\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1295) }

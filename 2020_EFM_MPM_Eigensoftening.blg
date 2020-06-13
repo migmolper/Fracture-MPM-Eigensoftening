@@ -3,12 +3,12 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: 2020_EFM_MPM_Eigensoftening.aux
 The style file: elsarticle-num.bst
 Database file #1: Biblio.bib
-I was expecting a `,' or a `}'---line 450 of file Biblio.bib
+I was expecting a `,' or a `}'---line 505 of file Biblio.bib
  : 
  : author = {Schreyer, H.L. and Sulsky, D.L. and Zhou, S.-J},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 3780 of file Biblio.bib
+Repeated entry---line 3835 of file Biblio.bib
  : @article{Wang2017
  :                  ,
 I'm skipping whatever remains of this entry
@@ -17,45 +17,45 @@ Warning--empty title in Schreyer_2002
 Warning--empty journal in Schreyer_2002
 Warning--empty booktitle in Galetzka_et_al_2017
 Warning--empty pages in Galetzka_et_al_2017
-You've used 51 entries,
+You've used 54 entries,
             2937 wiz_defined-function locations,
-            1137 strings with 17364 characters,
-and the built_in function-call counts, 15147 in all, are:
-= -- 1526
-> -- 510
+            1164 strings with 18352 characters,
+and the built_in function-call counts, 16258 in all, are:
+= -- 1642
+> -- 546
 < -- 0
-+ -- 204
-- -- 153
-* -- 1212
-:= -- 2140
-add.period$ -- 77
-call.type$ -- 51
-change.case$ -- 50
++ -- 218
+- -- 164
+* -- 1318
+:= -- 2297
+add.period$ -- 83
+call.type$ -- 54
+change.case$ -- 54
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 402
-empty$ -- 1585
-format.name$ -- 198
-if$ -- 3857
+cite$ -- 59
+duplicate$ -- 432
+empty$ -- 1699
+format.name$ -- 211
+if$ -- 4139
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 52
-newline$ -- 199
-num.names$ -- 50
-pop$ -- 257
+int.to.str$ -- 54
+missing$ -- 55
+newline$ -- 214
+num.names$ -- 53
+pop$ -- 270
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 912
+skip$ -- 965
 stack$ -- 0
-substring$ -- 854
-swap$ -- 113
+substring$ -- 925
+swap$ -- 125
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 103
-width$ -- 53
-write$ -- 476
+while$ -- 109
+width$ -- 56
+write$ -- 510
 (There were 2 error messages)
