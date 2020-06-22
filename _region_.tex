@@ -1011,7 +1011,7 @@ required to achieve a numerically stable simulation.\\
 
 An interesting case of this experimental test was reported by Zhang {\it et al.} \cite{Zhang_2009,Zhang_2010a}. As in the aforementioned study,
 an impact hammer of 120.6 kg has been employed in the proposed simulations to drop it at an impact
-speed of 881 mm/s. The beam dimensions were 100 mm x 100 mm (B x D)
+speed of 2640 mm/s. The beam dimensions were 100 mm x 100 mm (B x D)
 in cross section, and 420 mm in total lenght (L). The initial
 notch-depth ratio was approximately 0.5, and the span, S, was fixed at
 300 mm during the tests (see Figure
@@ -1051,14 +1051,16 @@ adopted. Both the hammer and the concrete beam are explicitly
 represented in order to properly capture the impact. Several levels of
 discretization were required to assess the objectiveness of the
 obtained results. The results here exposed are from a discretization
-of 30616 material points and 6297 nodes. To achieve better results, an
+of 21576 material points and 3943 nodes. To achieve better results, an
 unestructured grid layout has been adopted focusing the minimum nodal
-spacing, 0.47 mm, in the middle of the beam and in the impact surface
+spacing, 1.2 mm, in the middle of the beam and in the impact surface
 of the hammer. For this simulation, \gls{gamma-lme} was fixed to
-6. Once the accuracy of the \acrshort{lme} approximants have been
-proven in Section \ref{sec:3.1}, this discretization has been adopted.
-%without comparing
-%with linear interpolation. Therefore \\
+1.8, this low value of the regularization parameter smooth high stress
+overshots after the impact. Here the stabilization properties of the \acrshort{lme}
+described in \cite{Molinos2020} becomes crucial to achieve
+non-spurious results. In fact, standard linear element were tested
+with unsatisfactory results since grid-crossing occurs in the hammer
+head producing non realistic forces.\\
 
 First, the reaction and impact forces are validated against their
 experimental counterparts. Since the impact forces applied by the
@@ -1075,21 +1077,21 @@ measured, they are compared with numerical ones in Figure
   \label{fig:Reactions-Forces-impact-test}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Note that the general trend of both forces are correctly
+Note that the general trend of the impact forces was correctly
 captured. Observe that in experimental solution the delay between
 impact peak and reactions peak does not agree with the numerical
-ones. On the other hand, if the delay is computed analytically through
-concrete wave speed is much closer to the numerical results. A
-feasible explanation to this unexpected result can due the composite
-nature of the concrete. Another discrepancy is in the much higher
-values of maximum impact and reaction forces in numerical than in
-experimental. In this case, this is a consequence of over-rigidity
-in the supports. \PNA{Although the traditional \acrshort{mpm} implementation allows collision of two bodies, inaccurate energy conservation is obtained without the implementation of a conservative contact algorithm to reproduce the hammer impact in the beam. %In the
-%%\acrshort{mpm}, the implementation of this feature can be bypassed to obtain preliminary results. Nevertheless, this kind of algorithm could
-%be implemented to get ever more accurate solutions. 
-Despite the observed discrepancies, this is
-out of the scope of this document, although future research of authors will overcome this
-limitation. Similarly, results of support forces will be more realistic when modelled by a suitable contact algorithm instead of avoiding any vertical displacement}.\\
+ones. A feasible explanation to this unexpected result can due to a
+over-rigidity in the supports. \PNA{Although the traditional \acrshort{mpm} implementation allows collision of two bodies, inaccurate energy conservation is obtained without the implementation of a conservative contact algorithm to reproduce the hammer impact in the beam.
+Despite the observed discrepancies, this is out of the scope of this
+document, although future research of authors will overcome this
+limitation. Similarly, results of support forces will be more
+realistic when modelled by a suitable contact algorithm instead of
+avoiding any vertical displacement}.\MMP{Navas {\it et al.}
+(2017)\cite{Navas_2017_ES} demonstrate the importance of the stiffness
+of the support in order to obtain accurate results of the reaction
+forces. Interesting contact algorithms within the \acrshort{mpm}
+methodology are available in the literature
+\cite{Bardenhagen_Contact_2001,XZhang_Contact_2011}.}
 
 Finally, longitudinal stress distribution and crack propagation are
 depicted in Figure \ref{fig:Stress-vs-damage-impact-test}. Stress
@@ -1106,9 +1108,9 @@ other side of the crack.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
-\subfigure[t = 0.27 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0060}}
-\subfigure[t = 0.36 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0080}}
-\subfigure[t = 0.45 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0100}}
+\subfigure[t = 0.27 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0005}}
+\subfigure[t = 0.36 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0015}}
+\subfigure[t = 0.45 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0030}}
 \caption{Evolution of the stress tensor magnitude for linear
   interpolation (pictures in the left side), and \acrshort{lme}
   (pictures in the right side). Both simulations performed with an
@@ -1120,37 +1122,40 @@ other side of the crack.
 \section{Conclusions}
 \label{sec:4}
 
-\DM{Cometario general: Pienso que hay que estructurar un poco la conclusión. No agregar tantas citas. Acá estás concluyendo tu trabajo. Iría de lo general a lo particular. Pondría claramente en cada parrafo cual es el aporte. Con tantas citas no queda claro que hiciste vos y que los otros. Las citas estarán puestas cuando vos comenzaste a hablar de lo que hiciete en el cuerpo del documento. Acá las citas minimas y tus aportes.
-Imagino un primer parrafo asi diciendo cuales son las limitaciones ...propuesta modificable...:}
-
 \DM{The paper proposes the eigensoftening algorithm in a \acrshort{MPM} framework for quasi-brittle materials to overcome the limitations observed in the EigenMPM \cite{Zhang_EE_2020}. The overestimation of tensile 
-stress and strain peaks in the fracture mechanism of quasi-brittle materials and the stress oscillations observed with conventional \acrshort{mpm}/\acrshort{gimp} are faced.  }
+stress and strain peaks in the fracture mechanism of quasi-brittle
+materials and the stress oscillations observed with conventional
+\acrshort{mpm}/\acrshort{gimp} are faced.} \PNA{Based on the
+EigenMPM approach to fracture, two additional improvements have been proposed in the present research in order to solve the shortcomings of the original concept pointed out in the aforementioned paper \cite{Zhang_EE_2020}.}
 
-\PNA{Based on the EigenMPM approach to fracture proposed by Zhang {\it et al.} 
-\cite{Zhang_EE_2020}, two additional improvements have been proposed in the present research in order to 
-solve the shortcomings of the original concept that Zhang {\it et al.} pointed out in the aforementioned paper \cite{Zhang_EE_2020}. }
-
-
-Firstly, by
-introducing the concept of eigensoftening to the \acrshort{mpm} framework,
+Firstly, by introducing the concept of eigensoftening to the \acrshort{mpm} framework,
 which allows to consider gradual failure process of each material point. This concept is analogous the softening law which is traditionally employed in the context
-of cohesive fracture in \acrshort{fem}. Furthermore, this failure criterion admits the design of more elaborated damage curves, which can be employed in order to describe the failure process in more sophisticated
-materials. In this direction, an interesting future improvement of the
-algorithm would be the ability to simulate of crack patterns in
-composite material such as steel or carbon fiber reinforced concretes\cite{Ruiz2019}. Interesting researches have been done on this field~\cite{Navas_2018_ES}. In addition, the eigensoftening approach can be extrapolated to rock fracture in the same manner the eigenerosion was~\cite{Wang2017}, taking into account that the volumetric stiffness remains in order to support bulk loads. 
+of cohesive fracture in \acrshort{fem}. Furthermore, this failure
+criterion admits the design of more elaborated damage curves, which
+can be employed in order to describe the failure process in more
+sophisticated materials. Secondly to achieve better results, three new
+numerical algorithms has been implemented. The \acrshort{lme}
+approximants are employed to remove from
+the solution those wiggles provoked by inaccuracies in the stress
+integration. The traditional time scheme of the
+\acrshort{mpm} has been improved with a Newmark Predictor Corrector
+scheme as well. And the traditional concept of element connectivity
+has been removed to allow a more flexible and efficient implementation of search
+algorithm. In this research, the aforementioned techniques have helped
+to improve the results in fracture propagation through the
+eigensoftening and eigenerosion algorithms.
 
-Secondly, \acrshort{lme} is employed to remove from
-the solution those wiggles provoked by inaccuracies in the stress integration. This spatial discretization was previously employed within the \acrshort{mpm} framework with excellent results under the elastic regime~\cite{Wobbes2020,Molinos2020}. The traditional time scheme of the \acrshort{mpm} has been improved with a Newmark Predictor Corrector scheme as well. In this research, the aforementioned techniques have helped to improve the
-results in fracture propagation through the eigensoftening and eigenerosion algorithms. Further improvement may be reached by adapting \acrshort{lme} through the
-deformation gradient \cite{Kochmann2019}. \textit{A priori} this would enhance the localisation properties of the proposed algorithms in more sophisticated domains.
-
-Finally, for better capturing the measurement of forces made in the
-laboratory, more realistic contact tools have to be
-developed. Navas~\textif{et al.} demonstrate the importance of the
-stiffness of the support in order to obtain accurate results of the
-reaction forces. Interesting contact algorithms within the
-\acrshort{mpm} methodology are available in the literature
-\cite{Bardenhagen_Contact_2001,XZhang_Contact_2011}
+Finally, further improvements of the present research are exposed. The
+algorithm would have the ability to simulate of crack patterns in
+composite material such as steel or carbon fiber reinforced
+concretes\cite{Navas_2018_ES,Ruiz2019}. In addition, the eigensoftening
+approach can be extrapolated to rock fracture in the same manner the
+eigenerosion was~\cite{Wang2017}, taking into account that the
+volumetric stiffness remains in order to support bulk loads. Also the
+benefits of \acrshort{lme} can be exploited by adapting it through the
+deformation gradient \cite{Kochmann2019}. \textit{A priori} this would
+enhance the localisation properties of the proposed algorithms in more
+sophisticated domains. And the implementation of a contact algorithm to model other impact cases such as bullets collisions. 
 
 \section*{Acknowledgements}
 The financial support to develop this research from the Ministerio de
@@ -1292,4 +1297,4 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 
 
 
-\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1295) }
+\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1300) }

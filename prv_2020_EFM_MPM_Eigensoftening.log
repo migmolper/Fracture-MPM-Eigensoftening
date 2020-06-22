@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  13 JUN 2020 13:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  22 JUN 2020 09:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -600,7 +600,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) )
 (\end occurred when \iffalse on line 74 was incomplete)
 Beginning to dump on file prv_2020_EFM_MPM_Eigensoftening.fmt
- (preloaded format=prv_2020_EFM_MPM_Eigensoftening 2020.6.13)
+ (preloaded format=prv_2020_EFM_MPM_Eigensoftening 2020.6.22)
 20626 strings of total length 317327
 359237 memory locations dumped; current usage is 418&354273
 16967 multiletter control sequences

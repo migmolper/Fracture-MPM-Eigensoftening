@@ -1008,7 +1008,7 @@ required to achieve a numerically stable simulation.\\
 
 An interesting case of this experimental test was reported by Zhang {\it et al.} \cite{Zhang_2009,Zhang_2010a}. As in the aforementioned study,
 an impact hammer of 120.6 kg has been employed in the proposed simulations to drop it at an impact
-speed of 881 mm/s. The beam dimensions were 100 mm x 100 mm (B x D)
+speed of 2640 mm/s. The beam dimensions were 100 mm x 100 mm (B x D)
 in cross section, and 420 mm in total lenght (L). The initial
 notch-depth ratio was approximately 0.5, and the span, S, was fixed at
 300 mm during the tests (see Figure
@@ -1048,14 +1048,16 @@ adopted. Both the hammer and the concrete beam are explicitly
 represented in order to properly capture the impact. Several levels of
 discretization were required to assess the objectiveness of the
 obtained results. The results here exposed are from a discretization
-of 30616 material points and 6297 nodes. To achieve better results, an
+of 21576 material points and 3943 nodes. To achieve better results, an
 unestructured grid layout has been adopted focusing the minimum nodal
-spacing, 0.47 mm, in the middle of the beam and in the impact surface
+spacing, 1.2 mm, in the middle of the beam and in the impact surface
 of the hammer. For this simulation, \gls{gamma-lme} was fixed to
-6. Once the accuracy of the \acrshort{lme} approximants have been
-proven in Section \ref{sec:3.1}, this discretization has been adopted.
-%without comparing
-%with linear interpolation. Therefore \\
+1.8, this low value of the regularization parameter smooth high stress
+overshots after the impact. Here the stabilization properties of the \acrshort{lme}
+described in \cite{Molinos2020} becomes crucial to achieve
+non-spurious results. In fact, standard linear element were tested
+with unsatisfactory results since grid-crossing occurs in the hammer
+head producing non realistic forces.\\
 
 First, the reaction and impact forces are validated against their
 experimental counterparts. Since the impact forces applied by the
@@ -1072,16 +1074,11 @@ measured, they are compared with numerical ones in Figure
   \label{fig:Reactions-Forces-impact-test}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Note that the general trend of both forces are correctly
+Note that the general trend of the impact forces was correctly
 captured. Observe that in experimental solution the delay between
 impact peak and reactions peak does not agree with the numerical
-ones. On the other hand, if the delay is computed analytically through
-concrete wave speed is much closer to the numerical results. A
-feasible explanation to this unexpected result can due the composite
-nature of the concrete. Another discrepancy is in the much higher
-values of maximum impact and reaction forces in numerical than in
-experimental. In this case, this is a consequence of over-rigidity
-in the supports. \PNA{Although the traditional \acrshort{mpm} implementation allows collision of two bodies, inaccurate energy conservation is obtained without the implementation of a conservative contact algorithm to reproduce the hammer impact in the beam.
+ones. A feasible explanation to this unexpected result can due to a
+over-rigidity in the supports. \PNA{Although the traditional \acrshort{mpm} implementation allows collision of two bodies, inaccurate energy conservation is obtained without the implementation of a conservative contact algorithm to reproduce the hammer impact in the beam.
 Despite the observed discrepancies, this is out of the scope of this
 document, although future research of authors will overcome this
 limitation. Similarly, results of support forces will be more
@@ -1108,9 +1105,9 @@ other side of the crack.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
-\subfigure[t = 0.27 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0060}}
-\subfigure[t = 0.36 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0080}}
-\subfigure[t = 0.45 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0100}}
+\subfigure[t = 0.27 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0005}}
+\subfigure[t = 0.36 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0015}}
+\subfigure[t = 0.45 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0030}}
 \caption{Evolution of the stress tensor magnitude for linear
   interpolation (pictures in the left side), and \acrshort{lme}
   (pictures in the right side). Both simulations performed with an
