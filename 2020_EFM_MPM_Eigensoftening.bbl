@@ -66,7 +66,11 @@ K.~Yun, Z.~Wang, M.~Chang, J.~Liu, T.-J. Kim, N.~Son, K.~Ji, S.~Ronald,
 \newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S004579491831513X}
 
 \bibitem{Schreyer_2002}
-
+H.~Schreyer, D.~Sulsky, S.~Zhou, Modeling delamination as a strong
+  discontinuity with the material point method, Computer Methods in Applied
+  Mechanics and Engineering 191 (2002) 2483--2507.
+\newblock \href {http://dx.doi.org/10.1016/S0045-7825(01)00409-1}
+  {\path{doi:10.1016/S0045-7825(01)00409-1}}.
 
 \bibitem{Chen_2002}
 Z.~Chen, W.~Hu, L.~Shen, X.~An, R.~Brannon, An evaluation of the mpm for
@@ -187,7 +191,7 @@ T.~Rabczuk, H.~Ren,
 \newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0013795217306907}
 
 \bibitem{Nairn_2006}
-Y.~GUO, J.~Nairn, Three-dimensional dynamic fracture analysis using the
+Y.~Guo, J.~Nairn, Three-dimensional dynamic fracture analysis using the
   material point method, Computer Modeling in Engineering & Sciences 16.
 
 \bibitem{Nairn_2002}
@@ -331,6 +335,21 @@ X.~Zhang, R.~Yu, G.~Ruiz, M.~Tarifa, M.~Camara, Effect of loading rate on crack
   velocities in hsc., International Journal of Impact Engineering 37 (2010)
   359--370.
 
+\bibitem{Bardenhagen_Contact_2001}
+S.~Bardenhagen, J.~Guilkey, K.~Roessig, J.~Brackbill, W.~Witzel, J.~Foster, An
+  improved contact algorithm for the material point method and application to
+  stress propagation in granular material, CMES. Computer Modeling in
+  Engineering & Sciences 2.
+\newblock \href {http://dx.doi.org/10.3970/cmes.2001.002.509}
+  {\path{doi:10.3970/cmes.2001.002.509}}.
+
+\bibitem{XZhang_Contact_2011}
+P.~Huang, X.~Zhang, S.~Ma, X.~Huang, Contact algorithms for the material point
+  method in impact and penetration simulation, International Journal for
+  Numerical Methods in Engineering 85 (2011) 498 -- 517.
+\newblock \href {http://dx.doi.org/10.1002/nme.2981}
+  {\path{doi:10.1002/nme.2981}}.
+
 \bibitem{Ruiz2019}
 G.~Ruiz, A.~[de~la Rosa], L.~Almeida, E.~Poveda, X.~Zhang, M.~Tarifa, Z.~Wu,
   R.~Yu,
@@ -357,20 +376,5 @@ S.~Kumar, K.~Danas, D.~M. Kochmann, {Enhanced local maximum-entropy
   approximation for stable meshfree simulations}, Computer Methods in Applied
   Mechanics and Engineering\href {http://dx.doi.org/10.1016/j.cma.2018.10.030}
   {\path{doi:10.1016/j.cma.2018.10.030}}.
-
-\bibitem{Bardenhagen_Contact_2001}
-S.~Bardenhagen, J.~Guilkey, K.~Roessig, J.~Brackbill, W.~Witzel, J.~Foster, An
-  improved contact algorithm for the material point method and application to
-  stress propagation in granular material, CMES. Computer Modeling in
-  Engineering & Sciences 2.
-\newblock \href {http://dx.doi.org/10.3970/cmes.2001.002.509}
-  {\path{doi:10.3970/cmes.2001.002.509}}.
-
-\bibitem{XZhang_Contact_2011}
-P.~Huang, X.~Zhang, S.~Ma, X.~Huang, Contact algorithms for the material point
-  method in impact and penetration simulation, International Journal for
-  Numerical Methods in Engineering 85 (2011) 498 -- 517.
-\newblock \href {http://dx.doi.org/10.1002/nme.2981}
-  {\path{doi:10.1002/nme.2981}}.
 
 \end{thebibliography}
