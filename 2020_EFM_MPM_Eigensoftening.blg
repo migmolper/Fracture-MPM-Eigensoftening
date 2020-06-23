@@ -1,53 +1,63 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: 2020_EFM_MPM_Eigensoftening.aux
 The style file: elsarticle-num.bst
 Database file #1: Biblio.bib
-Repeated entry---line 3835 of file Biblio.bib
+Warning--I'm ignoring Navas_2018_ES's extra "year" field
+--line 315 of file Biblio.bib
+Warning--I'm ignoring Navas_2018_ES's extra "volume" field
+--line 317 of file Biblio.bib
+Warning--I'm ignoring Nairn_2006's extra "volume" field
+--line 411 of file Biblio.bib
+Warning--I'm ignoring Kochmann2019's extra "year" field
+--line 1117 of file Biblio.bib
+Repeated entry---line 3827 of file Biblio.bib
  : @article{Wang2017
  :                  ,
 I'm skipping whatever remains of this entry
+Warning--empty year in Wang_2020
+Warning--empty year in Zhang_EE_2020
 Warning--empty booktitle in Galetzka_et_al_2017
 Warning--empty pages in Galetzka_et_al_2017
 You've used 54 entries,
             2937 wiz_defined-function locations,
-            1169 strings with 18536 characters,
-and the built_in function-call counts, 16485 in all, are:
-= -- 1675
+            1183 strings with 17967 characters,
+and the built_in function-call counts, 17437 in all, are:
+= -- 1794
 > -- 555
 < -- 0
 + -- 221
 - -- 167
-* -- 1338
-:= -- 2334
-add.period$ -- 84
+* -- 1488
+:= -- 2404
+add.period$ -- 104
 call.type$ -- 54
 change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 435
-empty$ -- 1717
+cite$ -- 58
+duplicate$ -- 425
+empty$ -- 1799
 format.name$ -- 215
-if$ -- 4197
+if$ -- 4402
 int.to.chr$ -- 0
 int.to.str$ -- 54
 missing$ -- 55
-newline$ -- 215
+newline$ -- 220
 num.names$ -- 54
-pop$ -- 265
+pop$ -- 231
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 973
+skip$ -- 1026
 stack$ -- 0
-substring$ -- 952
-swap$ -- 128
+substring$ -- 1182
+swap$ -- 151
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 111
+warning$ -- 4
+while$ -- 123
 width$ -- 56
-write$ -- 516
+write$ -- 539
 (There was 1 error message)

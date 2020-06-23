@@ -362,7 +362,7 @@ recently improving it capability to predict the crack path in 3D cases
 \cite{YUN_2019}.}
 
 The simulation of fracture propagation in a more accurate and effective
-way can be considered as one of the \PNA{ongoing goals} of the development of novel spatial discretization methods like meshfree techniques. Some
+way can be considered as one of the \PNA{ongoing goals} of the development of novel spatial discretisation methods like meshfree techniques. Some
 examples of it are the \acrfull{mpm}
 \cite{Schreyer_2002,Chen_2002,Nairn_2003,Zhenmao_2005}, the
 \acrfull{efgm} \cite{BELYTSCHKO_1995,BELYTSCHKO_2000,Zhuang_2012,Muthu_2013}, the
@@ -375,7 +375,7 @@ and nodes to distinguish if they are in the same side of the crack or
 not. Under this approach, crack surface is described with line segments
 in 2D and triangle patches in 3D cases. The chosen criteria for crack
 propagation is based on such parameters as energy release rate
-analyzed by Tan \& Nairn (2002)\cite{Nairn_2002}, and the stress
+analysed by Tan \& Nairn (2002)\cite{Nairn_2002}, and the stress
 intensity factor or the J-integral discussed by Guo \& Nairn
 (2004)\cite{Nairn_2004}. 
 On the other hand, the \PNA{foundation} of the second approach is the introduction of failed
@@ -394,7 +394,7 @@ Similar to this approach, Schmidt {\it et al.}
 \cite{Schmidt_2009} introduced the concept of eigenfracture, where
 crack sets are approximated by means of eigen-deformations, which
 enable the material to develop displacement jumps at no cost of local
-elastic energy. Later, the eigenerosion approach to brittle facture
+elastic energy. Later, the eigenerosion approach to brittle fracture
 was carried out by Pandolfi {\it et al.}
 \cite{Pandolfi_2012,Pandolfi_2013}. \PNA{In this technique, the concept of ``erosion'' of
 the material point is depicted, being the material point able to remain intact or become completely failed or eroded, when no loading
@@ -417,7 +417,7 @@ crack band model \cite{Bazant83}, since energy dissipation is performed through 
 dissipation of the fracture energy. \PNA{Moreover, in order to mitigate stress
 oscillations as well as to deal with tensile instabilities, such those that
 occurs when particles crosses an element boundary, the work of Molinos~\etal~\cite{Molinos2020} is followed. The traditional \acrshort{mpm} technique is enhanced through the \acrfull{lme} approximation technique
-\cite{Arroyo2006} for the spatial discretization as well as a explicitly \acrshort{mpm} \acrfull{npc} scheme is derived for the time discretization.}\\
+\cite{Arroyo2006} for the spatial discretisation as well as a explicitly \acrshort{mpm} \acrfull{npc} scheme is derived for the time discretisation.}\\
 
 The paper is structured as follows. First meshfree methodology,
 eigenerosion and eigensoftening algorithms are presented in Section
@@ -525,7 +525,7 @@ where $H(N_I)$ is the entropy of the system of nodes following the
 definition given by Shannon (1948) \cite{Shannon1948}, the shape
 function width is defined as $U(\vec{x}_p,N_I) \coloneqq
 \sum_I N_I |\vec{x}_p - \vec{x}_I |^2$, and $\beta$ is a
-regularization o \textit{thermalization} parameter such that for
+regularisation o \textit{thermalization} parameter such that for
 Pareto optimal solutions $\beta \in
 (0,\infty)$. Notice that $\beta$ has units of $[L]^{-2}$,
 therefore it can be controlled by adjusting a dimensionless
@@ -634,7 +634,7 @@ when $G_p^{k+1}$ surpasses the critical energy release rate that
 measures the material-specific energy, $G_F$. The convergence of this
 approach has been analyzed by Schmidt {\it et al.}
 (2009)\cite{Schmidt_2009}, who proved that $G_F$ converges to the Griffith
-fracture when the discretization size tends to zero. It is necessary to
+fracture when the discretisation size tends to zero. It is necessary to
 point out that, when a material point overpass the critical energy, its
 contribution to the internal forces vector is set to zero, but its
 contribution to the mass matrix is preserved.\\
@@ -679,7 +679,7 @@ material point in the $\epsilon$-neighborhood. At this point, an \textit{effecti
 the local strain energy as $\delta W_q = \sigma_{q,1}
 \delta\varepsilon_q$. Now, with the assumption that the effective
 strain of each material point at every time step is constant in the
-neighborhood of $\vec{x}_p^{k+1}$, the equation 
+neighbourhood of $\vec{x}_p^{k+1}$, the equation 
 \eqref{eq:variation-averaged-strain-energy-density} can be simplified
  to
 \begin{equation}
@@ -798,7 +798,7 @@ found in \ref{sec:node-linked-method-1}.}
   EighenMPM \cite{Zhang_EE_2020} has been evaluated with ``three
   benchmark tests''}.
 The first one deals with the presence of stress
-instabilities provoked by the spatial discretization, appearing even when the \acrshort{gimp} shape functions are employed. To overcome it, \acrshort{lme}
+instabilities provoked by the spatial discretisation, appearing even when the \acrshort{gimp} shape functions are employed. To overcome it, \acrshort{lme}
 approximants are introduced as an alternative to the existing interpolation techniques. Its
 performance in mitigating spurious stress oscillations under the \acrshort{mpm}~\cite{Wobbes2020,Molinos2020} framework helps to enhance
 notoriously the quality of the results as it is observed in Section
@@ -836,7 +836,7 @@ $[M] [L]^{-1} [T]^{-2}$, the Poisson's ratio \gls{nu} = 0.333, and
 critical energy-release rate \gls{Gf} = 0.0001 $[L]^{2} [T]^{-2}$. The absence of units is due to the current simulation will not be validated against experimental results, where
 scale factor is relevant, but will be against an analytical
 solution provided by Pandolfi \& Ortiz \cite{Pandolfi_2012}.} In
-\acrshort{mpm}, two different discretization are required. On one
+\acrshort{mpm}, two different discretisation are required. On one
 hand, a cartesian grid of nodes is considered with a nodal spacing
 value of 0.025. On the other hand, the plate will be modeled with a
 initial layout of four particles per element and occupying the Gauss
@@ -1049,10 +1049,10 @@ Value &    2368    &     102.7    &      5.4     &  141  &   31  &  12 \\
 For the present research, a 2D setting of the experiment has been
 adopted. Both the hammer and the concrete beam are explicitly
 represented in order to properly capture the impact. Several levels of
-discretization were required to assess the objectiveness of the
-obtained results. The results here exposed are from a discretization
+discretisation were required to assess the objectiveness of the
+obtained results. The results here exposed are from a discretisation
 of 21576 material points and 3943 nodes. To achieve better results, an
-unestructured grid layout has been adopted focusing the minimum nodal
+unstructured grid layout has been adopted focusing the minimum nodal
 spacing, 1.2 mm, in the middle of the beam and in the impact surface
 of the hammer. For this simulation, \gls{gamma-lme} was fixed to
 1.8, this low value of the regularization parameter smooth high stress
@@ -1070,7 +1070,8 @@ measured, they are compared with numerical ones in Figure
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\textwidth]{Figure-impact-test-Forces-Time}
+  \subfigure[Hammer forces]{\includegraphics[width=0.8\textwidth]{Figure-impact-test-Forces-Time}}
+  \subfigure[Reactions]{\includegraphics[width=0.8\textwidth]{Figure-impact-test-Reactions-Time}}
   \caption{Evolution of the reaction forces plotted \textit{versus}
     the imposed displacement for linear interpolation technique and
     the \acrshort{lme} approximants.}
@@ -1111,7 +1112,7 @@ other side of the crack.
 \subfigure[t = 0.27 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0005}}
 \subfigure[t = 0.36 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0015}}
 \subfigure[t = 0.45 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0030}}
-\caption{Evolution of the stress tensor magnitude for linear
+\caption{Evolution of the stress tensor magnitude [MPa] for linear
   interpolation (pictures in the left side), and \acrshort{lme}
   (pictures in the right side). Both simulations performed with an
   eigenerosion algorithm.}
@@ -1296,5 +1297,8 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 \end{document}
 
 
+%%% Local Variables:
+%%% ispell-local-dictionary: "en_GB"
+%%% End:
 
-\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1300) }
+\message{ !name(2020_EFM_MPM_Eigensoftening.tex) !offset(-1304) }

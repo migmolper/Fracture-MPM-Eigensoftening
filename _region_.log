@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  22 JUN 2020 10:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.23)  23 JUN 2020 18:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,18 +8,18 @@ entering extended mode
 Document Class: elsarticle 2019/01/14, 3.1: Elsevier Ltd
 \@bls=\dimen102
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen103
@@ -42,19 +42,19 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-\c@tnote=\count87
-\c@fnote=\count88
-\c@cnote=\count89
-\c@ead=\count90
-\c@author=\count91
+\c@tnote=\count88
+\c@fnote=\count89
+\c@cnote=\count90
+\c@ead=\count91
+\c@author=\count92
 \@eadauthor=\toks15
-\c@affn=\count92
-\absbox=\box26
-\keybox=\box27
+\c@affn=\count93
+\absbox=\box27
+\keybox=\box28
 \Columnwidth=\dimen106
 \space@left=\dimen107
-\els@boxa=\box28
-\els@boxb=\box29
+\els@boxa=\box29
+\els@boxb=\box30
 \leftMargin=\dimen108
 \@enLab=\toks16
 \@sep=\skip43
@@ -66,7 +66,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 
 
-/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty:795: LaTeX Error: \makeindex undefined.
+/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty:795: LaTeX Error: Command \makeindex undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -77,7 +77,7 @@ l.795 \renewcommand\makeindex
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-\c@NAT@ctr=\count93
+\c@NAT@ctr=\count94
 )
 \splwrite=\write3
 \openout3 = `_region_.spl'.
@@ -85,23 +85,23 @@ If that doesn't work, type  X <return>  to quit.
 \appnamewidth=\dimen109
 ) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count94
+\linenopenalty=\count95
 \output=\toks17
-\linenoprevgraf=\count95
+\linenoprevgraf=\count96
 \linenumbersep=\dimen110
 \linenumberwidth=\dimen111
-\c@linenumber=\count96
-\c@pagewiselinenumber=\count97
-\c@LN@truepage=\count98
-\c@internallinenumber=\count99
-\c@internallinenumbers=\count100
+\c@linenumber=\count97
+\c@pagewiselinenumber=\count98
+\c@LN@truepage=\count99
+\c@internallinenumber=\count100
+\c@internallinenumbers=\count101
 \quotelinenumbersep=\dimen112
 \bframerule=\dimen113
 \bframesep=\dimen114
-\bframebox=\box30
+\bframebox=\box31
 LaTeX Info: Redefining \\ on input line 3056.
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
@@ -114,15 +114,11 @@ Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -149,50 +145,52 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen115
-\Hy@linkcounter=\count101
-\Hy@pagecounter=\count102
+\Hy@linkcounter=\count102
+\Hy@pagecounter=\count103
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count103
+\Hy@SavedSpaceFactor=\count104
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4509.
-Package hyperref Info: Link nesting OFF on input line 4514.
-Package hyperref Info: Hyper index ON on input line 4517.
-Package hyperref Info: Plain pages OFF on input line 4524.
-Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count104
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count105
  (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5115.
+LaTeX Info: Redefining \url on input line 5125.
 \XeTeXLinkMargin=\dimen116
-\Fld@menulength=\count105
+\Fld@menulength=\count106
 \Field@Width=\dimen117
 \Fld@charsize=\dimen118
-Package hyperref Info: Hyper figures OFF on input line 6369.
-Package hyperref Info: Link nesting OFF on input line 6374.
-Package hyperref Info: Hyper index ON on input line 6377.
-Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring OFF on input line 6389.
-Package hyperref Info: Link coloring with OCG OFF on input line 6394.
-Package hyperref Info: PDF/A mode OFF on input line 6399.
-LaTeX Info: Redefining \ref on input line 6439.
-LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count106
-\c@Item=\count107
-\c@Hfootnote=\count108
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count107
+\c@Item=\count108
+\c@Hfootnote=\count109
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count109
-\c@bookmark@seq@number=\count110
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count110
+\c@bookmark@seq@number=\count111
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
@@ -200,11 +198,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip47
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count111
+\c@float@type=\count112
 \float@exts=\toks18
-\float@box=\box31
+\float@box=\box32
 \@float@everytoks=\toks19
-\@floatcapt=\box32
+\@floatcapt=\box33
 ) (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip48
@@ -213,10 +211,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip50
 \subfigcapmargin=\dimen120
 \subfiglabelskip=\skip51
-\c@subfigure=\count112
-\c@lofdepth=\count113
-\c@subtable=\count114
-\c@lotdepth=\count115
+\c@subfigure=\count113
+\c@lofdepth=\count114
+\c@subtable=\count115
+\c@lotdepth=\count116
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -225,9 +223,9 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@top=\skip52
 \subfig@bottom=\skip53
 ) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
 \multirow@colwidth=\skip54
-\multirow@cntb=\count116
+\multirow@cntb=\count117
 \multirow@dima=\skip55
 \bigstrutjot=\dimen121
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
@@ -250,7 +248,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 ) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
@@ -266,30 +264,30 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count117
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count118
-\leftroot@=\count119
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count120
-\DOTSCASE@=\count121
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box33
-\strutbox@=\box34
+\inf@bad=\count118
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count119
+\leftroot@=\count120
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count121
+\DOTSCASE@=\count122
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box34
+\strutbox@=\box35
 \big@size=\dimen127
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count122
-\c@MaxMatrixCols=\count123
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count123
+\c@MaxMatrixCols=\count124
 \dotsspace@=\muskip11
-\c@parentequation=\count124
-\dspbrk@lvl=\count125
+\c@parentequation=\count125
+\dspbrk@lvl=\count126
 \tag@help=\toks26
-\row@=\count126
-\column@=\count127
-\maxfields@=\count128
+\row@=\count127
+\column@=\count128
+\maxfields@=\count129
 \andhelp@=\toks27
 \eqnshift@=\dimen128
 \alignsep@=\dimen129
@@ -301,21 +299,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip58
 \multlinetaggap=\skip59
 \mathdisplay@stack=\toks29
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 ) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
  (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count129
-\calc@Bcount=\count130
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count130
+\calc@Bcount=\count131
 \calc@Adimen=\dimen134
 \calc@Bdimen=\dimen135
 \calc@Askip=\skip60
 \calc@Bskip=\skip61
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count131
+\calc@Ccount=\count132
 \calc@Cskip=\skip62
 ) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
@@ -324,7 +322,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count132
+\g_MT_multlinerow_int=\count133
 \l_MT_multwidth_dim=\dimen136
 \origjot=\skip63
 \l_MT_shortvdotswithinadjustabove_dim=\dimen137
@@ -354,37 +352,36 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\@xs@message=\write4
-\integerpart=\count133
-\decimalpart=\count134
+\integerpart=\count134
+\decimalpart=\count135
 )
-Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
  (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count135
-\c@Blindtext=\count136
-\c@blind@countparstart=\count137
-\blind@countxx=\count138
-\blindtext@numBlindtext=\count139
-\blind@countyy=\count140
-\c@blindlist=\count141
-\c@blindlistlevel=\count142
-\c@blindlist@level=\count143
-\blind@listitem=\count144
-\c@blind@listcount=\count145
-\c@blind@levelcount=\count146
-\blind@mathformula=\count147
-\blind@Mathformula=\count148
-\c@blind@randomcount=\count149
-\c@blind@randommax=\count150
-\c@blind@pangramcount=\count151
-\c@blind@pangrammax=\count152
+\c@blindtext=\count136
+\c@Blindtext=\count137
+\c@blind@countparstart=\count138
+\blind@countxx=\count139
+\blindtext@numBlindtext=\count140
+\blind@countyy=\count141
+\c@blindlist=\count142
+\c@blindlistlevel=\count143
+\c@blindlist@level=\count144
+\blind@listitem=\count145
+\c@blind@listcount=\count146
+\c@blind@levelcount=\count147
+\blind@mathformula=\count148
+\blind@Mathformula=\count149
+\c@blind@randomcount=\count150
+\c@blind@randommax=\count151
+\c@blind@pangramcount=\count152
+\c@blind@pangrammax=\count153
 ) (/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count153
+\c@AlgoLine=\count154
  (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
@@ -392,7 +389,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count154
+\c@checkoddpage=\count155
 ) (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
@@ -411,41 +408,41 @@ Package: relsize 2013/03/29 ver 4.1
 \interspacealgoruled=\dimen147
 \interspacetitleboxruled=\dimen148
 \algocf@ruledwidth=\skip76
-\algocf@inoutbox=\box35
-\algocf@inputbox=\box36
+\algocf@inoutbox=\box36
+\algocf@inputbox=\box37
 \AlCapSkip=\skip77
 \AlCapHSkip=\skip78
 \algoskipindent=\skip79
-\algocf@nlbox=\box37
-\algocf@hangingbox=\box38
-\algocf@untilbox=\box39
+\algocf@nlbox=\box38
+\algocf@hangingbox=\box39
+\algocf@untilbox=\box40
 \algocf@skipuntil=\skip80
-\algocf@capbox=\box40
+\algocf@capbox=\box41
 \algocf@lcaptionbox=\skip81
 \algoheightruledefault=\skip82
 \algoheightrule=\skip83
 \algotitleheightruledefault=\skip84
 \algotitleheightrule=\skip85
-\c@algocfline=\count155
-\c@algocfproc=\count156
-\c@algocf=\count157
-\algocf@algoframe=\box41
-\algocf@algobox=\box42
+\c@algocfline=\count156
+\c@algocfproc=\count157
+\c@algocf=\count158
+\algocf@algoframe=\box42
+\algocf@algobox=\box43
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
-Package: glossaries 2017/11/14 v4.35 (NLCT)
+Package: glossaries 2019/01/06 v4.42 (NLCT)
  (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
  (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks36
 \XKV@tempa@toks=\toks37
 )
-\XKV@depth=\count158
+\XKV@depth=\count159
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/share/texlive/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2017/11/14 v2.06 (NLCT)
  (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count159
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count160
 )
 \@glsmfirst=\toks38
 \@glsmrest=\toks39
@@ -454,29 +451,29 @@ Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
-Package: datatool-base 2017/11/12 v2.29 (NLCT)
+Package: datatool-base 2018/12/07 v2.31 (NLCT)
  (/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count160
+\c@su@anzahl=\count161
 ) (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
-Package: datatool-fp 2017/11/12 v2.29 (NLCT)
+Package: datatool-fp 2018/12/07 v2.31 (NLCT)
  (/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
 Package: fp 1995/04/02
  `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count161
+\actioncount=\count162
 ) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count162
-\FP@xia=\count163
-\FP@xib=\count164
-\FP@xfa=\count165
-\FP@xfb=\count166
-\FP@rega=\count167
-\FP@regb=\count168
-\FP@regs=\count169
-\FP@times=\count170
+\FP@xs=\count163
+\FP@xia=\count164
+\FP@xib=\count165
+\FP@xfa=\count166
+\FP@xfb=\count167
+\FP@rega=\count168
+\FP@regb=\count169
+\FP@regs=\count170
+\FP@times=\count171
 ) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
 ) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
@@ -489,7 +486,7 @@ Package: fp-trigo 1995/04/14
 Package: fp-pas 1994/08/29
 ) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count171
+\FPseed=\count172
 ) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
 ) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
@@ -498,18 +495,18 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks40
-\@dtl@tmpcount=\count172
+\@dtl@tmpcount=\count173
 \dtl@tmplength=\skip86
-\dtl@sortresult=\count173
-\@dtl@numgrpsepcount=\count174
-\@dtl@datatype=\count175
-\dtl@codeA=\count176
-\dtl@codeB=\count177
-\@dtl@foreach@level=\count178
+\dtl@sortresult=\count174
+\@dtl@numgrpsepcount=\count175
+\@dtl@datatype=\count176
+\dtl@codeA=\count177
+\dtl@codeB=\count178
+\@dtl@foreach@level=\count179
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-307.sty
-Package: glossaries-compatible-307 2017/11/14 v4.35 (NLCT)
+Package: glossaries-compatible-307 2019/01/06 v4.42 (NLCT)
 )
-\gls@level=\count179
+\gls@level=\count180
 \@gls@tmpb=\toks41
 \gls@tmplen=\skip87
 \glskeylisttok=\toks42
@@ -517,38 +514,38 @@ Package: glossaries-compatible-307 2017/11/14 v4.35 (NLCT)
 \glsshorttok=\toks44
 \glslongtok=\toks45
  (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
-Package: glossary-hypernav 2017/11/14 v4.35 (NLCT)
+Package: glossary-hypernav 2019/01/06 v4.42 (NLCT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
-Package: glossary-list 2017/11/14 v4.35 (NLCT)
+Package: glossary-list 2019/01/06 v4.42 (NLCT)
 \glslistdottedwidth=\skip88
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
-Package: glossary-long 2017/11/14 v4.35 (NLCT)
+Package: glossary-long 2019/01/06 v4.42 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LTleft=\skip89
 \LTright=\skip90
 \LTpre=\skip91
 \LTpost=\skip92
-\LTchunksize=\count180
+\LTchunksize=\count181
 \LTcapwidth=\dimen149
-\LT@head=\box43
-\LT@firsthead=\box44
-\LT@foot=\box45
-\LT@lastfoot=\box46
-\LT@cols=\count181
-\LT@rows=\count182
-\c@LT@tables=\count183
-\c@LT@chunks=\count184
+\LT@head=\box44
+\LT@firsthead=\box45
+\LT@foot=\box46
+\LT@lastfoot=\box47
+\LT@cols=\count182
+\LT@rows=\count183
+\c@LT@tables=\count184
+\c@LT@chunks=\count185
 \LT@p@ftn=\toks46
 )
 \glsdescwidth=\skip93
 \glspagelistwidth=\skip94
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
-Package: glossary-super 2017/11/14 v4.35 (NLCT)
+Package: glossary-super 2019/01/06 v4.42 (NLCT)
  (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count185
+\c@tracingst=\count186
 \ST@wd=\dimen150
 \ST@rightskip=\skip95
 \ST@leftskip=\skip96
@@ -563,18 +560,18 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@prevht=\dimen158
 \ST@toadd=\dimen159
 \ST@dimen=\dimen160
-\ST@pbox=\box47
+\ST@pbox=\box48
 )) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
-Package: glossary-tree 2017/11/14 v4.35 (NLCT)
+Package: glossary-tree 2019/01/06 v4.42 (NLCT)
 \glstreeindent=\skip98
 ))
-\glswrite=\write5
-\glo@main@file=\write6
-\openout6 = `_region_.glo'.
+\glswrite=\write4
+\glo@main@file=\write5
+\openout5 = `_region_.glo'.
 
 Package glossaries Info: Writing glossary file _region_.glo on input line 74.
-\glo@acronym@file=\write7
-\openout7 = `_region_.acn'.
+\glo@acronym@file=\write6
+\openout6 = `_region_.acn'.
 
 Package glossaries Info: Writing glossary file _region_.acn on input line 74.
 
@@ -593,37 +590,37 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 300.
 LaTeX Font Info:    ... okay on input line 300.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 300.
 LaTeX Font Info:    ... okay on input line 300.
-(/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/preview.sty
+(/home/migmolper/.emacs.d/elpa/auctex-12.1.2/latex/preview.sty
 Package: preview 2017/04/24 12.1 (AUCTeX/preview-latex)
  (/usr/share/texlive/texmf-dist/tex/generic/luatex85/luatex85.sty
 Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
-) (/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/prtightpage.def
+) (/home/migmolper/.emacs.d/elpa/auctex-12.1.2/latex/prtightpage.def
 \PreviewBorder=\dimen161
-) (/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/prauctex.def
+) (/home/migmolper/.emacs.d/elpa/auctex-12.1.2/latex/prauctex.def
 No auxiliary output files.
 
 
-\hbadness=\count186
+\hbadness=\count187
 \hfuzz=\dimen162
-(/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/prauctex.cfg)) (/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/prfootnotes.def)
-\pr@snippet=\count187
-\pr@box=\box48
+(/home/migmolper/.emacs.d/elpa/auctex-12.1.2/latex/prauctex.cfg)) (/home/migmolper/.emacs.d/elpa/auctex-12.1.2/latex/prfootnotes.def)
+\pr@snippet=\count188
+\pr@box=\box49
 \pr@output=\toks47
 
 Preview: Fontsize 12pt
 Preview: PDFoutput 1
 ) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count188
+\scratchcounter=\count189
 \scratchdimen=\dimen163
-\scratchbox=\box49
-\nofMPsegments=\count189
-\nofMParguments=\count190
+\scratchbox=\box50
+\nofMPsegments=\count190
+\nofMParguments=\count191
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count191
+\MPscratchCnt=\count192
 \MPscratchDim=\dimen164
-\MPnumerator=\count192
-\makeMPintoPDFobject=\count193
+\MPnumerator=\count193
+\makeMPintoPDFobject=\count194
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -637,14 +634,14 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\AtBeginShipoutBox=\box50
+\AtBeginShipoutBox=\box51
 Package hyperref Info: Link coloring OFF on input line 300.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count194
+\c@section@level=\count195
 )
 LaTeX Info: Redefining \ref on input line 300.
 LaTeX Info: Redefining \pageref on input line 300.
@@ -2163,15 +2160,15 @@ Not a real error.
 ./_region_.tex:682: Preview: Snippet 82 started.
 <-><->
       
-l.682 neighborhood of $
-                       \vec{x}_p^{k+1}$, the equation
+l.682 neighbourhood of $
+                        \vec{x}_p^{k+1}$, the equation
 Not a real error.
 
 ./_region_.tex:682: Preview: Snippet 82 ended.(649479+296364x1486176).
 <-><->
       
-l.682 neighborhood of $\vec{x}_p^{k+1}$
-                                       , the equation
+l.682 neighbourhood of $\vec{x}_p^{k+1}$
+                                        , the equation
 Not a real error.
 
 [82]
@@ -3042,9 +3039,31 @@ l.918 created with different notch angles of 0$
                                                ^ยบ$ and 60$^ยบ$ with respect
 Not a real error.
 
-Missing character: There is no ย in font cmr8!
-Missing character: There is no บ in font cmr12!
-./_region_.tex:918: Preview: Snippet 128 ended.(285390+0x32768).
+./_region_.tex:918: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.918 created with different notch angles of 0$^ยบ
+                                                  $ and 60$^ยบ$ with respect
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 918.
+
+./_region_.tex:918: Missing } inserted.
+<inserted text> 
+                }
+l.918 ...ted with different notch angles of 0$^ยบ$
+                                                   and 60$^ยบ$ with respect
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./_region_.tex:918: Preview: Snippet 128 ended.(696155+0x344068).
 <-><->
       
 l.918 ...ted with different notch angles of 0$^ยบ$
@@ -3059,9 +3078,31 @@ l.918 ... different notch angles of 0$^ยบ$ and 60$
                                                   ^ยบ$ with respect
 Not a real error.
 
-Missing character: There is no ย in font cmr8!
-Missing character: There is no บ in font cmr12!
-./_region_.tex:918: Preview: Snippet 129 ended.(285390+0x32768).
+./_region_.tex:918: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.918 ...fferent notch angles of 0$^ยบ$ and 60$^ยบ
+                                                  $ with respect
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 918.
+
+./_region_.tex:918: Missing } inserted.
+<inserted text> 
+                }
+l.918 ...ferent notch angles of 0$^ยบ$ and 60$^ยบ$
+                                                   with respect
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./_region_.tex:918: Preview: Snippet 129 ended.(696155+0x344068).
 <-><->
       
 l.918 ...ferent notch angles of 0$^ยบ$ and 60$^ยบ$
@@ -3163,9 +3204,18 @@ l.951 ...p boundary particles are $v_x$ = 0, $v_y$
 Not a real error.
 
 [133]
-Missing character: There is no โ in font cmr12!
-Missing character: There is no  in font cmr12!
-Missing character: There is no ’ in font cmr12!
+
+./_region_.tex:951: Package inputenc Error: Unicode character โ’ (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.951 ...dary particles are $v_x$ = 0, $v_y$ = โ’
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
 ./_region_.tex:953: Preview: Snippet 134 started.
 <-><->
@@ -3579,15 +3629,20 @@ l.1071 \begin{figure}
                      
 Not a real error.
 
-<Figure-impact-test-Forces-Time.png, id=710, 462.21033pt x 346.26067pt>
+<Figure-impact-test-Forces-Time.png, id=710, 462.22687pt x 347.04657pt>
 File: Figure-impact-test-Forces-Time.png Graphic file (type png)
 <use Figure-impact-test-Forces-Time.png>
 Package pdftex.def Info: Figure-impact-test-Forces-Time.png  used on input line 1073.
-(pdftex.def)             Requested size: 312.00119pt x 233.74228pt.
-./_region_.tex:1078: Preview: Snippet 154 ended.(17674189+0x25559040).
+(pdftex.def)             Requested size: 312.00119pt x 234.25691pt.
+<Figure-impact-test-Reactions-Time.png, id=711, 462.22687pt x 347.04657pt>
+File: Figure-impact-test-Reactions-Time.png Graphic file (type png)
+<use Figure-impact-test-Reactions-Time.png>
+Package pdftex.def Info: Figure-impact-test-Reactions-Time.png  used on input line 1074.
+(pdftex.def)             Requested size: 312.00119pt x 234.25691pt.
+./_region_.tex:1079: Preview: Snippet 154 ended.(36071192+0x25559040).
 <-><->
       
-l.1078 \end{figure}
+l.1079 \end{figure}
                    
 Not a real error.
 
@@ -3597,52 +3652,54 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) ha
 
 \pr@endbox ...y \pr@markerbox }\else \box \pr@box 
                                                   \fi }\global \advance \pr@...
-l.1078 \end{figure}
+l.1079 \end{figure}
                    
 
 
- <./Figure-impact-test-Forces-Time.png>]
-
-Package natbib Warning: Citation `Navas_2017_ES' on page 12 undefined on input line 1094.
 
 
-Package natbib Warning: Citation `Bardenhagen_Contact_2001' on page 12 undefined on input line 1094.
+ <./Figure-impact-test-Forces-Time.png> <./Figure-impact-test-Reactions-Time.png>]
+
+Package natbib Warning: Citation `Navas_2017_ES' on page 12 undefined on input line 1095.
 
 
-Package natbib Warning: Citation `XZhang_Contact_2011' on page 12 undefined on input line 1094.
+Package natbib Warning: Citation `Bardenhagen_Contact_2001' on page 12 undefined on input line 1095.
 
 
-LaTeX Warning: Reference `fig:Stress-vs-damage-impact-test' on page 12 undefined on input line 1097.
+Package natbib Warning: Citation `XZhang_Contact_2011' on page 12 undefined on input line 1095.
 
 
-Package natbib Warning: Citation `Navas_2017_ES' on page 12 undefined on input line 1098.
+LaTeX Warning: Reference `fig:Stress-vs-damage-impact-test' on page 12 undefined on input line 1098.
 
-./_region_.tex:1109: Preview: Snippet 155 started.
+
+Package natbib Warning: Citation `Navas_2017_ES' on page 12 undefined on input line 1099.
+
+./_region_.tex:1110: Preview: Snippet 155 started.
 <-><->
       
-l.1109 \begin{figure}
+l.1110 \begin{figure}
                      
 Not a real error.
 
-<./Figure-impact-test-Damage-vs-Stress-0005.png, id=722, 1000.73875pt x 541.02126pt>
+<./Figure-impact-test-Damage-vs-Stress-0005.png, id=727, 1000.73875pt x 541.02126pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0005.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0005.png>
-Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0005.png  used on input line 1111.
+Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0005.png  used on input line 1112.
 (pdftex.def)             Requested size: 323.70071pt x 174.99603pt.
-<./Figure-impact-test-Damage-vs-Stress-0015.png, id=723, 1000.73875pt x 541.02126pt>
+<./Figure-impact-test-Damage-vs-Stress-0015.png, id=728, 1000.73875pt x 541.02126pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0015.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0015.png>
-Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0015.png  used on input line 1112.
+Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0015.png  used on input line 1113.
 (pdftex.def)             Requested size: 323.70071pt x 174.99603pt.
-<./Figure-impact-test-Damage-vs-Stress-0030.png, id=724, 1000.73875pt x 541.02126pt>
+<./Figure-impact-test-Damage-vs-Stress-0030.png, id=729, 1000.73875pt x 541.02126pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0030.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0030.png>
-Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0030.png  used on input line 1113.
+Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0030.png  used on input line 1114.
 (pdftex.def)             Requested size: 323.70071pt x 174.99603pt.
-./_region_.tex:1119: Preview: Snippet 155 ended.(42430139+0x25559040).
+./_region_.tex:1120: Preview: Snippet 155 ended.(42430139+0x25559040).
 <-><->
       
-l.1119 \end{figure}
+l.1120 \end{figure}
                    
 Not a real error.
 
@@ -3652,7 +3709,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) ha
 
 \pr@endbox ...y \pr@markerbox }\else \box \pr@box 
                                                   \fi }\global \advance \pr@...
-l.1119 \end{figure}
+l.1120 \end{figure}
                    
 
 
@@ -3660,17 +3717,17 @@ l.1119 \end{figure}
 
 
  <./Figure-impact-test-Damage-vs-Stress-0005.png> <./Figure-impact-test-Damage-vs-Stress-0015.png> <./Figure-impact-test-Damage-vs-Stress-0030.png>]
-./_region_.tex:1122: Preview: Snippet 156 started.
+./_region_.tex:1123: Preview: Snippet 156 started.
 <-><->
       
-l.1122 \section
+l.1123 \section
                {Conclusions}
 Not a real error.
 
-./_region_.tex:1122: Preview: Snippet 156 ended.(546132+0x25559040).
+./_region_.tex:1123: Preview: Snippet 156 ended.(546132+0x25559040).
 <-><->
       
-l.1122 \section{Conclusions}
+l.1123 \section{Conclusions}
                             
 Not a real error.
 
@@ -3678,361 +3735,357 @@ Not a real error.
 
 ]
 
-./_region_.tex:1128: Package glossaries Error: Glossary entry `MPM' has not been defined.
+./_region_.tex:1129: Package glossaries Error: Glossary entry `MPM' has not been defined.
 
 See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1128 \acrshort{mpm}/\acrshort{gimp} are faced.}
+l.1129 \acrshort{mpm}/\acrshort{gimp} are faced.}
                                                   \PNA{Based on the
 You need to define a glossary entry before you can use it.
-
-
-Package natbib Warning: Citation `Zhang_EE_2020' on page 13 undefined on input line 1128.
 
 
 Package natbib Warning: Citation `Zhang_EE_2020' on page 13 undefined on input line 1129.
 
 
-Package natbib Warning: Citation `Navas_2018_ES' on page 13 undefined on input line 1151.
+Package natbib Warning: Citation `Zhang_EE_2020' on page 13 undefined on input line 1130.
 
 
-Package natbib Warning: Citation `Ruiz2019' on page 13 undefined on input line 1151.
+Package natbib Warning: Citation `Navas_2018_ES' on page 13 undefined on input line 1152.
 
 
-Package natbib Warning: Citation `Wang2017' on page 13 undefined on input line 1153.
+Package natbib Warning: Citation `Ruiz2019' on page 13 undefined on input line 1152.
 
 
-Package natbib Warning: Citation `Kochmann2019' on page 13 undefined on input line 1156.
+Package natbib Warning: Citation `Wang2017' on page 13 undefined on input line 1154.
 
-./_region_.tex:1160: Preview: Snippet 157 started.
+
+Package natbib Warning: Citation `Kochmann2019' on page 13 undefined on input line 1157.
+
+./_region_.tex:1161: Preview: Snippet 157 started.
 <-><->
       
-l.1160 \section
+l.1161 \section
                *{Acknowledgements}
 Not a real error.
 
-./_region_.tex:1160: Preview: Snippet 157 ended.(546132+152916x25559040).
+./_region_.tex:1161: Preview: Snippet 157 ended.(546132+152916x25559040).
 <-><->
       
-l.1160 \section*{Acknowledgements}
+l.1161 \section*{Acknowledgements}
                                   
 Not a real error.
 
 [157]
-Missing character: There is no โ in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
-
-./_region_.tex:1172: Preview: Snippet 158 started.
+./_region_.tex:1173: Preview: Snippet 158 started.
 <-><->
       
-l.1172 \section
+l.1173 \section
                {Explicit Newmark Predictor-Corrector algorithm}
 Not a real error.
 
-./_region_.tex:1172: Preview: Snippet 158 ended.(546132+152916x25559040).
+./_region_.tex:1173: Preview: Snippet 158 ended.(546132+152916x25559040).
 <-><->
       
-l.1172 ...t Newmark Predictor-Corrector algorithm}
+l.1173 ...t Newmark Predictor-Corrector algorithm}
                                                   
 Not a real error.
 
 [158
 
 ]
-./_region_.tex:1177: Preview: Snippet 159 started.
+./_region_.tex:1178: Preview: Snippet 159 started.
 <-><->
       
-l.1177     \textbf{Update mass matrix :} $
+l.1178     \textbf{Update mass matrix :} $
                                            \tens{m}_{I} = N_{Ip}^{k}\ m_p$ \;
 Not a real error.
 
-./_region_.tex:1177: Preview: Snippet 159 ended.(649479+300642x4543983).
+./_region_.tex:1178: Preview: Snippet 159 ended.(649479+300642x4543983).
 <-><->
       
-l.1177 ...rix :} $ \tens{m}_{I} = N_{Ip}^{k}\ m_p$
+l.1178 ...rix :} $ \tens{m}_{I} = N_{Ip}^{k}\ m_p$
                                                    \;
 Not a real error.
 
 [159]
-./_region_.tex:1180: Preview: Snippet 160 started.
+./_region_.tex:1181: Preview: Snippet 160 started.
 <-><->
       
-l.1180     \begin{equation*}
+l.1181     \begin{equation*}
                             
 Not a real error.
 
-./_region_.tex:1182: Preview: Snippet 160 ended.(1914243+0x23248920).
+./_region_.tex:1183: Preview: Snippet 160 ended.(1914243+0x23248920).
 <-><->
       
-l.1182     \end{equation*}
+l.1183     \end{equation*}
                           \;
 Not a real error.
 
 [160]
-./_region_.tex:1185: Preview: Snippet 161 started.
+./_region_.tex:1186: Preview: Snippet 161 started.
 <-><->
       
-l.1185     boundary, set $
+l.1186     boundary, set $
                           \vec{v}_{I}^{pred} = 0$.\;
 Not a real error.
 
-./_region_.tex:1185: Preview: Snippet 161 ended.(736915+213206x2946412).
+./_region_.tex:1186: Preview: Snippet 161 ended.(736915+213206x2946412).
 <-><->
       
-l.1185     boundary, set $\vec{v}_{I}^{pred} = 0$
+l.1186     boundary, set $\vec{v}_{I}^{pred} = 0$
                                                  .\;
 Not a real error.
 
 [161]
-./_region_.tex:1188: Preview: Snippet 162 started.
+./_region_.tex:1189: Preview: Snippet 162 started.
 <-><->
       
-l.1188     \begin{equation*}
+l.1189     \begin{equation*}
                             
 Not a real error.
 
-./_region_.tex:1192: Preview: Snippet 162 ended.(1433795+0x23248920).
+./_region_.tex:1193: Preview: Snippet 162 ended.(1433795+0x23248920).
 <-><->
       
-l.1192     \end{equation*}
+l.1193     \end{equation*}
                            \;
 Not a real error.
 
 [162]
-./_region_.tex:1194: Preview: Snippet 163 started.
+./_region_.tex:1195: Preview: Snippet 163 started.
 <-><->
       
-l.1194     \textbf{Update the density field :} $
+l.1195     \textbf{Update the density field :} $
                                                 \rho_p^{k+1} =
 Not a real error.
 
-./_region_.tex:1195: Preview: Snippet 163 ended.(909420+637008x6349002).
+./_region_.tex:1196: Preview: Snippet 163 ended.(909420+637008x6349002).
 <-><->
       
-l.1195 ...ta\tens{\varepsilon}_{p}^{k+1}\right]}.$
+l.1196 ...ta\tens{\varepsilon}_{p}^{k+1}\right]}.$
                                                   \;
 Not a real error.
 
 [163]
-./_region_.tex:1200: Preview: Snippet 164 started.
+./_region_.tex:1201: Preview: Snippet 164 started.
 <-><->
       
-l.1200     nodal force $
+l.1201     nodal force $
                         \vec{f}_{I}^{k+1} = \vec{f}_{I}^{int,k+1} + \vec{f}_...
 Not a real error.
 
-./_region_.tex:1200: Preview: Snippet 164 ended.(768079+213206x8332064).
+./_region_.tex:1201: Preview: Snippet 164 ended.(768079+213206x8332064).
 <-><->
       
-l.1200 ...}_{I}^{int,k+1} + \vec{f}_{I}^{ext,k+1}$
+l.1201 ...}_{I}^{int,k+1} + \vec{f}_{I}^{ext,k+1}$
                                                   .\;
 Not a real error.
 
 [164]
-./_region_.tex:1203: Preview: Snippet 165 started.
+./_region_.tex:1204: Preview: Snippet 165 started.
 <-><->
       
-l.1203     \begin{equation*}
+l.1204     \begin{equation*}
                             
 Not a real error.
 
-./_region_.tex:1205: Preview: Snippet 165 ended.(2116386+0x23248920).
+./_region_.tex:1206: Preview: Snippet 165 ended.(2116386+0x23248920).
 <-><->
       
-l.1205     \end{equation*}
+l.1206     \end{equation*}
                           \;
 Not a real error.
 
 [165]
-./_region_.tex:1208: Preview: Snippet 166 started.
+./_region_.tex:1209: Preview: Snippet 166 started.
 <-><->
       
-l.1208     \begin{align*}
+l.1209     \begin{align*}
                          
 Not a real error.
 
-./_region_.tex:1217: Preview: Snippet 166 ended.(6935555+0x14991578).
+./_region_.tex:1218: Preview: Snippet 166 ended.(6935555+0x14991578).
 <-><->
       
-l.1217     \end{align*}
+l.1218     \end{align*}
                        \;
 Not a real error.
 
 [166]
-./_region_.tex:1225: Preview: Snippet 167 started.
+./_region_.tex:1226: Preview: Snippet 167 started.
 <-><->
       
-l.1225 \section
+l.1226 \section
                {Eigensoftening Algorithm}
 Not a real error.
 
-./_region_.tex:1225: Preview: Snippet 167 ended.(546132+152916x25559040).
+./_region_.tex:1226: Preview: Snippet 167 ended.(546132+152916x25559040).
 <-><->
       
-l.1225 \section{Eigensoftening Algorithm}
+l.1226 \section{Eigensoftening Algorithm}
                                          
 Not a real error.
 
 [167
 
 ]
-./_region_.tex:1230: Preview: Snippet 168 started.
+./_region_.tex:1231: Preview: Snippet 168 started.
 <-><->
       
-l.1230 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.1231 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
-./_region_.tex:1230: Preview: Snippet 168 ended.(338603+152916x386477).
+./_region_.tex:1231: Preview: Snippet 168 ended.(338603+152916x386477).
 <-><->
       
-l.1230 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.1231 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
 [168]
-./_region_.tex:1230: Preview: Snippet 169 started.
+./_region_.tex:1231: Preview: Snippet 169 started.
 <-><->
       
-l.1230 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.1231 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
-./_region_.tex:1230: Preview: Snippet 169 ended.(338603+0x310929).
+./_region_.tex:1231: Preview: Snippet 169 ended.(338603+0x310929).
 <-><->
       
-l.1230 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.1231 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
 [169]
-./_region_.tex:1230: Preview: Snippet 170 started.
+./_region_.tex:1231: Preview: Snippet 170 started.
 <-><->
       
-l.1230 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.1231 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
-./_region_.tex:1230: Preview: Snippet 170 ended.(546132+219909x1048643).
+./_region_.tex:1231: Preview: Snippet 170 ended.(546132+219909x1048643).
 <-><->
       
-l.1230 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.1231 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
 [170]
-./_region_.tex:1230: Preview: Snippet 171 started.
+./_region_.tex:1231: Preview: Snippet 171 started.
 <-><->
       
-l.1230 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.1231 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
-./_region_.tex:1230: Preview: Snippet 171 ended.(546132+219909x1136387).
+./_region_.tex:1231: Preview: Snippet 171 ended.(546132+219909x1136387).
 <-><->
       
-l.1230 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.1231 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
 [171]
-./_region_.tex:1230: Preview: Snippet 172 started.
+./_region_.tex:1231: Preview: Snippet 172 started.
 <-><->
       
-l.1230 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.1231 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
-./_region_.tex:1230: Preview: Snippet 172 ended.(338603+117964x824492).
+./_region_.tex:1231: Preview: Snippet 172 ended.(338603+117964x824492).
 <-><->
       
-l.1230 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+l.1231 ...ood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
                                                   
 Not a real error.
 
 [172]
-./_region_.tex:1231: Preview: Snippet 173 started.
+./_region_.tex:1232: Preview: Snippet 173 started.
 <-><->
       
-l.1231 ...n damage parameter $\chi := \{\chi_p\}$}
+l.1232 ...n damage parameter $\chi := \{\chi_p\}$}
                                                   
 Not a real error.
 
-./_region_.tex:1231: Preview: Snippet 173 ended.(589824+219909x3314163).
+./_region_.tex:1232: Preview: Snippet 173 ended.(589824+219909x3314163).
 <-><->
       
-l.1231 ...n damage parameter $\chi := \{\chi_p\}$}
+l.1232 ...n damage parameter $\chi := \{\chi_p\}$}
                                                   
 Not a real error.
 
 [173]
-./_region_.tex:1233: Preview: Snippet 174 started.
+./_region_.tex:1234: Preview: Snippet 174 started.
 <-><->
       
-l.1233   $
+l.1234   $
           \chi_p \leftarrow \chi_p^{k}$ \;
 Not a real error.
 
-./_region_.tex:1233: Preview: Snippet 174 ended.(649479+296364x2838129).
+./_region_.tex:1234: Preview: Snippet 174 ended.(649479+296364x2838129).
 <-><->
       
-l.1233   $\chi_p \leftarrow \chi_p^{k}$
+l.1234   $\chi_p \leftarrow \chi_p^{k}$
                                         \;
 Not a real error.
 
 [174]
-./_region_.tex:1260: Preview: Snippet 175 started.
+./_region_.tex:1261: Preview: Snippet 175 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 175 ended.(338603+152916x386477).
+./_region_.tex:1261: Preview: Snippet 175 ended.(338603+152916x386477).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [175]
-./_region_.tex:1260: Preview: Snippet 176 started.
+./_region_.tex:1261: Preview: Snippet 176 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 176 ended.(537395+219909x929807).
+./_region_.tex:1261: Preview: Snippet 176 ended.(537395+219909x929807).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [176]
-./_region_.tex:1260: Preview: Snippet 177 started.
+./_region_.tex:1261: Preview: Snippet 177 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 177 ended.(506811+219909x2216435).
+./_region_.tex:1261: Preview: Snippet 177 ended.(506811+219909x2216435).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [177]
-./_region_.tex:1260: Undefined control sequence.
+./_region_.tex:1261: Undefined control sequence.
 <argument> \emph {$\chi _p = 0$ \AND 
                                      $\epsilon _{f,p} = 0$}
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4040,160 +4093,160 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./_region_.tex:1260: Preview: Snippet 178 started.
+./_region_.tex:1261: Preview: Snippet 178 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 178 ended.(506811+219909x2494149).
+./_region_.tex:1261: Preview: Snippet 178 ended.(506811+219909x2494149).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [178]
-./_region_.tex:1260: Preview: Snippet 179 started.
+./_region_.tex:1261: Preview: Snippet 179 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 179 ended.(537395+219909x2608934).
+./_region_.tex:1261: Preview: Snippet 179 ended.(537395+219909x2608934).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [179]
-./_region_.tex:1260: Preview: Snippet 180 started.
+./_region_.tex:1261: Preview: Snippet 180 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 180 ended.(589824+219909x9504110).
+./_region_.tex:1261: Preview: Snippet 180 ended.(589824+219909x9504110).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [180]
-./_region_.tex:1260: Preview: Snippet 181 started.
+./_region_.tex:1261: Preview: Snippet 181 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 181 ended.(506811+219909x2203540).
+./_region_.tex:1261: Preview: Snippet 181 ended.(506811+219909x2203540).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [181]
-./_region_.tex:1260: Preview: Snippet 182 started.
+./_region_.tex:1261: Preview: Snippet 182 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 182 ended.(589829+219909x10592714).
+./_region_.tex:1261: Preview: Snippet 182 ended.(589829+219909x10592714).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [182]
-./_region_.tex:1260: Preview: Snippet 183 started.
+./_region_.tex:1261: Preview: Snippet 183 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 183 ended.(453288+219909x5119093).
+./_region_.tex:1261: Preview: Snippet 183 ended.(453288+219909x5119093).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [183]
-./_region_.tex:1260: Preview: Snippet 184 started.
+./_region_.tex:1261: Preview: Snippet 184 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 184 ended.(647518+413189x6556593).
+./_region_.tex:1261: Preview: Snippet 184 ended.(647518+413189x6556593).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [184]
-./_region_.tex:1260: Preview: Snippet 185 started.
+./_region_.tex:1261: Preview: Snippet 185 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 185 ended.(546132+219909x3215252).
+./_region_.tex:1261: Preview: Snippet 185 ended.(546132+219909x3215252).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [185]
-./_region_.tex:1260: Preview: Snippet 186 started.
+./_region_.tex:1261: Preview: Snippet 186 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 186 ended.(338603+219909x3170424).
+./_region_.tex:1261: Preview: Snippet 186 ended.(338603+219909x3170424).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [186]
-./_region_.tex:1260: Preview: Snippet 187 started.
+./_region_.tex:1261: Preview: Snippet 187 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 187 ended.(546133+219909x2216435).
+./_region_.tex:1261: Preview: Snippet 187 ended.(546133+219909x2216435).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [187]
-./_region_.tex:1260: Undefined control sequence.
+./_region_.tex:1261: Undefined control sequence.
 <argument> \emph {$\chi _p \neq 1$ \AND 
                                         $\epsilon _{f,p} > 0$}
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4201,338 +4254,338 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./_region_.tex:1260: Preview: Snippet 188 started.
+./_region_.tex:1261: Preview: Snippet 188 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 188 ended.(506811+219909x2494149).
+./_region_.tex:1261: Preview: Snippet 188 ended.(506811+219909x2494149).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [188]
-./_region_.tex:1260: Preview: Snippet 189 started.
+./_region_.tex:1261: Preview: Snippet 189 started.
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 189 ended.(904403+511188x13394320).
+./_region_.tex:1261: Preview: Snippet 189 ended.(904403+511188x13394320).
 <-><->
       
-l.1260   \caption
+l.1261   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 Not a real error.
 
 [189]
-./_region_.tex:1260: Preview: Snippet 190 started.
+./_region_.tex:1261: Preview: Snippet 190 started.
 <-><->
       
-l.1260   \caption{Compute damage parameter $
+l.1261   \caption{Compute damage parameter $
                                             \chi_p^{k+1}$}
 Not a real error.
 
-./_region_.tex:1260: Preview: Snippet 190 ended.(649479+296364x1531004).
+./_region_.tex:1261: Preview: Snippet 190 ended.(649479+296364x1531004).
 <-><->
       
-l.1260 ...{Compute damage parameter $\chi_p^{k+1}$
+l.1261 ...{Compute damage parameter $\chi_p^{k+1}$
                                                   }
 Not a real error.
 
 [190]
-./_region_.tex:1264: Preview: Snippet 191 started.
+./_region_.tex:1265: Preview: Snippet 191 started.
 <-><->
       
-l.1264 \section
+l.1265 \section
                {Node-linked method for $\epsilon$-neighbourhood reconstruction}
 Not a real error.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 1264.
+(hyperref)                removing `\epsilon' on input line 1265.
 
-./_region_.tex:1264: Preview: Snippet 191 ended.(1496404+0x25559040).
+./_region_.tex:1265: Preview: Snippet 191 ended.(1496404+0x25559040).
 <-><->
       
-l.1264 ...$\epsilon$-neighbourhood reconstruction}
+l.1265 ...$\epsilon$-neighbourhood reconstruction}
                                                   
 Not a real error.
 
 [191
 
 ]
-./_region_.tex:1268: Preview: Snippet 192 started.
+./_region_.tex:1269: Preview: Snippet 192 started.
 <-><->
       
-l.1268 ...{$I_0$ : Closest node for each particle}
+l.1269 ...{$I_0$ : Closest node for each particle}
                                                   
 Not a real error.
 
-./_region_.tex:1268: Preview: Snippet 192 ended.(537395+117964x650924).
+./_region_.tex:1269: Preview: Snippet 192 ended.(537395+117964x650924).
 <-><->
       
-l.1268 ...{$I_0$ : Closest node for each particle}
+l.1269 ...{$I_0$ : Closest node for each particle}
                                                   
 Not a real error.
 
 [192]
-./_region_.tex:1269: Preview: Snippet 193 started.
+./_region_.tex:1270: Preview: Snippet 193 started.
 <-><->
       
-l.1269 ...es}$ : List of nodes close to each node}
+l.1270 ...es}$ : List of nodes close to each node}
                                                   
 Not a real error.
 
-./_region_.tex:1269: Preview: Snippet 193 ended.(537395+117964x1942272).
+./_region_.tex:1270: Preview: Snippet 193 ended.(537395+117964x1942272).
 <-><->
       
-l.1269 ...es}$ : List of nodes close to each node}
+l.1270 ...es}$ : List of nodes close to each node}
                                                   
 Not a real error.
 
 [193]
-./_region_.tex:1270: Preview: Snippet 194 started.
+./_region_.tex:1271: Preview: Snippet 194 started.
 <-><->
       
-l.1270 ... : List of particles close to each node}
+l.1271 ... : List of particles close to each node}
                                                   
 Not a real error.
 
-./_region_.tex:1270: Preview: Snippet 194 ended.(546132+117964x3529595).
+./_region_.tex:1271: Preview: Snippet 194 ended.(546132+117964x3529595).
 <-><->
       
-l.1270 ... : List of particles close to each node}
+l.1271 ... : List of particles close to each node}
                                                   
 Not a real error.
 
 [194]
-./_region_.tex:1271: Preview: Snippet 195 started.
+./_region_.tex:1272: Preview: Snippet 195 started.
 <-><->
       
-l.1271 ...psilon$-neighbourhood for each particle}
+l.1272 ...psilon$-neighbourhood for each particle}
                                                   
 Not a real error.
 
-./_region_.tex:1271: Preview: Snippet 195 ended.(546132+185684x5263220).
+./_region_.tex:1272: Preview: Snippet 195 ended.(546132+185684x5263220).
 <-><->
       
-l.1271 ...psilon$-neighbourhood for each particle}
+l.1272 ...psilon$-neighbourhood for each particle}
                                                   
 Not a real error.
 
 [195]
-./_region_.tex:1271: Preview: Snippet 196 started.
+./_region_.tex:1272: Preview: Snippet 196 started.
 <-><->
       
-l.1271 ...psilon$-neighbourhood for each particle}
+l.1272 ...psilon$-neighbourhood for each particle}
                                                   
 Not a real error.
 
-./_region_.tex:1271: Preview: Snippet 196 ended.(338603+0x310929).
+./_region_.tex:1272: Preview: Snippet 196 ended.(338603+0x310929).
 <-><->
       
-l.1271 ...psilon$-neighbourhood for each particle}
+l.1272 ...psilon$-neighbourhood for each particle}
                                                   
 Not a real error.
 
 [196]
-./_region_.tex:1289: Preview: Snippet 197 started.
+./_region_.tex:1290: Preview: Snippet 197 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 197 ended.(338603+152916x386477).
+./_region_.tex:1290: Preview: Snippet 197 ended.(338603+152916x386477).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [197]
-./_region_.tex:1289: Preview: Snippet 198 started.
+./_region_.tex:1290: Preview: Snippet 198 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 198 ended.(537395+219909x929807).
+./_region_.tex:1290: Preview: Snippet 198 ended.(537395+219909x929807).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [198]
-./_region_.tex:1289: Preview: Snippet 199 started.
+./_region_.tex:1290: Preview: Snippet 199 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 199 ended.(338603+152916x386477).
+./_region_.tex:1290: Preview: Snippet 199 ended.(338603+152916x386477).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [199]
-./_region_.tex:1289: Preview: Snippet 200 started.
+./_region_.tex:1290: Preview: Snippet 200 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 200 ended.(537395+117964x650924).
+./_region_.tex:1290: Preview: Snippet 200 ended.(537395+117964x650924).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [200]
-./_region_.tex:1289: Preview: Snippet 201 started.
+./_region_.tex:1290: Preview: Snippet 201 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 201 ended.(589824+196608x3192116).
+./_region_.tex:1290: Preview: Snippet 201 ended.(589824+196608x3192116).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [201]
-./_region_.tex:1289: Preview: Snippet 202 started.
+./_region_.tex:1290: Preview: Snippet 202 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 202 ended.(589824+196608x4580196).
+./_region_.tex:1290: Preview: Snippet 202 ended.(589824+196608x4580196).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [202]
-./_region_.tex:1289: Preview: Snippet 203 started.
+./_region_.tex:1290: Preview: Snippet 203 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 203 ended.(702690+194419x6053850).
+./_region_.tex:1290: Preview: Snippet 203 ended.(702690+194419x6053850).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [203]
-./_region_.tex:1289: Preview: Snippet 204 started.
+./_region_.tex:1290: Preview: Snippet 204 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 204 ended.(702690+196608x10771261).
+./_region_.tex:1290: Preview: Snippet 204 ended.(702690+196608x10771261).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [204]
-./_region_.tex:1289: Preview: Snippet 205 started.
+./_region_.tex:1290: Preview: Snippet 205 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 205 ended.(546132+185684x6868846).
+./_region_.tex:1290: Preview: Snippet 205 ended.(546132+185684x6868846).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [205]
-./_region_.tex:1289: Preview: Snippet 206 started.
+./_region_.tex:1290: Preview: Snippet 206 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 206 ended.(589824+196608x6177353).
+./_region_.tex:1290: Preview: Snippet 206 ended.(589824+196608x6177353).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [206]
-./_region_.tex:1289: Preview: Snippet 207 started.
+./_region_.tex:1290: Preview: Snippet 207 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 207 ended.(338603+152916x644437).
+./_region_.tex:1290: Preview: Snippet 207 ended.(338603+152916x644437).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [207]
-./_region_.tex:1289: Preview: Snippet 208 started.
+./_region_.tex:1290: Preview: Snippet 208 started.
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
-./_region_.tex:1289: Preview: Snippet 208 ended.(107771+117964x257960).
+./_region_.tex:1290: Preview: Snippet 208 ended.(107771+117964x257960).
 <-><->
       
-l.1289   \label
+l.1290   \label
                {alg-node-link}
 Not a real error.
 
 [208]
-./_region_.tex:1290: Preview: Snippet 209 started.
+./_region_.tex:1291: Preview: Snippet 209 started.
 <-><->
       
-l.1290   \caption{$
+l.1291   \caption{$
                    \epsilon$-neighborhood reconstruction algorithm}
 Not a real error.
 
-./_region_.tex:1290: Preview: Snippet 209 ended.(338603+0x310929).
+./_region_.tex:1291: Preview: Snippet 209 ended.(338603+0x310929).
 <-><->
       
-l.1290   \caption{$\epsilon$
+l.1291   \caption{$\epsilon$
                             -neighborhood reconstruction algorithm}
 Not a real error.
 
@@ -4546,20 +4599,20 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1296.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1296.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1296.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1296.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1297.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1297.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1297.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1297.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1296.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1297.
  ) 
 Here is how much of TeX's memory you used:
- 14595 strings out of 492982
- 218383 string characters out of 6134895
- 376287 words of memory out of 5000000
- 17813 multiletter control sequences out of 15000+600000
+ 14575 strings out of 492615
+ 218286 string characters out of 6131390
+ 384390 words of memory out of 5000000
+ 18137 multiletter control sequences out of 15000+600000
  15986 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,22n,38p,2211b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4589,10 +4642,10 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist,
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on _region_.pdf (209 pages, 7217803 bytes).
+Output written on _region_.pdf (209 pages, 7262234 bytes).
 PDF statistics:
- 1004 PDF objects out of 1200 (max. 8388607)
- 635 compressed objects within 7 object streams
- 68 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1009 PDF objects out of 1200 (max. 8388607)
+ 637 compressed objects within 7 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
