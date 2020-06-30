@@ -324,10 +324,11 @@ and Manuel Pastor$^a$
   framework. With this purpose the eigensoftening algorithm, developed
   originally for the \acrfull{otm} approximation scheme, is extended
   to the \acrshort{mpm} with the aim of presenting a suitable alternative
-  to the existing fracture algorithms developed for the
-  \acrshort{mpm}. The good fitting in the predictions made by the
+  to the existing fracture algorithms developed for \PNA{such a methodology}.
+  %\acrshort{mpm}. 
+  The good fitting in the predictions made by the
   eigensoftening algorithm against both analytical and experimental
-  results proofs the well performance of the method when challenging
+  results proofs the \PNA{excellent} performance of the method when challenging
   applications are to modeled.
 \end{abstract}
 
@@ -705,7 +706,7 @@ forces as,
  \begin{equation}
    \label{eq:f-int-damaged}
    f^{int}_I = \sum_p (1 - \chi_p)\ \tens{\sigma}_{p}^{k+1} \cdot
-   \Grad{N_{Ip}}\ \Omega_p
+   \Grad{N_{Ip}}\ \Omega_p,
  \end{equation}
 where $\chi_p$ and $\Omega_p$ are respectively the damage or softening
 variable and the volume for each material point $p$. \PNA{$\chi_p$ is any function, taking
@@ -762,21 +763,21 @@ interpretation of the \acrshort{fem} element typically adopted in
 \acrshort{mpm} simulations is not required anymore. Instead, a linked
 list with the surrounding nodes for each node is defined at the initial
 time. Also, each particle has to be associated with the
-closest node instead with the belonging element as heretofore has been
+closest node instead of with the belonging element as heretofore has been
 done.
 \MMP{Now lets define the concept of a particle \textit{tributary nodes} as the
 list of nodes close to it among which the information transfers
-occurs. Once the closest node are defined, the particle
-posses automatically a list of \textit{tributary nodes}. This has two
-immediate benefits, the first is that shape functions with global
-support as \acrshort{lme} are easier to implement,
-and the second is the increase of the efficiency of the $\epsilon$-neighbourhood
+occurs. Once the closest nodes are defined, the particle
+possesses automatically a list of \textit{tributary nodes}. This has two
+immediate benefits: the first one is that shape functions with global
+support as \acrshort{lme} are easier to be implemented,
+and the second one is the increase of the efficiency of the $\epsilon$-neighbourhood
 reconstruction. Regarding this last benefit, since the current
 particle has a \textit{tributary nodes} list assigned to it, and
 consequently each node has a linked list with a set of
 \textit{tributary particles}\footnote{Notice that the list of the
   particles close to each node is unique for each node and is updated
-  in each time step.} close to it, is possible to define efficiently a
+  in each time step.} close to it, it is possible to define efficiently a
 search list with those particles close to the current particle.
 In the end, particles out of the area of influence, Figure
 \ref{fig:Failed-particles}, are pop out of the final
@@ -804,9 +805,9 @@ are compared by carrying out an eigenerosion simulation. The second
 limitation is concerned to its inability to simulate properly quasi-brittle
 fracture \cite{Navas_2018_ES}. It can be solved through the
 eigensoftening algorithm described in Section \ref{sec:2.3}.\MMP{A proof
-of it is exposed in Sections \ref{sec:3.2} \ref{sec:3.3}, where experimental results
-are compared with experimental ones as well as eigensoftening
-computations. In the first case comparing with a semicircular bending
+of it is exposed in Sections \ref{sec:3.2} and \ref{sec:3.3}, where experimental results
+are compared \PNA{with numerical ones, being the eigensoftening technique the one employed in this research for the
+computations.} In the first case comparing with a semicircular bending
 test and in the second case with a drop-weight impact test.}
 
 
@@ -830,16 +831,16 @@ control on the outer flanks of the plate (See Figure
 The constitutive model considered in the numerical experiment is a
 linear-elastic Hookean material, whose Young's modulus \MMP{\gls{E} = 1.06
 $[M] [L]^{-1} [T]^{-2}$, the Poisson's ratio \gls{nu} = 0.333, and
-critical energy-release rate \gls{Gf} = 0.0001 $[L]^{2} [T]^{-2}$. The absence of units is due to the current simulation will not be validated against experimental results, where
-scale factor is relevant, but will be against an analytical
+critical energy-release rate \gls{Gf} = 0.0001 $[L]^{2} [T]^{-2}$. The absence of units is due to the current simulation will not be tested against experimental results, where
+scale factor is relevant, but will be validated against an analytical
 solution provided by Pandolfi \& Ortiz \cite{Pandolfi_2012}.} In
 \acrshort{mpm}, two different discretisation are required. On one
 hand, a cartesian grid of nodes is considered with a nodal spacing
-value of 0.025. On the other hand, the plate will be modeled with a
+value of 0.025 $[L]$. On the other hand, the plate will be modeled with a
 initial layout of four particles per element and occupying the Gauss
 quadrature positions.\\
 
-\MMP{Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows the
+\MMP{Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows that the
 \acrshort{lme}$_{\gamma = 3.5}$ solution has a reaction peak value of 0.03 $[M] [L]
 [T]^{-2}$ for a imposed displacement 0.015 $[L]$ which agrees with the
 analytical solution \cite{Pandolfi_2012}}. It also shows the presence
@@ -891,30 +892,29 @@ both parts of the panel are separated is observed in Figure
 \ref{fig:Reactions-cracked-panel-mode-I}. These phenomena should not be
 attributed to the eigenerosion algorithm since the fracture process is
 over. They are due to the dynamic nature of the solver: \PNA{once the
-  energy is release dinamically by the crack, the waves propagate
+  energy is released dinamically by the crack, the waves propagate
   along the domain.}
 
 
 \subsection{Semicircular bending test}
 \label{sec:3.2}
 
-The second application to be considered is two semicircular
-bending tests on Johnstone, which have been carried out by Lim {\it et
+The second application to be considered \PNA{analyzes the bending behavior of semicircular specimens of Johnstone rocks, text which were experimentally} carried out by Lim {\it et
   al.} \cite{LIM_1993} and numerically reproduced by Wang {\it et
   al.}\cite{Wang_2020} under \acrshort{sph} framework within an
 implicit algorithm. The aim of the test is to examine the predictive
 capability of the eigensoftening algorithm under different kind of
-mixed-mode loading conditions. This capability was previously within a
+mixed-mode loading conditions. This capability was assessed previously within a
 \acrshort{otm} implementation \cite{Navas_2018_ES}.
 
 The geometry and boundary conditions are sketched in Figure 
-\ref{fig:geometry-Semicircular-bending-test}. The experiment consist in two
+\ref{fig:geometry-Semicircular-bending-test}. The experiment \PNA{consist of loading
 semicircular specimens with a radius of 47.5 mm and a thickness of
-20 mm are supported by two rollers at a span of 47.5 mm and loaded by
-another roller on its mid-span. Notches with a length of 16.6 mm are
-created with different notch angles of 0$^º$ and 60$^º$ with respect
-to the vertical axis to investigate the influences of the
-notch angles on the peak load \ref{fig:plot-Angle-Forces-test}.
+20 mm, supported by two rollers at a span of 47.5 mm, by
+another roller on its top mid-span. Notches with a length of 16.6 mm are
+created with the different notch angles of 0$^º$, 30$^º$ and 60$^º$ with respect
+to the vertical axis in order to investigate the influence of the
+notch angle on the peak load \ref{fig:plot-Angle-Forces-test}.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
@@ -924,7 +924,7 @@ notch angles on the peak load \ref{fig:plot-Angle-Forces-test}.
   \label{fig:geometry-Semicircular-bending-test}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The material properties of Johnstone are listed in Table \ref{tab:Johnstone-properties}.
+The material properties of Johnstone rock are listed in Table \ref{tab:Johnstone-properties}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}
   \centering
@@ -943,12 +943,11 @@ The material properties of Johnstone are listed in Table \ref{tab:Johnstone-prop
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In the tests, particles were uniformly distributed with an almost
 constant separation of 1 mm between them, resulting in a total number of 4672
-\acrshort{mpm} particles for generating the specimen. Additionally a
+\acrshort{mpm} particles for generating the specimen. Additionally, a
 regular cartesian background grid of 1917 nodes with 1.5 mm of nodal distance
 was generated. The velocities of the top boundary particles are $v_x$ = 0, $v_y$ = −
 2 mm/s, whereas the velocities of the bottom boundary particles are
-$v_y$ = 0 mm/s. To reduce dynamic effects due to a sudden loading, it
-was preformed within a soft loading ramp. Finally, the model was
+$v_y$ = 0 mm/s. To reduce dynamic effects due to a sudden loading, \PNA{a soft loading ramp has been employed as a loading curve.} Finally, the model was
 calibrated with a regularization parameter \gls{Ceps} = 1.7 and a
 bandwidth value \gls{heps} = 15.
 
@@ -957,13 +956,13 @@ comparison of mixed-mode fracture envelope between experiments and
 \acrshort{mpm} simulations for different notch inclination angles
 $\alpha$ = 0$^{\circ}$, 30$^{\circ}$ and 60$^{\circ}$. The final
 fracture pattern is a vertical straight line when $\alpha$ = 0$^{\circ}$  (pure mode I). 
-When $\alpha$ > 0$^{\circ}$, the sample is
-subjected to mixed-mode. For simulation cases 0$^{\circ}$ and 30$^{\circ}$, the fractures
+When $\alpha > 0^{\circ}$, the sample is
+subjected to a mixed-mode pattern. For the cases of 0$^{\circ}$ and 30$^{\circ}$, cracks
 initiate from the notch tip and then propagate towards upper loading
-point. Experiments show that a few fractures tend to initiate behind
-notch tip when the notch angle is beyond 50$^{\circ}$, figure
-\ref{fig:Figure-Angle-Forces-test-damage-pattern} demonstrate that
-eigensoftening combined with \acrshort{mpm} is able to reproduce this
+point. Experiments show that a few cracks tend to initiate behind
+notch tip when the notch angle is beyond 50$^{\circ}$. Figure
+\ref{fig:Figure-Angle-Forces-test-damage-pattern} demonstrates that
+eigensoftening, combined with \acrshort{mpm}, is able to reproduce this
 behavior. Therefore, the simulation results predict successfully the
 fracture envelope in experiments and demonstrate the capability of
 the eigensoftening-\acrshort{mpm} model for capturing the fracture
@@ -982,7 +981,7 @@ development under various complex loading conditions.
 Additionally, \ref{fig:plot-Angle-Forces-test} compare the peak load
 between experiments and simulations for the notch inclination angles
 0$^{\circ}$, 30$^{\circ}$ and 60$^{\circ}$. This figure proofs how the
-eigensoftening-\acrshort{mpm} simulation can well capture the
+eigensoftening-\acrshort{mpm} simulation can appropriately capture the
 increasing trend of the peak load with the increasing notch angles in
 the experiment.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
