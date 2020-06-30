@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.23)  23 JUN 2020 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.6.29)  30 JUN 2020 20:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -128,7 +128,7 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@bottom=\skip52
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip53
 \multirow@cntb=\count107
 \multirow@dima=\skip54
@@ -216,7 +216,7 @@ LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+Package: mathtools 2019/07/31 v1.22 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
@@ -616,12 +616,12 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 339.
+LaTeX Font Info:    Try loading font information for U+msa on input line 340.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 339.
+LaTeX Font Info:    Try loading font information for U+msb on input line 340.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -635,40 +635,40 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 \openout4 = `2020_EFM_MPM_Eigensoftening.ist'.
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 361--368
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 362--369
 
  []
 
 
-Overfull \hbox (14.38843pt too wide) in paragraph at lines 369--389
+Overfull \hbox (14.38843pt too wide) in paragraph at lines 370--390
 \OT1/cmr/m/n/12 dif-fer-ent ways[] . On the one hand, the ``CRAcks with Ma-te-r
 ial Points (CRAMP)''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--389
+Underfull \hbox (badness 10000) in paragraph at lines 370--390
 
  []
 
 
-Overfull \hbox (18.83047pt too wide) in paragraph at lines 390--407
+Overfull \hbox (18.83047pt too wide) in paragraph at lines 391--408
 \OT1/cmr/m/n/12 eigen-frac-ture, where crack sets are ap-prox-i-mated by means 
 of eigen-deformations,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--407
+Underfull \hbox (badness 10000) in paragraph at lines 391--408
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 408--418
+Underfull \hbox (badness 10000) in paragraph at lines 409--419
 
  []
 
 [3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 580--597
+Underfull \hbox (badness 10000) in paragraph at lines 581--598
 
  []
 
@@ -676,150 +676,140 @@ Underfull \hbox (badness 10000) in paragraph at lines 580--597
 <Figure-Particle-failed.png, id=39, 542.2659pt x 386.1627pt>
 File: Figure-Particle-failed.png Graphic file (type png)
 <use Figure-Particle-failed.png>
-Package pdftex.def Info: Figure-Particle-failed.png  used on input line 616.
+Package pdftex.def Info: Figure-Particle-failed.png  used on input line 617.
 (pdftex.def)             Requested size: 195.0pt x 138.86526pt.
-
-Overfull \hbox (8.13126pt too wide) in paragraph at lines 629--638
+ [7 <./Figure-Particle-failed.png>]
+Overfull \hbox (8.13126pt too wide) in paragraph at lines 630--639
 \OT1/cmr/m/n/12 when $\OML/cmm/m/it/12 G[]$ \OT1/cmr/m/n/12 sur-passes the crit
 -i-cal en-ergy re-lease rate that mea-sures the material-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 629--638
+Underfull \hbox (badness 10000) in paragraph at lines 630--639
 
  []
 
-[7]
-<Figure-Damage.pdf, id=46, 192.32654pt x 161.78944pt>
+<Figure-Damage.pdf, id=47, 192.32654pt x 161.78944pt>
 File: Figure-Damage.pdf Graphic file (type pdf)
 <use Figure-Damage.pdf>
-Package pdftex.def Info: Figure-Damage.pdf  used on input line 656.
+Package pdftex.def Info: Figure-Damage.pdf  used on input line 657.
 (pdftex.def)             Requested size: 195.0pt x 164.04788pt.
- [8 <./Figure-Particle-failed.png>]
-Overfull \hbox (10.42734pt too wide) in paragraph at lines 695--705
-\OT1/cmr/m/n/12 eigen-ero-sion method (Eq. []). The
- []
-
-[9 <./Figure-Damage.pdf>]
-Overfull \hbox (164.35745pt too wide) in paragraph at lines 733--737
-\OT1/cmr/m/n/12 Introducing [] in [],
- []
-
-
-Overfull \hbox (0.11125pt too wide) in paragraph at lines 740--744
-\OT1/cmr/m/n/12 The func-tion of $\OML/cmm/m/it/12 ^^_$ \OT1/cmr/m/n/12 pre-sen
-ted in []
- []
-
-
-Overfull \hbox (83.27289pt too wide) in paragraph at lines 747--749
-\OT1/cmr/m/n/12 Implementation de-tails can be con-sulted in Ap-pendix  BEigen-
-soft-en-ing Algorithmappendix.B[]. 
- []
-
-[10]
-Overfull \hbox (0.714pt too wide) in paragraph at lines 796--811
+[8 <./Figure-Damage.pdf>] [9] [10]
+Overfull \hbox (0.714pt too wide) in paragraph at lines 797--812
 [][]\OT1/cmr/m/n/12 The pro-posed ap-proach to over-come the two main short-com
 -ings of Eighen-
  []
 
-[11]
-<Figure-Mode_I.pdf, id=76, 350.46571pt x 400.10464pt>
+<Figure-Mode_I.pdf, id=73, 350.46571pt x 400.10464pt>
 File: Figure-Mode_I.pdf Graphic file (type pdf)
 <use Figure-Mode_I.pdf>
-Package pdftex.def Info: Figure-Mode_I.pdf  used on input line 825.
+Package pdftex.def Info: Figure-Mode_I.pdf  used on input line 826.
 (pdftex.def)             Requested size: 155.99762pt x 178.0979pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--841
+Underfull \hbox (badness 10000) in paragraph at lines 816--843
 
  []
 
-<Figure-Reactions-Mode-I.png, id=77, 462.528pt x 346.896pt>
+[11]
+<Figure-Reactions-Mode-I.png, id=77, 484.81125pt x 355.3275pt>
 File: Figure-Reactions-Mode-I.png Graphic file (type png)
 <use Figure-Reactions-Mode-I.png>
-Package pdftex.def Info: Figure-Reactions-Mode-I.png  used on input line 856.
-(pdftex.def)             Requested size: 312.00119pt x 234.01236pt.
+Package pdftex.def Info: Figure-Reactions-Mode-I.png  used on input line 870.
+(pdftex.def)             Requested size: 312.00119pt x 228.68294pt.
 <./Figure-Stress-0100-mode-I.png, id=78, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0100-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0100-mode-I.png>
-Package pdftex.def Info: ./Figure-Stress-0100-mode-I.png  used on input line 87
-9.
+Package pdftex.def Info: ./Figure-Stress-0100-mode-I.png  used on input line 89
+3.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
 <./Figure-Stress-0250-mode-I.png, id=79, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0250-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0250-mode-I.png>
-Package pdftex.def Info: ./Figure-Stress-0250-mode-I.png  used on input line 88
-0.
+Package pdftex.def Info: ./Figure-Stress-0250-mode-I.png  used on input line 89
+4.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
 <./Figure-Stress-0398-mode-I.png, id=80, 1086.0575pt x 624.3325pt>
 File: ./Figure-Stress-0398-mode-I.png Graphic file (type png)
 <use ./Figure-Stress-0398-mode-I.png>
-Package pdftex.def Info: ./Figure-Stress-0398-mode-I.png  used on input line 88
-1.
+Package pdftex.def Info: ./Figure-Stress-0398-mode-I.png  used on input line 89
+5.
 (pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
 
-LaTeX Warning: Float too large for page by 11.41342pt on input line 887.
 
-
-Overfull \hbox (9.22513pt too wide) in paragraph at lines 845--896
-\OT1/cmr/m/n/12 place-ment for lin-ear in-ter-po-la-tion tech-nique and the []L
-ME approximantsfigure.4[]
- []
-
-
-Overfull \hbox (15.62257pt too wide) in paragraph at lines 845--896
-\OT1/cmr/m/n/12 clearly shows the []LME$[]$ so-lu-tion has a re-ac-tion peak va
-lue of 0.03 $[\OML/cmm/m/it/12 M\OT1/cmr/m/n/12 ][\OML/cmm/m/it/12 L\OT1/cmr/m/
-n/12 ][\OML/cmm/m/it/12 T\OT1/cmr/m/n/12 ][]$
- []
+LaTeX Warning: Float too large for page by 11.41342pt on input line 901.
 
 [12 <./Figure-Mode_I.pdf>] [13 <./Figure-Reactions-Mode-I.png>] [14 <./Figure-S
 tress-0100-mode-I.png> <./Figure-Stress-0250-mode-I.png> <./Figure-Stress-0398-
 mode-I.png>]
-./2020_EFM_MPM_Eigensoftening.tex:915: Missing { inserted.
+./2020_EFM_MPM_Eigensoftening.tex:930: Missing { inserted.
 <to be read again> 
                    \begingroup 
-l.915 created with different notch angles of 0$^º
-                                                  $ and 60$^º$ with respect
+l.930 ...k load \ref{fig:plot-Angle-Forces-test}.}
+                                                  
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 915
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 930
 .
 
-./2020_EFM_MPM_Eigensoftening.tex:915: Missing } inserted.
+./2020_EFM_MPM_Eigensoftening.tex:930: Missing } inserted.
 <inserted text> 
                 }
-l.915 ...ted with different notch angles of 0$^º$
-                                                   and 60$^º$ with respect
+l.930 ...k load \ref{fig:plot-Angle-Forces-test}.}
+                                                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./2020_EFM_MPM_Eigensoftening.tex:915: Missing { inserted.
+./2020_EFM_MPM_Eigensoftening.tex:930: Missing { inserted.
 <to be read again> 
                    \begingroup 
-l.915 ...fferent notch angles of 0$^º$ and 60$^º
-                                                  $ with respect
+l.930 ...k load \ref{fig:plot-Angle-Forces-test}.}
+                                                  
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 915
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 930
 .
 
-./2020_EFM_MPM_Eigensoftening.tex:915: Missing } inserted.
+./2020_EFM_MPM_Eigensoftening.tex:930: Missing } inserted.
 <inserted text> 
                 }
-l.915 ...ferent notch angles of 0$^º$ and 60$^º$
-                                                   with respect
+l.930 ...k load \ref{fig:plot-Angle-Forces-test}.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./2020_EFM_MPM_Eigensoftening.tex:930: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.930 ...k load \ref{fig:plot-Angle-Forces-test}.}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 930
+.
+
+./2020_EFM_MPM_Eigensoftening.tex:930: Missing } inserted.
+<inserted text> 
+                }
+l.930 ...k load \ref{fig:plot-Angle-Forces-test}.}
+                                                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -830,10 +820,10 @@ my insertion and my current dilemma will both disappear.
 File: ./Figure-Semicircular-bending-test.png Graphic file (type png)
 <use ./Figure-Semicircular-bending-test.png>
 Package pdftex.def Info: ./Figure-Semicircular-bending-test.png  used on input 
-line 921.
+line 934.
 (pdftex.def)             Requested size: 234.00238pt x 206.76pt.
 
-./2020_EFM_MPM_Eigensoftening.tex:948: Package inputenc Error: Unicode characte
+./2020_EFM_MPM_Eigensoftening.tex:961: Package inputenc Error: Unicode characte
 r − (U+2212)
 (inputenc)                not set up for use with LaTeX.
 
@@ -841,7 +831,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.948 ...dary particles are $v_x$ = 0, $v_y$ = −
+l.961 ...dary particles are $v_x$ = 0, $v_y$ = −
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -852,48 +842,47 @@ t>
 File: ./Figure-Angle-Forces-test-0-damage-pattern.png Graphic file (type png)
 <use ./Figure-Angle-Forces-test-0-damage-pattern.png>
 Package pdftex.def Info: ./Figure-Angle-Forces-test-0-damage-pattern.png  used 
-on input line 974.
+on input line 986.
 (pdftex.def)             Requested size: 191.10214pt x 131.45561pt.
 <./Figure-Angle-Forces-test-30-damage-pattern.png, id=103, 950.8323pt x 603.213
 6pt>
 File: ./Figure-Angle-Forces-test-30-damage-pattern.png Graphic file (type png)
 <use ./Figure-Angle-Forces-test-30-damage-pattern.png>
 Package pdftex.def Info: ./Figure-Angle-Forces-test-30-damage-pattern.png  used
- on input line 975.
+ on input line 987.
 (pdftex.def)             Requested size: 191.10214pt x 121.22964pt.
 <./Figure-Angle-Forces-test-60-damage-pattern.png, id=104, 960.9501pt x 603.213
 6pt>
 File: ./Figure-Angle-Forces-test-60-damage-pattern.png Graphic file (type png)
 <use ./Figure-Angle-Forces-test-60-damage-pattern.png>
 Package pdftex.def Info: ./Figure-Angle-Forces-test-60-damage-pattern.png  used
- on input line 976.
+ on input line 988.
 (pdftex.def)             Requested size: 191.10214pt x 119.95946pt.
 <./Figure-Angle-Forces-test.png, id=105, 462.528pt x 346.896pt>
 File: ./Figure-Angle-Forces-test.png Graphic file (type png)
 <use ./Figure-Angle-Forces-test.png>
-Package pdftex.def Info: ./Figure-Angle-Forces-test.png  used on input line 991
-.
+Package pdftex.def Info: ./Figure-Angle-Forces-test.png  used on input line 100
+3.
 (pdftex.def)             Requested size: 272.99881pt x 204.75684pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1006--1008
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1020
+
+ []
+
+<./Figure-impact-test.png, id=106, 1296.042pt x 658.3797pt>
+File: ./Figure-impact-test.png Graphic file (type png)
+<use ./Figure-impact-test.png>
+Package pdftex.def Info: ./Figure-impact-test.png  used on input line 1031.
+(pdftex.def)             Requested size: 312.00119pt x 158.48651pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1021--1042
 
  []
 
 [16] [17 <./Figure-Angle-Forces-test-0-damage-pattern.png> <./Figure-Angle-Forc
 es-test-30-damage-pattern.png> <./Figure-Angle-Forces-test-60-damage-pattern.pn
 g> <./Figure-Angle-Forces-test.png>]
-<./Figure-impact-test.png, id=116, 1296.042pt x 658.3797pt>
-File: ./Figure-impact-test.png Graphic file (type png)
-<use ./Figure-impact-test.png>
-Package pdftex.def Info: ./Figure-impact-test.png  used on input line 1019.
-(pdftex.def)             Requested size: 312.00119pt x 158.48651pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1009--1030
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1061
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1073
 
  []
 
@@ -902,64 +891,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 1046--1061
 File: Figure-impact-test-Forces-Time.png Graphic file (type png)
 <use Figure-impact-test-Forces-Time.png>
 Package pdftex.def Info: Figure-impact-test-Forces-Time.png  used on input line
- 1070.
+ 1082.
 (pdftex.def)             Requested size: 312.00119pt x 234.25691pt.
 <Figure-impact-test-Reactions-Time.png, id=122, 462.22687pt x 347.04657pt>
 File: Figure-impact-test-Reactions-Time.png Graphic file (type png)
 <use Figure-impact-test-Reactions-Time.png>
 Package pdftex.def Info: Figure-impact-test-Reactions-Time.png  used on input l
-ine 1071.
+ine 1083.
 (pdftex.def)             Requested size: 312.00119pt x 234.25691pt.
 <./Figure-impact-test-Damage-vs-Stress-0005.png, id=123, 1000.73875pt x 541.021
 26pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0005.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0005.png>
 Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0005.png  used o
-n input line 1104.
+n input line 1116.
 (pdftex.def)             Requested size: 323.70071pt x 174.99603pt.
 <./Figure-impact-test-Damage-vs-Stress-0015.png, id=124, 1000.73875pt x 541.021
 26pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0015.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0015.png>
 Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0015.png  used o
-n input line 1105.
+n input line 1117.
 (pdftex.def)             Requested size: 323.70071pt x 174.99603pt.
 <./Figure-impact-test-Damage-vs-Stress-0030.png, id=125, 1000.73875pt x 541.021
 26pt>
 File: ./Figure-impact-test-Damage-vs-Stress-0030.png Graphic file (type png)
 <use ./Figure-impact-test-Damage-vs-Stress-0030.png>
 Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0030.png  used o
-n input line 1106.
+n input line 1118.
 (pdftex.def)             Requested size: 323.70071pt x 174.99603pt.
 
 
-LaTeX Warning: Float too large for page by 45.43254pt on input line 1112.
+LaTeX Warning: Float too large for page by 45.43254pt on input line 1124.
 
-[19] [20 <./Figure-impact-test-Forces-Time.png> <./Figure-impact-test-Reactions
--Time.png>]
 
-./2020_EFM_MPM_Eigensoftening.tex:1121: Package glossaries Error: Glossary entr
+./2020_EFM_MPM_Eigensoftening.tex:1133: Package glossaries Error: Glossary entr
 y `MPM' has not been defined.
 
 See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1121 \acrshort{mpm}/\acrshort{gimp} are faced.}
-                                                  \PNA{Based on the
+l.1133 \acrshort{mpm} are faced.}
+                                  \PNA{Based on the
 You need to define a glossary entry before you can use it.
 
-[21] [22 <./Figure-impact-test-Damage-vs-Stress-0005.png> <./Figure-impact-test
--Damage-vs-Stress-0015.png> <./Figure-impact-test-Damage-vs-Stress-0030.png>]
-[23]
+[19] [20 <./Figure-impact-test-Forces-Time.png> <./Figure-impact-test-Reactions
+-Time.png>] [21 <./Figure-impact-test-Damage-vs-Stress-0005.png> <./Figure-impa
+ct-test-Damage-vs-Stress-0015.png> <./Figure-impact-test-Damage-vs-Stress-0030.
+png>] [22]
 Overfull \vbox (1.75684pt too high) has occurred while \output is active []
 
 
-[24]
-./2020_EFM_MPM_Eigensoftening.tex:1253: Undefined control sequence.
+[23]
+./2020_EFM_MPM_Eigensoftening.tex:1266: Undefined control sequence.
 <argument> $\chi _p = 0$ \AND 
                               $\epsilon _{f,p} = 0$
-l.1253   \caption
+l.1266   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -967,10 +955,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./2020_EFM_MPM_Eigensoftening.tex:1253: Undefined control sequence.
+./2020_EFM_MPM_Eigensoftening.tex:1266: Undefined control sequence.
 <argument> $\chi _p \neq 1$ \AND 
                                  $\epsilon _{f,p} > 0$
-l.1253   \caption
+l.1266   \caption
                  {Compute damage parameter $\chi_p^{k+1}$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -979,12 +967,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (5.76389pt too wide) in paragraph at lines 1257--1257
+Overfull \hbox (5.76389pt too wide) in paragraph at lines 1270--1270
 []\OT1/cmr/bx/n/12 Node-linked method for $\OML/cmm/b/it/12 ^^O$\OT1/cmr/bx/n/1
 2 -neighbourhood re-con-struc-
  []
 
-[25] (./2020_EFM_MPM_Eigensoftening.bbl
+[24] (./2020_EFM_MPM_Eigensoftening.bbl
 Underfull \hbox (badness 1577) in paragraph at lines 22--28
 \OT1/cmr/m/n/12 e-ments for three-dimensional crack-propagation anal-y-sis., In
 -ter-na-
@@ -1020,7 +1008,7 @@ Underfull \hbox (badness 2426) in paragraph at lines 37--43
 er-ing 48
  []
 
-[26]
+[25]
 ./2020_EFM_MPM_Eigensoftening.bbl:54: Misplaced alignment tab character &.
 l.54   via extended finite elements, Computers &
                                                  Structures 206 (2018) 122 -...
@@ -1063,13 +1051,13 @@ Underfull \hbox (badness 2134) in paragraph at lines 73--78
 eth-
  []
 
-[27]
+[26]
 Underfull \hbox (badness 2644) in paragraph at lines 157--161
 []\OT1/cmr/m/n/12 A. Pan-dolfi, B. Li, M. Or-tiz, Mod-el-ing frac-ture by mater
 ial-
  []
 
-[28]
+[27]
 ./2020_EFM_MPM_Eigensoftening.bbl:183: Misplaced alignment tab character &.
 l.183 ...ethod, Computer Modeling in Engineering &
                                                    Sciences 1~(1)
@@ -1090,13 +1078,13 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[29]
+[28]
 Underfull \hbox (badness 1635) in paragraph at lines 307--311
 []\OT1/cmr/m/n/12 M. Galet-zka, P. Glauner, A sim-ple and cor-rect even-odd al-
 go-
  []
 
-[30]
+[29]
 Underfull \hbox (badness 2065) in paragraph at lines 326--331
 []\OT1/cmr/m/n/12 X. Zhang, G. Ruiz, R. Yu, M. Tar-ifa, Frac-ture be-haviour of
 
@@ -1146,24 +1134,24 @@ Underfull \hbox (badness 2134) in paragraph at lines 355--362
 111.
  []
 
-[31])
+[30])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[32] (./2020_EFM_MPM_Eigensoftening.aux)
+[31] (./2020_EFM_MPM_Eigensoftening.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11072 strings out of 492615
- 166301 string characters out of 6131390
- 306798 words of memory out of 5000000
- 14730 multiletter control sequences out of 15000+600000
+ 11066 strings out of 492671
+ 166185 string characters out of 6134270
+ 305518 words of memory out of 5000000
+ 14719 multiletter control sequences out of 15000+600000
  15986 words of font info for 59 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 1137 hyphenation exceptions out of 8191
  45i,21n,38p,1992b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
@@ -1187,10 +1175,10 @@ ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msam10.pfb>
-Output written on 2020_EFM_MPM_Eigensoftening.pdf (32 pages, 7323683 bytes).
+Output written on 2020_EFM_MPM_Eigensoftening.pdf (31 pages, 7308085 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 245 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

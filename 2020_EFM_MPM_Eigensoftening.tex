@@ -815,7 +815,7 @@ test and in the second case with a drop-weight impact test.}
 \label{sec:3.1}
 The aim of the problem presented hereinafter is to assess the
 capability of the \acrshort{lme} approximants to improve the result
-\textit{versus} the standard linear interpolation. The application
+\textit{versus} the standard linear interpolation and \acrshort{ugimp}. The application
 consists of a square plate of size\MMP{$H = 1\ [L] $} containing an initial edge
 crack of length $0.25 \cdot H$ loaded in a pure mode I by displacement
 control on the outer flanks of the plate (See Figure
@@ -831,7 +831,8 @@ control on the outer flanks of the plate (See Figure
 The constitutive model considered in the numerical experiment is a
 linear-elastic Hookean material, whose Young's modulus \MMP{\gls{E} = 1.06
 $[M] [L]^{-1} [T]^{-2}$, the Poisson's ratio \gls{nu} = 0.333, and
-critical energy-release rate \gls{Gf} = 0.0001 $[L]^{2} [T]^{-2}$. The absence of units is due to the current simulation will not be tested against experimental results, where
+critical energy-release rate \gls{Gf} = 0.0001 $[L]^{2} [T]^{-2}$. The absence of units is due to the current
+simulation will not be tested against experimental results, where
 scale factor is relevant, but will be validated against an analytical
 solution provided by Pandolfi \& Ortiz \cite{Pandolfi_2012}.} In
 \acrshort{mpm}, two different discretisation are required. On one
@@ -848,9 +849,21 @@ of wiggles in the reaction-displacements curve, in both loading and
 post-failure stages, when linear interpolation technique is used. In
 contrast, \acrshort{lme} simulation does not exhibit these spurious
 oscillations and remains linear until the failure. About the strength,
-linear interpolation produces stiffer results than
-\acrshort{lme}. This can be attributed to imprecision in the stress
-field due to grid-crossing phenomena.\\
+linear interpolation produces stiffer results than \acrshort{lme}. This can be attributed to imprecision in the
+stress field due to grid-crossing phenomena. \MMP{Alternative to
+  \acrshort{lme}, \acrshort{ugimp} shape
+functions can be employed to mitigate grid-crossing instabilities.
+Figure \ref{fig:Reactions-cracked-panel-mode-I} support this since it
+does not exhibits it when particles cross element borders as occur
+with linear interpolation. Unfortunately the extended support of this
+kind of shape function interfere with nodes in both sides of the notch,
+producing an undesired ``tie-effect''. This involves in a violation of
+the free border boundary condition in the notch. Possible solutions to this effect
+are the suppression of the elements in the notch, within a CRAMP-like
+method where two pairs of nodes are employed, or reducing the mesh size. With \acrshort{lme}
+approximants these artefacts are not required since it is possible to control the support
+of the shape function reducing the grid-crossing and avoiding the
+``tie-effect'' in the notch at the same time.}\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
@@ -862,7 +875,7 @@ field due to grid-crossing phenomena.\\
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Additionally, Figure \ref{fig:Stress-cracked-panel-mode-I}
-exhibits more clearly the difference between linear interpolation and
+remark clearly the difference between linear interpolation and
 \acrshort{lme}, since numerical instability becomes rather significant
 when particles crosses the boundary of the element in the linear
 case, which is observed at 60 seconds. \PNA{Although, apparently, the
@@ -1096,7 +1109,7 @@ of simulations since the majority of the computational effort is
 clearly localised in a tiny region of the domain. On the other
 hand, there is the possibility to reduce the shape function support to avoid
 a material point in one side of the crack is affected by those in the
-other side of the crack. 
+other side of the crack.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \centering
@@ -1117,7 +1130,7 @@ other side of the crack.
 \DM{The paper proposes the eigensoftening algorithm in a \acrshort{MPM} framework for quasi-brittle materials to overcome the limitations observed in the EigenMPM \cite{Zhang_EE_2020}. The overestimation of tensile 
 stress and strain peaks in the fracture mechanism of quasi-brittle
 materials and the stress oscillations observed with conventional
-\acrshort{mpm}/\acrshort{gimp} are faced.} \PNA{Based on the
+\acrshort{mpm} are faced.} \PNA{Based on the
 EigenMPM approach to fracture, two additional improvements have been proposed in the present research in order to solve the shortcomings of the original concept pointed out in the aforementioned paper \cite{Zhang_EE_2020}.}
 
 Firstly, by introducing the concept of eigensoftening to the \acrshort{mpm} framework,
@@ -1129,11 +1142,12 @@ sophisticated materials. Secondly to achieve better results, three new
 numerical algorithms has been implemented. The \acrshort{lme}
 approximants are employed to remove from
 the solution those wiggles provoked by inaccuracies in the stress
-integration. The traditional time scheme of the
-\acrshort{mpm} has been improved with a Newmark Predictor Corrector
-scheme as well. And the traditional concept of element connectivity
-has been removed to allow a more flexible and efficient implementation of search
-algorithm. In this research, the aforementioned techniques have helped
+integration and \MMP{to avoid the ``tie-effect'' observed in the
+\acrshort{ugimp}}. The traditional time scheme of the \acrshort{mpm}
+has been improved with a Newmark Predictor Corrector scheme as
+well. And the traditional concept of element connectivity has been
+removed to allow a more flexible and efficient implementation of
+search algorithm. In this research, the aforementioned techniques have helped
 to improve the results in fracture propagation through the
 eigensoftening and eigenerosion algorithms.
 
