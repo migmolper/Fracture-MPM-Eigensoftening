@@ -58,7 +58,7 @@ J.~Huang, An efficient morphology generation and level set representation of
 \bibitem{NAGASHIMA_2016}
 T.~Nagashima, M.~Sawada, Development of a damage propagation analysis system
   based on level set xfem using the cohesive zone model, Computers & Structures
-  174 (2016) 42 -- 53, cIVIL-COMP.
+  174 (2016) 42 -- 53.
 \newblock \href {http://dx.doi.org/10.1016/j.compstruc.2015.10.005}
   {\path{doi:10.1016/j.compstruc.2015.10.005}}.
 
@@ -193,7 +193,7 @@ H.~Tan, J.~Nairn, Hierarchical, adaptive, material point method for dynamic
   {\path{doi:10.1016/S0045-7825(01)00377-2}}.
 
 \bibitem{Nairn_2004}
-Y.~GUO, J.~Nairn, Calculation of j-integral and stress intensity factors using
+Y.~Guo, J.~Nairn, Calculation of j-integral and stress intensity factors using
   the material point method, CMES. Computer Modeling in Engineering & Sciences
   6~(3) (2004) 295--308.
 \newblock \href {http://dx.doi.org/10.3970/cmes.2004.006.295}
@@ -314,6 +314,11 @@ E.~Wobbes, R.~Tielen, M.~M{\"{o}}ller, C.~Vuik, {Comparison and unification of
   material-point and optimal transportation meshfree methods}, Computational
   Particle Mechanics\href {http://dx.doi.org/10.1007/s40571-020-00316-7}
   {\path{doi:10.1007/s40571-020-00316-7}}.
+
+\bibitem{Bardenhagen2004}
+S.~G. S.~G. Bardenhagen, E.~M. Kober, {The generalized interpolation material
+  point method}, CMES - Computer Modeling in Engineering and Sciences 5~(6)
+  (2004) 477--495.
 
 \bibitem{LIM_1993}
 I.~Lim, I.~Johnston, S.~Choi, Stress intensity factors for semi-circular
