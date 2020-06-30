@@ -644,7 +644,7 @@ materials \cite{Navas_2017_ES}. To overcome this limitation, the
 aforementioned authors proposed the concept of eigensoftening to take
 into account the gradual failure in quasi-brittle materials. The idea
 behind this concept is inspired in the cohesive fracture. This gradual
-failure criterion is plotted in figure \label{fig:Damage-ft-wc}, where
+failure criterion is plotted in Figure \ref{fig:Damage-ft-wc}, where
 a linear decreasing cohesive law is presented to illustrate the
 concept earlier described. In the picture, the shaded region represents
 the static fracture energy per unit of area, $G_F$. Notice how a
@@ -925,7 +925,7 @@ The geometry and boundary conditions are sketched in Figure
 semicircular specimens with a radius of 47.5 mm and a thickness of
 20 mm, supported by two rollers at a span of 47.5 mm, by
 another roller on its top mid-span. Notches with a length of 16.6 mm are
-created with the different notch angles of 0$^º$, 30$^º$ and 60$^º$ with respect
+created with the different notch angles of 0$^{\circ}$, 30$^{\circ}$ and 60$^{\circ}$ with respect
 to the vertical axis in order to investigate the influence of the
 notch angle on the peak load \ref{fig:plot-Angle-Forces-test}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -958,8 +958,8 @@ In the tests, particles were uniformly distributed with an almost
 constant separation of 1 mm between them, resulting in a total number of 4672
 \acrshort{mpm} particles for generating the specimen. Additionally, a
 regular cartesian background grid of 1917 nodes with 1.5 mm of nodal distance
-was generated. The velocities of the top boundary particles are $v_x$ = 0, $v_y$ = −
-2 mm/s, whereas the velocities of the bottom boundary particles are
+was generated. The velocity of the top boundary particles is 
+$v_y$ = − 2 mm/s, whereas the velocity of the bottom boundary particles is
 $v_y$ = 0 mm/s. To reduce dynamic effects due to a sudden loading, a soft loading ramp has been employed as a loading curve. Finally, the model was
 calibrated with a regularization parameter \gls{Ceps} = 1.7 and a
 bandwidth value \gls{heps} = 15.
@@ -1127,7 +1127,7 @@ other side of the crack.
 \section{Conclusions}
 \label{sec:4}
 
-The paper proposes the eigensoftening algorithm in a \acrshort{MPM} framework for quasi-brittle materials to overcome the limitations observed in the EigenMPM \cite{Zhang_EE_2020}. The overestimation of tensile 
+The paper proposes the eigensoftening algorithm in a \acrshort{mpm} framework for quasi-brittle materials to overcome the limitations observed in the EigenMPM \cite{Zhang_EE_2020}. The overestimation of tensile 
 stress and strain peaks in the fracture mechanism of quasi-brittle
 materials and the stress oscillations observed with conventional
 \acrshort{mpm} are faced. Based on the
@@ -1169,6 +1169,8 @@ Ciencia e Innovaci\'on, under Grant No. BIA-2016-76253 is greatly
 appreciated. The first and the second authors also acknowledge the
 fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 (FJCI-2017–31544) respectively.
+
+\printglossaries
 
 \appendix
 %\addappheadtotoc
@@ -1234,28 +1236,28 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 \begin{algorithm}[H]
   \DontPrintSemicolon
   \KwInput{For each $p$, $\epsilon$-neighbourhood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
-  \KwOutput{Return damage parameter $\chi := \{\chi_p\}$}
+  \KwOutput{Return damage parameter $\chi = \{\chi_p\}$}
   % \KwData{Testing set $x$}
   $\chi_p \leftarrow \chi_p^{k}$ \;
   \For{$p$ to $N_p$}
   {
-    \If{$\chi_p = 0$ \AND $\epsilon_{f,p} = 0$}
+    \If{$\chi_p = 0$ \And $\epsilon_{f,p} = 0$}
     {
       \For{$q \in B_{\epsilon,p}$}
       {
-        $\sigma_{q,I} \leftarrow \text{getEigenvaluesOf}(\sigma_{q})$ \;
+        $\sigma_{q,I} \leftarrow \text{getEigenvaluesOf} (\sigma_{q}) $ \;
         \If{$\chi_q < 1$}
         {
-          $\sum m_p\sigma_{p,I} \leftarrow \sum m_p\sigma_{p,I} + m_q\sigma_{q,I}$ \;
+          $ \sum m_p\sigma_{p,I} \leftarrow \sum m_p\sigma_{p,I} + m_q\sigma_{q,I}$ \;
         }
-        $m_p \leftarrow m_p + m_q$ \;
+        $ m_p \leftarrow m_p + m_q$ \;
       }
       $\sigma_{p,\epsilon} \leftarrow \frac{1}{m_p} \sum m_p\sigma_{p,I}$\;
       \If{$\sigma_{p,\epsilon} > f_{t,p}$}
       {
         $\epsilon_{f,p} = \epsilon_{I,p}$ \;  
       }
-      \ElseIf{$\chi_p \neq 1$ \AND $\epsilon_{f,p} > 0$}
+      \ElseIf{$\chi_p \neq 1$ \And $\epsilon_{f,p} > 0$}
       {
         $\chi_p^{k+1} \leftarrow \min\Big \{1 , \max \{\chi_p^{k},
         \frac{(\epsilon_{I,p}- \epsilon_{f,p})\ h_{\epsilon,p}}{w_c}
@@ -1263,8 +1265,8 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
       }
     }
   }
-  \caption{Compute damage parameter $\chi_p^{k+1}$}
-  \label{alg-eigens}
+    \label{alg-eigens}
+  \caption{Compute damage parameter $\chi$}
 \end{algorithm}
 
 \section{Node-linked method for $\epsilon$-neighbourhood reconstruction}
