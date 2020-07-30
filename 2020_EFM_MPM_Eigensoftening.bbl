@@ -51,21 +51,22 @@ T.~Belytschko, H.~Chen, J.~Xu, G.~Zi, Dynamic crack propagation based on loss
 \bibitem{HUANG_2018}
 J.~Huang, An efficient morphology generation and level set representation of
   cementitious microstructures with arbitrarily shaped aggregates and cracks
-  via extended finite elements, Computers & Structures 206 (2018) 122 -- 144.
+  via extended finite elements, Computers {\&} Structures 206 (2018) 122 --
+  144.
 \newblock \href {http://dx.doi.org/10.1016/j.compstruc.2018.05.010}
   {\path{doi:10.1016/j.compstruc.2018.05.010}}.
 
 \bibitem{NAGASHIMA_2016}
 T.~Nagashima, M.~Sawada, Development of a damage propagation analysis system
-  based on level set xfem using the cohesive zone model, Computers & Structures
-  174 (2016) 42 -- 53.
+  based on level set xfem using the cohesive zone model, Computers {\&}
+  Structures 174 (2016) 42 -- 53.
 \newblock \href {http://dx.doi.org/10.1016/j.compstruc.2015.10.005}
   {\path{doi:10.1016/j.compstruc.2015.10.005}}.
 
 \bibitem{YUN_2019}
 K.~Yun, Z.~Wang, M.~Chang, J.~Liu, T.-J. Kim, N.~Son, K.~Ji, S.~Ronald, A
   computational methodology for simulating quasi-brittle fracture problems,
-  Computers & Structures 215 (2019) 65 -- 79.
+  Computers {\&} Structures 215 (2019) 65 -- 79.
 \newblock \href {http://dx.doi.org/10.1016/j.compstruc.2019.02.003}
   {\path{doi:10.1016/j.compstruc.2019.02.003}}.
 
@@ -85,7 +86,7 @@ Z.~Chen, W.~Hu, L.~Shen, X.~An, R.~Brannon, An evaluation of the mpm for
 
 \bibitem{Nairn_2003}
 J.~Nairn, Material point method calculations with explicit cracks, Computer
-  Modeling in Engineering \& Sciences 4~(6) (2003) 649--664.
+  Modeling in Engineering {\&} Sciences 4~(6) (2003) 649--664.
 \newblock \href {http://dx.doi.org/10.3970/cmes.2003.004.649}
   {\path{doi:10.3970/cmes.2003.004.649}}.
 
@@ -128,7 +129,7 @@ N.~Muthu, S.~Maiti, B.~Falzon, I.~Guiamatsia, A comparison of stress intensity
 Y.~Wang, H.~T. Tran, G.~D. Nguyen, P.~G. Ranjith, H.~H. Bui, Simulation of
   mixed-mode fracture using sph particles with an embedded fracture process
   zone, International Journal for Numerical and Analytical Methods in
-  Geomechanics 44~(10)  1417--1445.
+  Geomechanics 44~(10) (2020) 1417--1445.
 \newblock \href {http://dx.doi.org/10.1002/nag.3069}
   {\path{doi:10.1002/nag.3069}}.
 
@@ -180,7 +181,7 @@ T.~Rabczuk, H.~Ren, A peridynamics formulation for quasi-static fracture and
 
 \bibitem{Nairn_2006}
 Y.~Guo, J.~Nairn, Three-dimensional dynamic fracture analysis using the
-  material point method, Computer Modeling in Engineering & Sciences 1~(1)
+  material point method, Computer Modeling in Engineering {\&} Sciences 1~(1)
   (2006) 11--25.
 \newblock \href {http://dx.doi.org/10.3970/cmes.2006.016.141}
   {\path{doi:10.3970/cmes.2006.016.141}}.
@@ -194,8 +195,8 @@ H.~Tan, J.~Nairn, Hierarchical, adaptive, material point method for dynamic
 
 \bibitem{Nairn_2004}
 Y.~Guo, J.~Nairn, Calculation of j-integral and stress intensity factors using
-  the material point method, CMES. Computer Modeling in Engineering & Sciences
-  6~(3) (2004) 295--308.
+  the material point method, CMES. Computer Modeling in Engineering {\&}
+  Sciences 6~(3) (2004) 295--308.
 \newblock \href {http://dx.doi.org/10.3970/cmes.2004.006.295}
   {\path{doi:10.3970/cmes.2004.006.295}}.
 
@@ -230,7 +231,7 @@ A.~Pandolfi, M.~Ortiz, An eigenerosion approach to brittle fracture.,
 \bibitem{Zhang_EE_2020}
 K.~Zhang, S.-L. Shen, A.~Zhou, Dynamic brittle fracture with eigenerosion
   enhanced material point method, International Journal for Numerical Methods
-  in Engineering  1--27\href {http://dx.doi.org/10.1002/nme.6381}
+  in Engineering (2020) 1--27\href {http://dx.doi.org/10.1002/nme.6381}
   {\path{doi:10.1002/nme.6381}}.
 
 \bibitem{Navas_2017_ES}
@@ -305,7 +306,7 @@ M.~Shimrat, Algorithm 112: Position of point relative to polygon, Commun. ACM
 
 \bibitem{Galetzka_et_al_2017}
 M.~Galetzka, P.~Glauner, A simple and correct even-odd algorithm for the
-  point-in-polygon problem for complex polygons, 2017.
+  point-in-polygon problem for complex polygons, 2017, pp. 1--2.
 \newblock \href {http://dx.doi.org/10.5220/0006040801750178}
   {\path{doi:10.5220/0006040801750178}}.
 
@@ -345,7 +346,7 @@ X.~Zhang, R.~Yu, G.~Ruiz, M.~Tarifa, M.~Camara, Effect of loading rate on crack
 S.~Bardenhagen, J.~Guilkey, K.~Roessig, J.~Brackbill, W.~Witzel, J.~Foster, An
   improved contact algorithm for the material point method and application to
   stress propagation in granular material, CMES. Computer Modeling in
-  Engineering & Sciences 2~(4) (2001) 509--522.
+  Engineering {\&} Sciences 2~(4) (2001) 509--522.
 \newblock \href {http://dx.doi.org/10.3970/cmes.2001.002.509}
   {\path{doi:10.3970/cmes.2001.002.509}}.
 
@@ -368,7 +369,7 @@ G.~Ruiz, A.~de~la Rosa, L.~Almeida, E.~Poveda, X.~Zhang, M.~Tarifa, Z.~Wu,
 \bibitem{Wang2017}
 K.~Wang, W.~Sun, A unified variational eigen-erosion framework for interacting
   brittle fractures and compaction bands in fluid-infiltrating porous media,
-  Computer Methods in Applied Mechanics and Engineering 318 (2017) 1 -- 32.
+  Computer Methods in Applied Mechanics {\&} Engineering 318 (2017) 1 -- 32.
 \newblock \href {http://dx.doi.org/10.1016/j.cma.2017.01.017}
   {\path{doi:10.1016/j.cma.2017.01.017}}.
 

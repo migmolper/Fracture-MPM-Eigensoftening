@@ -3,61 +3,46 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: 2020_EFM_MPM_Eigensoftening.aux
 The style file: elsarticle-num.bst
 Database file #1: Biblio.bib
-Warning--I'm ignoring Navas_2018_ES's extra "year" field
---line 314 of file Biblio.bib
-Warning--I'm ignoring Navas_2018_ES's extra "volume" field
---line 316 of file Biblio.bib
-Warning--I'm ignoring Nairn_2006's extra "volume" field
---line 410 of file Biblio.bib
-Warning--I'm ignoring Kochmann2019's extra "year" field
---line 1116 of file Biblio.bib
-Repeated entry---line 3826 of file Biblio.bib
- : @article{Wang2017
- :                  ,
-I'm skipping whatever remains of this entry
-Warning--empty year in Wang_2020
-Warning--empty year in Zhang_EE_2020
 Warning--empty booktitle in Galetzka_et_al_2017
-Warning--empty pages in Galetzka_et_al_2017
 You've used 55 entries,
             2937 wiz_defined-function locations,
-            1187 strings with 18123 characters,
-and the built_in function-call counts, 17707 in all, are:
-= -- 1820
+            1188 strings with 18145 characters,
+and the built_in function-call counts, 17802 in all, are:
+= -- 1833
 > -- 562
-< -- 0
+< -- 1
 + -- 224
 - -- 169
-* -- 1509
-:= -- 2441
+* -- 1514
+:= -- 2451
 add.period$ -- 105
 call.type$ -- 55
 change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 59
-duplicate$ -- 432
-empty$ -- 1830
+cite$ -- 56
+duplicate$ -- 437
+empty$ -- 1838
 format.name$ -- 218
-if$ -- 4470
+if$ -- 4500
 int.to.chr$ -- 0
 int.to.str$ -- 55
 missing$ -- 56
 newline$ -- 223
 num.names$ -- 55
-pop$ -- 237
+pop$ -- 234
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1041
+skip$ -- 1050
 stack$ -- 0
-substring$ -- 1205
-swap$ -- 152
-text.length$ -- 0
+substring$ -- 1217
+swap$ -- 159
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 126
+warning$ -- 1
+while$ -- 128
 width$ -- 57
-write$ -- 546
-(There was 1 error message)
+write$ -- 547
+(There was 1 warning)
