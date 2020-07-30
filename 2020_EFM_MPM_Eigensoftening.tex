@@ -958,8 +958,8 @@ In the tests, particles were uniformly distributed with an almost
 constant separation of 1 mm between them, resulting in a total number of 4672
 \acrshort{mpm} particles for generating the specimen. Additionally, a
 regular cartesian background grid of 1917 nodes with 1.5 mm of nodal distance
-was generated. The velocity of the top boundary particles is $v_y = − 2 mm/s$, 
-whereas the velocity of the bottom boundary particles is $v_y$ = 0 mm/s.
+was generated. The velocity of the top boundary particles is $v_y = 2 mm/s$, 
+whereas the velocity of the bottom boundary particles is $v_y = 0 mm/s$.
 To reduce dynamic effects due to a sudden loading, a soft loading ramp has been employed as a loading curve. 
 Finally, the model was calibrated with a regularization parameter \gls{Ceps} = 1.7 and a
 bandwidth value \gls{heps} = 15.
@@ -1237,11 +1237,11 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
   \DontPrintSemicolon
   \KwInput{For each $p$, $\epsilon$-neighbourhood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
   \KwOutput{Return damage parameter $\chi = \{\chi_p\}$}
-  % \KwData{Testing set $x$}
+  \KwData{Testing set $x$}
   $\chi_p \leftarrow \chi_p^{k}$ \;
   \For{$p$ to $N_p$}
   {
-    \If{$\chi_p = 0$ \And $\epsilon_{f,p} = 0$}
+    \If{$\chi_p = 0$ \textbf{and} $\epsilon_{f,p} = 0$}
     {
       \For{$q \in B_{\epsilon,p}$}
       {
@@ -1257,7 +1257,7 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
       {
         $\epsilon_{f,p} = \epsilon_{I,p}$ \;  
       }
-      \ElseIf{$\chi_p \neq 1$ \And $\epsilon_{f,p} > 0$}
+      \ElseIf{$\chi_p \neq 1$  \textbf{and} $\epsilon_{f,p} > 0$}
       {
         $\chi_p^{k+1} \leftarrow \min\Big \{1 , \max \{\chi_p^{k},
         \frac{(\epsilon_{I,p}- \epsilon_{f,p})\ h_{\epsilon,p}}{w_c}
