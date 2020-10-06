@@ -9,6 +9,7 @@
 \usepackage{color}
 \usepackage{soul}
 \usepackage{cancel}
+\usepackage{textcomp}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Init macros math
@@ -346,49 +347,32 @@ Material Point Method \sep Solid Dynamics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{sec:1}
-The failure mechanisms of quasi-brittle materials and the  crack propagation have been studied from different fields such as materials science, structural engineering, earth science and petroleum engineering . The prediction of crack propagation has been approached with different numerical techniques. The \acrfull{fem} is widely used in industrial application. However, the presence of cracks is a violation of the continuity requirement of the \acrshort{fem}. To overcome this issue, numerous numerical
-\textcolor{red}{artifices}  have been proposed with the aim of reproducing such a
-complex behaviour. These techniques vary from the employment of cohesive
-approaches~\cite{Barenblatt,Hilleborg_1976}, or to the gradual insertion of
-cohesive elements \cite{Ortiz_1999,Pandolfi_2002,Ruiz_2000} at solid
-elements boundaries. To alleviate these shortcomings of the
-\acrshort{fem}, the \acrfull{xfem} in conjunction with level set
+The failure mechanisms of quasi-brittle materials and the  crack propagation have been studied from different fields such as materials science, structural engineering, earth science and petroleum engineering . The prediction of crack propagation has been approached with different numerical techniques. The \acrfull{fem} is widely used in industrial application. However, the presence of cracks is a violation of the continuity requirement of the \acrshort{fem}. To overcome this issue, numerous numerical \textcolor{red}{artifices} have been proposed with the aim of reproducing such a
+complex behaviour. \textcolor{blue}{An example of this}, is the gradual insertion of
+cohesive elements \cite{Ortiz_1999} at solid elements boundaries. To alleviate these shortcomings of the \acrshort{fem}, the \acrfull{xfem} in conjunction with level set
 technique was introduced by Belytschko {\it et al.}
 \cite{Belytschko_03} to handle arbitrary crack paths level
 set. Some relevant contributions to the \acrshort{xfem} are the
-modeling micro-scale crack propagation \cite{HUANG_2018}, the
-introduction of a cohesive zone model \cite{NAGASHIMA_2016}, and more
-recently improving it capability to predict the crack path in 3D cases
-\cite{YUN_2019}.
-
+modeling micro-scale crack propagation \cite{HUANG_2018} \textcolor{blue}{or} the
+introduction of a cohesive zone model \cite{NAGASHIMA_2016}.\\
 The simulation of fracture propagation in a more accurate and effective
 way can be considered as one of the ongoing goals of the development of novel spatial discretisation methods like meshfree techniques. Some
 examples of it are the \acrfull{mpm}
-\cite{Schreyer_2002,Chen_2002,Nairn_2003,Zhenmao_2005}, the
-\acrfull{efgm} \cite{BELYTSCHKO_1995,BELYTSCHKO_2000,Zhuang_2012,Muthu_2013}, the
-\acrfull{sph} \cite{Wang_2020,Wang_2019}, the \acrfull{otm} \cite{Li2010,Li_2012,Pandolfi_2013,Li_2015} or Peridynamics
-\cite{HA_2011,RABCZUK_2017} among others. \\
-
-Concerning \acrshort{mpm}, fracture has been treated numerically through two different ways. On the one hand, the ``CRAcks with Material Points (CRAMP)'' is proposed~\cite{Nairn_2003,Nairn_2006}. The basis of this methodology consist of the removal of the restriction
+\cite{Schreyer_2002,Nairn_2003,NAIRN_2018}, the
+\acrfull{efgm}~\cite{BELYTSCHKO_1995b,BELYTSCHKO_2000}, the
+\acrfull{sph}~\cite{Wang_2020,Wang_2019}, the \acrfull{otm}~\cite{Pandolfi_2013,Li_2015} or Peridynamics~\cite{HA_2011,RABCZUK_2017} among others.\\
+Concerning \acrshort{mpm}, fracture has been treated numerically through two different ways. On the one hand, the ``CRAcks with Material Points (CRAMP)'' is proposed~\cite{Nairn_2003}. The basis of this methodology consist of the removal of the restriction
 of the single-valued velocity field close to the crack through, at least, two sets of nodes. In this method, different labels are assigned to the material points
 and nodes to distinguish if they are in the same side of the crack or
 not. Under this approach, crack surface is described with line segments
 in 2D and triangle patches in 3D cases. The chosen criteria for crack
 propagation is based on such parameters as energy release rate
-analysed by Tan \& Nairn (2002)\cite{Nairn_2002}, and the stress
-intensity factor or the J-integral discussed by Guo \& Nairn
-(2004)\cite{Nairn_2004}. 
-On the other hand, the foundation of the second approach is the introduction of failed
-material points to describe the crack evolution. In these methods, the
-formation of failed points describes the nucleation of cracks, and
+analysed by Tan \& Nairn (2002)\cite{Nairn_2002}. On the other hand, the foundation of the second approach is the introduction of failed material points to describe the crack evolution. In these methods, the formation of failed points describes the nucleation of cracks, and
 thereafter its propagation and branching. Consequently, the position
 of the crack does not need to be explicitly stated. This fact represents
 significant advantages over the ``CRAMP''. Under this approach, the
 prediction of failure evolution is computed with a decohesion model,
-which has been discussed by Chen {\it et al.}\cite{Zhenmao_2005} and
-Schreyer {\it et al.}\cite{Schreyer_2002}. Successful simulations are provided within the framework of the fracture of brittle materials by Chen {\it et
-  al.} \cite{Chen_2002,Chen_2003} and Sulsky \& Schreyer
-\cite{Sulsky_2004}.\\
+which has been discussed by Schreyer {\it et al.}\cite{Schreyer_2002}. Successful simulations are provided within the framework of the fracture of brittle materials by Chen {\it et al.} \cite{Chen_2002}.\\
 
 Similar to this approach, Schmidt {\it et al.}
 \cite{Schmidt_2009} introduced the concept of eigenfracture, where
@@ -405,19 +389,15 @@ complex phenomena such as dynamic fragmentation of metals
 fracture of brittle materials in the \acrshort{mpm}
 framework. Nonetheless, when quasi-brittle materials are simulated
 though this approach, the results exhibit an overestimation of tensile
-stress and strain peaks. Furthermore, since the work of Zhang {\it et al.}
-\cite{Zhang_EE_2020} is made with conventional \acrshort{mpm}/\acrshort{gimp}, stress oscillations are to be faced.\\
+stress and strain peaks. Furthermore, since the \textcolor{red}{aforementioned} work is made with conventional \acrshort{mpm}/\acrshort{gimp}, stress oscillations are to be faced.\\
 
-To overcome the limitations observed in the EigenMPM
-\cite{Zhang_EE_2020}, the present research proposes the eigensoftening
-algorithm developed by Navas {\it et al.}
+To overcome the limitations observed in the EigenMPM, the present research proposes the eigensoftening algorithm developed by Navas {\it et al.}
 \cite{Navas_2017_ES,Navas2018a} for the \acrshort{otm} framework and
 engineered for quasi-brittle materials. Inspired in the concept of the
 crack band model \cite{Bazant83}, since energy dissipation is performed through the softened (or failed) volume, this methodology is able to capture the gradual rather than abrupt
 dissipation of the fracture energy. Moreover, in order to mitigate stress
 oscillations as well as to deal with tensile instabilities, such those that
-occurs when particles crosses an element boundary, the work of Molinos~\etal~\cite{Molinos2020} is followed. The traditional \acrshort{mpm} technique is enhanced through the \acrfull{lme} approximation technique
-\cite{Arroyo2006} for the spatial discretisation as well as a explicitly \acrshort{mpm} \acrfull{npc} scheme is derived for the time discretisation.\\
+occurs when particles crosses an element boundary, the work of Molinos~\etal~\cite{Molinos2020} is followed. The traditional \acrshort{mpm} technique is enhanced through the \acrfull{lme} approximation technique \cite{Arroyo2006} for the spatial discretisation as well as a explicitly \acrshort{mpm} \acrfull{npc} scheme is derived for the time discretisation.\\
 
 The paper is structured as follows. First meshfree methodology,
 eigenerosion and eigensoftening algorithms are presented in Section
@@ -452,10 +432,7 @@ process, where particle data is projected to the grid nodes, (ii) an
 Eulerian step, where balance of momentum equation is expressed as a
 nodal equilibrium equation in a FEM-like procedure, and finally
 (iii) a Lagrangian advection of the particles. In the present research,
-\textcolor{blue}{the explicit predictor-corrector time integration scheme proposed by Molinos~\etal~\cite{Molinos2020} is adopted}. The
-purpose of this choice is motivated due to its proved robustness and
-stability for dynamic computations. In the first stage, the nodal
-velocity predictor \textcolor{red}{$ \vec{v}_{I}^{pred}$} is computed through
+\textcolor{blue}{the explicit predictor-corrector time integration scheme proposed by Molinos {\it et al.} \cite{Molinos2020} has been adopted. The purpose of this choice is motivated due to its proved robustness and stability for dynamic computations, Navas {\it et al.} \cite{Navas2018a}}. In the first stage, the nodal velocity predictor \textcolor{red}{$ \vec{v}_{I}^{pred}$} is computed through
 \textcolor{red}{particles} velocities \textcolor{red}{$\vec{v}_p$} and accelerations \textcolor{red}{$\vec{a}_p$} and evaluated
 in the $k$ time step,
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -497,15 +474,21 @@ The complete pseudo-algorithm it is summarised in \ref{sec:expl-pred-corr}.
 \label{sec:2.2}
 \acrfull{lme} approximation scheme was introduced by Arroyo \& Ortiz
 (2006)\cite{Arroyo2006} as a bridge between finite elements and
-meshfree methods. The key idea under this interpolation technique is
-the interpretation of each nodal value $N_I$ as a
-probability. Related with this definition, two important limits are
-introduced. First the maximum-entropy (\textit{max-ent}) limit, which
-ensures a \textit{unbiased statistical inference} based on the nodal
-data as states the Jayne's\cite{Jaynes1957} principle of
-\textit{maximum entropy}. And second the Delaunay triangulation that
-warranties the \textit{least width} shape function support. To reach
-a compromise between two competing objectives, a Pareto set is
+meshfree methods. \textcolor{blue}{The basic idea of the shape functions based on such an estimate is to interpret the shape function $N_I(\vec{x})$ as a probability. This allows us to introduce two important limits: the principle of maximum-entropy (\textit{max-ent}) statistical
+inference stated by Jaynes \cite{Jaynes1957}, and the Delaunay triangulation
+which ensures the minimal width of the shape function.}
+
+\textcolor{blue}{This approximation scheme represents an optimal compromise, in the sense of
+Pareto, between the \textit{unbiased statistical inference} based on
+the nodal data which leads to the principle of \textit{Maximum-Entropy}
+stated by Jaynes \cite{Jaynes1957}, and the definition of local shape
+functions of \textit{least width} the least biased shape functions.
+Following \cite{Arroyo2006}, entropy of a discrete random variable can be defined as the uncertainty of the random variable. A measure of this uncertainty can be obtained by means of Shannon\textquotesingle s entropy:}
+\begin{equation}
+  \label{eq:Shannon-entropy}
+  \textcolor{blue}{H(p_1,\ldots,p_n) = -\sum^{N_n}_{I=1}{p_I\ \log p_I }}
+\end{equation}
+\textcolor{blue}{where $p_I$ stands for probability of the random variable outcomes. By interpreting these probabilities as the shape functions $N_I(\vec{x})$ of an approximation scheme, equation \eqref{eq:Shannon-entropy} can be regarded as a measure of the uncertainty of the approximation.} To reach a compromise between two competing objectives, a Pareto set is
 defined as,
 \begin{align*}
   \label{eq:LME-scheme-pareto-set}
@@ -583,16 +566,14 @@ criterion. When material points are failed, they are assumed to have
 null stress tensor. To reproduce this behaviour in the present
 research, the eigensoftening algorithm is introduced in the 
 \acrshort{mpm} framework as an alternative approach to the decohesion
-model \cite{Zhenmao_2005,Schreyer_2002}. The eigensoftening concept
+model \cite{Schreyer_2002}. The eigensoftening concept
 was originally developed by Navas {\it et al.}
 (2017)\cite{Navas_2017_ES} as an extension for quasi-brittle materials
 of the eigenerosion proposed by Pandolfi \& Ortiz
 (2012)\cite{Pandolfi_2012} for fracture of brittle materials. The
   evaluation of both approaches \cite{Navas_2017_ES} against
   experimental measures show that the eigenerosion algorithm significantly overestimates the tensile stress and the strain peaks, meanwhile eigensoftening captures the forces and crack
-patterns accurately. Furthermore,
-the accuracy of this algorithm has been proven for complex fracture
-patterns such as the ones obtained with fiber \textcolor{red}{reinforced} concrete (FRC),
+patterns accurately. Furthermore, the accuracy of this algorithm has been proven for \textcolor{blue}{mixed-mode} fracture patterns such as the ones obtained with fiber \textcolor{red}{reinforced} concrete (FRC),
 \cite{Navas_2018_ES}.\\
 
 The key idea behind the eigenerosion algorithm is the computation of the
@@ -745,7 +726,7 @@ damage variable can be expressed in terms of the following variables,
   \label{eq:damage-variable-chi-III}
   \chi = \chi(\varepsilon_{\epsilon,f}, h_{\epsilon}, f_t, w_c, G_f)
 \end{equation}
-Implementation details can be consulted in \ref{sec:eigens-algor-1}.
+Implementation details can be consulted in \ref{sec:eigens-algor-1}. \textcolor{blue}{Unfortunately, this method is not free of pitfalls. The first one involves the isotropic model of failure assumption of the eigensofteing, therefore, complex fracture patterns such as delamination can not be simulated. A possible solution for this incovenience is the use of anisotropic damage model. Regarding this, the current work can be extended following the approach proposed by Nairn~\cite{NAIRN_2018}. The second one is handling crack contact. After particle fails, the stress tensor of it is enforced to be zero in all the directions, of course, this is a direct consequence of the isotropic model of failure assumption. Consequently, a spurious slip condition is enforced in the tangent direction of the crack, also the material loose its toughness to compression in the fracture interface. This limitation was noticed earlier by in Pandolfy and Ortiz \cite{Pandolfi_2012} two alternatives to overcome this limitation where briefly discussed. Again, the use of an anisotropic damage model~\cite{NAIRN_2018} would overcome this limitation.}
 
 \subsection{$\epsilon$-neighbourhood reconstruction : A node-linked method}
 \label{sec:epsil-neighb-reconst}
@@ -753,8 +734,7 @@ The construction of the $\epsilon$-neighbourhood is a major issue of the propose
 numerical implementation should be employed. In opposite with the Cell-linked
 method proposed by Allen \& Tildesley \cite{Allen_et_al_1989} where
 the definition of a numerical tolerance is required for auxiliar
-algorithms like Crossing Number \cite{Shimrat_1962} or Correct
-Even-Odd \cite{Galetzka_et_al_2017}, the proposed methodology adopted herein is linked to the shape function neighbourhood. In order to avoid the aforementioned error prone
+algorithms, the proposed methodology adopted herein is linked to the shape function neighbourhood. In order to avoid the aforementioned error prone
 techniques, we endeavour to exploit the meshfree benefits of
 the \acrshort{lme} approximants to introduce a node-linked method. Due
 to the global support of this interpolation technique, the classical
@@ -897,8 +877,7 @@ The second application to be considered analyses the bending behavior of semicir
   al.}\cite{Wang_2020} under \acrshort{sph} framework within an
 implicit algorithm. The aim of the test is to examine the predictive
 capability of the eigensoftening algorithm under different kind of
-mixed-mode loading conditions. This capability was assessed previously within a
-\acrshort{otm} implementation \cite{Navas_2018_ES}.
+mixed-mode loading conditions.
 
 The geometry and boundary conditions are sketched in Figure 
 \ref{fig:geometry-Semicircular-bending-test}. The experiment consist of loading
@@ -998,7 +977,7 @@ fracture occurs in a period of milliseconds and waves propagate fast along the h
 materials involved in the aforementioned test. Accordingly, small time steps are
 required to achieve a numerically stable simulation.\\
 
-An interesting case of this experimental test was reported by Zhang {\it et al.} \cite{Zhang_2009,Zhang_2010a}. As in the aforementioned study,
+An interesting case of this experimental test was reported by Zhang {\it et al.} \cite{Zhang_2010a}. As in the aforementioned study,
 an impact hammer of 120.6 kg has been employed in the proposed simulations to drop it at an impact
 speed of 2640 mm/s. The beam dimensions were 100 mm x 100 mm (B x D)
 in cross section, and 420 mm in total lenght (L). The initial
@@ -1084,7 +1063,7 @@ evolution agrees with the results obtained by \cite{Navas_2017_ES}
 under the \acrshort{otm} framework. Two additional considerations about
 this results are concerning the interpolation technique. On the one hand,
 in the opposite to the \acrshort{ugimp} shape function, \acrshort{lme}
-allows unstructured grids. This is a remarkable benefit for this kind
+allows unstructured grids \textcolor{blue}{without a considerable effort and computational cost or any additional accommodation}. This is a remarkable benefit for this kind
 of simulations since the majority of the computational effort is
 clearly localised in a tiny region of the domain. On the other
 hand, there is the possibility to reduce the shape function support to avoid
@@ -1130,17 +1109,8 @@ search algorithm. In this research, the aforementioned techniques have helped
 to improve the results in fracture propagation through the
 eigensoftening and eigenerosion algorithms.
 
-Finally, further improvements of the present research are exposed. The
-algorithm would have the ability to simulate of crack patterns in
-composite material such as steel or carbon fiber reinforced
-concretes\cite{Navas_2018_ES,Ruiz2019}. In addition, the eigensoftening
-approach can be extrapolated to rock fracture in the same manner the
-eigenerosion was~\cite{Wang2017}, taking into account that the
-volumetric stiffness remains in order to support bulk loads. Also the
-benefits of \acrshort{lme} can be exploited by adapting it through the
-deformation gradient \cite{Kochmann2019}. \textit{A priori} this would
-enhance the localisation properties of the proposed algorithms in more
-sophisticated domains. And the implementation of a contact algorithm to model other impact cases such as bullets collisions. 
+\textcolor{blue}{Next, further improvements of the present research are exposed. Firstly, the eigensoftening approach can be extrapolated to rock fracture in the same manner the eigenerosion was~\cite{Wang2017}, taking into account that the volumetric stiffness remains in order to support bulk loads. Secondly, the algorithm would have the ability to simulate of crack patterns in
+composite material such as steel or carbon fiber reinforced concretes by means of empirical definitions of $\chi$ curve~\cite{Navas_2018_ES}. However, capturing fracture patters in anisotropic media such as carbon fibre plates requires the redefinition of the approximation towards an anisotropic softening damage model. In addition, this improvement also would allows the model to handle crack contact. Finally, the implementation of a contact algorithm to model other impact cases such as bullets collisions.}
 
 \section*{Acknowledgements}
 The financial support to develop this research from the Ministerio de
