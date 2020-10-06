@@ -1,0 +1,1196 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.6.29)  30 JUN 2020 22:34
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**2020_EFM_MPM_Eigensoftening.tex
+(./2020_EFM_MPM_Eigensoftening.tex
+LaTeX2e <2018-12-01>
+(./elsarticle.cls
+Document Class: elsarticle 2019/01/14, 3.1: Elsevier Ltd
+\@bls=\dimen102
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+\c@tnote=\count88
+\c@fnote=\count89
+\c@cnote=\count90
+\c@ead=\count91
+\c@author=\count92
+\@eadauthor=\toks15
+\c@affn=\count93
+\absbox=\box27
+\keybox=\box28
+\Columnwidth=\dimen106
+\space@left=\dimen107
+\els@boxa=\box29
+\els@boxb=\box30
+\leftMargin=\dimen108
+\@enLab=\toks16
+\@sep=\skip43
+\@@sep=\skip44
+
+(./2020_EFM_MPM_Eigensoftening.spl)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count94
+)
+\splwrite=\write3
+\openout3 = `2020_EFM_MPM_Eigensoftening.spl'.
+
+\appnamewidth=\dimen109
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count95
+\output=\toks17
+\linenoprevgraf=\count96
+\linenumbersep=\dimen110
+\linenumberwidth=\dimen111
+\c@linenumber=\count97
+\c@pagewiselinenumber=\count98
+\c@LN@truepage=\count99
+\c@internallinenumber=\count100
+\c@internallinenumbers=\count101
+\quotelinenumbersep=\dimen112
+\bframerule=\dimen113
+\bframesep=\dimen114
+\bframebox=\box31
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count102
+\float@exts=\toks18
+\float@box=\box32
+\@float@everytoks=\toks19
+\@floatcapt=\box33
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip47
+\subfigcapskip=\skip48
+\subfigcaptopadj=\dimen115
+\subfigbottomskip=\skip49
+\subfigcapmargin=\dimen116
+\subfiglabelskip=\skip50
+\c@subfigure=\count103
+\c@lofdepth=\count104
+\c@subtable=\count105
+\c@lotdepth=\count106
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip51
+\subfig@bottom=\skip52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip53
+\multirow@cntb=\count107
+\multirow@dima=\skip54
+\bigstrutjot=\dimen117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks20
+\SOUL@lasttoken=\toks21
+\SOUL@cmds=\toks22
+\SOUL@buffer=\toks23
+\SOUL@token=\toks24
+\SOUL@spaceskip=\skip55
+\SOUL@ttwidth=\dimen118
+\SOUL@uldp=\dimen119
+\SOUL@ulht=\dimen120
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip56
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks25
+\ex@=\dimen121
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen122
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count108
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count109
+\leftroot@=\count110
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count111
+\DOTSCASE@=\count112
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box34
+\strutbox@=\box35
+\big@size=\dimen123
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count113
+\c@MaxMatrixCols=\count114
+\dotsspace@=\muskip10
+\c@parentequation=\count115
+\dspbrk@lvl=\count116
+\tag@help=\toks26
+\row@=\count117
+\column@=\count118
+\maxfields@=\count119
+\andhelp@=\toks27
+\eqnshift@=\dimen124
+\alignsep@=\dimen125
+\tagshift@=\dimen126
+\tagwidth@=\dimen127
+\totwidth@=\dimen128
+\lineht@=\dimen129
+\@envbody=\toks28
+\multlinegap=\skip57
+\multlinetaggap=\skip58
+\mathdisplay@stack=\toks29
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2019/07/31 v1.22 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count120
+\calc@Bcount=\count121
+\calc@Adimen=\dimen130
+\calc@Bdimen=\dimen131
+\calc@Askip=\skip59
+\calc@Bskip=\skip60
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count122
+\calc@Cskip=\skip61
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count123
+\l_MT_multwidth_dim=\dimen132
+\origjot=\skip62
+\l_MT_shortvdotswithinadjustabove_dim=\dimen133
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen134
+\l_MT_above_intertext_sep=\dimen135
+\l_MT_below_intertext_sep=\dimen136
+\l_MT_above_shortintertext_sep=\dimen137
+\l_MT_below_shortintertext_sep=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks30
+\thm@bodyfont=\toks31
+\thm@headfont=\toks32
+\thm@notefont=\toks33
+\thm@headpunct=\toks34
+\thm@preskip=\skip63
+\thm@postskip=\skip64
+\thm@headsep=\skip65
+\dth@everypar=\toks35
+LaTeX Info: Redefining \qed on input line 274.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count124
+\decimalpart=\count125
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count126
+\c@Blindtext=\count127
+\c@blind@countparstart=\count128
+\blind@countxx=\count129
+\blindtext@numBlindtext=\count130
+\blind@countyy=\count131
+\c@blindlist=\count132
+\c@blindlistlevel=\count133
+\c@blindlist@level=\count134
+\blind@listitem=\count135
+\c@blind@listcount=\count136
+\c@blind@levelcount=\count137
+\blind@mathformula=\count138
+\blind@Mathformula=\count139
+\c@blind@randomcount=\count140
+\c@blind@randommax=\count141
+\c@blind@pangramcount=\count142
+\c@blind@pangrammax=\count143
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count144
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip66
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count145
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip67
+\skiplinenumber=\skip68
+\skiprule=\skip69
+\skiphlne=\skip70
+\skiptext=\skip71
+\skiplength=\skip72
+\algomargin=\skip73
+\skipalgocfslide=\skip74
+\algowidth=\dimen139
+\inoutsize=\dimen140
+\inoutindent=\dimen141
+\interspacetitleruled=\dimen142
+\interspacealgoruled=\dimen143
+\interspacetitleboxruled=\dimen144
+\algocf@ruledwidth=\skip75
+\algocf@inoutbox=\box36
+\algocf@inputbox=\box37
+\AlCapSkip=\skip76
+\AlCapHSkip=\skip77
+\algoskipindent=\skip78
+\algocf@nlbox=\box38
+\algocf@hangingbox=\box39
+\algocf@untilbox=\box40
+\algocf@skipuntil=\skip79
+\algocf@capbox=\box41
+\algocf@lcaptionbox=\skip80
+\algoheightruledefault=\skip81
+\algoheightrule=\skip82
+\algotitleheightruledefault=\skip83
+\algotitleheightrule=\skip84
+\c@algocfline=\count146
+\c@algocfproc=\count147
+\c@algocf=\count148
+\algocf@algoframe=\box42
+\algocf@algobox=\box43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2019/01/06 v4.42 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks36
+\XKV@tempa@toks=\toks37
+)
+\XKV@depth=\count149
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count150
+)
+\@glsmfirst=\toks38
+\@glsmrest=\toks39
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2018/12/07 v2.31 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count151
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2018/12/07 v2.31 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count152
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count153
+\FP@xia=\count154
+\FP@xib=\count155
+\FP@xfa=\count156
+\FP@xfb=\count157
+\FP@rega=\count158
+\FP@regb=\count159
+\FP@regs=\count160
+\FP@times=\count161
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count162
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks40
+\@dtl@tmpcount=\count163
+\dtl@tmplength=\skip85
+\dtl@sortresult=\count164
+\@dtl@numgrpsepcount=\count165
+\@dtl@datatype=\count166
+\dtl@codeA=\count167
+\dtl@codeB=\count168
+\@dtl@foreach@level=\count169
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
+307.sty
+Package: glossaries-compatible-307 2019/01/06 v4.42 (NLCT)
+)
+\gls@level=\count170
+\@gls@tmpb=\toks41
+\gls@tmplen=\skip86
+\glskeylisttok=\toks42
+\glslabeltok=\toks43
+\glsshorttok=\toks44
+\glslongtok=\toks45
+
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
+y
+Package: glossary-hypernav 2019/01/06 v4.42 (NLCT)
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2019/01/06 v4.42 (NLCT)
+\glslistdottedwidth=\skip87
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2019/01/06 v4.42 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
+\LTleft=\skip88
+\LTright=\skip89
+\LTpre=\skip90
+\LTpost=\skip91
+\LTchunksize=\count171
+\LTcapwidth=\dimen145
+\LT@head=\box44
+\LT@firsthead=\box45
+\LT@foot=\box46
+\LT@lastfoot=\box47
+\LT@cols=\count172
+\LT@rows=\count173
+\c@LT@tables=\count174
+\c@LT@chunks=\count175
+\LT@p@ftn=\toks46
+)
+\glsdescwidth=\skip92
+\glspagelistwidth=\skip93
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2019/01/06 v4.42 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count176
+\ST@wd=\dimen146
+\ST@rightskip=\skip94
+\ST@leftskip=\skip95
+\ST@parfillskip=\skip96
+\ST@pageleft=\dimen147
+\ST@headht=\dimen148
+\ST@tailht=\dimen149
+\ST@pagesofar=\dimen150
+\ST@pboxht=\dimen151
+\ST@lineht=\dimen152
+\ST@stretchht=\dimen153
+\ST@prevht=\dimen154
+\ST@toadd=\dimen155
+\ST@dimen=\dimen156
+\ST@pbox=\box48
+))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2019/01/06 v4.42 (NLCT)
+\glstreeindent=\skip97
+))
+\glswrite=\write4
+\glo@main@file=\write5
+\openout5 = `2020_EFM_MPM_Eigensoftening.glo'.
+
+Package glossaries Info: Writing glossary file 2020_EFM_MPM_Eigensoftening.glo 
+on input line 74.
+\glo@acronym@file=\write6
+\openout6 = `2020_EFM_MPM_Eigensoftening.acn'.
+
+Package glossaries Info: Writing glossary file 2020_EFM_MPM_Eigensoftening.acn 
+on input line 74.
+
+(./2020_EFM_MPM_Eigensoftening.aux
+
+LaTeX Warning: Label `fig:Damage-ft-wc' multiply defined.
+
+)
+\openout1 = `2020_EFM_MPM_Eigensoftening.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count177
+\scratchdimen=\dimen157
+\scratchbox=\box49
+\nofMPsegments=\count178
+\nofMParguments=\count179
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count180
+\MPscratchDim=\dimen158
+\MPnumerator=\count181
+\makeMPintoPDFobject=\count182
+\everyMPtoPDFconversion=\toks48
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 340.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 340.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[1
+
+\openout4 = `2020_EFM_MPM_Eigensoftening.ist'.
+
+
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 362--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--390
+
+ []
+
+
+Overfull \hbox (18.83047pt too wide) in paragraph at lines 391--408
+\OT1/cmr/m/n/12 eigen-frac-ture, where crack sets are ap-prox-i-mated by means 
+of eigen-deformations,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--408
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 409--419
+
+ []
+
+[3] [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 581--598
+
+ []
+
+[6]
+<Figure-Particle-failed.png, id=39, 542.2659pt x 386.1627pt>
+File: Figure-Particle-failed.png Graphic file (type png)
+<use Figure-Particle-failed.png>
+Package pdftex.def Info: Figure-Particle-failed.png  used on input line 617.
+(pdftex.def)             Requested size: 195.0pt x 138.86526pt.
+ [7 <./Figure-Particle-failed.png>]
+Overfull \hbox (8.13126pt too wide) in paragraph at lines 630--639
+\OT1/cmr/m/n/12 when $\OML/cmm/m/it/12 G[]$ \OT1/cmr/m/n/12 sur-passes the crit
+-i-cal en-ergy re-lease rate that mea-sures the material-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 630--639
+
+ []
+
+<Figure-Damage.pdf, id=47, 192.32654pt x 161.78944pt>
+File: Figure-Damage.pdf Graphic file (type pdf)
+<use Figure-Damage.pdf>
+Package pdftex.def Info: Figure-Damage.pdf  used on input line 657.
+(pdftex.def)             Requested size: 195.0pt x 164.04788pt.
+[8 <./Figure-Damage.pdf>] [9] [10]
+Overfull \hbox (0.714pt too wide) in paragraph at lines 795--812
+[]\OT1/cmr/m/n/12 The pro-posed ap-proach to over-come the two main short-com-i
+ngs of Eighen-
+ []
+
+<Figure-Mode_I.pdf, id=73, 350.46571pt x 400.10464pt>
+File: Figure-Mode_I.pdf Graphic file (type pdf)
+<use Figure-Mode_I.pdf>
+Package pdftex.def Info: Figure-Mode_I.pdf  used on input line 827.
+(pdftex.def)             Requested size: 155.99762pt x 178.0979pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--844
+
+ []
+
+[11]
+<Figure-Reactions-Mode-I.png, id=77, 484.81125pt x 355.3275pt>
+File: Figure-Reactions-Mode-I.png Graphic file (type png)
+<use Figure-Reactions-Mode-I.png>
+Package pdftex.def Info: Figure-Reactions-Mode-I.png  used on input line 871.
+(pdftex.def)             Requested size: 312.00119pt x 228.68294pt.
+<./Figure-Stress-0100-mode-I.png, id=78, 1086.0575pt x 624.3325pt>
+File: ./Figure-Stress-0100-mode-I.png Graphic file (type png)
+<use ./Figure-Stress-0100-mode-I.png>
+Package pdftex.def Info: ./Figure-Stress-0100-mode-I.png  used on input line 89
+4.
+(pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
+<./Figure-Stress-0250-mode-I.png, id=79, 1086.0575pt x 624.3325pt>
+File: ./Figure-Stress-0250-mode-I.png Graphic file (type png)
+<use ./Figure-Stress-0250-mode-I.png>
+Package pdftex.def Info: ./Figure-Stress-0250-mode-I.png  used on input line 89
+5.
+(pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
+<./Figure-Stress-0398-mode-I.png, id=80, 1086.0575pt x 624.3325pt>
+File: ./Figure-Stress-0398-mode-I.png Graphic file (type png)
+<use ./Figure-Stress-0398-mode-I.png>
+Package pdftex.def Info: ./Figure-Stress-0398-mode-I.png  used on input line 89
+6.
+(pdftex.def)             Requested size: 284.69833pt x 163.65633pt.
+
+
+LaTeX Warning: Float too large for page by 11.41342pt on input line 902.
+
+[12 <./Figure-Mode_I.pdf>] [13 <./Figure-Reactions-Mode-I.png>] [14 <./Figure-S
+tress-0100-mode-I.png> <./Figure-Stress-0250-mode-I.png> <./Figure-Stress-0398-
+mode-I.png>]
+./2020_EFM_MPM_Eigensoftening.tex:929: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.929 ... with the different notch angles of 0$^º
+                                                  $, 30$^º$ and 60$^º$ wit...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 929
+.
+
+./2020_EFM_MPM_Eigensoftening.tex:929: Missing } inserted.
+<inserted text> 
+                }
+l.929 ...with the different notch angles of 0$^º$
+                                                  , 30$^º$ and 60$^º$ with...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./2020_EFM_MPM_Eigensoftening.tex:929: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.929 ... different notch angles of 0$^º$, 30$^º
+                                                  $ and 60$^º$ with respect
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 929
+.
+
+./2020_EFM_MPM_Eigensoftening.tex:929: Missing } inserted.
+<inserted text> 
+                }
+l.929 ...different notch angles of 0$^º$, 30$^º$
+                                                   and 60$^º$ with respect
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./2020_EFM_MPM_Eigensoftening.tex:929: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.929 ...otch angles of 0$^º$, 30$^º$ and 60$^º
+                                                  $ with respect
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 929
+.
+
+./2020_EFM_MPM_Eigensoftening.tex:929: Missing } inserted.
+<inserted text> 
+                }
+l.929 ...tch angles of 0$^º$, 30$^º$ and 60$^º$
+                                                   with respect
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<./Figure-Semicircular-bending-test.png, id=97, 271.0125pt x 239.4546pt>
+File: ./Figure-Semicircular-bending-test.png Graphic file (type png)
+<use ./Figure-Semicircular-bending-test.png>
+Package pdftex.def Info: ./Figure-Semicircular-bending-test.png  used on input 
+line 935.
+(pdftex.def)             Requested size: 234.00238pt x 206.76pt.
+
+./2020_EFM_MPM_Eigensoftening.tex:962: Package inputenc Error: Unicode characte
+r − (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.962 ...dary particles are $v_x$ = 0, $v_y$ = −
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[15 <./Figure-Semicircular-bending-test.png>]
+<./Figure-Angle-Forces-test-0-damage-pattern.png, id=102, 876.876pt x 603.2136p
+t>
+File: ./Figure-Angle-Forces-test-0-damage-pattern.png Graphic file (type png)
+<use ./Figure-Angle-Forces-test-0-damage-pattern.png>
+Package pdftex.def Info: ./Figure-Angle-Forces-test-0-damage-pattern.png  used 
+on input line 987.
+(pdftex.def)             Requested size: 191.10214pt x 131.45561pt.
+<./Figure-Angle-Forces-test-30-damage-pattern.png, id=103, 950.8323pt x 603.213
+6pt>
+File: ./Figure-Angle-Forces-test-30-damage-pattern.png Graphic file (type png)
+<use ./Figure-Angle-Forces-test-30-damage-pattern.png>
+Package pdftex.def Info: ./Figure-Angle-Forces-test-30-damage-pattern.png  used
+ on input line 988.
+(pdftex.def)             Requested size: 191.10214pt x 121.22964pt.
+<./Figure-Angle-Forces-test-60-damage-pattern.png, id=104, 960.9501pt x 603.213
+6pt>
+File: ./Figure-Angle-Forces-test-60-damage-pattern.png Graphic file (type png)
+<use ./Figure-Angle-Forces-test-60-damage-pattern.png>
+Package pdftex.def Info: ./Figure-Angle-Forces-test-60-damage-pattern.png  used
+ on input line 989.
+(pdftex.def)             Requested size: 191.10214pt x 119.95946pt.
+<./Figure-Angle-Forces-test.png, id=105, 462.528pt x 346.896pt>
+File: ./Figure-Angle-Forces-test.png Graphic file (type png)
+<use ./Figure-Angle-Forces-test.png>
+Package pdftex.def Info: ./Figure-Angle-Forces-test.png  used on input line 100
+4.
+(pdftex.def)             Requested size: 272.99881pt x 204.75684pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1014--1021
+
+ []
+
+<./Figure-impact-test.png, id=106, 1296.042pt x 658.3797pt>
+File: ./Figure-impact-test.png Graphic file (type png)
+<use ./Figure-impact-test.png>
+Package pdftex.def Info: ./Figure-impact-test.png  used on input line 1032.
+(pdftex.def)             Requested size: 312.00119pt x 158.48651pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1022--1043
+
+ []
+
+[16] [17 <./Figure-Angle-Forces-test-0-damage-pattern.png> <./Figure-Angle-Forc
+es-test-30-damage-pattern.png> <./Figure-Angle-Forces-test-60-damage-pattern.pn
+g> <./Figure-Angle-Forces-test.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1059--1074
+
+ []
+
+<Figure-impact-test-Forces-Time.png, id=117, 462.22687pt x 347.04657pt>
+File: Figure-impact-test-Forces-Time.png Graphic file (type png)
+<use Figure-impact-test-Forces-Time.png>
+Package pdftex.def Info: Figure-impact-test-Forces-Time.png  used on input line
+ 1083.
+(pdftex.def)             Requested size: 312.00119pt x 234.25691pt.
+<Figure-impact-test-Reactions-Time.png, id=118, 462.22687pt x 347.04657pt>
+File: Figure-impact-test-Reactions-Time.png Graphic file (type png)
+<use Figure-impact-test-Reactions-Time.png>
+Package pdftex.def Info: Figure-impact-test-Reactions-Time.png  used on input l
+ine 1084.
+(pdftex.def)             Requested size: 312.00119pt x 234.25691pt.
+[18 <./Figure-impact-test.png>]
+<./Figure-impact-test-Damage-vs-Stress-0005.png, id=123, 1000.73875pt x 541.021
+26pt>
+File: ./Figure-impact-test-Damage-vs-Stress-0005.png Graphic file (type png)
+<use ./Figure-impact-test-Damage-vs-Stress-0005.png>
+Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0005.png  used o
+n input line 1117.
+(pdftex.def)             Requested size: 323.70071pt x 174.99603pt.
+<./Figure-impact-test-Damage-vs-Stress-0015.png, id=124, 1000.73875pt x 541.021
+26pt>
+File: ./Figure-impact-test-Damage-vs-Stress-0015.png Graphic file (type png)
+<use ./Figure-impact-test-Damage-vs-Stress-0015.png>
+Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0015.png  used o
+n input line 1118.
+(pdftex.def)             Requested size: 323.70071pt x 174.99603pt.
+<./Figure-impact-test-Damage-vs-Stress-0030.png, id=125, 1000.73875pt x 541.021
+26pt>
+File: ./Figure-impact-test-Damage-vs-Stress-0030.png Graphic file (type png)
+<use ./Figure-impact-test-Damage-vs-Stress-0030.png>
+Package pdftex.def Info: ./Figure-impact-test-Damage-vs-Stress-0030.png  used o
+n input line 1119.
+(pdftex.def)             Requested size: 323.70071pt x 174.99603pt.
+
+
+LaTeX Warning: Float too large for page by 45.43254pt on input line 1125.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:1131: Package glossaries Error: Glossary entr
+y `MPM' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1131 ...softening algorithm in a \acrshort{MPM} 
+                                                  framework for quasi-brittl...
+
+You need to define a glossary entry before you can use it.
+
+[19] [20 <./Figure-impact-test-Forces-Time.png> <./Figure-impact-test-Reactions
+-Time.png>] [21 <./Figure-impact-test-Damage-vs-Stress-0005.png> <./Figure-impa
+ct-test-Damage-vs-Stress-0015.png> <./Figure-impact-test-Damage-vs-Stress-0030.
+png>] [22]
+Overfull \vbox (1.75684pt too high) has occurred while \output is active []
+
+
+[23]
+./2020_EFM_MPM_Eigensoftening.tex:1267: Undefined control sequence.
+<argument> $\chi _p = 0$ \AND 
+                              $\epsilon _{f,p} = 0$
+l.1267   \caption
+                 {Compute damage parameter $\chi_p^{k+1}$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./2020_EFM_MPM_Eigensoftening.tex:1267: Undefined control sequence.
+<argument> $\chi _p \neq 1$ \AND 
+                                 $\epsilon _{f,p} > 0$
+l.1267   \caption
+                 {Compute damage parameter $\chi_p^{k+1}$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (5.76389pt too wide) in paragraph at lines 1271--1271
+[]\OT1/cmr/bx/n/12 Node-linked method for $\OML/cmm/b/it/12 ^^O$\OT1/cmr/bx/n/1
+2 -neighbourhood re-con-struc-
+ []
+
+[24] (./2020_EFM_MPM_Eigensoftening.bbl
+Underfull \hbox (badness 1577) in paragraph at lines 22--28
+\OT1/cmr/m/n/12 e-ments for three-dimensional crack-propagation anal-y-sis., In
+-ter-na-
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 22--28
+\OT1/cmr/m/n/12 tional Jour-nal for Nu-mer-i-cal Meth-ods in En-gi-neer-ing. 44
+ (1999)
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 22--28
+\OT1/cmr/m/n/12 1267--1282.  doi:10.1002/(SICI)1097-0207(19990330)44:9<1267::AI
+D-
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 37--43
+[]\OT1/cmr/m/n/12 G. Ruiz, M. Or-tiz, A. Pan-dolfi, Three-dimensional finite-el
+ement
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 37--43
+\OT1/cmr/m/n/12 sim-u-la-tion of the dy-namic Brazil-ian tests on con-crete cyl
+in-ders,
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 37--43
+\OT1/cmr/m/n/12 In-ter-na-tional Jour-nal for Nu-mer-i-cal Meth-ods in En-gi-ne
+er-ing 48
+ []
+
+[25]
+./2020_EFM_MPM_Eigensoftening.bbl:54: Misplaced alignment tab character &.
+l.54   via extended finite elements, Computers &
+                                                 Structures 206 (2018) 122 -...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./2020_EFM_MPM_Eigensoftening.bbl:60: Misplaced alignment tab character &.
+l.60 ...using the cohesive zone model, Computers &
+                                                   Structures
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 59--64
+[]\OT1/cmr/m/n/12 T. Na-gashima, M. Sawada, De-vel-op-ment of a dam-age prop-a-
+ga-
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 59--64
+\OT1/cmr/m/n/12 tion anal-y-sis sys-tem based on level set xfem us-ing the co-h
+e-
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 59--64
+\OT1/cmr/m/n/12 sive zone model, Com-put-ers  Struc-tures 174 (2016) 42 -- 53.
+ []
+
+./2020_EFM_MPM_Eigensoftening.bbl:68: Misplaced alignment tab character &.
+l.68   Computers &
+                   Structures 215 (2019) 65 -- 79.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 66--71
+\OT1/cmr/m/n/12 frac-ture prob-lems, Com-put-ers  Struc-tures 215 (2019) 65 -- 
+79.
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 73--78
+\OT1/cmr/m/n/12 dis-con-ti-nu-ity with the ma-te-rial point method, Com-puter M
+eth-
+ []
+
+[26]
+Underfull \hbox (badness 2644) in paragraph at lines 157--161
+[]\OT1/cmr/m/n/12 A. Pan-dolfi, B. Li, M. Or-tiz, Mod-el-ing frac-ture by mater
+ial-
+ []
+
+[27]
+./2020_EFM_MPM_Eigensoftening.bbl:183: Misplaced alignment tab character &.
+l.183 ...ethod, Computer Modeling in Engineering &
+                                                   Sciences 1~(1)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./2020_EFM_MPM_Eigensoftening.bbl:197: Misplaced alignment tab character &.
+l.197 ... CMES. Computer Modeling in Engineering &
+                                                   Sciences
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[28]
+Underfull \hbox (badness 1635) in paragraph at lines 307--311
+[]\OT1/cmr/m/n/12 M. Galet-zka, P. Glauner, A sim-ple and cor-rect even-odd al-
+go-
+ []
+
+[29]
+Underfull \hbox (badness 2065) in paragraph at lines 331--336
+[]\OT1/cmr/m/n/12 X. Zhang, G. Ruiz, R. Yu, M. Tar-ifa, Frac-ture be-haviour of
+
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 331--336
+\OT1/cmr/m/n/12 high-strength con-crete at a wide range of load-ing rates., In-
+
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 331--336
+\OT1/cmr/m/n/12 ter-na-tional Jour-nal of Im-pact En-gi-neer-ing 36 (2009) 1204
+--1209.
+ []
+
+./2020_EFM_MPM_Eigensoftening.bbl:348: Misplaced alignment tab character &.
+l.348   Engineering &
+                      Sciences 2~(4) (2001) 509--522.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 360--367
+[]\OT1/cmr/m/n/12 G. Ruiz, A. de la Rosa, L. Almeida, E. Poveda, X. Zhang,
+ []
+
+
+Underfull \hbox (badness 3635) in paragraph at lines 360--367
+\OT1/cmr/m/n/12 M. Tar-ifa, Z. Wu, R. Yu, Dy-namic mixed-mode frac-ture in
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 360--367
+\OT1/cmr/m/n/12 scc re-in-forced with steel fibers: an ex-per-i-men-tal study, 
+In-ter-
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 360--367
+\OT1/cmr/m/n/12 na-tional Jour-nal of Im-pact En-gi-neer-ing 129 (2019) 101 -- 
+111.
+ []
+
+[30])
+
+Package glossaries Warning: No \printglossary or \printglossaries found. 
+(Remove \makeglossaries if you don't want any glossaries.) 
+This document will not have a glossary.
+
+[31] (./2020_EFM_MPM_Eigensoftening.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 11069 strings out of 492671
+ 166254 string characters out of 6134270
+ 304534 words of memory out of 5000000
+ 14722 multiletter control sequences out of 15000+600000
+ 15986 words of font info for 59 fonts, out of 8000000 for 9000
+ 1137 hyphenation exceptions out of 8191
+ 45i,21n,38p,1992b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msam10.pfb>
+Output written on 2020_EFM_MPM_Eigensoftening.pdf (31 pages, 7307672 bytes).
+PDF statistics:
+ 245 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+
