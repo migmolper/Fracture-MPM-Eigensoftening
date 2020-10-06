@@ -70,7 +70,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Init glossaries
 \usepackage[acronym]{glossaries}
-
 \makeglossaries
 
 \newacronym{mpm}{MPM}{Material Point Method}
@@ -301,7 +300,10 @@
 
 \begin{frontmatter}
 
-\title{LME-MPM applied to quasi-brittle fracture.}
+%\title{About the modelling of fracture in quasi-brittle materials thorough the local maximum entropy material point method : the eigensoftening algorithm as proposed approach.}
+
+\title{\textcolor{blue}{Local maximum entropy material point method applied to quasi-brittle fracture.} }
+
 
 % \title{An enhanced EigenMPM }
 
@@ -324,11 +326,9 @@ and Manuel Pastor$^a$
   framework. With this purpose the eigensoftening algorithm, developed
   originally for the \acrfull{otm} approximation scheme, is extended
   to the \acrshort{mpm} with the aim of presenting a suitable alternative
-  to the existing fracture algorithms developed for such a methodology.
-  %\acrshort{mpm}. 
-  The good fitting in the predictions made by the
-  eigensoftening algorithm against both analytical and experimental
-  results proofs the excellent performance of the method when challenging
+  to the existing fracture algorithms developed for such a methodology.  The good fitting in the predictions made by
+   the eigensoftening algorithm against both analytical and experimental
+  results \textcolor{red}{proves} the excellent performance of the method when challenging
   applications are to modeled.
 \end{abstract}
 
@@ -341,11 +341,13 @@ Material Point Method \sep Solid Dynamics
 
 \linenumbers
 
+\printglossary[type=\acronymtype]
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{sec:1}
 The failure mechanisms of quasi-brittle materials and the  crack propagation have been studied from different fields such as materials science, structural engineering, earth science and petroleum engineering . The prediction of crack propagation has been approached with different numerical techniques. The \acrfull{fem} is widely used in industrial application. However, the presence of cracks is a violation of the continuity requirement of the \acrshort{fem}. To overcome this issue, numerous numerical
-artifacts have been proposed with the aim of reproducing such a
+\textcolor{red}{artifices}  have been proposed with the aim of reproducing such a
 complex behaviour. These techniques vary from the employment of cohesive
 approaches~\cite{Barenblatt,Hilleborg_1976}, or to the gradual insertion of
 cohesive elements \cite{Ortiz_1999,Pandolfi_2002,Ruiz_2000} at solid
@@ -439,14 +441,10 @@ algorithms based on the eigendeformation concept are presented in
 
 \subsection{The \acrshort{mpm} time integration : A \acrlong{npc}  scheme}
 \label{sec:2.1}
-The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian
-method where moving material points, henceforth in this research,
-particles ($\square_p$) will carry on all the physical information of the local state ($\sigma_p,
-\varepsilon_p$) and a set of fixed background nodes ($\square_I$) will
-be introduced to compute the balance of momentum equation. Since the
-\acrshort{mpm} possesses the advantages of both Lagrangian and
-Eulerian descriptions, no element distortion takes place in the
-\acrshort{mpm}. Therefore, it is an appropriate and efficient method
+
+\textcolor{blue}{The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian method where the continuum \gls{domain} is discretised with a finite set of material points (also known as particles in this research) $\hat{\Omega} = \{ \vec{x}_p, p \in \mathcal{C} \} \subset \Omega$, where $\mathcal{C} = 1, \ldots, n_p$. Any particle field such as position, velocity, mass, volume and stress denoted by $\vec{x}_p$, $\vec{v}_p$, $m_p$, $V_p$ and $\tens{\sigma}_p$, respectively, are assigned to each material point.  In addition to this set of material points, a set of fixed background nodes is introduced to compute the balance of momentum equation. This set of nodes is defined as  $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^{2}$, where $\mathcal{B} = 1, \ldots, n_I$. In the present research, any nodal quantity is denoted by ($\square_I$).}
+
+Since the \acrshort{mpm} possesses the advantages of both Lagrangian and Eulerian descriptions, no  element distortion takes place in the \acrshort{mpm}. Therefore, it is an appropriate and efficient method
 to solve problems with moving discontinuities such as fracture evolution.\\
 Without loosing generality, the \acrshort{mpm} algorithm
 can be described with three main steps: (i) a variational recovery
@@ -454,19 +452,20 @@ process, where particle data is projected to the grid nodes, (ii) an
 Eulerian step, where balance of momentum equation is expressed as a
 nodal equilibrium equation in a FEM-like procedure, and finally
 (iii) a Lagrangian advection of the particles. In the present research,
-an explicit predictor-corrector time integration scheme is adopted. The
+\textcolor{blue}{the explicit predictor-corrector time integration scheme proposed by Molinos~\etal~\cite{Molinos2020} is adopted}. The
 purpose of this choice is motivated due to its proved robustness and
 stability for dynamic computations. In the first stage, the nodal
-velocity predictor $ \vec{\tilde{v}}_I^{k+1}$ is computed through
-nodal velocities $\vec{v}_I$ and accelerations $\vec{a}_I$ and evaluated
+velocity predictor \textcolor{red}{$ \vec{v}_{I}^{pred}$} is computed through
+\textcolor{red}{particles} velocities \textcolor{red}{$\vec{v}_p$} and accelerations \textcolor{red}{$\vec{a}_p$} and evaluated
 in the $k$ time step,
+%%%%%%%%%%%%%%%%%%%%%%%
 \begin{equation}
-  \label{eq:Predictor-velocity}
-  \vec{\tilde{v}}_I^{k+1} = \frac{N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{\tens{m}_I^{k+1}}\ .
+ \label{eq:Predictor-velocity}
+    \vec{v}_{I}^{pred} =  \textcolor{blue}{\sum_{p\ \in\ \mathcal{C}}} \frac{ N_{I}(\vec{x}_p^k )\ m_p\ (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}.
 \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%
 Where \gls{gamma-npc} is an user-defined parameter (typically adopted as
-0.5), $\tens{m}_I$ represents the lumped mass matrix, and $N_{Ip}^{k}$ is
-the nodal contribution of the shape function evaluated in the particle
+0.5), $\tens{m}_I$ represents the lumped mass matrix, and \textcolor{red}{$N_{I}(\vec{x}_p^k) $} is the nodal contribution of the shape function evaluated in the particle
 coordinates $\vec{x}_p^k$. This way of computing the nodal predictor is numerically stable
 as well as minimises the computational effort. Once nodal velocities are
 obtained, the essential boundary conditions are imposed. After that, an
@@ -482,14 +481,14 @@ are corrected in a \textit{corrector} stage:
 Finally, in order to update the particles, those are advected in the Lagrangian stage as
 \begin{align}
   \label{eq:Update-lagrangian-pce}
-        &\vec{a}_p^{k+1} =
-          \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\ ,\\
-      &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
-        \frac{N_{Ip}^k\
+        &\vec{a}_p^{k+1} = \textcolor{blue}{\sum_{I\ \in\ \mathcal{B}_p}}
+          \frac{N_{I}(\vec{x}_p^k)\ \vec{f}_{I}^{k}}{\tens{m}_I^k}\ ,\\
+      &\vec{v}_p^{k+1} = \vec{v}_p^n + \textcolor{blue}{\sum_{I\ \in\ \mathcal{B}_p}} \Delta t\
+        \frac{N_{I}(\vec{x}_p^k)\
         \vec{f}_{I}^{k}}{\tens{m}_I^k}\ ,\\
-      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
-         N_{Ip}^k\ \vec{v}_{I}^{k} +
-        \frac{1}{2}\Delta t^2\ \frac{N_{Ip}^k\
+      &\vec{x}_p^{k+1} = \vec{x}_p^n +  \textcolor{blue}{\sum_{I\ \in\ \mathcal{B}_p}} \Delta t\
+         N_{I}(\vec{x}_p^k)\ \vec{v}_{I}^{k} +
+        \frac{1}{2}\Delta t^2\ \frac{N_{I}(\vec{x}_p^k)\
         \vec{f}_{I}^{k}}{\tens{m}_I^k}\ .
 \end{align}
 The complete pseudo-algorithm it is summarised in \ref{sec:expl-pred-corr}.
@@ -593,7 +592,7 @@ of the eigenerosion proposed by Pandolfi \& Ortiz
   experimental measures show that the eigenerosion algorithm significantly overestimates the tensile stress and the strain peaks, meanwhile eigensoftening captures the forces and crack
 patterns accurately. Furthermore,
 the accuracy of this algorithm has been proven for complex fracture
-patterns such as the ones obtained with fiber reinforces concrete (FRC),
+patterns such as the ones obtained with fiber \textcolor{red}{reinforced} concrete (FRC),
 \cite{Navas_2018_ES}.\\
 
 The key idea behind the eigenerosion algorithm is the computation of the
@@ -792,24 +791,8 @@ found in \ref{sec:node-linked-method-1}.
 \section{Cases of study and discussion}
 \label{sec:3}
 
-The proposed approach to overcome the two main shortcomings of
-EighenMPM \cite{Zhang_EE_2020} has been evaluated with ``three
-benchmark tests''.
-The first one deals with the presence of stress
-instabilities provoked by the spatial discretisation, appearing even when the \acrshort{gimp} shape functions are employed. To overcome it, \acrshort{lme}
-approximants are introduced as an alternative to the existing interpolation techniques. Its
-performance in mitigating spurious stress oscillations under the \acrshort{mpm}~\cite{Wobbes2020,Molinos2020} framework helps to enhance
-notoriously the quality of the results as it is observed in Section
-\ref{sec:3.1}, where both interpolation techniques
-are compared by carrying out an eigenerosion simulation. The second
-limitation is concerned to its inability to simulate properly quasi-brittle
-fracture \cite{Navas_2018_ES}. It can be solved through the
-eigensoftening algorithm described in Section \ref{sec:2.3}. A proof
-of it is exposed in Sections \ref{sec:3.2} and \ref{sec:3.3}, where experimental results
-are compared with numerical ones, being the eigensoftening technique the one employed in this research for the
-computations. In the first case comparing with a semicircular bending
-test and in the second case with a drop-weight impact test.
-
+\textcolor{blue}{The proposed approach to overcome the two main shortcomings of
+EighenMPM  has been evaluated with three benchmark tests. On the one hand, the benchmark proposed in section \ref{sec:3.1} discuss the presence of stress instabilities provoked by the spatial discretisation. For that purpose, two different interpolation techniques, \acrshort{gimp} and \acrshort{lme}, as been compared by carrying out an eigenerosion simulation. And on the other hand the inability of the eigenerosion to simulate properly quasi-brittle fracture is discussed in sections \ref{sec:3.2} and \ref{sec:3.3}, where experimental results are compared with numerical ones. In the first case comparing with a semicircular bending test and in the second case with a drop-weight impact test.}
 
 \subsection{Edge-cracked square panel in mode I}
 \label{sec:3.1}
@@ -817,7 +800,7 @@ The aim of the problem presented hereinafter is to assess the
 capability of the \acrshort{lme} approximants to improve the result
 \textit{versus} the standard linear interpolation and \acrshort{ugimp}
 \cite{Bardenhagen2004}. The application
-consists of a square plate of size $H = 1\ [L] $ containing an initial edge
+consists of a square plate of size $H = 1$ containing an initial edge
 crack of length $0.25 \cdot H$ loaded in a pure mode I by displacement
 control on the outer flanks of the plate (See Figure
 \ref{fig:geometry-cracked-panel-mode-I} for details). 
@@ -830,21 +813,19 @@ control on the outer flanks of the plate (See Figure
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The constitutive model considered in the numerical experiment is a
-linear-elastic Hookean material, whose Young's modulus \gls{E} = 1.06
-$[M] [L]^{-1} [T]^{-2}$, the Poisson's ratio \gls{nu} = 0.333, and
-critical energy-release rate \gls{Gf} = 0.0001 $[L]^{2} [T]^{-2}$. The absence of units is due to the current
+linear-elastic Hookean material, whose Young's modulus \gls{E} = 1.06, the Poisson's ratio \gls{nu} = 0.333, and
+critical energy-release rate \gls{Gf} = 0.0001. The absence of units is due to the current
 simulation will not be tested against experimental results, where
 scale factor is relevant, but will be validated against an analytical
 solution provided by Pandolfi \& Ortiz \cite{Pandolfi_2012}. In
 \acrshort{mpm}, two different discretisation are required. On one
 hand, a cartesian grid of nodes is considered with a nodal spacing
-value of 0.025 $[L]$. On the other hand, the plate will be modeled with a
+value of 0.025. On the other hand, the plate will be modeled with a
 initial layout of four particles per element and occupying the Gauss
 quadrature positions.\\
 
 Figure \ref{fig:Reactions-cracked-panel-mode-I} clearly shows that the
-\acrshort{lme}$_{\gamma = 3.5}$ solution has a reaction peak value of 0.03 $[M] [L]
-[T]^{-2}$ for a imposed displacement 0.015 $[L]$ which agrees with the
+\acrshort{lme}$_{\gamma = 3.5}$ solution has a reaction peak value of 0.03 for a imposed displacement 0.015 which agrees with the
 analytical solution \cite{Pandolfi_2012}. It also shows the presence
 of wiggles in the reaction-displacements curve, in both loading and
 post-failure stages, when linear interpolation technique is used. In
@@ -895,8 +876,7 @@ breaking.
 \subfigure[t = 100]{\includegraphics[width=0.73\textwidth]{./Figure-Stress-0398-mode-I.png}}
 \caption{Evolution of the stress tensor magnitude for linear
   interpolation (pictures in the left side), and \acrshort{lme}
-  (pictures in the right side). Both simulations performed with an
-  eigenerosion algorithm.}
+  (pictures in the right side).  \textcolor{blue}{The results are printed directly on the material points.}}
 \label{fig:Stress-cracked-panel-mode-I}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -943,11 +923,11 @@ The material properties of Johnstone rock are listed in Table \ref{tab:Johnstone
   \centering
   \begin{tabular}[]{l l}
     \hline
-    Young's modulus (\gls{E})   & 0.4\ $GPa$       \\
+    Young's modulus (\gls{E})   & 0.4\  \textcolor{red}{GPa}       \\
     Poisson ratio (\gls{nu})    & 0.25           \\
-    Density (\gls{rho})         & 1.54\ $g/cm^3$ \\
-    Tensile strength (\gls{ft}) & 0.6\ $MPa$       \\
-    Critical opening displacement (\gls{Wc}) & 0.015\ $mm$ \\
+    Density (\gls{rho})         & 1.54\ \textcolor{red}{$\text{g/cm}^3$} \\
+    Tensile strength (\gls{ft}) & 0.6\ \textcolor{red}{MPa}       \\
+    Critical opening displacement (\gls{Wc}) & 0.015\ \textcolor{red}{mm} \\
     \hline
   \end{tabular}
   \caption[Mechanical properties of Johnstone. ]{Material properties of Johnstone.}
@@ -987,7 +967,7 @@ development under various complex loading conditions.
 \subfigure[$\alpha$ = 30]{\includegraphics[width=0.49\textwidth]{./Figure-Angle-Forces-test-30-damage-pattern.png}}
 \subfigure[$\alpha$ = 60]{\includegraphics[width=0.49\textwidth]{./Figure-Angle-Forces-test-60-damage-pattern.png}}
 \caption{Crack pattern for different notch inclination angle, and
-  comparison with the experimental results  \cite{LIM_1993}.}
+  comparison with the experimental results  \cite{LIM_1993}. \textcolor{blue}{The results are printed directly on the material points.}}
 \label{fig:Figure-Angle-Forces-test-damage-pattern}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1118,8 +1098,7 @@ other side of the crack.
 \subfigure[t = 0.45 ms]{\includegraphics[width=0.83\textwidth]{./Figure-impact-test-Damage-vs-Stress-0030}}
 \caption{Evolution of the stress tensor magnitude [MPa] for linear
   interpolation (pictures in the left side), and \acrshort{lme}
-  (pictures in the right side). Both simulations performed with an
-  eigenerosion algorithm.}
+  (pictures in the right side). \textcolor{blue}{The results are printed directly on the material points.}}
 \label{fig:Stress-vs-damage-impact-test}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1186,8 +1165,9 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \textbf{Explicit Newmark Predictor :}
     \begin{equation*}
-      \vec{v}_I^{pred} = \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}
+      \vec{v}_I^{pred} = \textcolor{blue}{\sum_{p\ \in\ \mathcal{C}}} \frac{ N_{I}(\vec{x}_p^k)\  m_p\ (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}
     \end{equation*}\;
+    \vspace{-0.5cm}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \textbf{Impose essential boundary conditions :} At the fixed
     boundary, set $\vec{v}_{I}^{pred} = 0$.\; 
@@ -1195,9 +1175,10 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
     \textbf{Deformation tensor increment calculation :}
     \begin{equation*}
       \Delta \tens{\varepsilon}_{p}^{k+1} = \Delta t\
-        \dot{\tens{\varepsilon}_{p}}^{k+1} = \Delta t\ \left[ \vec{v}_{I}^{pred} \otimes
-        \Grad{N_{Ip}^{k+1}} \right]^s
-    \end{equation*} \;
+        \dot{\tens{\varepsilon}_{p}}^{k+1} =  \textcolor{blue}{\sum_{I\ \in\ \mathcal{B}_p}} \Delta t\ \left[ \vec{v}_{I}^{pred} \otimes
+        \Grad{N_{I}(\vec{x}_p^k)} \right]^s
+    \end{equation*}\;
+    \vspace{-0.5cm}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \textbf{Update the density field :} $\rho_p^{k+1} =
     \frac{\rho_p^k}{1 + \mathit{tra}\left[\Delta\tens{\varepsilon}_{p}^{k+1}\right]}.$\;
@@ -1211,18 +1192,20 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
     \begin{equation*}
       \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}  
     \end{equation*}\;
+    \vspace{-0.5cm}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \textbf{Update particles lagrangian quantities :}
     \begin{align*}
-      &\vec{a}_p^{k+1} = \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
-      &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
-        \frac{N_{Ip}^k\
+      &\vec{a}_p^{k+1} = \textcolor{blue}{\sum_{I\ \in\ \mathcal{B}_p}} \frac{N_{I}(\vec{x}_p^k)\ \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+      &\vec{v}_p^{k+1} = \vec{v}_p^n + \textcolor{blue}{\sum_{I\ \in\ \mathcal{B}_p}} \Delta t\
+        \frac{N_{I}(\vec{x}_p^k) \
         \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
-      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
-         N_{Ip}^k\ \vec{v}_{I}^{k} +
-        \frac{1}{2}\Delta t^2\ \frac{N_{Ip}^k\
+      &\vec{x}_p^{k+1} = \vec{x}_p^n + \textcolor{blue}{\sum_{I\ \in\ \mathcal{B}_p}} \Delta t\
+         N_{I}(\vec{x}_p^k) \ \vec{v}_{I}^{k} + 
+        \frac{1}{2}\Delta t^2\ \frac{N_{I}(\vec{x}_p^k)\
         \vec{f}_{I}^{k}}{\tens{m}_I^k}
     \end{align*}\;
+    \vspace{-0.5cm}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \textbf{Reset nodal values}\;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 

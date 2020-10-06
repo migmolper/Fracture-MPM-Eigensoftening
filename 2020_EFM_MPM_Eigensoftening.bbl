@@ -305,10 +305,11 @@ M.~Shimrat, Algorithm 112: Position of point relative to polygon, Commun. ACM
   {\path{doi:10.1145/368637.368653}}.
 
 \bibitem{Galetzka_et_al_2017}
-M.~Galetzka, P.~Glauner, A simple and correct even-odd algorithm for the
-  point-in-polygon problem for complex polygons, 2017, pp. 1--2.
-\newblock \href {http://dx.doi.org/10.5220/0006040801750178}
-  {\path{doi:10.5220/0006040801750178}}.
+M.~Galetzka, P.~O. Glauner, \href{http://arxiv.org/abs/1207.3502}{A correct
+  even-odd algorithm for the point-in-polygon {(PIP)} problem for complex
+  polygons}, CoRR abs/1207.3502.
+\newblock \href {http://arxiv.org/abs/1207.3502} {\path{arXiv:1207.3502}}.
+\newline\urlprefix\url{http://arxiv.org/abs/1207.3502}
 
 \bibitem{Wobbes2020}
 E.~Wobbes, R.~Tielen, M.~M{\"{o}}ller, C.~Vuik, {Comparison and unification of
