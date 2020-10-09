@@ -6,6 +6,7 @@
 \usepackage{color}
 \usepackage{bm}
 \usepackage{amsmath}
+\usepackage{textcomp}
 
 % \geometry{landscape} % rotated page geometry
 
@@ -52,7 +53,7 @@ The reviewer's positive commentaries are greatly appreciated.
 
 \textit{The authors rely on a variant of MPM called LME-MPM. I was not familiar with this option before. This paper might need more explanation, but maybe the references are enough.}\\
 
-The LME-MPM is explained in more detail in an earlier article by the authors.
+The LME-MPM is explained in more detail in an earlier article by the authors. In this paper, only several notions are provided. This notions have been extended in order to improve the understanding of it
 \\
 
 \textit{Here are some specific comments:}
@@ -65,11 +66,11 @@ The LME-MPM is explained in more detail in an earlier article by the authors.
 
  \item \textit{"numerical artifacts have been proposed" People don't intentionally create artifacts. I think authors meant something different. This paper needs some English editing, but I will not comment on them all.}\\
  
-The correct word is artifices in stead of artifacts. As suggested by the reviewer, a proofreading will be done to improve the English of the manuscript.
+The correct word is "artifices" instead of artifacts. As suggested by the reviewer, a proofreading will be done to improve the English of the manuscript.
  
  \item \textit{Page 4: Equation (1) (from standard MPM) must sum over particles, but that is not stated. Perhaps they are using "repeated indices" summed, but that is not stated either. Also, MPM codes typically do not track particle acceleration. How is that terms tracked here? (actually I see in Eq, (3), but that is not common in MPM, instead, that extrapolation is used to update particle position and then discarded).}\\
  
-As reviewer noticed, the Einstein summation convention for repeated indices has been adopted. This will be clarified in the revised version of the manuscript. Concerning the use of the particle acceleration in the algorithm, this a key part of the Newmark predictor-corrector (NPC) proposed by the authors in Molinos {\it et al.}  \cite{Molinos_2020} (not yet published), this algorithm detailed in the Appendix A. Additionally,  since the algorithm proposed in the aforementioned publication was adapted for the MPM from the proposed by Navas {\it et al.} \cite{Navas_2018a} (2018), the reviewer can visit it to get more details about the good performance of the NPC in the dynamic regime. In the aforementioned publication, the overall performance of the algorithm in demanding dynamic cases is demonstrated. To clarify this issue, an additional reference to this work will be incorporated to the revised version of the manuscript.
+As the reviewer noticed, the Einstein summation convention for repeated indices has been adopted. This will be clarified in the revised version of the manuscript. Concerning the use of the particle acceleration in the algorithm, this a key part of the Newmark predictor-corrector (NPC) proposed by the authors in Molinos {\it et al.}  \cite{Molinos_2020} (not yet published). This algorithm detailed in the Appendix A. Additionally,  since the algorithm proposed in the aforementioned publication was adapted for the MPM from the proposed by Navas {\it et al.} \cite{Navas_2018a} (2018). More details of the good performance of the NPC algorithm in the dynamic region can be found in the aforementioned paper. To clarify this issue, an additional reference to this work will be incorporated to the revised version of the manuscript.
 
 \item \textit{Page 7: "reinforces" should be "reinforced" (in FRC)}\\
 
@@ -77,9 +78,7 @@ Fixed.
 
 \item \textit{Section 2.3: Fracture modelling approach. The core of this paper appears to be "isotropic softening" where particles degrade the same in all directions. Although this is common approach in numerical modeling, I am skeptical it can really extend fracture mechanics. For example, how does this modeling handle mode I (failure by tensile stress) from mode II (failure by shear stress). An alternative is to use anisotropic softening and that approach has been implemented in MPM: J. A. Nairn, "Direct Comparison of Anisotropic Damage Mechanics to Fracture Mechanics of Explicit Cracks," Eng. Fract. Mech., 203, 197-207 (2018) and papers cited therein (citing such papers would also help promote impact factor of Engineering Fracture Mechanics).}\\
  
-Authors really appreciate the suggestion of the reviewer to including a cite to the work of J.A. Nairn. The state of art of the manuscript will be revised to include this research and remove the non necessary references. Answering reviewer\textquotesingle s question, the eigensoftening technique is able to handle with both modes I and II. Observe equation (14) is formulated in terms of $\sigma_{I}$. This is the first component of the stress tensor in the maximum principal stress. Therefore, fracture will appear following the $\sigma_I$ trajectories. For instance, it it is well known that a pure shear stress state ($\tau$) can be expressed as a composition of two stress states, one traction ($\sigma_{I} = \tau$) and other compression ($\sigma_{II} = -  \tau$) with principal axes rotated 45$^o$. Additionally, as  Navas {\it et al.}  \cite{Navas_2018b} probed by means of qualitative and quantitative comparisons, the eigensofteing is able to deal with mixed modes even with non isotropic materials as the FRC.
-
-However, as the reviewer argues, in order to capture complex behaviours such as delamination, the damage model for concrete must consider the anisotropy of the material in the formulation. Therefore, the authors agree with the reviewer that the use of an anisotropic damage model would be an important step forward for the proposed model. This pitfall will be clarified and the proposal of an anisotropic damage model will be included in the conclusions as a future research line of the authors.
+Authors appreciate the suggestion of the reviewer to mention interesting affine works. The state of art of the manuscript will be revised to include this research and remove the non necessary references. Answering reviewer\textquotesingle s question, the eigensoftening technique is able to handle with both modes I and II. Observe that equation (14) is formulated in terms of $\sigma_{I}$. This is the first component of the stress tensor in the maximum principal stress. Therefore, fracture will appear following the $\sigma_I$ trajectories. For instance, it it is well known that a pure shear stress state ($\tau$) can be expressed as a composition of two stress states, one traction ($\sigma_{I} = \tau$) and other compression ($\sigma_{II} = -  \tau$) with principal axes rotated 45$^o$. Additionally, as  Navas {\it et al.}  \cite{Navas_2018b} proved by means of qualitative and quantitative comparisons, the eigensofteing technique is able to deal with mixed modes even with non isotropic materials as the FRC.
  
 \item \textit{General: What shape functions are used or what are the $N_I$? It was not clear to me. The nomenclatture "N" is common used in MPM and finite element literature to refer to cell shape functions. MPM integrates these of particle volume to get GIMP shape functions.}\\
 
@@ -87,16 +86,18 @@ $N_I$ is used to define the value of the shape function for a given node $I$ in 
   
 \item \textit{Page 12: "four particles per element and occupying the Gauss quadrature positions" MPM does not numerically integrate particles and they move while the grid does not. Why start at Gaussian quadrature positions? I have never seen that in MPM. The usual discretization is to use equally spaced material points (or at quarter points of the cells).}\\
 
-In MPM, the user is able to choose the initial position of the particles. Therefore, we choose the Gaussian quadrature positions to ensure good integration properties at least in the first time steps. Of course, in a general scenario, the user has not control over the position of the material points in the following the next time steps. 
+In MPM, the user is able to choose the initial position of the particles. Therefore, we choose the Gaussian quadrature positions to ensure good integration properties at least in the first time steps. Of course, in a general scenario, the user has not control over the position of the material points in the following time steps. 
    
 \item \textit{Page 16: "Figure 7 shows the comparison of mixed-mode fracture"
 Isotropic failure methods can be used on mixed-mode failure and might even give results that look reasonable. But mixed mode results should depend on separate stresses to initiation tensile failure or shear failure and different amounts critical energy for mode I and Mode II. For example, if this work uses a single toughness, all failure will result in the same energy regardless of ratio of mode I to mode II. That response does not agree well with experimental results (e.g., mixed-mode delamination or adhesive failure).}\\
 
 As the reviewer argues, to simulate complex fracture patterns as delamination, the model should consider an anisotropic behaviour. Although, contrary to the reviewer\textquotesingle s opinion, the eigensofening is capable to capture mixed-mode failure. In previous research, Navas {\it et al.}  \cite{Navas_2018b} demonstrate against experimental results that the eigensoftening approach is able to capture properly the crack pattern and other experimental measurements. 
 
+However, we agree with the reviewer that in order to capture complex behaviours such as delamination, the damage model for concrete must consider the anisotropy of the material in the formulation. Therefore, the authors agree with the reviewer that the use of an anisotropic damage model would be an important step forward for the proposed model. This pitfall will be clarified and the proposal of an anisotropic damage model will be included in the conclusions as a future research line of the authors.
+
 \item \textit{Page 19: "Although the traditional MPM implementation allows collision of two bodies, inaccurate energy conservation is obtained without the implementation of a conservative contact algorithm to reproduce the hammer impact in the beam." Well known and many papers are available that do contact in MPM (including many improvements over the two cited in Refs 51 and 52). It is one of the common reasons for using MPM instead of finite element modeling.}\\
 
-As the reviewer remarks, better results would be obtained if a better contact algorithm is implemented. In addition, the implementation of a proper contact algorithm would help to modelise the supports of the concrete beam in a realistic fashion (Section 3.3). 
+As the reviewer remarks, better results would be obtained if a better contact algorithm is implemented. In addition, the implementation of a proper contact algorithm would help to model the supports of the concrete beam in a more realistic manner (Section 3.3). 
 
 \item \textit{Page 19: "opposite to the uGIMP shape function, LME allows unstructured grids" Actually, uGIMP has no problem handling a rectilinear grid with arbitrarily sized elements. It could even handle unstructured grids with extra work, but I have never seen it done.}\\
 
@@ -104,11 +105,11 @@ It is true that uGIMP has no problem to handle a rectilinear grid with arbitrari
 
 \item \textit{General: I did not find any mention of handling crack contact either during fracture (such as pure mode II fracture) on when a crack forms and then comes back into contact when forces later change direction. Is it possible in this methods or is it a limitation of the approach (such limitations should be listed). The mentioned CRAMP algorithm fully handles contact using results similar to MPM contact methods. I recall the anisotropic softening methods handle crack contact as well. The challenge is that when a crack in progress comes into contact, it should respond with a stiffness similar to the initial material and not some isotropically reduced stiffness. Can this approach distinguish tension and compression? Real materials have very different failure mode.}\\
 
-The authors appreciate the constructive discussion of the reviewer. Extending the eigensoftening algorithm to anisotropic softening seems to be a interesting research line in future. It will be added to the conclusions. Handling crack contact is a current pitfall of the algorithm and will be properly listed in the corrected version of the manuscript. Furthermore, in Pandolfi and Ortiz (2012) \cite{Ortiz_Pandolfi_2012} (Section 3.2) two alternatives to overcome this limitation where briefly discussed. Since the examples proposed in the present research does not involves contact constrain, those improvements were not the focus of our research. This pitfall will be included in the description of the algorithm. 
+The authors appreciate the constructive discussion of the reviewer. Extending the eigensoftening algorithm to anisotropic softening seems to be an interesting research line in the future. It will be added to the conclusions. Handling crack contact is a current pitfall of the algorithm and will be properly listed in the corrected version of the manuscript. Furthermore, in Pandolfi and Ortiz (2012) \cite{Ortiz_Pandolfi_2012} (Section 3.2) two alternatives to overcome this limitation were briefly discussed. Since the examples proposed in the present research does not involves contact constrain, those improvements were not the focus of our research. This pitfall will be included in the description of the algorithm. 
 
 \item \textit{uGIMP: uGIMP can be based on linear or spline grid shape functions. The later can eliminate all oscillations seen in linear uGIMP. The improvements are most dramatic in bending problems such as example 2 and 3 here. Did authors try them?}\\
 
-The authors really appreciate the interesting proposal of the reviewer. We were aware of the work proposed by Steffen {\it et al.} \cite{Steffen_2008} with the B-splines. But we were not aware of the possibility of using spline grid shape functions in the uGIMP. However, since the aim of this manuscript is  discussing the capabilities of a new fracture algorithm for the MPM, we only considered the linear uGIMP shape functions and the LME approximants to stablish a comparison. Nevertheles, the discussion proposed by the reviewer seems to be interesting for a work focused on the computational aspect of the MPM.
+The authors appreciate the interesting proposal of the reviewer. We were aware of the work proposed by Steffen {\it et al.} \cite{Steffen_2008} with the B-splines. But we were not aware of the possibility of using spline grid shape functions in the uGIMP. However, since the aim of this manuscript is the discussion of the capabilities of a new fracture algorithm for the MPM, we only considered the linear uGIMP shape functions and the LME approximants to establish a comparison. Nevertheless, the discussion proposed by the reviewer seems to be interesting for a work focused on the computational aspect of the MPM.
 
  \end{enumerate}
 
@@ -118,7 +119,7 @@ The authors really appreciate the interesting proposal of the reviewer. We were 
 
 \section*{Response to Reviewer \#2}
 
-\textit {The manuscript describes an approach to tackle fracture process in brittle materials. Using the material point method as discretization and the eigendeformation concept (in the version devised by one of the authors in his previous contributions), authors propose an efficient algorithm that is illustrated by a few examples of application. The paper is well written, the literature adequately acknowledged. }\\
+\textit {The manuscript describes an approach to tackle fracture process in brittle materials. Using the material point method as discretisation and the eigendeformation concept (in the version devised by one of the authors in his previous contributions), authors propose an efficient algorithm that is illustrated by a few examples of application. The paper is well written, the literature adequately acknowledged. }\\
 
 
 
@@ -131,7 +132,7 @@ Done.
 
 \item \textit{The introduction to the case of study in section 3 is not necessary, you can shorten it.}\\
 
-You are right, unnecessary references  and explanations will be removed. 
+We agree with the reviewer\textquotesingle s opinion, unnecessary references  and explanations will be removed. 
 
 \item \textit{Images look as pixels. Is this an artefact of the approach or figures can be obtained in a smoother shade of colors ?}\\
 
@@ -148,7 +149,7 @@ The material parameters are the same as those used by Pandolfi and Ortiz (2012) 
 \item \textit{Can you explain why there is a wrong time history in the simulation of the drop-weight test?
 }\\
 
-The reason is we are not simulating the real hammer used in the experiments. In instead of it, we simulated a hammer with two different materials. The "head" of the numerical hammer has the same properties like the used in the experiments, the "body" of the numerical hammer has different density and elastic modulus. This approach makes it possible to considerably reduce the length of the numerical hammer and, therefore, the computational cost of the simulation. The elastic modulus and density of the second material were calibrated to reproduce accurately the impact, unfortunately after it, the numerical hammer does not behave exactly as the used in the experiments. 
+The reason lies on the fact that the real hammer, used in the experimental tests, is not reproduced exactly on the simulations in order to avoid to reproduce an enormous hammer compared to the beam. In instead of it, we simulated a hammer with two different materials. The "head" of the numerical hammer has the same properties as the one used in the experiments, the "body" of the numerical hammer has different density and elastic modulus. This approach makes it possible to considerably reduce the length of the numerical hammer and, therefore, the computational cost of the simulation. The elastic modulus and density of the second material were calibrated to reproduce accurately the impact, unfortunately after it, the numerical hammer does not behave exactly as the one used in the experiments. 
 
 \end{enumerate}
 
