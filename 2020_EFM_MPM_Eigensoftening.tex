@@ -70,21 +70,43 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-\usepackage{siunitx}
-\usepackage[record,% using bib2gls
- symbols, % create list of symbols
- acronym
+\usepackage[symbols,
+  stylemods={tree},% loads glossaries-extra-stylemods to patch styles
+  record % using 'bib2gls'
 ]{glossaries-extra}
 
+% assign titles to group labels:
+\glsxtrsetgrouptitle{latin}{Latin}
+\glsxtrsetgrouptitle{greek}{Greek}
+
 \GlsXtrLoadResources[
-  src={symbols}, % data in symbols.bib
-  sort-field={name}, % sort by name field
-  sort={letter-nocase}, % case-insensitive letter sort
-  type=symbols, % put these terms in the symbols list
-  field-aliases={unit=symbol}% convert unit key to symbol
+ src={symbols-latin},
+ type=symbols,
+ group={latin},% assign group label
+ set-widest,% needed for 'alttree' styles
+ save-locations=false
 ]
+
+\GlsXtrLoadResources[
+ src={symbols-greek},
+ type=symbols,
+ group={greek},% assign group label
+ set-widest,% needed for 'alttree' styles
+ save-locations=false
+]
+
+%\usepackage{siunitx}
+%\usepackage[record,% using bib2gls
+% acronym
+%]{glossaries-extra}
+
+%\GlsXtrLoadResources[
+%  src={symbols}, % data in symbols.bib
+%  sort-field={name}, % sort by name field
+%  sort={letter-nocase}, % case-insensitive letter sort
+%  type=symbols, % put these terms in the symbols list
+%  field-aliases={unit=symbol}% convert unit key to symbol
+%]
 
 
 % Init glossaries
@@ -108,156 +130,158 @@
 \newacronym{fe}{FE}{Forward Euler}
 \newacronym{cramp}{CRAMP}{CRAcks with Material Points}
 
-\newglossaryentry{domain}
-{
-  name=$\varOmega$,
-  description={Continuum domain}
-}
 
-\newglossaryentry{contour}
-{
-  name=$\partial\varOmega$,
-  description={Boundary of the continuum domain $\varOmega$. Also
-    defined as $\Gamma$}
-}
+%\newglossaryentry{domain}
+%{
+%  name=$\varOmega$,
+%  description={Continuum domain}
+%}
 
-\newglossaryentry{dirichlet-boundary}
-{
-  name=$ \Gamma_d$,
-  description={Essential or Dirichlet boundary conditions over $\partial\varOmega$}
-}
+%\newglossaryentry{contour}
+%{
+%  name=$\partial\varOmega$,
+%  description={Boundary of the continuum domain $\varOmega$. Also
+%defined as $\Gamma$}
+%}
 
-\newglossaryentry{neumann-boundary}
-{
-  name=$ \Gamma_n$,
-  description={Natural or Nemann boundary conditions over $\partial\varOmega$}
-}
+%\newglossaryentry{dirichlet-boundary}
+%{
+%  name=$ \Gamma_d$,
+%  description={Essential or Dirichlet boundary conditions over $\partial\varOmega$}
+%}
 
-\newglossaryentry{a}
-{
-  name=$\vect{a}$,
-  description={First order tensor which describes the acceleration field}
-}
+%\newglossaryentry{neumann-boundary}
+%{
+%  name=$ \Gamma_n$,
+%  description={Natural or Nemann boundary conditions over $\partial\varOmega$}
+%}
 
-\newglossaryentry{v}
-{
-  name=$\vect{v}$,
-  description={First order tensor which describes the velocity field}
-}
+%\newglossaryentry{a}
+%{
+%  name=$\vect{a}$,
+%  description={First order tensor which describes the acceleration field}
+%}
 
-\newglossaryentry{u}
-{
-  name=$\vect{u}$,
-  description={First order tensor which describes the displacement field}
-}
+%\newglossaryentry{v}
+%{
+%  name=$\vect{v}$,
+%  description={First order tensor which describes the velocity field}
+%}
 
-\newglossaryentry{x}
-{
-  name=$\vect{x}$,
-  description={First order tensor which describes the global coordinates field}
-}
+%\newglossaryentry{u}
+%{
+%  name=$\vect{u}$,
+%  description={First order tensor which describes the displacement field}
+%}
 
-\newglossaryentry{xi}
-{
-  name=$\vect{\xi}$,
-  description={First order tensor which describes the local coordinates field}
-}
+%\newglossaryentry{x}
+%{
+%  name=$\vect{x}$,
+%  description={First order tensor which describes the global coordinates field}
+%}
 
-
-\newglossaryentry{stress}
-{
-  name=$\tens{\sigma}$,
-  description={Second order tensor which means the Cauchy stress tensor}
-}
+%\newglossaryentry{xi}
+%{
+%  name=$\vect{\xi}$,
+%  description={First order tensor which describes the local coordinates field}
+%}
 
 
-\newglossaryentry{strain}
-{
-  name=$\tens{\varepsilon}$,
-  description={Second order tensor which means the Cauchy strain tensor}
-}
-
-\newglossaryentry{Constitutive}
-{
-  name=$\tens{D}$,
-  description={Four order tensor which means the constitutive response
-    of the material}
-}
-
-\newglossaryentry{LME-beta}
-{
-  name=$\beta$,
-  description={Regularization or thermalization parameter of the
-    LME$_{\beta}$ Pareto set}
-}
-
-\newglossaryentry{rho}
-{
-  name=$\rho$,
-  description={Describes the scalar density field}
-}
-
-\newglossaryentry{fc}
-{
-  name=f$_c$,
-  description={Compressive strenght}
-}
-
-\newglossaryentry{ft}
-{
-  name=f$_t$,
-  description={Tensile strenght}
-}
-
-\newglossaryentry{Gf}
-{
-  name=G$_F$,
-  description={Specific fracture energy}
-}
-
-\newglossaryentry{E}
-{
-  name=E,
-  description={Elastic modulus}
-}
-
-\newglossaryentry{nu}
-{
-  name=$\nu$,
-  description={Poisson ratio}
-}
-
-\newglossaryentry{Ceps}
-{
-  name=$C_{\epsilon}$,
-  description={Normalizing constant}
-}
+%\newglossaryentry{stress}
+%{
+%  name=$\tens{\sigma}$,
+%  description={Second order tensor which means the Cauchy stress tensor}
+%}
 
 
-\newglossaryentry{heps}
-{
-  name=$h_{\epsilon}$,
-  description={Band width}
-}
+%\newglossaryentry{strain}
+%{
+%  name=$\tens{\varepsilon}$,
+%  description={Second order tensor which means the Cauchy strain tensor}
+%}
 
-\newglossaryentry{Wc}
-{
-  name=$w_{c}$,
-  description={Critical opening displacement}
-}
+%\newglossaryentry{Constitutive}
+%{
+%  name=$\tens{D}$,
+%  description={Four order tensor which means the constitutive response
+%    of the material}
+%}
 
-\newglossaryentry{gamma-npc}
-{
-  name=$\gamma$,
-  description={Time integration parameter for the \acrshort{npc} algorithm}
-}
+%\newglossaryentry{LME-beta}
+%{
+%  name=$\beta$,
+%  description={Regularization or thermalization parameter of the
+%    LME$_{\beta}$ Pareto set}
+%}
 
-\newglossaryentry{gamma-lme}
-{
-  name=$\widehat{\gamma}$,
-  description={Dimensionless parameter to control the value of the
-    thermalization parameter $\beta$ of the \acrshort{lme} shape functions.}
-}
+%\newglossaryentry{rho}
+%{
+%  name=$\rho$,
+%  description={Describes the scalar density field}
+%}
+
+%\newglossaryentry{fc}
+%{
+%  name=f$_c$,
+%  description={Compressive strenght}
+%}
+
+%\newglossaryentry{ft}
+%{
+%  name=f$_t$,
+%  description={Tensile strenght}
+%}
+
+%\newglossaryentry{Gf}
+%{
+%  name=G$_F$,
+%  description={Specific fracture energy}
+%}
+
+%\newglossaryentry{E}
+%{
+%  name=E,
+%  description={Elastic modulus}
+%}
+
+%\newglossaryentry{nu}
+%{
+%  name=$\nu$,
+%  description={Poisson ratio}
+%}
+
+%\newglossaryentry{Ceps}
+%{
+%  name=$C_{\epsilon}$,
+%  description={Normalizing constant}
+%}
+
+
+%\newglossaryentry{heps}
+%{
+%  name=$h_{\epsilon}$,
+%  description={Band width}
+%}
+
+%\newglossaryentry{Wc}
+%{
+%  name=$w_{c}$,
+%  description={Critical opening displacement}
+%}
+
+%\newglossaryentry{gamma-npc}
+%{
+%  name=$\gamma$,
+%  description={Time integration parameter for the \acrshort{npc} algorithm}
+%}
+
+%\newglossaryentry{gamma-lme}
+%{
+%  name=$\widehat{\gamma}$,
+%  description={Dimensionless parameter to control the value of the
+%    thermalization parameter $\beta$ of the \acrshort{lme} shape functions.}
+%}
+
 
 % End glossaries
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -412,7 +436,7 @@ algorithms based on the eigendeformation concept are presented in
 \subsection{The \acrshort{mpm} time integration : A \acrlong{npc}  scheme}
 \label{sec:2.1}
 
-\textcolor{blue}{The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian method where the continuum \gls{domain} is discretised with a finite set of material points (also known as particles in this research) $\hat{\Omega} = \{ \vec{x}_p, p \in \mathcal{C} \} \subset \Omega$, where $\mathcal{C} = 1, \ldots, n_p$. Any particle field such as position, velocity, mass, volume and stress denoted by $\vec{x}_p$, $\vec{v}_p$, $m_p$, $V_p$ and $\tens{\sigma}_p$, respectively, are assigned to each material point.  In addition to this set of material points, a set of fixed background nodes is introduced to compute the balance of momentum equation. This set of nodes is defined as  $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^{2}$, where $\mathcal{B} = 1, \ldots, n_I$. In the present research, any nodal quantity is denoted by ($\square_I$).}
+\textcolor{blue}{The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian method where the continuum $\gls{domain}$ is discretised with a finite set of material points (also known as particles in this research) $\hat{\Omega} = \{ \vec{x}_p, p \in \mathcal{C} \} \subset \Omega$, where $\mathcal{C} = 1, \ldots, n_p$. Any particle field such as position, velocity, mass, volume and stress denoted by $\vec{x}_p$, $\vec{v}_p$, $m_p$, $V_p$ and $\tens{\sigma}_p$, respectively, are assigned to each material point.  In addition to this set of material points, a set of fixed background nodes is introduced to compute the balance of momentum equation. This set of nodes is defined as  $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^{2}$, where $\mathcal{B} = 1, \ldots, n_I$. In the present research, any nodal quantity is denoted by ($\square_I$).}
 
 Since the \acrshort{mpm} possesses the advantages of both Lagrangian and Eulerian descriptions, no  element distortion takes place in the \acrshort{mpm}. Therefore, it is an appropriate and efficient method
 to solve problems with moving discontinuities such as fracture evolution.\\
@@ -430,7 +454,7 @@ in the $k$ time step,
     \vec{v}_{I}^{pred} =  \textcolor{blue}{\sum_{p\ \in\ \mathcal{C}}} \frac{ N_{I}(\vec{x}_p^k )\ m_p\ (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}.
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%
-Where \gls{gamma-npc} is an user-defined parameter (typically adopted as
+Where $\gls{gamma-npc}$ is an user-defined parameter (typically adopted as
 0.5), $\tens{m}_I$ represents the lumped mass matrix, and \textcolor{red}{$N_{I}(\vec{x}_p^k) $} is the nodal contribution of the shape function evaluated in the particle
 coordinates $\vec{x}_p^k$. This way of computing the nodal predictor is numerically stable
 as well as minimises the computational effort. Once nodal velocities are
@@ -499,10 +523,10 @@ regularisation o \textit{thermalization} parameter such that for
 Pareto optimal solutions $\beta \in
 (0,\infty)$. Notice that $\beta$ has units of $[L]^{-2}$,
 \textcolor{red}{and} can be controlled by adjusting a dimensionless
-parameter\footnote{To avoid confusion with the \gls{gamma-npc} parameter of
+parameter\footnote{To avoid confusion with the $\gls{gamma-npc}$ parameter of
   the \acrshort{npc}, the dimensionless parameter defined in Arroyo \&
   Ortiz \cite{Arroyo2006} as $\gamma$ will be represent by
-  \gls{gamma-lme} to preserve as much as possible the original notation.},
+  $\gls{gamma-lme}$ to preserve as much as possible the original notation.},
 $\widehat{\gamma}=\beta h^2$, where $h$ is defined as a
 suitable measure of the nodal spacing. With the restrictions of the
 Pareto set, the unique solution of the local
@@ -760,8 +784,8 @@ control on the outer flanks of the plate (See Figure
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The constitutive model considered in the numerical experiment is a
-linear-elastic Hookean material, whose Young's modulus \gls{E} = 1.06, the Poisson's ratio \gls{nu} = 0.333, and
-critical energy-release rate \gls{Gf} = 0.0001. The absence of units is due to the current
+linear-elastic Hookean material, whose Young's modulus $\gls{E}$ = 1.06, the Poisson's ratio $\gls{nu}$ = 0.333, and
+critical energy-release rate $\gls{Gf}$ = 0.0001. The absence of units is due to the current
 simulation will not be tested against experimental results, where scale factor is relevant, but will be validated against an analytical
 solution provided by Pandolfi \& Ortiz \cite{Pandolfi_2012}. In \acrshort{mpm}, two different discretisation are required. On one
 hand, a cartesian grid of nodes is considered with a nodal spacing value of 0.025. On the other hand, the plate will be modeled with a
@@ -848,11 +872,11 @@ The material properties of Johnstone rock are listed in Table \ref{tab:Johnstone
   \centering
   \begin{tabular}[]{l l}
     \hline
-    Young's modulus (\gls{E})   & 0.4\  \textcolor{red}{GPa}       \\
-    Poisson ratio (\gls{nu})    & 0.25           \\
-    Density (\gls{rho})         & 1.54\ \textcolor{red}{$\text{g/cm}^3$} \\
-    Tensile strength (\gls{ft}) & 0.6\ \textcolor{red}{MPa}       \\
-    Critical opening displacement (\gls{Wc}) & 0.015\ \textcolor{red}{mm} \\
+    Young's modulus ($\gls{E}$)   & 0.4\  \textcolor{red}{GPa}       \\
+    Poisson ratio ($\gls{nu}$)    & 0.25           \\
+    Density ($\gls{rho}$)         & 1.54\ \textcolor{red}{$\text{g/cm}^3$} \\
+    Tensile strength ($\gls{ft}$) & 0.6\ \textcolor{red}{MPa}       \\
+    Critical opening displacement ($\gls{Wc}$) & 0.015\ \textcolor{red}{mm} \\
     \hline
   \end{tabular}
   \caption[Mechanical properties of Johnstone. ]{Material properties of Johnstone.}
@@ -865,8 +889,8 @@ constant separation of 1 mm between them, resulting in a total number of 4672
 regular cartesian background grid of 1917 nodes with 1.5 mm of nodal distance
 was generated. The velocity \textcolor{blue}{of the particles in the top boundary} is $v_y = 2 mm/s$, 
 whereas the velocity of the bottom boundary particles is $v_y = 0 mm/s$. \textcolor{blue}{This boundary condition has been imposed via a soft loading ramp to ovoid dynamic effects due to a sudden loading}.
-Finally, the model was calibrated with a regularization parameter \gls{Ceps} = 1.7 and a
-bandwidth value \gls{heps} = 15.
+Finally, the model was calibrated with a regularization parameter $\gls{Ceps}$ = 1.7 and a
+bandwidth value $\gls{heps}$ = 15.
 
 Figure \ref{fig:Figure-Angle-Forces-test-damage-pattern} \textcolor{red}{compares} the
 comparison of mixed-mode fracture envelope between experiments and
@@ -931,9 +955,9 @@ notch-depth ratio was approximately 0.5, and the span, S, was fixed at
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The material adopted for the simulation was characterised by Navas
 {\it et al.}~\cite{Navas_2017_ES}, being the material properties, such
-as the material density, \gls{rho}, the compressive strenght, \gls{fc},
-the tensile strenght \gls{ft}, the specific fracture energy, \gls{Gf},
-and the elastic modulus \gls{E}, provided in table \ref{tab:concrete-properties}.\\
+as the material density, $\gls{rho}$, the compressive strenght, $\gls{fc}$,
+the tensile strenght $\gls{ft}$, the specific fracture energy, $\gls{Gf}$,
+and the elastic modulus $\gls{E}$, provided in table \ref{tab:concrete-properties}.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{table}
@@ -959,7 +983,7 @@ obtained results. The results here exposed are from a discretisation
 of 21576 material points and 3943 nodes. To achieve better results, an
 unstructured grid layout has been adopted focusing the minimum nodal
 spacing, 1.2 mm, in the middle of the beam and in the impact surface
-of the hammer. For this simulation, \gls{gamma-lme} was fixed to
+of the hammer. For this simulation, $\gls{gamma-lme}$ was fixed to
 1.8, this low value of the regularization parameter smooth high stress
 overshots after the impact. Here the stabilization properties of the \acrshort{lme}
 described in \cite{Molinos2020} becomes crucial to achieve
@@ -1052,7 +1076,8 @@ appreciated. The first and the second authors also acknowledge the
 fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 (FJCI-2017–31544) respectively.
 
-\printglossaries
+%\printglossaries
+\printunsrtglossary[type=symbols,style=alttreegroup,title={List of Symbols}]
 
 \appendix
 %\addappheadtotoc
