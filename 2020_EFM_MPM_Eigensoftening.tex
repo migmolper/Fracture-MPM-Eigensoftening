@@ -105,6 +105,7 @@
 \newacronym{npc}{NPC}{Newmark Predictor-Corrector}
 \newacronym{fe}{FE}{Forward Euler}
 \newacronym{cramp}{CRAMP}{CRAcks with Material Points}
+\newacronym{frc}{FRC}{Fiber Reinforced Concrete}
 
 
 \newglossaryentry{domain}
@@ -122,14 +123,26 @@ defined as $\Gamma$}
 
 \newglossaryentry{dirichlet-boundary}
 {
-  name=$ \Gamma_d$,
+  name=$\Gamma_d$,
   description={Essential or Dirichlet boundary conditions over $\partial\varOmega$}
 }
 
 \newglossaryentry{neumann-boundary}
 {
-  name=$ \Gamma_n$,
+  name=$\Gamma_n$,
   description={Natural or Nemann boundary conditions over $\partial\varOmega$}
+}
+
+\newglossaryentry{rho}
+{
+  name=$\rho$,
+  description={Describes the scalar density field}
+}
+
+\newglossaryentry{m}
+{
+  name=$m$,
+  description={Describes the scalar mass field}
 }
 
 \newglossaryentry{a}
@@ -176,6 +189,12 @@ defined as $\Gamma$}
   description={Second order tensor which means the Cauchy strain tensor}
 }
 
+\newglossaryentry{strain_q}
+{
+  name=$\delta\epsilon$,
+  description={Effective strain}
+}
+
 \newglossaryentry{Constitutive}
 {
   name=$\tens{D}$,
@@ -188,12 +207,6 @@ defined as $\Gamma$}
   name=$\beta$,
   description={Regularization or thermalization parameter of the
     LME$_{\beta}$ Pareto set}
-}
-
-\newglossaryentry{rho}
-{
-  name=$\rho$,
-  description={Describes the scalar density field}
 }
 
 \newglossaryentry{fc}
@@ -228,14 +241,19 @@ defined as $\Gamma$}
 
 \newglossaryentry{Ceps}
 {
-  name=$C_{\epsilon}$,
+  name=C$_{\epsilon}$,
   description={Normalizing constant}
 }
 
+\newglossaryentry{eps-neighborhood}
+{
+ name=$\epsilon$,
+  description={Neighbourhood size}
+}
 
 \newglossaryentry{heps}
 {
-  name=$h_{\epsilon}$,
+  name=h$_{\epsilon}$,
   description={Band width}
 }
 
@@ -243,6 +261,12 @@ defined as $\Gamma$}
 {
   name=$w_{c}$,
   description={Critical opening displacement}
+}
+
+\newglossaryentry{Wn}
+{
+  name=$w_{n}$,
+  description={Current crack opening}
 }
 
 \newglossaryentry{gamma-npc}
@@ -255,7 +279,7 @@ defined as $\Gamma$}
 {
   name=$\widehat{\gamma}$,
   description={Dimensionless parameter to control the value of the
-    thermalization parameter $\beta$ of the \acrshort{lme} shape functions.}
+    thermalization parameter \gls{LME-beta} of the \acrshort{lme} shape functions.}
 }
 
 
@@ -280,7 +304,6 @@ defined as $\Gamma$}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \journal{Engineering Fracture Mechanics}
-% \journal{Computers and Structures}
 
 \modulolinenumbers[5]
 
@@ -412,7 +435,7 @@ algorithms based on the eigendeformation concept are presented in
 \subsection{The \acrshort{mpm} time integration : A \acrlong{npc}  scheme}
 \label{sec:2.1}
 
-\textcolor{blue}{The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian method where the continuum \gls{domain} is discretised with a finite set of material points (also known as particles in this research) $\hat{\Omega} = \{ \vec{x}_p, p \in \mathcal{C} \} \subset \Omega$, where $\mathcal{C} = 1, \ldots, n_p$. Any particle field such as position, velocity, mass, volume and stress denoted by $\vec{x}_p$, $\vec{v}_p$, $m_p$, $V_p$ and $\tens{\sigma}_p$, respectively, are assigned to each material point.  In addition to this set of material points, a set of fixed background nodes is introduced to compute the balance of momentum equation. This set of nodes is defined as  $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^{2}$, where $\mathcal{B} = 1, \ldots, n_I$. In the present research, any nodal quantity is denoted by ($\square_I$).}
+\textcolor{blue}{The \acrshort{mpm}~\cite{Sulsky1994} is a meshfree Lagrangian-Eulerian method where the continuum \gls{domain} is discretised with a finite set of material points (also known as particles in this research) $\hat{\Omega} = \{ \vec{x}_p, p \in \mathcal{C} \} \subset \Omega$, where $\mathcal{C} = 1, \ldots, n_p$. Any particle field such as position, velocity, mass, stain and stress denoted by \gls{x}, \gls{v}, \gls{m}, \gls{strain} and \gls{stress}, respectively, are assigned to each material point. In the present research, any particle quantity is denoted by ($\square_p$). In addition to this set of material points, a set of fixed background nodes is introduced to compute the balance of momentum equation. This set of nodes is defined as  $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^{2}$, where $\mathcal{B} = 1, \ldots, n_I$. In the present research, any nodal quantity is denoted by ($\square_I$).}
 
 Since the \acrshort{mpm} possesses the advantages of both Lagrangian and Eulerian descriptions, no  element distortion takes place in the \acrshort{mpm}. Therefore, it is an appropriate and efficient method
 to solve problems with moving discontinuities such as fracture evolution.\\
@@ -493,11 +516,9 @@ defined as,
 \end{align*}            
 where $H(N_I)$ is the entropy of the system of nodes following the
 definition given by Shannon (1948) \cite{Shannon1948}, the shape
-function width is defined as $U(\vec{x}_p,N_I) \coloneqq
-\sum_I N_I |\vec{x}_p - \vec{x}_I |^2$, and $\beta$ is a
-regularisation o \textit{thermalization} parameter such that for
+function width is defined as $U(\vec{x}_p,N_I) \coloneqq \sum_I N_I |\vec{x}_p - \vec{x}_I |^2$, and \gls{LME-beta} is a regularisation o \textit{thermalization} parameter such that for
 Pareto optimal solutions $\beta \in
-(0,\infty)$. Notice that $\beta$ has units of $[L]^{-2}$,
+(0,\infty)$. Notice that \gls{LME-beta} has units of $[L]^{-2}$,
 \textcolor{red}{and} can be controlled by adjusting a dimensionless
 parameter\footnote{To avoid confusion with the \gls{gamma-npc} parameter of
   the \acrshort{npc}, the dimensionless parameter defined in Arroyo \&
@@ -524,7 +545,7 @@ is through a Newton-Raphson procedure, or in more challenging
 scenarios by a combination of the Newton-Raphson and the Nelder-Mead
 Simplex algorithms \cite{Navas2018a}. Nonetheless, since finite
 strains are not involved in the present research, Newton-Raphson is an
-enough efficient method. For an uniform nodal spacing, $\beta$ can be
+enough efficient method. For an uniform nodal spacing, \gls{LME-beta} can be
 considered constant, thus first derivatives of the interpolation technique $\nabla
 N^*_I$ can be obtained 
 by evaluating the following expression
@@ -561,8 +582,7 @@ of the eigenerosion proposed by Pandolfi \& Ortiz
 (2012)\cite{Pandolfi_2012} for fracture of brittle materials. The
   evaluation of both approaches \cite{Navas_2017_ES} against
   experimental measures show that the eigenerosion algorithm significantly overestimates the tensile stress and the strain peaks, Meanwhile eigensoftening captures the forces and crack
-patterns accurately. Furthermore, the accuracy of this algorithm has been proven for \textcolor{red}{mixed-mode} fracture patterns such as the ones obtained with fiber \textcolor{red}{reinforced} concrete (FRC),
-\cite{Navas_2018_ES}.\\
+patterns accurately. Furthermore, the accuracy of this algorithm has been proven for \textcolor{red}{mixed-mode} fracture patterns such as the ones obtained with \textcolor{red}{\acrfull{frc}}, \cite{Navas_2018_ES}.\\
 
 The key idea behind the eigenerosion algorithm is the computation of the
 energy-release rate attendant to the failure of material point $p$,
@@ -574,9 +594,9 @@ energy-release rate attendant to the failure of material point $p$,
 &m_p^{k+1} =  \sum_{x_q^{k+1} \in
   B_{\epsilon}(x_p^{k+1})} m_q  
 \end{align}
-where $B_{\epsilon}(x_p^{k+1})$ is a $^n$dimensional sphere of radius $\epsilon$
+where $B_{\epsilon}(x_p^{k+1})$ is a $^n$dimensional sphere of radius \gls{eps-neighborhood}
 centered at $x_p^{k+1}$. The particles which lie under this sphere are
-known as the $\epsilon$-neighborhood of the material point (see
+known as the \gls{eps-neighborhood}-neighborhood of the material point (see
 \cite{Pandolfi_2012}). This concept is conveniently sketched in
 Figure \ref{fig:Failed-particles}.
 %%%%%%%%%%%
@@ -584,22 +604,20 @@ Figure \ref{fig:Failed-particles}.
   \centering
   \includegraphics[width=0.5\textwidth]{Figure-Particle-failed}
   \caption{Scheme of a linear cohesive law, where the shaded area is
-    $G_f$, $f_t$ is the tensile strength, and $w_c$ is the critical
+    \gls{Gf}, \gls{ft} is the tensile strength, and \gls{Wc} is the critical
     opening displacement.}
   \label{fig:Failed-particles}
 \end{figure}
 %%%%%%%%%%%
 Other parameters are the mass of the neighborhood $m_p^{k+1}$, the
 current free-energy density per unit mass  $W_q^{k+1}$ and the
-normalizing constant $C_{\epsilon}$, which also defines the
-  $\epsilon$-neighborhood size, being $\epsilon = C_\epsilon h$, and
-  $h$ is a measure of the distance between nodes.
+normalizing constant \gls{Ceps}, which also defines the \gls{eps-neighborhood}-neighborhood size, being $\epsilon = C_\epsilon h$, and $h$ is a measure of the distance between nodes.
 
 The failure criterion \textcolor{blue}{considers that a material point fails}
 when $G_p^{k+1}$ surpasses the critical energy release rate that
-measures the material-specific energy, $G_F$. The convergence of this
+measures the material-specific energy, \gls{Gf}. The convergence of this
 approach has been analyzed by Schmidt {\it et al.}
-(2009)\cite{Schmidt_2009}, who proved that $G_F$ converges to the Griffith
+(2009)\cite{Schmidt_2009}, who proved that \gls{Gf} converges to the Griffith
 fracture when the discretisation size tends to zero. It is necessary to
 point out that, when a material point overpass the critical energy, its
 contribution to the internal forces vector is set to zero. \textcolor{red}{However,} its
@@ -612,16 +630,16 @@ materials \cite{Navas_2017_ES}. To overcome this limitation, the authors \cite{N
 failure criterion is plotted in Figure \ref{fig:Damage-ft-wc}, where
 a linear decreasing cohesive law is presented to illustrate the
 concept earlier described. In the picture, the shaded region represents
-the static fracture energy per unit of area, $G_F$. Notice how a
-cohesive crack appears when the maximum tensile strength, $f_t$, is
-reached. Once the crack, $w_n$, reaches the value of the critical
-crack opening, $w_c$, a stress-free crack is attained.
+the static fracture energy per unit of area, \gls{Gf}. Notice how a
+cohesive crack appears when the maximum tensile strength, \gls{ft}, is
+reached. Once the crack, \gls{Wn}, reaches the value of the critical
+crack opening, \gls{Wc}, a stress-free crack is attained.
 %%%%%%%%%%%
 \begin{figure}
   \centering
   \includegraphics[width=0.5\textwidth]{Figure-Damage}
   \caption{Scheme of a cohesive linear law, where the shaded area is
-    $G_f$, $f_t$ is the tensile strength, and $w_c$ is the critical
+    \gls{Gf}, \gls{ft} is the tensile strength, and \gls{Wc} is the critical
     opening displacement.}
   \label{fig:Damage-ft-wc}
 \end{figure}
@@ -630,7 +648,7 @@ For the eigensoftening algorithm, a strength criterion for crack
 initialization was adopted. Particularly the maximum principal stress
 theory for brittle fracture was considered in \cite{Navas_2017_ES},
 this allows to quantify the variation of the averaged strain energy density in the
-$\epsilon$-neighborhood of the material point $\vec{x}_p^{k+1}$ as
+\gls{eps-neighborhood}-neighborhood of the material point $\vec{x}_p^{k+1}$ as
 \begin{equation}
   \label{eq:variation-averaged-strain-energy-density}
   \delta W_{\epsilon,p} = \frac{\partial G_p}{C_{\epsilon}} =
@@ -638,9 +656,9 @@ $\epsilon$-neighborhood of the material point $\vec{x}_p^{k+1}$ as
   B_{\epsilon}(x_p^{k+1})} m_q \tens{\sigma}_{q,I} \delta \tens{\varepsilon}_q,
 \end{equation}
 where $\tens{\sigma}_{q,I}$ is the maximum principal stress of each
-material point in the $\epsilon$-neighborhood. At this point, an \textit{effective} strain $\varepsilon_q$ is introduced in order to obtain the variation of
+material point in the \gls{eps-neighborhood}-neighborhood. At this point, an \textit{effective} strain \gls{strain_q} is introduced in order to obtain the variation of
 the local strain energy as $\delta W_q = \sigma_{q,1}
-\delta\varepsilon_q$. Now, with the assumption that the effective
+\delta\epsilon_q$. Now, with the assumption that the effective
 strain of each material point at every time step is constant in the
 neighbourhood of $\vec{x}_p^{k+1}$, the equation 
 \eqref{eq:variation-averaged-strain-energy-density} can be simplified
@@ -648,7 +666,7 @@ neighbourhood of $\vec{x}_p^{k+1}$, the equation
 \begin{equation}
   \label{eq:variation-averaged-strain-energy-density-simpli}
   \delta W_{\epsilon,p} =
-  \frac{\delta \tens{\epsilon}_p}{m_p} \sum_{x_q^{k+1} \in
+  \frac{\delta\tens{\epsilon}_p}{m_p} \sum_{x_q^{k+1} \in
   B_{\epsilon}(x_p^{k+1})} m_q \tens{\sigma}_{q,I}. 
 \end{equation}
 Consequently, it is possible to define an equivalent critical stress at the
@@ -664,9 +682,9 @@ $\epsilon$-neighborhood, defined similarly to the eigenerosion
   method (Eq.~\eqref{eq:mass-EE}). The equivalent critical stress
   leads to a definition of the   averaged strain energy in terms of the averaged
 strain as $\delta W_{\epsilon,p} =
- \tens{\sigma}_{\epsilon,p}\ \delta\varepsilon_p$. The softening behaviour is
+ \tens{\sigma}_{\epsilon,p}\ \delta\epsilon_p$. The softening behaviour is
 activated once $\tens{\sigma}_{\epsilon,p}^{k+1}$ surpasses the
-tensile strength, $f_t$. This consists of a reduction of the internal
+tensile strength, \gls{ft}. This consists of a reduction of the internal
 forces as, 
  \begin{equation}
    \label{eq:f-int-damaged}
@@ -684,14 +702,14 @@ material points), that relates the crack opening and the residual strength. \tex
  \end{equation}
 Analogous to the crack band model presented by
 Bazant~\cite{Bazant83}, Navas {\it et al.} \cite{Navas_2018_ES}
-\cite{Navas_2017_ES} introduced a band width parameter $h_{\epsilon}$ in order to relate the crack opening with the strain.
+\cite{Navas_2017_ES} introduced a band width parameter \gls{heps} in order to relate the crack opening with the strain.
 Concerning this parameter, a typical value between two and
 four times the maximum size of the aggregates is adopted in the case of
 concrete as brittle material. The effective fracture strain
 $\varepsilon_{\epsilon,f}$ is defined as the difference between the strain at crack initialization,
 $\varepsilon_1(\vec{x}_p^{0})$, and the current strain, $\varepsilon_1(\vec{x}_p^{k+1})$, for a material point $p$. Also,
 $\varepsilon_{\epsilon,f}$ can be represented as the current crack
-opening $w_n$ within the band width $h_{\epsilon}$. Therefore, 
+opening \gls{Wn} within the band width \gls{heps}. Therefore, 
 \begin{equation}
   \label{eq:effective-fracture-strain}
   \varepsilon_{\epsilon,f} = \varepsilon_1(\vec{x}_p^{k+1}) -
@@ -940,7 +958,7 @@ and the elastic modulus \gls{E}, provided in table \ref{tab:concrete-properties}
   \centering
   \begin{tabular}[]{c c c c c c c}
     \hline
-      &   $\rho$   & $\text{f}_c$ & $\text{f}_t$ & $G_F$ &   E   & $\text{d}_{max}$ \\
+      &   $\rho$   & $\text{f}_c$ & $\text{f}_t$ & \gls{Gf} &   E   & $\text{d}_{max}$ \\
       & (kg/m$^3$) &     (MPa)    &     (MPa)    & (N/m) & (GPa) & (mm) \\
     \hline
 Value &    2368    &     102.7    &      5.4     &  141  &   31  &  12 \\
@@ -1122,7 +1140,7 @@ fellowship Fundaci\'on Agust\'in de Betancourt and Juan de la Cierva
 
 \begin{algorithm}[H]
   \DontPrintSemicolon
-  \KwInput{For each $p$, $\epsilon$-neighbourhood, $f_{t,p}$, $h_{\epsilon,p}$, $w_c$}
+  \KwInput{For each $p$, $\epsilon$-neighbourhood, $f_{t,p}$, $h_{\epsilon,p}$, \gls{Wc}}
   \KwOutput{Return damage parameter $\chi = \{\chi_p\}$}
   \KwData{Testing set $x$}
   $\chi_p \leftarrow \chi_p^{k}$ \;
